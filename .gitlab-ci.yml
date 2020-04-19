@@ -1,0 +1,28 @@
+image: python:3-alpine
+
+before_script:
+  - apk update
+  - apk add zip
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - python -mjson.tool 'pt-BR/pt-BR.json' > /dev/null
+    - python -mjson.tool 'pt-BR/module.json' > /dev/null
+
+build:
+  stage: build
+  script:
+    - zip pt-BR.zip -r pt-BR
+  artifacts:
+    name: pt-BR
+    when: on_success
+    paths:
+      - pt-BR.zip
+  when: on_success
+  only:
+    - tags
