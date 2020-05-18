@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://gitlab.com/foundryvtt-pt-br/core/compare/v1.0.0...v1.1.0) (2020-05-18)
+
+
+### Features
+
+* update strings for 0.5.7 update ([1a6b56f](https://gitlab.com/foundryvtt-pt-br/core/commit/1a6b56fce373349202d4644e181279df4212f88f))
+
 ## 1.0.0 (2020-04-19)
 
 

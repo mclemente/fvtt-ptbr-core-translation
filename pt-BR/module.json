@@ -2,7 +2,7 @@
     "name": "pt-BR",
     "title": "Portuguese (BR) Core",
     "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "Miriadis, Bellenus, Thomaz M., ChaoticTabris, Caua539",
     "minimumCoreVersion": "0.5.0",
     "compatibleCoreVersion": "0.5.7",
