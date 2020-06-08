@@ -250,7 +250,7 @@
   "ERROR.LowResolution": "Foundry Virtual Tabletop requer uma resolução de tela mínima de {reqWidth}px por {reqHeight}px ou maior. Sua tela atual possui uma resolução efetiva de {width}px por {height}px, e como resultado muitas funcionalidades do sofware podem não funcionar corretamente.",
   "ERROR.NoWebGL": "Atualmente, seu navegador não suporta a renderização WebGL, que é exigida pelo Foundry Virtual Tabletop. Verifique se você possui a renderização de hardware e o WebGL ativados no seu navegador.",
   "ERROR.BackgroundTextureSize": "Você está usando uma textura de fundo de cena com dimensões de {width}px por {height}px. Uma ou ambas as dimensões excedem o tamanho máximo de textura de {max}px suportado pelo seu dispositivo.",
-  "ERROR.InvalidAdminKey": "A chave de acesso de administrador informada é inválida. Se você esqueceu a senha configurada, será necessário excluir manualmente o arquivo <strong>Config/admin.txt</strong> da sua pasta de dados do usuário.",
+  "ERROR.InvalidAdminKey": "A chave de acesso de administrador informada é inválida. Se você esqueceu a senha configurada, será necessário excluir manualmente o arquivo <strong>Config/admin.txt</strong> da sua pasta de dados do usuário.</p>",
   "ERROR.TokenCollide": "O movimento de Token iniciado colide com pelo menos uma Parede.",
   "WARNING.GridConfigNoBG": "Você está usando a Ferramenta de Configuração de Grid em uma Cena que não possui imagem de fundo. Isso não é recomendável e poderá gerar resultados inesperados.",
   
