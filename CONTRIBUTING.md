@@ -1,6 +1,6 @@
 ## Português
 
-Se você quer ajudar com a tradução dos termos por favor entre em contato através do Discord com **Bellenus#5269** ou **Melithian539#0625** para ser adicionado ao projeto de tradução no Zanata como um tradutor ou revisor.
+Se você quer ajudar com a tradução dos termos basta acessar o nosso projeto no [**Transifex**](https://www.transifex.com/foundryvtt-brasil/fvtt-core/) e começar a traduzir! Caso tenha alguma dúvida você pode nos procurar no Discord através desse [**convite**](https://discord.gg/Muj5AUK).
 
 Caso você queira contrubuir com o repositorio do GitLab de alguma forma, por favor leia as instruções abaixo com atenção.
 
@@ -13,7 +13,7 @@ Caso você queira contrubuir com o repositorio do GitLab de alguma forma, por fa
 
 ### Merge Requests
 
-* Por favor não envie *Merge Requests* diretamente para o branch `master`. Crie um novo branch e e submeta uma nova *Merge Request* apartir dele ou do branch `dev`.
+* Por favor não envie *Merge Requests* diretamente para o branch `master`. Crie um novo branch e submeta uma nova *Merge Request* apartir dele ou do branch `dev`.
 
 
 ___
@@ -21,7 +21,7 @@ ___
 
 ## English
 
-If you would like to help with the translation of terms or would like to use the same project for other languages please contact **Bellenus#5269** or **Melithian539#0625** in Discord to be added to the translation project on Zanata as a translator or reviewer.
+If you would like to help with the translation of terms,just access our project at [**Transifex**](https://www.transifex.com/foundryvtt-brasil/fvtt-core/) and start translating! If you have any questions you can contact us on Discord through this [**invitation**](https://discord.gg/Muj5AUK).
 
 If you want to contribute to the GitLab repository in any way, please read the instructions below carefully.
 
