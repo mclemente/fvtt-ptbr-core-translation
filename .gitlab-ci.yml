@@ -25,4 +25,4 @@ build:
       - pt-BR.zip
   when: on_success
   only:
-    - tags
+    - master
