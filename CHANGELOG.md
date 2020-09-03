@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://gitlab.com/foundryvtt-pt-br/core/compare/v1.3.0...v1.4.0) (2020-09-03)
+
+
+### Features
+
+* **pt-br.json:** update translation for latest Foundry v0.7.1 ([2057f53](https://gitlab.com/foundryvtt-pt-br/core/commit/2057f533959391cf1d3d8324c4d4f46bcea3fd03))
+
 ## [1.3.0](https://gitlab.com/foundryvtt-pt-br/core/compare/v1.1.0...v1.3.0) (2020-06-08)
 
 
