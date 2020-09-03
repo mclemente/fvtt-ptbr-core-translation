@@ -18,5 +18,5 @@
     ],
     "url": "https://gitlab.com/foundryvtt-pt-br/core",
     "manifest": "https://gitlab.com/foundryvtt-pt-br/core/-/raw/master/pt-BR/module.json",
-    "download": "https://gitlab.com/foundryvtt-pt-br/core/-/jobs/artifacts/master/raw/pt-BR.zip?job=build"
+    "download": "https://gitlab.com/api/v4/projects/18230905/jobs/artifacts/v1.3.0/raw/pt-BR.zip?job=build"
 }

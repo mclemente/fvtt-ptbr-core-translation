@@ -13,13 +13,9 @@
     "license": "MIT",
     "devDependencies": {
         "commitizen": "^4.1.2",
-        "cz-conventional-changelog": "^3.2.0",
         "standard-version": "^8"
     },
     "standard-version": {
-        "skip": {
-            "tag": true
-        },
         "bumpFiles": [
             {
                 "filename": "pt-BR/module.json",
@@ -32,12 +28,11 @@
             {
                 "filename": "package-lock.json",
                 "type": "json"
+            },
+            {
+                "filename": "pt-BR/module.json",
+                "updater": "src/download-updater.js"
             }
         ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
     }
 }
