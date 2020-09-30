@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://gitlab.com/foundryvtt-pt-br/core/compare/v1.5.0...v1.5.1) (2020-09-30)
+
+
+### Bug Fixes
+
+* **pt-br.json:** small translation improvements ([dbec0c9](https://gitlab.com/foundryvtt-pt-br/core/commit/dbec0c914c21ef77479d6482b2e7661552975fff))
+
 ## [1.5.0](https://gitlab.com/foundryvtt-pt-br/core/compare/v1.4.0...v1.5.0) (2020-09-30)
 
 

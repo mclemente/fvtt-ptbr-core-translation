@@ -1,6 +1,6 @@
 {
     "name": "portuguese-core",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
     "repository": {
         "type": "git",
