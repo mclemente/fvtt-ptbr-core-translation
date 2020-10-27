@@ -2,7 +2,7 @@
     "name": "pt-BR",
     "title": "Portuguese (BR) Core",
     "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "author": "Miriadis, Bellenus, Thomaz M., ChaoticTabris, Caua539",
     "minimumCoreVersion": "0.5.0",
     "compatibleCoreVersion": "0.7.5",
@@ -18,5 +18,5 @@
     ],
     "url": "https://gitlab.com/foundryvtt-pt-br/core",
     "manifest": "https://gitlab.com/foundryvtt-pt-br/core/-/raw/master/pt-BR/module.json",
-    "download": "https://gitlab.com/foundryvtt-pt-br/core/-/jobs/artifacts/v1.5.1/raw/pt-BR.zip?job=build"
+    "download": "https://gitlab.com/foundryvtt-pt-br/core/-/jobs/artifacts/v1.6.0/raw/pt-BR.zip?job=build"
 }
