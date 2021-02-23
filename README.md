@@ -47,8 +47,3 @@ Once this is done, enable the module in the settings of the world in which you i
 ### Contributing
 
 The main form of contribution to the project is through the translation of the English terms available on the Zanata platform, which can be found at this [link](https://translate.zanata.org/project/view/fvtt-core "Zanata - FVTT Core"). For more information, read the [contribution guide](CONTRIBUTING.md "Contribution guide")
-
-
-___
-
-[**D20 Save Icon Format**](https://www.freeiconspng.com/img/34413) (with original colors) by **freeiconspng.com**
