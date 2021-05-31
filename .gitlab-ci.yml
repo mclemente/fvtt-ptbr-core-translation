@@ -13,7 +13,7 @@ cache:
 
 before_script:
   - apk update
-  - apk add zip curl git openssh-client findutils
+  - apk add zip curl git openssh-client ack
   - curl -L https://unpkg.com/@pnpm/self-installer | node
   - mkdir -p ~/.ssh
   - chmod 700 ~/.ssh
@@ -38,7 +38,7 @@ jsonlint:
 build:
   stage: build
   script:
-    - export NEXT_VERSION=$(pnpx semantic-release --dry-run | grep -Pio '(?<=The next release version is )(.*)(?=$)')
+    - export NEXT_VERSION=$(pnpx semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)')
     - export NEXT_DOWNLOAD=$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$NEXT_VERSION/pt-BR.zip
     - pnpx json -I -f pt-BR/module.json -e 'this.version="'$NEXT_VERSION'"' -e 'this.download="'$NEXT_DOWNLOAD'"'
     - pnpx json -I -f package.json -e 'this.version="'$NEXT_VERSION'"'
