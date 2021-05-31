@@ -5,10 +5,8 @@
     "version": "1.8.0",
     "author": "Foundry VTT Brasil",
     "minimumCoreVersion": "0.5.0",
-    "compatibleCoreVersion": "0.7.9",
-    "scripts": [],
-    "styles": [],
-    "packs": [],
+    "compatibleCoreVersion": "0.8.5",
+    "coreTranslation": true,
     "languages": [
         {
             "lang": "pt-BR",
