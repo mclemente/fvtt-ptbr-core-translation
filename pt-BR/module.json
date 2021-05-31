@@ -16,7 +16,7 @@
             "path": "pt-BR.json"
         }
     ],
-    "url": "https://gitlab.com/foundryvtt-pt-br/core",
-    "manifest": "https://gitlab.com/foundryvtt-pt-br/core/-/raw/master/pt-BR/module.json",
-    "download": "https://gitlab.com/foundryvtt-pt-br/core/-/jobs/artifacts/v1.8.0/raw/pt-BR.zip?job=build"
+    "url": "https://gitlab.com/fvtt-brasil/core",
+    "manifest": "https://gitlab.com/fvtt-brasil/core/-/raw/master/pt-BR/module.json",
+    "download": "https://gitlab.com/api/v4/projects/18230905/packages/generic/pt-BR/1.8.0/pt-BR.zip"
 }

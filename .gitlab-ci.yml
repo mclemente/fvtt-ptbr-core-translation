@@ -1,28 +1,63 @@
-image: node:alpine
+image: node:14-alpine3.13
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_MESSAGE =~ /^chore\(release\).*/ || $CI_COMMIT_TAG
+      when: never
+    - when: always
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .pnpm-store
 
 before_script:
   - apk update
-  - apk add zip
-  - npm install @prantlf/jsonlint -g
+  - apk add zip curl git openssh-client findutils
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - pnpm config set store-dir .pnpm-store
+  - pnpm set verify-store-integrity false
+  - pnpm install
 
 stages:
   - test
   - build
+  - release
 
-test:
+jsonlint:
   stage: test
   script:
-    - jsonlint -q --enforce-double-quotes pt-BR/
+    - pnpx jsonlint -q --enforce-double-quotes pt-BR lang
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'schedule'
 
 build:
   stage: build
   script:
-    - zip pt-BR.zip -r pt-BR
+    - export NEXT_VERSION=$(pnpx semantic-release --dry-run | grep -Pio '(?<=The next release version is )(.*)(?=$)')
+    - export NEXT_DOWNLOAD=$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$NEXT_VERSION/pt-BR.zip
+    - pnpx json -I -f pt-BR/module.json -e 'this.version="'$NEXT_VERSION'"' -e 'this.download="'$NEXT_DOWNLOAD'"'
+    - pnpx json -I -f package.json -e 'this.version="'$NEXT_VERSION'"'
+    - zip -r -9 pt-BR.zip pt-BR
   artifacts:
-    expire_in: never
     name: pt-BR
     when: on_success
     paths:
+      - package.json
       - pt-BR.zip
-  only:
-    - tags
+      - pt-BR/module.json
+  rules:
+    - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule'
+
+publish:
+  stage: release
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add -
+    - pnpx semantic-release
+  rules:
+      - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule'
