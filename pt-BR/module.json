@@ -5,13 +5,13 @@
     "version": "1.9.0",
     "author": "Foundry VTT Brasil",
     "minimumCoreVersion": "0.5.0",
-    "compatibleCoreVersion": "0.8.5",
+    "compatibleCoreVersion": "0.8.9",
     "coreTranslation": true,
     "languages": [
         {
             "lang": "pt-BR",
             "name": "Português (Brasil)",
-            "path": "pt-BR.json"
+            "path": "lang/pt-BR/foundry.json"
         }
     ],
     "url": "https://gitlab.com/fvtt-brasil/core",
