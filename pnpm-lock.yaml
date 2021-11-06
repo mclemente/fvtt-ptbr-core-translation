@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@crowdin/cli': ^3.7.1
   '@prantlf/jsonlint': ^10.2.0
   '@semantic-release/commit-analyzer': ^8.0.1
   '@semantic-release/exec': ^5.0.0
@@ -11,6 +12,7 @@ specifiers:
   semantic-release: ^17.4.3
 
 devDependencies:
+  '@crowdin/cli': 3.7.1
   '@prantlf/jsonlint': 10.2.0
   '@semantic-release/commit-analyzer': 8.0.1_semantic-release@17.4.3
   '@semantic-release/exec': 5.0.0_semantic-release@17.4.3
@@ -78,6 +80,13 @@ packages:
       chalk: 4.1.1
     dev: true
     optional: true
+
+  /@crowdin/cli/3.7.1:
+    resolution: {integrity: sha512-UJrppchjYW2Gyl/2Tl9C2txYsyA44lJkrx04BhmaihvsJT82x5YKvvvUuvvfCUukG4+3relo0EoQG846PZX3ng==}
+    hasBin: true
+    dependencies:
+      shelljs: 0.8.4
+    dev: true
 
   /@nodelib/fs.scandir/2.1.4:
     resolution: {integrity: sha512-33g3pMJk3bg5nXbL/+CY6I2eJDzZAni49PfJnL5fghPTggPvBd/pFNSgJsdAgWptuFu7qq/ERvOYFlhvsLTCKA==}
@@ -1488,6 +1497,11 @@ packages:
       through: 2.3.8
     dev: true
 
+  /interpret/1.4.0:
+    resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
+    engines: {node: '>= 0.10'}
+    dev: true
+
   /into-stream/6.0.0:
     resolution: {integrity: sha512-XHbaOAvP+uFKUFsOgoNPRjLkwB+I22JFPFe5OjTkQ0nwgj6+pSjb4NmB6VMxaPshLiOf+zcpOCBQuLwC1KHhZA==}
     engines: {node: '>=10'}
@@ -2337,6 +2351,13 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
+  /rechoir/0.6.2:
+    resolution: {integrity: sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=}
+    engines: {node: '>= 0.10'}
+    dependencies:
+      resolve: 1.20.0
+    dev: true
+
   /redent/3.0.0:
     resolution: {integrity: sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==}
     engines: {node: '>=8'}
@@ -2534,6 +2555,16 @@ packages:
   /shebang-regex/3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+    dev: true
+
+  /shelljs/0.8.4:
+    resolution: {integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==}
+    engines: {node: '>=4'}
+    hasBin: true
+    dependencies:
+      glob: 7.1.7
+      interpret: 1.4.0
+      rechoir: 0.6.2
     dev: true
 
   /side-channel/1.0.4:

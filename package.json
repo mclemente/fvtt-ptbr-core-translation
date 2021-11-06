@@ -12,6 +12,7 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@crowdin/cli": "^3.7.1",
         "@prantlf/jsonlint": "^10.2.0",
         "@semantic-release/commit-analyzer": "^8.0.1",
         "@semantic-release/exec": "^5.0.0",
