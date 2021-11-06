@@ -9,6 +9,7 @@ specifiers:
   '@semantic-release/gitlab': ^6.0.9
   commitizen: ^4.1.2
   conventional-changelog-conventionalcommits: ^4.6.0
+  json: ^11.0.0
   semantic-release: ^17.4.3
 
 devDependencies:
@@ -20,6 +21,7 @@ devDependencies:
   '@semantic-release/gitlab': 6.0.9_semantic-release@17.4.3
   commitizen: 4.2.4
   conventional-changelog-conventionalcommits: 4.6.0
+  json: 11.0.0
   semantic-release: 17.4.3
 
 packages:
@@ -1645,6 +1647,12 @@ packages:
 
   /json-stringify-safe/5.0.1:
     resolution: {integrity: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=}
+    dev: true
+
+  /json/11.0.0:
+    resolution: {integrity: sha512-N/ITv3Yw9Za8cGxuQqSqrq6RHnlaHWZkAFavcfpH/R52522c26EbihMxnY7A1chxfXJ4d+cEFIsyTgfi9GihrA==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
     dev: true
 
   /jsonfile/4.0.0:
