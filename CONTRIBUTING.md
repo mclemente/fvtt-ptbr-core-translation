@@ -1,37 +1,32 @@
-## Português
+Português ([english version](#english "English version"))
+=========================================================
 
-Se você quer ajudar com a tradução dos termos basta acessar o nosso projeto no [**Transifex**](https://www.transifex.com/foundryvtt-brasil/fvtt-core/) e começar a traduzir! Caso tenha alguma dúvida você pode nos procurar no Discord através desse [**convite**](https://discord.gg/Muj5AUK).
+## Contribuindo
+Todas as contribuições são bem vindas, se você quer ajudar com a tradução dos termos basta acessar o projeto no [Crowdin](https://fvtt.crowdin.com/core), criar uma conta e começar a traduzir, a conta é gratuita, não existe qualquer custo envolvido para ajudar com a tradução.
 
-Caso você queira contrubuir com o repositorio do GitLab de alguma forma, por favor leia as instruções abaixo com atenção.
+Se você encontrar algum erro na tradução você pode fazer a correção da mesma no projeto no [Crowdin](https://fvtt.crowdin.com/core) ou então criar uma nova [*issue*](https://gitlab.com/fvtt-brasil/core/-/issues) aqui mesmo, **não crie** *merge requests* com alterações na tradução, elas não serão aceitas.
 
+Se você quer ajudar com o código do módulo fique atendo aos seguintes requisitos:
 
-### Commits
+- Esse repositório segue o [Conventional Commits](https://www.conventionalcommits.org/), todos os *commits* devem estar de acordo com essa especificação.
 
-* Esse repositório utiliza a especificação do [*Conventional Commits*](https://www.conventionalcommits.org/pt-br). Se você não está familiarizado com essa convenção não se preocupe, basta rodar o script `npm run commit` ou `yarn commit` caso utilize o yarn, e responder as perguntas para gerar o commit. Commits que estejam fora a convenção não serão aceitos.
+- Esse repositório também segue o estilo [Semi-Standard](https://standardjs.com), todos os *commits* passam automaticamente por uma validação, *merge requests* que falhem nesse teste não serão aceitas.
 
-* Graças ao [*Conventional Commits*](https://www.conventionalcommits.org/pt-br) o *CHANGELOG* do repositorio pode ser gerado automaticamente através do script `npm run release` ou `yarn release` caso utilize o yarn. Sempre que finalizar o seu commit utilize o script acima para gerar o texto do *CHANGELOG.md* além de atualizar automaticamente a versão do módulo, por favor não atualize a versão manualmente.
+- As *tags* e *releases* são geradas automaticamente através do [semantic-release](https://github.com/semantic-release/semantic-release), que define a versão a ser lançada de acordo com a mensagem dos *commits*, não é necessário atualizar o número da versão em nenhum arquivo, mantenha eles como estão, tudo isso sera atualizado de forma automática.
+<br/>
 
-### Merge Requests
+English
+=======
 
-* Por favor não envie *Merge Requests* diretamente para o branch `master`. Crie um novo branch e submeta uma nova *Merge Request* apartir dele ou do branch `dev`.
+## Contributing
+All contributions are welcome, if you want to help with the translation of the terms just access the project on [Crowdin](https://fvtt.crowdin.com/core), create an account and start translating, the account is free, there is no cost involved to help with the translation.
 
+If you find any error in the translation you can correct it in the project on [Crowdin](https://fvtt.crowdin.com/core) or create a new [*issue*](https://gitlab.com/fvtt-brasil/core/-/issues) right here, **do not create** *merge requests* with changes in the translation, they will not be accepted.
 
-___
+If you want to help with the module code, please make sure you meet the following requirements:
 
+- This repository follows the [Conventional Commits](https://www.conventionalcommits.org/), all *commits* must comply with this specification.
 
-## English
+- This repository also follows the [Semi-Standard](https://standardjs.com) style, all *commits* automatically go through a validation, *merge requests* that fail this test will not be accepted.
 
-If you would like to help with the translation of terms,just access our project at [**Transifex**](https://www.transifex.com/foundryvtt-brasil/fvtt-core/) and start translating! If you have any questions you can contact us on Discord through this [**invitation**](https://discord.gg/Muj5AUK).
-
-If you want to contribute to the GitLab repository in any way, please read the instructions below carefully.
-
-
-### Commits
-
-* This repository uses the [*Conventional Commits*](https://www.conventionalcommits.org) specification . If you are not familiar with this convention don't worry, just run the script `npm run commit` or` yarn commit` if you use yarn and answer the questions to generate the commit. Commits outside the convention will not be accepted.
-
-* Thanks to the [*Conventional Commits*](https://www.conventionalcommits.org) the repository's *CHANGELOG* can be generated automatically through the script `npm run release` or ` yarn release` if you use yarn . Whenever you finish your commit, use the script above to generate the text of *CHANGELOG.md* in addition to automatically updating the module version, please do not update the version manually.
-
-### Merge requests
-
-* Please do not send *Merge Requests* directly to the `master` branch. Create a new branch and submit a new *Merge Request* from it or from the `dev` branch.
+- The *tags* and *releases* are automatically generated through the [semantic-release](https://github.com/semantic-release/semantic-release), which defines the version to be released according to the message of the *commits*, it is not necessary to update the version number in any file, keep them as they are, all this will be updated automatically.
