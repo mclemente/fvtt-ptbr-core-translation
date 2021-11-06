@@ -34,6 +34,8 @@ jsonlint:
     - pnpx jsonlint -q --enforce-double-quotes pt-BR lang
   rules:
     - if: $CI_PIPELINE_SOURCE != 'schedule'
+      changes:
+          - pt-BR/**/*.json
 
 build:
   stage: build
@@ -51,7 +53,7 @@ build:
       - pt-BR.zip
       - pt-BR/module.json
   rules:
-    - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule'
+    - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule' && $CI_COMMIT_MESSAGE =~ /^(feat|fix).*/
 
 publish:
   stage: release
@@ -60,4 +62,4 @@ publish:
     - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add -
     - pnpx semantic-release
   rules:
-      - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule'
+      - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule' && $CI_COMMIT_MESSAGE =~ /^(feat|fix).*/
