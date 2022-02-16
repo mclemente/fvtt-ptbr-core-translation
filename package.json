@@ -1,26 +1,26 @@
 {
-    "name": "portuguese-core",
-    "version": "1.10.0",
-    "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
-    "repository": {
-        "type": "git",
-        "url": "https://gitlab.com/fvtt-brasil/core.git"
-    },
-    "scripts": {
-        "commit": "pnpx cz",
-        "lintjson": "pnpx jsonlint -q --enforce-double-quotes pt-BR"
-    },
-    "license": "MIT",
-    "devDependencies": {
-        "@crowdin/cli": "^3.7.7",
-        "@prantlf/jsonlint": "^10.2.0",
-        "@semantic-release/commit-analyzer": "^9.0.2",
-        "@semantic-release/exec": "^6.0.3",
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/gitlab": "^7.0.4",
-        "commitizen": "^4.2.4",
-        "conventional-changelog-conventionalcommits": "^4.6.3",
-        "json": "^11.0.0",
-        "semantic-release": "^19.0.2"
-    }
+  "name": "portuguese-core",
+  "version": "1.11.0",
+  "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/fvtt-brasil/core.git"
+  },
+  "scripts": {
+    "commit": "pnpx cz",
+    "lintjson": "pnpx jsonlint -q --enforce-double-quotes pt-BR"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@crowdin/cli": "^3.7.7",
+    "@prantlf/jsonlint": "^10.2.0",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^7.0.4",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "json": "^11.0.0",
+    "semantic-release": "^19.0.2"
+  }
 }
