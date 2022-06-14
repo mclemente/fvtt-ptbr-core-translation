@@ -31,7 +31,7 @@ stages:
 jsonlint:
   stage: test
   script:
-    - pnpx jsonlint -q --enforce-double-quotes pt-BR lang
+    - pnpx jsonlint -q --enforce-double-quotes pt-BR
   rules:
     - if: $CI_PIPELINE_SOURCE != 'schedule'
       changes:
