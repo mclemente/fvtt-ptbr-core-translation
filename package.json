@@ -12,15 +12,15 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@crowdin/cli": "^3.7.7",
+    "@crowdin/cli": "^3.7.8",
     "@prantlf/jsonlint": "^10.2.0",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/gitlab": "^7.0.4",
+    "@semantic-release/gitlab": "^9.3.2",
     "commitizen": "^4.2.4",
-    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "json": "^11.0.0",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^19.0.3"
   }
 }
