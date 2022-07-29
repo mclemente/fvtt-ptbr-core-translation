@@ -17,7 +17,7 @@ cache:
 
 before_script:
   - apk update --quiet
-  - apk add --quiet zip curl git ack
+  - apk add --quiet curl git ack
   - curl -LSs https://unpkg.com/@pnpm/self-installer | node
   - pnpm config set store-dir .pnpm-store
   - pnpm set verify-store-integrity false
@@ -46,9 +46,7 @@ build:
     - export VERSION=$(pnpm --silent exec semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)') && echo VERSION=$VERSION >> build.env
     - export MANIFEST=$CI_PROJECT_URL/-/raw/$CI_COMMIT_BRANCH/pt-BR/module.json && echo MANIFEST=$MANIFEST >> build.env
     - export DOWNLOAD=$CI_PROJECT_URL/-/releases/v$VERSION/downloads/module.zip && echo DOWNLOAD=$DOWNLOAD >> build.env
-    - pnpm --silent exec json -I -f pt-BR/module.json -e 'this.version="'$VERSION'"' -e 'this.download="'$DOWNLOAD'"' -e 'this.manifest="'$MANIFEST'"'
-    - pnpm --silent exec json -I -f package.json -e 'this.version="'$VERSION'"'
-    - zip -r -9 module.zip pt-BR -x "pt-BR/lang/en/*"
+    - pnpm run build
   artifacts:
     name: module
     when: on_success
