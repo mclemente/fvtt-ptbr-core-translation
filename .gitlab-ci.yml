@@ -1,5 +1,9 @@
 image: node:16-alpine
 
+.releases:
+  rules:
+    - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule' && $CI_COMMIT_MESSAGE =~ /^(feat|fix).*/
+
 workflow:
   rules:
     - if: $CI_COMMIT_MESSAGE =~ /^chore\(release\).*/ || $CI_COMMIT_TAG
@@ -12,16 +16,12 @@ cache:
     - .pnpm-store
 
 before_script:
-  - apk update
-  - apk add zip curl git openssh-client ack
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
-  - mkdir -p ~/.ssh
-  - chmod 700 ~/.ssh
-  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
-  - chmod 644 ~/.ssh/known_hosts
+  - apk update --quiet
+  - apk add --quiet zip curl git ack
+  - curl -LSs https://unpkg.com/@pnpm/self-installer | node
   - pnpm config set store-dir .pnpm-store
   - pnpm set verify-store-integrity false
-  - pnpm install
+  - pnpm install --reporter=silent
 
 stages:
   - test
@@ -31,7 +31,7 @@ stages:
 jsonlint:
   stage: test
   script:
-    - pnpx jsonlint -q --enforce-double-quotes pt-BR
+    - pnpm --silent exec jsonlint -q --enforce-double-quotes pt-BR
   rules:
     - if: $CI_PIPELINE_SOURCE != 'schedule'
       changes:
@@ -40,10 +40,10 @@ jsonlint:
 build:
   stage: build
   script:
-    - export NEXT_VERSION=$(pnpx semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)')
+    - export NEXT_VERSION=$(pnpm --silent exec semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)')
     - export NEXT_DOWNLOAD=$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$NEXT_VERSION/pt-BR.zip
-    - pnpx json -I -f pt-BR/module.json -e 'this.version="'$NEXT_VERSION'"' -e 'this.download="'$NEXT_DOWNLOAD'"'
-    - pnpx json -I -f package.json -e 'this.version="'$NEXT_VERSION'"'
+    - pnpm --silent exec json -I -f pt-BR/module.json -e 'this.version="'$NEXT_VERSION'"' -e 'this.download="'$NEXT_DOWNLOAD'"'
+    - pnpm --silent exec json -I -f package.json -e 'this.version="'$NEXT_VERSION'"'
     - zip -r -9 pt-BR.zip pt-BR -x "pt-BR/lang/en/*"
   artifacts:
     name: pt-BR
@@ -52,14 +52,12 @@ build:
       - package.json
       - pt-BR.zip
       - pt-BR/module.json
-  rules:
-    - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule' && $CI_COMMIT_MESSAGE =~ /^(feat|fix).*/
+  extends: .releases
 
 publish:
   stage: release
   script:
-    - eval $(ssh-agent -s)
-    - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add -
-    - pnpx semantic-release
-  rules:
-      - if: $CI_COMMIT_BRANCH =~ /^(master|beta)/ && $CI_PIPELINE_SOURCE != 'schedule' && $CI_COMMIT_MESSAGE =~ /^(feat|fix).*/
+    - pnpm --silent exec semantic-release
+  dependencies:
+    - build
+  extends: .releases
