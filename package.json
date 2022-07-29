@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "commit": "pnpm exec cz",
-    "lintjson": "pnpm exec jsonlint -q --enforce-double-quotes pt-BR"
+    "lintjson": "pnpm exec jsonlint -q --enforce-double-quotes lang module.json"
   },
   "license": "MIT",
   "devDependencies": {

@@ -34,17 +34,18 @@ variables:
 jsonlint:
   stage: test
   script:
-    - pnpm --silent exec jsonlint -q --enforce-double-quotes pt-BR
+    - pnpm --silent exec jsonlint -q --enforce-double-quotes lang module.json
   rules:
     - if: $CI_PIPELINE_SOURCE != 'schedule'
       changes:
-          - pt-BR/**/*.json
+          - module.json
+          - lang/**/*.json
 
 build:
   stage: build
   script:
     - export VERSION=$(pnpm --silent exec semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)') && echo VERSION=$VERSION >> build.env
-    - export MANIFEST=$CI_PROJECT_URL/-/raw/$CI_COMMIT_BRANCH/pt-BR/module.json && echo MANIFEST=$MANIFEST >> build.env
+    - export MANIFEST=$CI_PROJECT_URL/-/raw/$CI_COMMIT_BRANCH/module.json && echo MANIFEST=$MANIFEST >> build.env
     - export DOWNLOAD=$CI_PROJECT_URL/-/releases/v$VERSION/downloads/module.zip && echo DOWNLOAD=$DOWNLOAD >> build.env
     - pnpm run build
   artifacts:
@@ -55,7 +56,7 @@ build:
     paths:
       - package.json
       - module.zip
-      - pt-BR/module.json
+      - module.json
   extends: .releases
 
 publish:

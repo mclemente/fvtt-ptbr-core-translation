@@ -13,7 +13,7 @@ if (!semver.test(nextVersion)) {
 }
 
 const packageFile = JSON.parse(readFileSync(`${process.cwd()}/package.json`));
-const moduleFile = JSON.parse(readFileSync(`${process.cwd()}/pt-BR/module.json`));
+const moduleFile = JSON.parse(readFileSync(`${process.cwd()}/module.json`));
 
 packageFile.version = nextVersion;
 moduleFile.version = nextVersion;
@@ -21,9 +21,9 @@ moduleFile.manifest = manifestUrl;
 moduleFile.download = downloadUrl;
 
 writeFileSync(`${process.cwd()}/package.json`, JSON.stringify(packageFile, null, 2));
-writeFileSync(`${process.cwd()}/pt-BR/module.json`, JSON.stringify(moduleFile, null, 2));
+writeFileSync(`${process.cwd()}/module.json`, JSON.stringify(moduleFile, null, 2));
 
 const module = new AdmZip();
-module.addLocalFolder(`${process.cwd()}/pt-BR/lang/pt-BR`, 'lang/pt-BR');
-module.addLocalFile(`${process.cwd()}/pt-BR/module.json`);
+module.addLocalFolder(`${process.cwd()}/lang/pt-BR`, 'lang/pt-BR');
+module.addLocalFile(`${process.cwd()}/module.json`);
 module.writeZip(`${process.cwd()}/module.zip`);
