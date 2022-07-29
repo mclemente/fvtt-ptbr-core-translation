@@ -28,6 +28,9 @@ stages:
   - build
   - release
 
+variables:
+  PACKAGE_REGISTRY_URL: $CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/module
+
 jsonlint:
   stage: test
   script:
@@ -40,17 +43,20 @@ jsonlint:
 build:
   stage: build
   script:
-    - export NEXT_VERSION=$(pnpm --silent exec semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)')
-    - export NEXT_DOWNLOAD=$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$NEXT_VERSION/pt-BR.zip
-    - pnpm --silent exec json -I -f pt-BR/module.json -e 'this.version="'$NEXT_VERSION'"' -e 'this.download="'$NEXT_DOWNLOAD'"'
-    - pnpm --silent exec json -I -f package.json -e 'this.version="'$NEXT_VERSION'"'
-    - zip -r -9 pt-BR.zip pt-BR -x "pt-BR/lang/en/*"
+    - export VERSION=$(pnpm --silent exec semantic-release --dry-run | ack -io '(?<=The next release version is )(.*)(?=$)') && echo VERSION=$VERSION >> build.env
+    - export MANIFEST=$CI_PROJECT_URL/-/raw/$CI_COMMIT_BRANCH/pt-BR/module.json && echo MANIFEST=$MANIFEST >> build.env
+    - export DOWNLOAD=$CI_PROJECT_URL/-/releases/v$VERSION/downloads/module.zip && echo DOWNLOAD=$DOWNLOAD >> build.env
+    - pnpm --silent exec json -I -f pt-BR/module.json -e 'this.version="'$VERSION'"' -e 'this.download="'$DOWNLOAD'"' -e 'this.manifest="'$MANIFEST'"'
+    - pnpm --silent exec json -I -f package.json -e 'this.version="'$VERSION'"'
+    - zip -r -9 module.zip pt-BR -x "pt-BR/lang/en/*"
   artifacts:
-    name: pt-BR
+    name: module
     when: on_success
+    reports:
+      dotenv: build.env
     paths:
       - package.json
-      - pt-BR.zip
+      - module.zip
       - pt-BR/module.json
   extends: .releases
 
