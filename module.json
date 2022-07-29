@@ -1,5 +1,5 @@
 {
-  "name": "pt-BR",
+  "id": "pt-BR",
   "title": "Portuguese (BR) Core",
   "description": "A translation module to add the option to display the core interface of Foundry VTT in Portuguese (BR).",
   "version": "1.11.1",
@@ -9,8 +9,11 @@
       "url": "https://discord.gg/XNC86FBnQ2"
     }
   ],
-  "minimumCoreVersion": "0.5.0",
-  "compatibleCoreVersion": "9",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.276",
+    "maximum": "10"
+  },
   "coreTranslation": true,
   "languages": [
     {
