@@ -7,9 +7,9 @@ specifiers:
   '@semantic-release/exec': ^6.0.3
   '@semantic-release/git': ^10.0.1
   '@semantic-release/gitlab': ^9.4.1
+  adm-zip: ^0.5.9
   commitizen: ^4.2.5
   conventional-changelog-conventionalcommits: ^5.0.0
-  json: ^11.0.0
   semantic-release: ^19.0.3
 
 devDependencies:
@@ -19,9 +19,9 @@ devDependencies:
   '@semantic-release/exec': 6.0.3_semantic-release@19.0.3
   '@semantic-release/git': 10.0.1_semantic-release@19.0.3
   '@semantic-release/gitlab': 9.4.1_semantic-release@19.0.3
+  adm-zip: 0.5.9
   commitizen: 4.2.5
   conventional-changelog-conventionalcommits: 5.0.0
-  json: 11.0.0
   semantic-release: 19.0.3
 
 packages:
@@ -562,6 +562,11 @@ packages:
     hasBin: true
     dev: true
     optional: true
+
+  /adm-zip/0.5.9:
+    resolution: {integrity: sha512-s+3fXLkeeLjZ2kLjCBwQufpI5fuN+kIGBxu6530nVQZGVol0d7Y/M88/xw9HGGUcJjKf8LutN3VPRUBq6N7Ajg==}
+    engines: {node: '>=6.0'}
+    dev: true
 
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -1835,12 +1840,6 @@ packages:
 
   /json-stringify-safe/5.0.1:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
-    dev: true
-
-  /json/11.0.0:
-    resolution: {integrity: sha512-N/ITv3Yw9Za8cGxuQqSqrq6RHnlaHWZkAFavcfpH/R52522c26EbihMxnY7A1chxfXJ4d+cEFIsyTgfi9GihrA==}
-    engines: {node: '>=0.10.0'}
-    hasBin: true
     dev: true
 
   /jsonfile/6.1.0:
