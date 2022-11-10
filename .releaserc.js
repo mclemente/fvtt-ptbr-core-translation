@@ -17,7 +17,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        publishCmd: 'curl --header \"JOB-TOKEN: $CI_JOB_TOKEN\" --upload-file module.zip $PACKAGE_REGISTRY_URL/$VERSION/module.zip && curl --header \"JOB-TOKEN: $CI_JOB_TOKEN\" --upload-file pt-BR/module.json $PACKAGE_REGISTRY_URL/$VERSION/module.json'
+        publishCmd: 'curl --header \"JOB-TOKEN: $CI_JOB_TOKEN\" --upload-file module.zip $PACKAGE_REGISTRY_URL/$VERSION/module.zip && curl --header \"JOB-TOKEN: $CI_JOB_TOKEN\" --upload-file module.json $PACKAGE_REGISTRY_URL/$VERSION/module.json'
       }
     ],
     [
@@ -46,7 +46,7 @@ module.exports = {
       {
         assets: [
           'package.json',
-          'pt-BR/module.json'
+          'module.json'
         ],
         message: 'chore(release): ${nextRelease.version}\n\n${nextRelease.notes}'
       }
