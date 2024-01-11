@@ -1,26 +1,6 @@
 {
-  "name": "portuguese-core",
-  "version": "2.1.0",
-  "description": "A translation module to add the option to display the core interface of FoundryVTT in Portuguese (BR).",
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/fvtt-brasil/core.git"
-  },
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "commit": "pnpm exec cz",
-    "lintjson": "pnpm exec jsonlint -q --enforce-double-quotes lang module.json"
   },
-  "license": "MIT",
   "devDependencies": {
-    "@crowdin/cli": "^3.12.0",
-    "@prantlf/jsonlint": "^14.0.3",
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/gitlab": "^12.0.1",
-    "adm-zip": "^0.5.10",
-    "commitizen": "^4.3.0",
-    "conventional-changelog-conventionalcommits": "^5.0.0",
-    "semantic-release": "^21.0.2"
   }
 }
