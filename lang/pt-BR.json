@@ -2039,7 +2039,7 @@
   "TOKEN.Dimensions": "Dimensões",
   "TOKEN.DimensionsHint": "Dimensões do token são arredondadas para a 0,5 mais próxima de um espaço da grade.",
   "TOKEN.ImageAlts": "Tokens Alternativos do Ator",
-  "TOKEN.ImagePath": "Caminho da Imagem do Token",
+  "TOKEN.ImagePath": "Caminho da Imagem",
   "TOKEN.LockRotation": "Bloquear rotação",
   "TOKEN.Lock": "Bloquear",
   "TOKEN.AppendNumber": "Anexar número ao nome de tokens desvinculados?",
