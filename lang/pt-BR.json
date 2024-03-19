@@ -1549,7 +1549,7 @@
   "SETUP.WorldMigrationCreateBackup": "Criar um backup antes da migração?",
   "SETUP.WorldMigrationBegin": "Iniciar migração",
   "SETUP.WorldMigrationInProcess": "Os dados do seu mundo estão sendo migrados para serem compatíveis com {version}. Isso pode levar algum tempo. Por favor, seja paciente e não feche o programa.",
-  "SETUP.AdminAccess": "Acesso de Administrador Necess[arop",
+  "SETUP.AdminAccess": "Acesso de Administrador Necessário",
   "SETUP.AdminPasswordLabel": "Senha de Administrador",
   "SETUP.AdminPasswordHint": "Você pode definir uma senha especial de administrador que é necessária para acessar essa tela de instalação.",
   "SETUP.AdminPasswordPrompt": "Você deve fornecer a senha do administrador para acessar a configuração do aplicativo.",
