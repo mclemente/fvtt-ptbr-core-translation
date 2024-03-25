@@ -1277,7 +1277,7 @@
   "SETTINGS.Logout": "Sair",
   "SETTINGS.Players": "Gestão de Usuários",
   "SETTINGS.Reset": "Redefinir Padrões",
-  "SETTINGS.ResetInfo": "Todas as configurações redefinidas para os valores padrão. Clique em \"Salvar alterações\" para confirmar.",
+  "SETTINGS.ResetInfo": "Todas as configurações foram redefinidas para seus valores padrão. Clique em \"Salvar alterações\" para confirmar.",
   "SETTINGS.Save": "Salvar Alterações",
   "SETTINGS.Setup": "Voltar à configuração",
   "SETTINGS.ShowToolclips": "Mostrar clipes de ferramentas ao passar o mouse",
