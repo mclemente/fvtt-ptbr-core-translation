@@ -1853,7 +1853,7 @@
   "OWNERSHIP.AllPlayers": "Todos os Jogadores",
   "OWNERSHIP.HintFolder": "Configurar o acesso para todos os documentos dentro desta pasta. As alterações serão aplicadas a todos os documentos contidos, excluindo o conteúdo de sub-pastas.",
   "OWNERSHIP.HintDocument": "Configura o acesso a este documento específico, permitindo que cada usuário seja atribuído a um nível diferente de visibilidade.",
-  "OWNERSHIP.Configure": "Configurar propriedade",
+  "OWNERSHIP.Configure": "Configurar Propriedade",
   "PERMISSION.Title": "Configuração de permissão do usuário",
   "PERMISSION.Configure": "Configurar Permissões",
   "PERMISSION.ConfigureLabel": "Abrir Configurações de Permissão",
