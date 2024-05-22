@@ -1480,7 +1480,7 @@
   "SETUP.PackageDependenciesTitle": "Instalar Dependências do Pacote",
   "SETUP.PackageInstallDependencies": "Deseja instalá-los automaticamente?",
   "SETUP.PackageDependenciesAutomaticSingular": "Instalar dependência automaticamente",
-  "SETUP.PackageDependenciesAutomaticPlural": "Instalar {number} dependências automaticamente",
+  "SETUP.PackageDependenciesAutomaticPlural": "Instalar dependências selectionadas automaticamente",
   "SETUP.PackageDependenciesManualSingular": "Instalar dependência manualmente",
   "SETUP.PackageDependenciesManualPlural": "Instalar todas as dependências manualmente",
   "SETUP.PackageDependenciesCouldNotInstallSingular": "Uma dependência precisa ser instalada manualmente.",
