@@ -417,7 +417,7 @@
   "CONTROLS.CanvasCancel": "Cancelar Movimento Pendente",
   "CONTROLS.CanvasMove": "Mover Objeto",
   "CONTROLS.CanvasPan": "Deslocar Tela",
-  "CONTROLS.CanvasPing": "Pingar Tela",
+  "CONTROLS.CanvasPing": "Pingar na Tela",
   "CONTROLS.CanvasPingAlert": "Ping de Alerta",
   "CONTROLS.CanvasPingPull": "Mover Tela para Ping",
   "CONTROLS.CanvasSelect": "Selecionar Objeto",
