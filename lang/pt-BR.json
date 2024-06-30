@@ -460,6 +460,20 @@
   "COMPENDIUM.CannotViewWarning": "Você não tem permissão suficiente para ver este Pacote de Compêndio.",
   "COMPENDIUM.OwnershipInheritBelow": "Herdar de baixo",
   "COMPENDIUM.OwnershipReset": "Redefinir para Padrão",
+  "COMPENDIUM.ART": {
+    "CONFIG": {
+      "Hint": "Use as setas para ajustar a prioridade das fontes de arte. Quando um único Ator possui arte fornecida por múltiplas fontes, aquela com maior prioridade será usada.",
+      "Portraits": "Retrato",
+      "PriorityDecrease": "Diminuir Prioridade",
+      "PriorityIncrease": "Aumentar Prioridade",
+      "Tokens": "Tokens"
+    },
+    "SETTING": {
+      "Hint": "Configure qual arte fornecida pelo sistema e módulo deve ser usada.",
+      "Label": "Configurar Arte",
+      "Title": "Compêndio de Arte"
+    }
+  },
   "CONTROLS.Title": "Referência dos Controles de Jogo",
   "CONTROLS.NavLabel": "Paleta de Controles de Tela",
   "CONTROLS.Instructions": "Este formulário descreve os comandos comuns de teclado e mouse usados para controlar vários aspectos do Foundry Virtual Tabletop. Alguns controles estão disponíveis apenas para um usuário Mestre do Jogo, esses estão destacados em roxo claro.",
@@ -819,6 +833,8 @@
   "DRAWING.RoleHint": "Um Desenho que represente um \"Objeto\" é renderizado no Grupo de Telas Primárias e é afetado pela iluminação e neblina de guerra. Um Desenho que transmite \"Informações\" é renderizado no Grupo de Interface e fica visível para todos os jogadores, a menos que esteja oculto.",
   "DRAWING.Object": "Objeto",
   "DRAWING.Information": "Informação",
+  "DRAWING.JointValidationError": "Os desenhos devem possuir texto visível, preenchimento visível ou linha visível.",
+  "DRAWING.JointValidationErrorUI": "Os desenhos devem possuir texto visível, preenchimento visível ou linha visível. Verifique as configurações padrão de Desenhos.",
   "EFFECT.MODE_CUSTOM": "Personalizar",
   "EFFECT.MODE_MULTIPLY": "Multiplicar",
   "EFFECT.MODE_ADD": "Adicionar",
@@ -1065,6 +1081,7 @@
   "HUD.TilePlay": "Reproduzir Peça de Vídeo",
   "HUD.TilePause": "Pausar Peça de Vídeo",
   "HUD.WarningEffectNoActor": "Você não pode atribuir efeitos de condições a um Token que não tenha nenhum Ator associado.",
+  "HTMLDocumentTagsElement.PLACEHOLDER": "Insira UUID ou Solte {type}",
   "JOURNAL.ModeText": "Texto",
   "JOURNAL.ModeImage": "Imagem",
   "JOURNAL.ActionShow": "Mostrar aos Jogadores",
@@ -1430,6 +1447,7 @@
   "SCENES.ForegroundElevationHint": "Uma elevação em unidades de distância que configura a altura da imagem em primeiro plano e peças superiores.",
   "SCENES.BackgroundScale": "Escala da Imagem de Fundo",
   "SCENES.BackgroundScaleHint": "Use SHIFT+roda do mouse ou SHIFT+Seta para cima e SHIFT+Seta para baixo para ajustar o tamanho da imagem de fundo.",
+  "SCENES.CaptureInitialViewPosition": "Posição da tela capturada como visualização inicial no formulário de configuração da Cena.",
   "SCENES.Configure": "Configurar",
   "SCENES.ConfigTitle": "Configurar a Cena",
   "SCENES.Darkness": "Nível de Escuridão",
@@ -1526,8 +1544,8 @@
     "Intensity":"Intensidade da Matiz",
     "IntensityHint":"Ajuste a intensidade com que a matiz escolhida se mistura à cena. Uma alta intensidade de matiz satura a cena com a cor, possivelmente sobrecarregando as cores existentes. Uma intensidade de matiz mais baixa combina com a cor escolhida de forma mais sutil.",
     "ResetEnvironment":"Redefinir para Opções Padrão",
-    "EnableCycling": "Habilitar Ciclo",
-    "EnableCyclingHint": "Quando esta opção está desmarcada, apenas o ambiente base é aplicado, sem mesclar valores entre base e escuridão de acordo com o nível de escuridão.",
+    "BlendAmbience": "Mesclar Ambiente",
+    "BlendAmbienceHint": "Quando esta opção estiver marcada, os valores de ambiente base são mesclados com os valores de ambiente escuro, de acordo com o nível de escuridão.",
     "BaseAmbience": "Ambiente Base",
     "DarkAmbience": "Ambiente Escuro",
     "DarknessLock": "Bloqueio de Nível de Escuridão",
@@ -2371,6 +2389,10 @@
           "events": {
             "label": "Eventos",
             "hint": "Os eventos que esse comportamento subscreve."
+          },
+          "once": {
+            "label": "Uma Vez",
+            "hint": "Desative o comportamento após a primeira vez que for acionado."
           }
         }
       },
@@ -2401,6 +2423,33 @@
           }
         }
       },
+      "displayScrollingText": {
+        "FIELDS": {
+          "color": {
+            "label": "Cor",
+            "hint": "A cor do texto de rolagem."
+          },
+          "text": {
+            "label": "Texto",
+            "hint": "O texto exibido quando o comportamento é acionado."
+          },
+          "visibility": {
+            "label": "Visibilidade",
+            "hint": "Configure quais usuários verão o texto de rolagem com base no nível de permissão."
+          }
+        },
+        "VISIBILITY_MODES": {
+          "GAMEMASTER": {
+            "label": "Mestre de Jogo"
+          },
+          "OBSERVER": {
+            "label": "Observador"
+          },
+          "ANYONE": {
+            "label": "Qualquer Um"
+          }
+        }
+      },
       "executeMacro": {
         "FIELDS": {
           "uuid": {
@@ -2421,21 +2470,19 @@
           }
         }
       },
-      "pauseGame": {
-        "FIELDS": {
-          "once": {
-            "label": "Uma Vez",
-            "hint": "Desative o comportamento quando um Token controlado pelo jogador entrar na Região."
-          }
-        }
-      },
       "teleportToken": {
         "FIELDS": {
           "destination": {
             "label": "Destino",
             "hint": "A Região de destino para a qual o Token é teletransportado assim que entrar na Região."
+          },
+          "choice": {
+            "label": "Permitir Escolha",
+            "hint": "Permite que o usuário que moveu o token escolha se deseja teleportá-lo."
           }
-        }
+        },
+        "Confirm": "Você quer teleportar {token}?",
+        "ConfirmGM": "Você quer teleportar {token} para {region} em {scene}?"
       },
       "toggleBehavior": {
         "FIELDS": {
@@ -2810,6 +2857,11 @@
     },
     "SHEET": {
       "legend": "Anel Dinâmico de Token"
+    },
+    "SETTINGS": {
+      "label": "Anéis Dinâmicos de Token",
+      "hint": "Escolha uma visualização de anel dinâmicos de token disponível. Mudá-lo requer uma recarga.",
+      "defaultConfigLabel": "Anel Padrão Foundry VTT"
     }
   },
   "TYPES.Base": "Base",
@@ -2823,6 +2875,7 @@
   "TYPES.Macro.chat": "Chat",
   "TYPES.Macro.script": "Script",
   "TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar Nível de Escuridão",
+  "TYPES.RegionBehavior.displayScrollingText": "Exibir Texto de Rolagem",
   "TYPES.RegionBehavior.executeMacro": "Executar Macro",
   "TYPES.RegionBehavior.executeScript": "Executar Script",
   "TYPES.RegionBehavior.pauseGame": "Pausar Jogo",
