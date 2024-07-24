@@ -134,150 +134,150 @@
 "APP.NavigateBackConfirm": "Are you sure you want to exit the Foundry Virtual Tabletop game?",
 
 "AMBIENT_LIGHT": {
-	"ACTIONS": {
-	"CREATE": "Create Ambient Light",
-	"UPDATE": "Update Ambient Light",
-	"RESET": "Reset Advanced Options"
-	},
-	"FIELDS": {
-	"x": {
-		"label": "X"
-	},
-	"y": {
-		"label": "Y"
-	},
-	"elevation": {
-		"label": "Elevation"
-	},
-	"rotation": {
-		"label": "Rotation Angle"
-	},
-	"vision": {
-		"label": "Provides Vision",
-		"hint": "A light source with this option enabled serves as an additional vision point for tokens. Activate this option to allow tokens to always see the area it illuminates, even if that area is behind a wall or outside a token's field of view."
-	},
-	"walls": {
-		"label": "Constrained By Walls",
-		"hint": "Configure whether area of effect for this light source is constrained by nearby walls."
-	}
-	},
-	"LABELS": {
-	"radius": "Light Radius",
-	"radiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light.",
-	"darknessAdvancedWarning": "Advanced configuration options are only supported for non-darkness sources."
-	},
-	"SECTIONS": {
-	"BASIC": "Basic Configuration",
-	"ADVANCED": "Advanced Options",
-	"ANIMATION": "Light Animation",
-	"APPEARANCE": "Light Appearance",
-	"PLACEMENT": "Light Placement"
-	}
+  "ACTIONS": {
+    "CREATE": "Create Ambient Light",
+    "UPDATE": "Update Ambient Light",
+    "RESET": "Reset Advanced Options"
+  },
+  "FIELDS": {
+    "x": {
+      "label": "X"
+    },
+    "y": {
+      "label": "Y"
+    },
+    "elevation": {
+      "label": "Elevation"
+    },
+    "rotation": {
+      "label": "Rotation Angle"
+    },
+    "vision": {
+      "label": "Provides Vision",
+      "hint": "A light source with this option enabled serves as an additional vision point for tokens. Activate this option to allow tokens to always see the area it illuminates, even if that area is behind a wall or outside a token's field of view."
+    },
+    "walls": {
+      "label": "Constrained By Walls",
+      "hint": "Configure whether area of effect for this light source is constrained by nearby walls."
+    }
+  },
+  "LABELS": {
+    "radius": "Light Radius",
+    "radiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light.",
+    "darknessAdvancedWarning": "Advanced configuration options are only supported for non-darkness sources."
+  },
+  "SECTIONS": {
+    "BASIC": "Basic Configuration",
+    "ADVANCED": "Advanced Options",
+    "ANIMATION": "Light Animation",
+    "APPEARANCE": "Light Appearance",
+    "PLACEMENT": "Light Placement"
+  }
 },
 
 
 "AMBIENT_SOUND": {
 "ACTIONS": {
-	"CREATE": "Create Ambient Sound",
-	"UPDATE": "Update Ambient Sound"
+  "CREATE": "Create Ambient Sound",
+  "UPDATE": "Update Ambient Sound"
 },
 "FIELDS": {
-	"x": {
-	"label": "X"
-	},
-	"y": {
-	"label": "Y"
-	},
-	"elevation": {
-	"label": "Elevation"
-	},
-	"path": {
-	"label": "Source File Path",
-	"hint": "Configure the ambient sound to play an audio file when tokens move within its radius."
-	},
-	"radius": {
-	"label": "Effect Radius"
-	},
-	"volume": {
-	"label": "Maximum Volume",
-	"hint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area."
-	},
-	"easing": {
-	"label": "Volume Easing",
-	"hint": "Adjust the volume level of the sound as Tokens move closer to the origin."
-	},
-	"hidden": {
-	"label": "Hidden",
-	"hint": "Toggle whether this sound source is temporarily disabled."
-	},
-	"walls": {
-	"label": "Constrained By Walls",
-	"hint": "Configure whether area of effect for this audio source is constrained by nearby walls."
-	},
-	"darkness": {
-	"label": "Darkness Activation Range",
-	"hint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
-	"min": {
-		"label": "Between"
-	},
-	"max": {
-		"label": "and"
-	}
-	},
-	"effects": {
-	"base": {
-		"type": {
-		"label": "Base Effect"
-		},
-		"intensity": {
-		"label": "Base Effect Intensity"
-		},
-		"hint": "Apply an audio effect to the sound which filters or transforms its sound."
-	},
-	"muffled": {
-		"type": {
-		"label": "Muffled Effect"
-		},
-		"intensity": {
-		"label": "Muffled Effect Intensity"
-		},
-		"hint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls."
-	}
-	}
+  "x": {
+    "label": "X"
+  },
+  "y": {
+    "label": "Y"
+  },
+  "elevation": {
+    "label": "Elevation"
+  },
+  "path": {
+    "label": "Source File Path",
+    "hint": "Configure the ambient sound to play an audio file when tokens move within its radius."
+  },
+  "radius": {
+    "label": "Effect Radius"
+  },
+  "volume": {
+    "label": "Maximum Volume",
+    "hint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area."
+  },
+  "easing": {
+    "label": "Volume Easing",
+    "hint": "Adjust the volume level of the sound as Tokens move closer to the origin."
+  },
+  "hidden": {
+    "label": "Hidden",
+    "hint": "Toggle whether this sound source is temporarily disabled."
+  },
+  "walls": {
+    "label": "Constrained By Walls",
+    "hint": "Configure whether area of effect for this audio source is constrained by nearby walls."
+  },
+  "darkness": {
+    "label": "Darkness Activation Range",
+    "hint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
+    "min": {
+      "label": "Between"
+    },
+    "max": {
+      "label": "and"
+    }
+  },
+  "effects": {
+    "base": {
+      "type": {
+        "label": "Base Effect"
+      },
+      "intensity": {
+        "label": "Base Effect Intensity"
+      },
+      "hint": "Apply an audio effect to the sound which filters or transforms its sound."
+    },
+    "muffled": {
+      "type": {
+        "label": "Muffled Effect"
+      },
+      "intensity": {
+        "label": "Muffled Effect Intensity"
+      },
+      "hint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls."
+    }
+  }
 },
 "SECTIONS": {
-	"SOURCE": "Source",
-	"PLACEMENT": "Placement",
-	"PLACEMENT_HINT": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
-	"VOLUME": "Volume",
-	"ACTIVATION": "Activation",
-	"EFFECTS": "Special Effects"
+  "SOURCE": "Source",
+  "PLACEMENT": "Placement",
+  "PLACEMENT_HINT": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
+  "VOLUME": "Volume",
+  "ACTIVATION": "Activation",
+  "EFFECTS": "Special Effects"
 }
 },
 
 "APPLICATION": {
-	"TOOLS": {
-	"ControlsMenu": "Application Controls",
-	"ToggleControls": "Toggle Controls",
-	"Close": "Close Window"
-	}
+  "TOOLS": {
+    "ControlsMenu": "Application Controls",
+    "ToggleControls": "Toggle Controls",
+    "Close": "Close Window"
+  }
 },
 
 "AUDIO": {
-	"CHANNELS": {
-	"MUSIC": {
-		"label": "Music",
-		"tooltip": "Controls the local volume of playlists and sounds which are classified as music."
-	},
-	"ENVIRONMENT": {
-		"label": "Environment",
-		"tooltip": "Controls the local volume of playlists and ambient sounds which are classified as environment."
-	},
-	"INTERFACE": {
-		"label": "Interface",
-		"tooltip": "Controls the local volume of sounds related to user interface or user interaction."
-	}
-	}
+  "CHANNELS": {
+    "MUSIC": {
+      "label": "Music",
+      "tooltip": "Controls the local volume of playlists and sounds which are classified as music."
+    },
+    "ENVIRONMENT": {
+      "label": "Environment",
+      "tooltip": "Controls the local volume of playlists and ambient sounds which are classified as environment."
+    },
+    "INTERFACE": {
+      "label": "Interface",
+      "tooltip": "Controls the local volume of sounds related to user interface or user interaction."
+    }
+  }
 },
 
 "CARDS.CardsDeck": "Cards Deck",
@@ -477,6 +477,20 @@
 "COMPENDIUM.CannotViewWarning": "You do not have sufficient permission to view this Compendium pack.",
 "COMPENDIUM.OwnershipInheritBelow": "Inherit from below",
 "COMPENDIUM.OwnershipReset": "Reset to Default",
+"COMPENDIUM.ART": {
+  "CONFIG": {
+    "Hint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided by multiple sources, the one with the highest priority will be used.",
+    "Portraits": "Portraits",
+    "PriorityDecrease": "Decrease Priority",
+    "PriorityIncrease": "Increase Priority",
+    "Tokens": "Tokens"
+  },
+  "SETTING": {
+    "Hint": "Configure which system- and module-provided art should be used.",
+    "Label": "Configure Art",
+    "Title": "Compendium Art"
+  }
+},
 
 "CONTROLS.Title": "Game Controls Reference",
 "CONTROLS.NavLabel": "Canvas Controls Palette",
@@ -713,14 +727,14 @@
 "DICE.SubmitRollPl": "Submit Rolls",
 "DICE.WarnMissingData": "The attribute {match} was not present in the provided roll data.",
 "DICE.CONFIG": {
-	"Hint": "Configure how dice rolling is performed.",
-	"Label": "Configure Dice",
-	"Title": "Dice Configuration"
+  "Hint": "Configure how dice rolling is performed.",
+  "Label": "Configure Dice",
+  "Title": "Dice Configuration"
 },
 "DICE.FULFILLMENT": {
-	"Default": "Foundry VTT Digital Roll",
-	"Mersenne": "Digital Roll (Mersenne Twister)",
-	"Manual": "Manual Input"
+  "Default": "Foundry VTT Digital Roll",
+  "Mersenne": "Digital Roll (Mersenne Twister)",
+  "Manual": "Manual Input"
 },
 
 "DOCUMENT.Create": "Create New {type}",
@@ -761,6 +775,7 @@
 "DOCUMENT.Combatant": "Combatant",
 "DOCUMENT.Combatants": "Combatants",
 "DOCUMENT.CopyOf": "{name} (Copy)",
+"DOCUMENT.Document": "Document",
 "DOCUMENT.Drawing": "Drawing",
 "DOCUMENT.Drawings": "Drawings",
 "DOCUMENT.Folder": "Folder",
@@ -842,6 +857,8 @@
 "DRAWING.RoleHint": "A Drawing which represents an \"Object\" is rendered in the Primary Canvas Group and is affected by lighting and fog of war exploration. A Drawing which conveys \"Information\" is rendered in the Interface Group and is visible to all players unless hidden.",
 "DRAWING.Object": "Object",
 "DRAWING.Information": "Information",
+"DRAWING.JointValidationError": "Drawings must have visible text, a visible fill, or a visible line.",
+"DRAWING.JointValidationErrorUI": "Drawings must have visible text, a visible fill, or a visible line. Please check the default Drawings configuration settings.",
 
 "EFFECT.MODE_CUSTOM": "Custom",
 "EFFECT.MODE_MULTIPLY": "Multiply",
@@ -928,13 +945,13 @@
 "WARNING.TilingSpriteDeprecation": "A module or system is using the legacy TilingSprite class which is no longer supported.",
 
 "EULA": {
-	"Acknowledge": "Acknowledge Agreement",
-	"Agree": "Agree",
-	"AgreeLabel": "I agree to these terms",
-	"AgreeHint": "By selecting the above checkbox you indicate that you have read and agree to the terms of the Foundry Virtual Tabletop End User License Agreement.",
-	"Decline": "Decline",
-	"Declined": "You have declined the End User License Agreement and cannot use the software.",
-	"ErrorAgreeRequired": "You must check the box to confirm your acceptance of this agreement to proceed."
+  "Acknowledge": "Acknowledge Agreement",
+  "Agree": "Agree",
+  "AgreeLabel": "I agree to these terms",
+  "AgreeHint": "By selecting the above checkbox you indicate that you have read and agree to the terms of the Foundry Virtual Tabletop End User License Agreement.",
+  "Decline": "Decline",
+  "Declined": "You have declined the End User License Agreement and cannot use the software.",
+  "ErrorAgreeRequired": "You must check the box to confirm your acceptance of this agreement to proceed."
 },
 
 "EDITOR.Format": "Format",
@@ -1007,14 +1024,16 @@
 "EDITOR.TableRows": "Rows",
 
 "ELEMENTS": {
-	"DOCUMENT_TAGS": {
-	"Add": "Add Document",
-	"Remove": "Remove Document"
-	},
-	"TAGS": {
-	"Add": "Add Tag",
-	"Remove": "Remove Tag"
-	}
+  "DOCUMENT_TAGS": {
+    "Add": "Add Document",
+    "Remove": "Remove Document"
+  },
+  "TAGS": {
+    "Add": "Add Tag",
+    "Remove": "Remove Tag",
+    "ErrorBlank": "Tags in an HTMLStringTagsElement may not be blank.",
+    "ErrorNonUnique": "Tag \"{tag}\" is already set."
+  }
 },
 
 "FILES.CreateDirectory": "Create Directory",
@@ -1102,6 +1121,8 @@
 "HUD.TilePlay": "Play Tile Video",
 "HUD.TilePause": "Pause Tile Video",
 "HUD.WarningEffectNoActor": "You cannot assign status effects to a Token which has no associated Actor.",
+
+"HTMLDocumentTagsElement.PLACEHOLDER": "Enter UUID or Drop {type}",
 
 "JOURNAL.ModeText": "Text",
 "JOURNAL.ModeImage": "Image",
@@ -1208,79 +1229,79 @@
 "KEYBINDINGS.FocusChat": "Focus Chat",
 
 "LIGHT.FIELDS": {
-	"alpha": {
-	"label": "Color Intensity",
-	"hint": "Modify the intensity of color emitted by this light source."
-	},
-	"animation": {
-	"label": "Light Animation",
-	"type": {
-		"label": "Light Animation Type"
-	},
-	"speed": {
-		"label": "Animation Speed",
-		"hint": "Increases to animation speed make the animation play faster."
-	},
-	"intensity": {
-		"label": "Animation Intensity",
-		"hint": "Increases to animation intensity make the animation more pronounced."
-	},
-	"reverse": {
-		"label": "Reverse Direction"
-	}
-	},
-	"angle": {
-	"label": "Emission Angle",
-	"hint": "Limit the angle of emission for this light source, and configure its rotation."
-	},
-	"attenuation": {
-	"label": "Attenuation",
-	"hint": "Transition illumination gradually between bright, dim, and dark."
-	},
-	"color": {
-	"label": "Light Color",
-	"hint": "Apply coloration to this light source and configure its intensity."
-	},
-	"coloration": {
-	"label": "Coloration Technique",
-	"hint": "The coloration technique applied to the light source contributes additive blending to the resulting appearance."
-	},
-	"contrast": {
-	"label": "Contrast",
-	"hint": "Adjust the contrast of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
-	},
-	"dim": {
-	"label": "Dim"
-	},
-	"bright": {
-	"label": "Bright"
-	},
-	"luminosity": {
-	"label": "Luminosity",
-	"hint": "Adjust the brightness of this light source. More luminous lights are less diminished by darkness. The default value for a standard light source is 0.5."
-	},
-	"negative": {
-	"label": "Is Darkness Source",
-	"hint": "A darkness source blocks light and vision and suppresses lights or vision sources which are inside its area of effect."
-	},
-	"saturation": {
-	"label": "Saturation",
-	"hint": "Adjust the saturation of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
-	},
-	"shadows": {
-	"label": "Shadows",
-	"hint": "Enhance or the intensity of dark colors illuminated by this light source. The default value for a standard light source is 0."
-	},
-	"darkness": {
-	"label": "Darkness Activation Range",
-	"hint": "You may specify a range of darkness levels during which this light source will be visible.",
-	"min": {
-		"label": "Between"
-	},
-	"max": {
-		"label": "and"
-	}
-	}
+  "alpha": {
+    "label": "Color Intensity",
+    "hint": "Modify the intensity of color emitted by this light source."
+  },
+  "animation": {
+    "label": "Light Animation",
+    "type": {
+      "label": "Light Animation Type"
+    },
+    "speed": {
+      "label": "Animation Speed",
+      "hint": "Increases to animation speed make the animation play faster."
+    },
+    "intensity": {
+      "label": "Animation Intensity",
+      "hint": "Increases to animation intensity make the animation more pronounced."
+    },
+    "reverse": {
+      "label": "Reverse Direction"
+    }
+  },
+  "angle": {
+    "label": "Emission Angle",
+    "hint": "Limit the angle of emission for this light source, and configure its rotation."
+  },
+  "attenuation": {
+    "label": "Attenuation",
+    "hint": "Transition illumination gradually between bright, dim, and dark."
+  },
+  "color": {
+    "label": "Light Color",
+    "hint": "Apply coloration to this light source and configure its intensity."
+  },
+  "coloration": {
+    "label": "Coloration Technique",
+    "hint": "The coloration technique applied to the light source contributes additive blending to the resulting appearance."
+  },
+  "contrast": {
+    "label": "Contrast",
+    "hint": "Adjust the contrast of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "dim": {
+    "label": "Dim"
+  },
+  "bright": {
+    "label": "Bright"
+  },
+  "luminosity": {
+    "label": "Luminosity",
+    "hint": "Adjust the brightness of this light source. More luminous lights are less diminished by darkness. The default value for a standard light source is 0.5."
+  },
+  "negative": {
+    "label": "Is Darkness Source",
+    "hint": "A darkness source blocks light and vision and suppresses lights or vision sources which are inside its area of effect."
+  },
+  "saturation": {
+    "label": "Saturation",
+    "hint": "Adjust the saturation of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "shadows": {
+    "label": "Shadows",
+    "hint": "Enhance or the intensity of dark colors illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "darkness": {
+    "label": "Darkness Activation Range",
+    "hint": "You may specify a range of darkness levels during which this light source will be visible.",
+    "min": {
+      "label": "Between"
+    },
+    "max": {
+      "label": "and"
+    }
+  }
 },
 
 "LIGHT.LegacyColoration": "Legacy Coloration",
@@ -1461,8 +1482,8 @@
 "PLAYLIST.PinToTop": "Pin to top",
 "PLAYLIST.PinToBottom": "Pin to bottom",
 "PLAYLIST.VOLUME": {
-	"CONTROLS": "User Volume Controls",
-	"TOOLTIP": "Volume: {volume}%"
+  "CONTROLS": "User Volume Controls",
+  "TOOLTIP": "Volume: {volume}%"
 },
 
 "SCENES.Accessibility" : "Permissions",
@@ -1482,6 +1503,7 @@
 "SCENES.ForegroundElevationHint": "An elevation in distance units which configures the height of the foreground image and overhead tiles.",
 "SCENES.BackgroundScale": "Background Image Scale",
 "SCENES.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the background image size.",
+"SCENES.CaptureInitialViewPosition": "Captured canvas position as initial view in the Scene configuration form.",
 "SCENES.Configure": "Configure",
 "SCENES.ConfigTitle": "Configure Scene",
 "SCENES.Darkness": "Darkness Level",
@@ -1577,10 +1599,10 @@
 "Hue":"Hue",
 "HueHint":"Choose a hue (color) to blend into the entire scene. To activate the color slider, you must have an intensity greater than 0.",
 "Intensity":"Hue Intensity",
-"IntensityHint":"Adjust how intensly the chosen hue is blended into the scene. A high hue intensity saturates the scene with the color, possibly overhelming existing colors. A lower hue intensity blends in the chosen color more subtly.",
+"IntensityHint":"Adjust how intensely the chosen hue is blended into the scene. A high hue intensity saturates the scene with the color, possibly overwhelming existing colors. A lower hue intensity blends in the chosen color more subtly.",
 "ResetEnvironment":"Reset to Default Options",
-"EnableCycling": "Enable Cycling",
-"EnableCyclingHint": "When this option is unchecked, only the base ambience is applied, without blending values between base and darkness according to darkness level.",
+"BlendAmbience": "Blend Ambience",
+"BlendAmbienceHint": "When this option is checked, the base ambience values are merged with the darkness ambience values according to darkness level.",
 "BaseAmbience": "Base Ambience",
 "DarkAmbience": "Dark Ambience",
 "DarknessLock": "Darkness Level Lock",
@@ -1737,6 +1759,7 @@
 "SETUP.UpdateChannelHint": "You may choose an update channel to control the types of updates you wish to receive for the core Foundry Virtual Tabletop software. If you do not have a specific reason to change this, it is recommended to consume the Stable channel.",
 "SETUP.UpdateCheck": "Update",
 "SETUP.UpdateCheckFor": "Check For Update",
+"SETUP.UpdatePerformIfAvailable": "Perform Update If Available",
 "SETUP.UpdateHint": "You may update your Foundry Virtual Tabletop software to a new version by checking for update on your preferred Software Update Channel.",
 "SETUP.UpdatePrototype": "Prototype",
 "SETUP.UpdatePrototypeHint": "Prototype: Releases for previewing the design of experimental features which are not yet fully developed.",
@@ -2155,19 +2178,19 @@
 "PACKAGECONFIG.Unmapped": "Unmapped",
 
 "JOIN": {
-	"CurrentPlayers": "Current Players",
-	"HeaderJoin": "Join Game Session",
-	"HeaderDetails": "Game Details",
-	"HeaderWorld": "World Description",
-	"NextSession": "Next Session",
-	"SelectUser": "Select User",
-	"UserKey": "User Password",
-	"AuthAdmin": "You are authenticated as a server administrator user.",
-	"ErrorMustSelectUser": "You must select a User in order to log in.",
-	"ErrorUserDoesNotExist": "The requested User, \"{user}\", does not exist!",
-	"ErrorInvalidPassword": "Invalid password provided for {user}!",
-	"ErrorBanned": "{user} does not have permission to access this World!",
-	"LoginSuccess": "Login as {user} successful, joining game!"
+  "CurrentPlayers": "Current Players",
+  "HeaderJoin": "Join Game Session",
+  "HeaderDetails": "Game Details",
+  "HeaderWorld": "World Description",
+  "NextSession": "Next Session",
+  "SelectUser": "Select User",
+  "UserKey": "User Password",
+  "AuthAdmin": "You are authenticated as a server administrator user.",
+  "ErrorMustSelectUser": "You must select a User in order to log in.",
+  "ErrorUserDoesNotExist": "The requested User, \"{user}\", does not exist!",
+  "ErrorInvalidPassword": "Invalid password provided for {user}!",
+  "ErrorBanned": "{user} does not have permission to access this World!",
+  "LoginSuccess": "Login as {user} successful, joining game!"
 },
 
 "SHEETS.ConfigureSheet": "Configure Sheet",
@@ -2182,14 +2205,14 @@
 "SHEETS.CopyUuid": "Copy Document UUID",
 
 "SOUND": {
-	"ConfigTitle": "Ambient Sound Configuration",
-	"PathPlaceholder": "path/to/audio.mp3",
-	"New": "New Sound",
-	"EFFECTS": {
-	"LOWPASS": "Lowpass Filter",
-	"HIGHPASS": "Highpass Filter",
-	"REVERB": "Reverb"
-	}
+  "ConfigTitle": "Ambient Sound Configuration",
+  "PathPlaceholder": "path/to/audio.mp3",
+  "New": "New Sound",
+  "EFFECTS": {
+    "LOWPASS": "Lowpass Filter",
+    "HIGHPASS": "Highpass Filter",
+    "REVERB": "Reverb"
+  }
 },
 
 "FOLDER.Clear": "Clear Folder",
@@ -2217,8 +2240,8 @@
 "FOLDER.ExportWarningNone": "There are no unlocked compendium packs available for {type} Documents which you can export to.",
 "FOLDER.ExportExistingFolder": "Existing Folder",
 "FOLDER.ExportNewFolder": "New Folder",
-"FOLDER.Exporting": "Exporting {type}s to Compendium {compendium}.",
-"FOLDER.ExportDone": "Finished exporting {type}s to Compendium {compendium}.",
+"FOLDER.Exporting": "Exporting {type} to Compendium {compendium}.",
+"FOLDER.ExportDone": "Finished exporting {type} to Compendium {compendium}.",
 "FOLDER.CreateTable": "Create Rollable Table",
 "FOLDER.CreateTableConfirm": "Create a new Rollable Table document using the contents of this Folder as table results?",
 "FOLDER.InvalidDocumentType": "Invalid Document type \"{type}\" provided for this Folder.",
@@ -2268,8 +2291,8 @@
 "PERMISSION.FilesUploadHint": "Allow users with this role to upload content to the server using the File Browser.",
 "PERMISSION.JournalCreate": "Create Journal Entries",
 "PERMISSION.JournalCreateHint": "Allow users with this role to create new Journal Entries in the Journal sidebar.",
-"PERMISSION.MacroScript": "Use Script Macros",
-"PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros which access the API.",
+"PERMISSION.MacroScript": "Use Script Macros and Execute Script Region Behaviors",
+"PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros which access the API and Execute Script Region Behaviors.",
 "PERMISSION.ManualRolls": "Make Manual Rolls",
 "PERMISSION.ManualRollsHint": "Allow users with this role the option to manually input rolls.",
 "PERMISSION.MessageWhisper": "Whisper Private Messages",
@@ -2299,244 +2322,273 @@
 "PERMISSION.WarningNoCreate": "You do not have sufficient permission to create a {document}.",
 
 "REGION": {
-	"SECTIONS": {
-	"identity": "Identity",
-	"shapes": "Shapes",
-	"behaviors": "Behaviors"
-	},
-	"FIELDS": {
-	"color": {
-		"label": "Color",
-		"hint": "The color applied to the visualization of the Region."
-	},
-	"shapes": {
-		"label": "Shapes",
-		"hint": "The shapes of the Region."
-	},
-	"elevation": {
-		"label": "Elevation",
-		"hint": "The elevation range of the Region.",
-		"FIELDS": {
-		"bottom": {
-			"label": "Bottom",
-			"hint": "The bottom of the elevation range."
-		},
-		"top": {
-			"label": "Top",
-			"hint": "The top of the elevation range."
-		}
-		}
-	},
-	"behaviors": {
-		"label": "Behaviors",
-		"hint": "The behaviors of the Region."
-	},
-	"visibility": {
-		"label": "Visibility",
-		"hint": "Configure the visibility of the Region."
-	}
-	},
-	"ACTIONS": {
-	"create": "Create Region",
-	"update": "Update Region",
-	"delete": "Delete Region",
-	"shapeCreateFromWalls": "Create Shapes from Controlled Walls",
-	"shapeMakeHole": "Make Hole",
-	"shapeFillHole": "Fill Hole",
-	"shapeMoveUp": "Move Shape Up",
-	"shapeMoveDown": "Move Shape Down",
-	"shapeRemove": "Remove Shape",
-	"behaviorCreate": "Create Behavior",
-	"behaviorEdit": "Edit Behavior",
-	"behaviorDelete": "Delete Behavior",
-	"behaviorEnable": "Enable Behavior",
-	"behaviorDisable": "Disable Behavior"
-	},
-	"VISIBILITY": {
-	"LAYER": {
-		"label": "Only on Region Layer"
-	},
-	"GAMEMASTER": {
-		"label": "Always for Gamemaster"
-	},
-	"ALWAYS": {
-		"label": "Always for Anyone"
-	}
-	},
-	"EVENTS": {
-	"regionBoundary": {
-		"label": "Region Boundary Changed"
-	},
-	"behaviorStatus": {
-		"label": "Behavior Status Changed"
-	},
-	"tokenEnter": {
-		"label": "Token Enters"
-	},
-	"tokenExit": {
-		"label": "Token Exits"
-	},
-	"tokenPreMove": {
-		"label": "Before Token Moves"
-	},
-	"tokenMove": {
-		"label": "After Token Moved"
-	},
-	"tokenMoveIn": {
-		"label": "Token Moved In"
-	},
-	"tokenMoveOut": {
-		"label": "Token Moved Out"
-	},
-	"tokenTurnStart": {
-		"label": "Token Starts Turn"
-	},
-	"tokenTurnEnd": {
-		"label": "Token Ends Turn"
-	},
-	"tokenRoundStart": {
-		"label": "Token Starts Round"
-	},
-	"tokenRoundEnd": {
-		"label": "Token Ends Round"
-	}
-	},
-	"SHAPES": {
-	"rectangle": "Rectangle",
-	"circle": "Circle",
-	"ellipse": "Ellipse",
-	"polygon": "Polygon"
-	},
-	"Behavior": "Behavior",
-	"Shape": "Shape",
-	"LEGEND": {
-	"control": "Control Region",
-	"config": "Configure Region",
-	"create": "Create Region",
-	"delete": "Delete Region",
-	"empty": "Empty",
-	"filter": "Filter Regions",
-	"lock": "Lock Region",
-	"title": "Region Legend",
-	"unlock": "Unlock Region",
-	"elevationBottom": "Elevation (Bottom)",
-	"elevationTop": "Elevation (Top)"
-	},
-	"SHEET": {
-	"title": "Configure Region"
-	},
-	"NOTIFICATIONS": {
-	"ControlWalls": "Control a group of walls which define the boundary of your desired shape.",
-	"DrawingMultipleRegionsControlled": "You must control only one or no Region when you draw a shape!",
-	"EmptyEnclosedArea": "The area enclosed by the controlled Walls is empty! Make sure that the outer Walls form a closed loop and are connected endpoint to endpoint.",
-	"NoControlledWalls": "You are not controlling any Walls!"
-	}
+  "SECTIONS": {
+    "identity": "Identity",
+    "shapes": "Shapes",
+    "behaviors": "Behaviors"
+  },
+  "FIELDS": {
+    "color": {
+      "label": "Color",
+      "hint": "The color applied to the visualization of the Region."
+    },
+    "shapes": {
+      "label": "Shapes",
+      "hint": "The shapes of the Region."
+    },
+    "elevation": {
+      "label": "Elevation",
+      "hint": "The elevation range of the Region.",
+      "FIELDS": {
+        "bottom": {
+          "label": "Bottom",
+          "hint": "The bottom of the elevation range."
+        },
+        "top": {
+          "label": "Top",
+          "hint": "The top of the elevation range."
+        }
+      }
+    },
+    "behaviors": {
+      "label": "Behaviors",
+      "hint": "The behaviors of the Region."
+    },
+    "visibility": {
+      "label": "Visibility",
+      "hint": "Configure the visibility of the Region."
+    }
+  },
+  "ACTIONS": {
+    "create": "Create Region",
+    "update": "Update Region",
+    "delete": "Delete Region",
+    "shapeCreateFromWalls": "Create Shapes from Controlled Walls",
+    "shapeMakeHole": "Make Hole",
+    "shapeFillHole": "Fill Hole",
+    "shapeMoveUp": "Move Shape Up",
+    "shapeMoveDown": "Move Shape Down",
+    "shapeRemove": "Remove Shape",
+    "behaviorCreate": "Create Behavior",
+    "behaviorEdit": "Edit Behavior",
+    "behaviorDelete": "Delete Behavior",
+    "behaviorEnable": "Enable Behavior",
+    "behaviorDisable": "Disable Behavior"
+  },
+  "VISIBILITY": {
+    "LAYER": {
+      "label": "Only on Region Layer"
+    },
+    "GAMEMASTER": {
+      "label": "Always for Gamemaster"
+    },
+    "ALWAYS": {
+      "label": "Always for Anyone"
+    }
+  },
+  "EVENTS": {
+    "regionBoundary": {
+      "label": "Region Boundary Changed"
+    },
+    "behaviorStatus": {
+      "label": "Behavior Status Changed"
+    },
+    "tokenEnter": {
+      "label": "Token Enters"
+    },
+    "tokenExit": {
+      "label": "Token Exits"
+    },
+    "tokenPreMove": {
+      "label": "Before Token Moves"
+    },
+    "tokenMove": {
+      "label": "After Token Moved"
+    },
+    "tokenMoveIn": {
+      "label": "Token Moved In"
+    },
+    "tokenMoveOut": {
+      "label": "Token Moved Out"
+    },
+    "tokenTurnStart": {
+      "label": "Token Starts Turn"
+    },
+    "tokenTurnEnd": {
+      "label": "Token Ends Turn"
+    },
+    "tokenRoundStart": {
+      "label": "Token Starts Round"
+    },
+    "tokenRoundEnd": {
+      "label": "Token Ends Round"
+    }
+  },
+  "SHAPES": {
+    "rectangle": "Rectangle",
+    "circle": "Circle",
+    "ellipse": "Ellipse",
+    "polygon": "Polygon"
+  },
+  "Behavior": "Behavior",
+  "Shape": "Shape",
+  "LEGEND": {
+    "control": "Control Region",
+    "config": "Configure Region",
+    "create": "Create Region",
+    "delete": "Delete Region",
+    "empty": "Empty",
+    "filter": "Filter Regions",
+    "lock": "Lock Region",
+    "title": "Region Legend",
+    "unlock": "Unlock Region",
+    "elevationBottom": "Elevation (Bottom)",
+    "elevationTop": "Elevation (Top)"
+  },
+  "SHEET": {
+    "title": "Configure Region"
+  },
+  "NOTIFICATIONS": {
+    "ControlWalls": "Control a group of walls which define the boundary of your desired shape.",
+    "DrawingMultipleRegionsControlled": "You must control only one or no Region when you draw a shape!",
+    "EmptyEnclosedArea": "The area enclosed by the controlled Walls is empty! Make sure that the outer Walls form a closed loop and are connected endpoint to endpoint.",
+    "NoControlledWalls": "You are not controlling any Walls!"
+  }
 },
 
 "BEHAVIOR": {
-	"SECTIONS": {
-	"identity": "Behavior Identity",
-	"status": "Behavior Status"
-	},
-	"FIELDS": {
-	"disabled": {
-		"label": "Disabled",
-		"hint": "Toggle whether this behavior is temporarily disabled."
-	}
-	},
-	"ACTIONS": {
-	"create": "Create Region Behavior",
-	"update": "Update Region Behavior",
-	"delete": "Delete Region Behavior"
-	},
-	"TYPES": {
-	"base": {
-		"SECTIONS": {
-		"events": "Subscribed Events"
-		},
-		"FIELDS": {
-		"events": {
-			"label": "Events",
-			"hint": "The events that this behavior subscribes to."
-		}
-		}
-	},
-	"adjustDarknessLevel": {
-		"FIELDS": {
-		"mode": {
-			"label": "Mode",
-			"hint": "How the darkness level is modified within this region. This Behavior respects the Scene's Global Illumination Threshold. If the total darkness level of an area exceeds the threshold value, then Global Illumination is prevented within that area."
-		},
-		"modifier": {
-			"label": "Modifier",
-			"hint": "A numeric modifier which applies to the darkness level according to the mode."
-		},
-		"blur": {
-			"label": "Blur",
-			"hint": "Should darkness levels smoothly transition at the boundary of this shape, or change immediately?"
-		}
-		},
-		"MODES": {
-		"OVERRIDE": {
-			"label": "Override"
-		},
-		"BRIGHTEN": {
-			"label": "Brighten"
-		},
-		"DARKEN": {
-			"label": "Darken"
-		}
-		}
-	},
-	"executeMacro": {
-		"FIELDS": {
-		"uuid": {
-			"label": "Macro",
-			"hint": "The Macro that is executed when one of the events occurs."
-		},
-		"everyone": {
-			"label": "Everyone",
-			"hint": "Configure whether the Macro is executed by all connected Users instead of a single User with sufficient permissions."
-		}
-		}
-	},
-	"executeScript": {
-		"FIELDS": {
-		"source": {
-			"label": "Script",
-			"hint": "The script that is executed when one of the events occurs."
-		}
-		}
-	},
-	"pauseGame": {
-		"FIELDS": {
-		"once": {
-			"label": "Once",
-			"hint": "Disable the behavior once a player-controlled Token enters the Region."
-		}
-		}
-	},
-	"teleportToken": {
-		"FIELDS": {
-		"destination": {
-			"label": "Destination",
-			"hint": "The destination Region the Token is teleported to once it enters the Region."
-		}
-		}
-	},
-	"toggleBehavior": {
-		"FIELDS": {
-		"enable": {
-			"label": "Enable Behaviors",
-			"hint": "The behaviors that are enabled when one of the events occurs."
-		},
-		"disable": {
-			"label": "Disable Behaviors",
-			"hint": "The behaviors that are disabled when one of the events occurs."
-		}
-		}
-	}
-	}
+  "SECTIONS": {
+    "identity": "Behavior Identity",
+    "status": "Behavior Status"
+  },
+  "FIELDS": {
+    "disabled": {
+      "label": "Disabled",
+      "hint": "Toggle whether this behavior is temporarily disabled."
+    }
+  },
+  "ACTIONS": {
+    "create": "Create Region Behavior",
+    "update": "Update Region Behavior",
+    "delete": "Delete Region Behavior"
+  },
+  "TYPES": {
+    "base": {
+      "SECTIONS": {
+        "events": "Subscribed Events"
+      },
+      "FIELDS": {
+        "events": {
+          "label": "Events",
+          "hint": "The events that this behavior subscribes to."
+        },
+        "once": {
+          "label": "Once",
+          "hint": "Disable the behavior after the first time it's triggered."
+        }
+      }
+    },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Mode",
+          "hint": "How the darkness level is modified within this region. This Behavior respects the Scene's Global Illumination Threshold. If the total darkness level of an area exceeds the threshold value, then Global Illumination is prevented within that area."
+        },
+        "modifier": {
+          "label": "Modifier",
+          "hint": "A numeric modifier which applies to the darkness level according to the mode."
+        },
+        "blur": {
+          "label": "Blur",
+          "hint": "Should darkness levels smoothly transition at the boundary of this shape, or change immediately?"
+        }
+      },
+      "MODES": {
+        "OVERRIDE": {
+          "label": "Override"
+        },
+        "BRIGHTEN": {
+          "label": "Brighten"
+        },
+        "DARKEN": {
+          "label": "Darken"
+        }
+      }
+    },
+    "displayScrollingText": {
+      "FIELDS": {
+        "color": {
+          "label": "Color",
+          "hint": "The color of the scrolling text."
+        },
+        "text": {
+          "label": "Text",
+          "hint": "The text that is displayed when the behavior is triggered."
+        },
+        "visibility": {
+          "label": "Visibility",
+          "hint": "Configure which Users will see the scrolling text based on permission level."
+        }
+      },
+      "VISIBILITY_MODES": {
+        "GAMEMASTER": {
+          "label": "Gamemaster"
+        },
+        "OBSERVER": {
+          "label": "Observer"
+        },
+        "ANYONE": {
+          "label": "Anyone"
+        }
+      }
+    },
+    "executeMacro": {
+      "FIELDS": {
+        "uuid": {
+          "label": "Macro",
+          "hint": "The Macro that is executed when one of the events occurs."
+        },
+        "everyone": {
+          "label": "Everyone",
+          "hint": "Configure whether the Macro is executed by all connected Users instead of a single User with sufficient permissions."
+        }
+      }
+    },
+    "executeScript": {
+      "FIELDS": {
+        "source": {
+          "label": "Script",
+          "hint": "The script that is executed when one of the events occurs."
+        }
+      }
+    },
+    "teleportToken": {
+      "FIELDS": {
+        "destination": {
+          "label": "Destination",
+          "hint": "The destination Region the Token is teleported to once it is moved into the Region."
+        },
+        "choice": {
+          "label": "Allow Choice",
+          "hint": "Allow the User that moved the Token to choose whether to teleport it."
+        }
+      },
+      "Confirm": "Do you want to teleport {token}?",
+      "ConfirmGM": "Do you want to teleport {token} to {region} in {scene}?"
+    },
+    "toggleBehavior": {
+      "FIELDS": {
+        "enable": {
+          "label": "Enable Behaviors",
+          "hint": "The behaviors that are enabled when one of the events occurs."
+        },
+        "disable": {
+          "label": "Disable Behaviors",
+          "hint": "The behaviors that are disabled when one of the events occurs."
+        }
+      }
+    }
+  }
 },
 
 "RULER.MovementNotAllowed": "The measured movement path is not allowed",
@@ -2875,46 +2927,52 @@
 "TOKEN.DetectionRemove": "Remove Detection Mode",
 
 "TOKEN.FIELDS": {
-	"ring": {
-	"colors": {
-		"ring": {
-		"label": "Ring Color",
-		"hint": "A color applied to the border of the ring."
-		},
-		"background": {
-		"label": "Background Color",
-		"hint": "A color applied to the background of the ring."
-		}
-	},
-	"effects": {
-		"label": "Ring Effects"
-	},
-	"enabled": {
-		"label": "Ring Enabled"
-	},
-	"subject": {
-		"scale": {
-		"label": "Subject Scale Correction",
-		"hint": "Adjust the relative size of the subject texture to the ring. Increasing this value will make the subject texture larger compared to the ring. Use lower values to reduce the subject texture size if it appears too dominant."
-		},
-		"texture": {
-		"label": "Subject Texture",
-		"hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the ring subject is the same as the standard token texture."
-		}
-	}
-	}
+  "ring": {
+    "colors": {
+      "ring": {
+        "label": "Ring Color",
+        "hint": "A color applied to the border of the ring."
+      },
+      "background": {
+        "label": "Background Color",
+        "hint": "A color applied to the background of the ring."
+      }
+    },
+    "effects": {
+      "label": "Ring Effects"
+    },
+    "enabled": {
+      "label": "Ring Enabled"
+    },
+    "subject": {
+      "scale": {
+        "label": "Subject Scale Correction",
+        "hint": "Adjust the relative size of the subject texture to the ring. Increasing this value will make the subject texture larger compared to the ring. Use lower values to reduce the subject texture size if it appears too dominant."
+      },
+      "texture": {
+        "label": "Subject Texture",
+        "hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the ring subject is the same as the standard token texture."
+      }
+    }
+  }
 },
 
 "TOKEN.RING": {
-	"EFFECTS": {
-	"BKG_WAVE": "Background Wave",
-	"RING_GRADIENT": "Ring Gradient",
-	"RING_PULSE": "Ring Pulse",
-	"INVISIBILITY": "Spectral Pulse"
-	},
-	"SHEET": {
-	"legend": "Dynamic Token Ring"
-	}
+  "EFFECTS": {
+    "BKG_WAVE": "Background Wave",
+    "RING_GRADIENT": "Ring Gradient",
+    "RING_PULSE": "Ring Pulse",
+    "INVISIBILITY": "Spectral Pulse"
+  },
+  "SHEET": {
+    "legend": "Dynamic Token Ring"
+  },
+  "SETTINGS": {
+    "label": "Dynamic Token Rings",
+    "hint": "Choose an available dynamic token ring visualization. Changing it requires a reload.",
+    "coreSteel": "Foundry VTT Steel Ring",
+    "coreBronze": "Foundry VTT Bronze Ring"
+  }
 },
 
 "TYPES.Base": "Base",
@@ -2928,6 +2986,7 @@
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
 "TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
+"TYPES.RegionBehavior.displayScrollingText": "Display Scrolling Text",
 "TYPES.RegionBehavior.executeMacro": "Execute Macro",
 "TYPES.RegionBehavior.executeScript": "Execute Script",
 "TYPES.RegionBehavior.pauseGame": "Pause Game",
@@ -2970,44 +3029,44 @@
 "TOURS.SuggestedDescription": "<p>You have completed the <strong>{currentTitle}</strong> Tour.</p><p>We suggest continuing on to the <strong>{nextTitle}</strong> Tour. Would you like to proceed?</p>",
 
 "USER": {
-	"FIELDS": {
-	"name": {
-		"label": "Player Name",
-		"hint": "Player names must be configured by the Gamemaster and can be changed in the User Management screen."
-	},
-	"avatar": {
-		"label": "Player Avatar",
-		"hint": "A player avatar is displayed when using built-in audio/video chat or may be displayed by modules."
-	},
-	"color": {
-		"label": "Player Color",
-		"hint": "Player color is used for cursors, rulers, templates, and other elements which differentiate between users."
-	},
-	"pronouns": {
-		"label": "Player Pronouns",
-		"hint": "Pronouns which inform how this player wishes to be referred to in third-person."
-	},
-	"character": {
-		"label": "Player Character",
-		"hint": "Select an Actor from the set which you have at least OBSERVER permission over which represents the main character for this User."
-	}
-	},
-	"SHEET": {
-	"HEADERS": {
-		"INFO": "Player Information",
-		"CHAR": "Player Character"
-	},
-	"BUTTONS": {
-		"SAVE": "Save Player Configuration",
-		"RELEASE": "Release Character"
-	}
-	},
-	"RoleNone": "None",
-	"RolePlayer": "Player",
-	"RoleTrusted": "Trusted Player",
-	"RoleAssistant": "Assistant GM",
-	"RoleGamemaster": "Game Master",
-	"GM": "GM"
+  "FIELDS": {
+    "name": {
+      "label": "Player Name",
+      "hint": "Player names must be configured by the Gamemaster and can be changed in the User Management screen."
+    },
+    "avatar": {
+      "label": "Player Avatar",
+      "hint": "A player avatar is displayed when using built-in audio/video chat or may be displayed by modules."
+    },
+    "color": {
+      "label": "Player Color",
+      "hint": "Player color is used for cursors, rulers, templates, and other elements which differentiate between users."
+    },
+    "pronouns": {
+      "label": "Player Pronouns",
+      "hint": "Pronouns which inform how this player wishes to be referred to in third-person."
+    },
+    "character": {
+      "label": "Player Character",
+      "hint": "Select an Actor from the set which you have at least OBSERVER permission over which represents the main character for this User."
+    }
+  },
+  "SHEET": {
+    "HEADERS": {
+      "INFO": "Player Information",
+      "CHAR": "Player Character"
+    },
+    "BUTTONS": {
+      "SAVE": "Save Player Configuration",
+      "RELEASE": "Release Character"
+    }
+  },
+  "RoleNone": "None",
+  "RolePlayer": "Player",
+  "RoleTrusted": "Trusted Player",
+  "RoleAssistant": "Assistant GM",
+  "RoleGamemaster": "Game Master",
+  "GM": "GM"
 },
 
 "USERS.AccessKey": "Password",
