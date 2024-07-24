@@ -753,6 +753,7 @@
   "DOCUMENT.Combatant": "Combatente",
   "DOCUMENT.Combatants": "Combatentes",
   "DOCUMENT.CopyOf": "{name} (Cópia)",
+  "DOCUMENT.Document": "Documento",
   "DOCUMENT.Drawing": "Desenho",
   "DOCUMENT.Drawings": "Desenhos",
   "DOCUMENT.Folder": "Pasta",
@@ -999,7 +1000,9 @@
     },
     "TAGS": {
       "Add": "Adicionar Etiqueta",
-      "Remove": "Remover Etiqueta"
+      "Remove": "Remover Etiqueta",
+      "ErrorBlank": "Etiquetas em um HTMLStringTagsElement não pode estar em branco.",
+      "ErrorNonUnique": "Etiqueta \"{tag}\" já está configurada."
     }
   },
   "FILES.CreateDirectory": "Criar Diretório",
@@ -1699,6 +1702,7 @@
   "SETUP.UpdateChannelHint": "Você pode escolher um canal de atualização para controlar os tipos de atualizações que deseja receber para o Foundry Virtual Tabletop. Se você não tiver uma razão específica para alterar isso, é recomendável consumir o canal Release.",
   "SETUP.UpdateCheck": "Atualizar",
   "SETUP.UpdateCheckFor": "Verificar Atualização",
+  "SETUP.UpdatePerformIfAvailable": "Executar Atualização se Disponível",
   "SETUP.UpdateHint": "Você pode atualizar seu Foundry Virtual Tabletop para uma nova versão, buscando por atualização no canal de atualização preferido.",
   "SETUP.UpdatePrototype": "Protótipo",
   "SETUP.UpdatePrototypeHint": "Protótipo: Versões para visualizar recursos experimentais que ainda não foram totalmente desenvolvidos.",
@@ -2861,7 +2865,8 @@
     "SETTINGS": {
       "label": "Anéis Dinâmicos de Token",
       "hint": "Escolha uma visualização de anel dinâmicos de token disponível. Mudá-lo requer uma recarga.",
-      "defaultConfigLabel": "Anel Padrão Foundry VTT"
+      "coreSteel": "Anel de Metal Foundry VTT",
+      "coreBronze": "Anel de Bronze Foundry VTT"
     }
   },
   "TYPES.Base": "Base",
