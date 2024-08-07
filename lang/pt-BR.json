@@ -1641,7 +1641,7 @@
   "SETTINGS.TokenDragPreviewN": "Visão ao Arrastar Token",
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são visualizadas em tempo real enquanto arrastar com o botão esquerdo. Isso é desabilitado por padrão porque pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.DefaultTokenN": "Configuração Padrão do Token",
-  "SETTINGS.DefaultTokenL": "Configurar Definições Padrão do Token",
+  "SETTINGS.DefaultTokenL": "Configurar Padrões do Token",
   "SETTINGS.DefaultTokenH": "Configurar valores padrões do token para atores recém-criados.",
   "SETTINGS.PermissionReset": "Redefinir configuração de permissão de cargo de Usuário para valores padrão.",
   "SETTINGS.PermissionUpdate": "Atualizar configuração de permissão de cargo do Usuário.",
