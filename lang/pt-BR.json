@@ -1140,7 +1140,7 @@
   "KEYBINDINGS.AllActions": "Todas as Ações",
   "KEYBINDINGS.AddBinding": "Adicionar Vínculo",
   "KEYBINDINGS.EditBinding": "Editar Vínculo",
-  "KEYBINDINGS.SaveBinding": "Salvar Vnculo",
+  "KEYBINDINGS.SaveBinding": "Salvar Vínculo",
   "KEYBINDINGS.DeleteBinding": "Excluir Vinculo",
   "KEYBINDINGS.Uneditable": "Vínculo Ineditável",
   "KEYBINDINGS.ActionFilter": "Filtro de Ação",
@@ -2482,11 +2482,11 @@
           },
           "choice": {
             "label": "Permitir Escolha",
-            "hint": "Permite que o usuário que moveu o token escolha se deseja teleportá-lo."
+            "hint": "Permite que o usuário que moveu o token escolha se deseja teletransportá-lo."
           }
         },
-        "Confirm": "Você quer teleportar {token}?",
-        "ConfirmGM": "Você quer teleportar {token} para {region} em {scene}?"
+        "Confirm": "Você quer teletransportar {token}?",
+        "ConfirmGM": "Você quer teletransportar {token} para {region} em {scene}?"
       },
       "toggleBehavior": {
         "FIELDS": {
@@ -2885,7 +2885,7 @@
   "TYPES.RegionBehavior.executeScript": "Executar Script",
   "TYPES.RegionBehavior.pauseGame": "Pausar Jogo",
   "TYPES.RegionBehavior.suppressWeather": "Suprimir Clima",
-  "TYPES.RegionBehavior.teleportToken": "Teleportar Token",
+  "TYPES.RegionBehavior.teleportToken": "Teletransportar Token",
   "TYPES.RegionBehavior.toggleBehavior": "Alternar Comportamento",
   "DETECTION.LightPerception": "Percepção de Luz",
   "DETECTION.BasicSight": "Visão no Escuro",
