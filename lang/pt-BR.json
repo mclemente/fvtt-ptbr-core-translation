@@ -5,7 +5,7 @@
   "Angle": "Ângulo",
   "Author": "Autor",
   "AuthorPl": "Autores",
-  "AreYouSure": "Você tem certeza?",
+  "AreYouSure": "Você tem Certeza?",
   "and": "e",
   "authorized": "autorizado",
   "Between": "Entre",
@@ -2866,7 +2866,13 @@
       "label": "Anéis Dinâmicos de Token",
       "hint": "Escolha uma visualização de anel dinâmicos de token disponível. Mudá-lo requer uma recarga.",
       "coreSteel": "Anel de Metal Foundry VTT",
-      "coreBronze": "Anel de Bronze Foundry VTT"
+      "coreBronze": "Anel de Bronze Foundry VTT",
+      "FIT_MODES": {
+        "label": "Modos de Ajuste do Anel Dinâmico de Token",
+        "hint": "Escolha o modo de ajuste para os Anéis Dinâmicos.",
+        "subject": "Padrão",
+        "grid": "Grade"
+      }
     }
   },
   "TYPES.Base": "Base",
