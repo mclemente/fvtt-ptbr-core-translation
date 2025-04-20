@@ -324,7 +324,7 @@
     "NotifyDraw": "Sacou {number} cartas de: {link}",
     "NotifyDeal": "Deu {number} cartas cada para: {link}",
     "NotifyReset": "Recolheu todas cartas para: {link}",
-    "NotifyReturn": "Devolveu todas as cartas de: {link}",
+    "NotifyReturn": "Devolveu todas as cartas de: {link}"
   },
   "CARD": {
     "Create": "Criar carta",
@@ -355,7 +355,7 @@
     "Save": "Salvar carta",
     "Unknown": "Desconhecido ({source})",
     "Play": "Jogar carta",
-    "PlayHint": "Jogue essa carta passando para alguma outra mão ou pilha.",
+    "PlayHint": "Jogue essa carta passando para alguma outra mão ou pilha."
   },
   "CHAT.Chat": "Chat",
   "CHAT.Clear": "Limpar Registro do Chat",
@@ -705,7 +705,7 @@
     "UndoDeleteObjects": "Revertida a exclusão de {count} objeto(s) {type}.",
     "EmptyUndoHistory": "Não há mais histórico rastreado para objetos {type} para desfazer.",
     "ObjectIsLocked": "Você não pode realizar esta ação enquanto o objeto {type} estiver bloqueado.",
-    "ObjectConfigured": "Você não pode realizar esta ação enquanto configura outro objeto.",
+    "ObjectConfigured": "Você não pode realizar esta ação enquanto configura outro objeto."
   },
   "DICE": {
     "ErrorNonNumeric": "A fórmula de rolagem de dados {formula} não produziu um resultado numérico.",
@@ -803,7 +803,7 @@
     "Users": "Usuários",
     "Wall": "Parede",
     "Walls": "Paredes",
-    "TypePageFormat": "{page} de {type}",
+    "TypePageFormat": "{page} de {type}"
   },
   "DRAWING.ConfigDefaultTitle": "Configuração Padrão de Desenho",
   "DRAWING.SubmitDefault": "Configurar Padrão",
@@ -1068,7 +1068,7 @@
     "FontPreview": "Dê já multa ao punk sexy que fez viação chegar à web.",
     "RemoveFont": "Remover Fonte",
     "Style": "Estilo da Fonte",
-    "Weight": "Peso da Fonte",
+    "Weight": "Peso da Fonte"
   },
   "GAME.Paused": "Jogo Pausado",
   "GAME.PausedWarning": "Você não pode realizar esta ação enquanto o jogo estiver pausado.",
@@ -1329,7 +1329,7 @@
     "LockBar": "Bloquear Barra",
     "UnlockBar": "Desbloquear Barra",
     "EmptySlot": "Espaço vazio {slot}",
-    "CannotOverwrite": "Não é possível sobrescrever esta Macro já que a barra está bloqueada.",
+    "CannotOverwrite": "Não é possível sobrescrever esta Macro já que a barra está bloqueada."
   },
   "MENU.NavLabel": "Menu principal",
   "MENU.Reload": "Recarregar",
@@ -2206,7 +2206,7 @@
     "HintFolder": "Configurar o acesso para todos os documentos dentro desta pasta. As alterações serão aplicadas a todos os documentos contidos, excluindo o conteúdo de sub-pastas.",
     "HintDocument": "Configura o acesso a este documento específico, permitindo que cada usuário seja atribuído a um nível diferente de visibilidade.",
     "Configure": "Configurar Propriedade",
-    "ShowGM": "Mostrar Usuários MJ",
+    "ShowGM": "Mostrar Usuários MJ"
   },
   "PERMISSION.Title": "Configuração de Permissão do Usuário",
   "PERMISSION.Configure": "Configurar Permissões",
