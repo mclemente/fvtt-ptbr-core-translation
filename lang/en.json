@@ -664,9 +664,7 @@
   "TargetSelect": "Select Targets",
   "TargetSelectP": "Target any Tokens that you can see.",
   "BasicMeasure": "Measure Distance",
-  "BasicMeasureStart": "Start Measuring",
   "BasicMeasureWaypoints": "Place Waypoints",
-  "BasicMeasureFollow": "Follow the Path",
   "GroupMeasure": "Measurement Controls",
   "MeasureType": "Template Type",
   "MeasureConfigHint": "Configure the placement and display of the measurement template.",
@@ -937,6 +935,7 @@
   "AmbientSound": "Ambient Sound",
   "AmbientSounds": "Ambient Sounds",
   "Card": "Card",
+  "CardPlural": "Cards",
   "Cards": "Card Stack",
   "CardsPlural": "Card Stacks",
   "ChatMessage": "Chat Message",
@@ -1134,19 +1133,27 @@
 "EFFECT.StatusMagicShield": "Magic Shield",
 "EFFECT.StatusHolyShield": "Holy Shield",
 
-"ERROR.BrowserVersion": "Foundry Virtual Tabletop uses modern JavaScript features which are unsupported on {browser} version less than {minimum}. You are using {browser} version {version}. Please update or use a different browser.",
-"ERROR.ElectronVersion": "You are using an older version of the Foundry Virtual Tabletop Electron client. For best performance we recommend that you re-download your desired version of Foundry Virtual Tabletop and perform a full re-installation of the software.",
-"ERROR.LowResolution": "Foundry Virtual Tabletop requires a minimum screen resolution of {reqWidth}px by {reqHeight}px or greater. Your display currently has an effective resolution of {width}px by {height}px, as a result many features of the software may not work properly.",
-"ERROR.NoWebGL": "Your browser does not currently support WebGL rendering which is required by Foundry Virtual Tabletop. Ensure that you have hardware rendering and WebGL enabled in your browser.",
-"ERROR.NoWebGL2": "Your browser does not currently support WebGL Version 2 rendering which is essential for Foundry Virtual Tabletop to work properly. Errors or abnormal graphical behavior may occur.",
-"ERROR.BackgroundTextureSize": "You are using a Scene background texture with dimensions {width}px by {height}px. One or both of these dimensions exceeds the maximum texture size of {max}px supported by your device.",
-"ERROR.InvalidAdminKey": "The provided server administrator password is invalid. If you have forgotten your configured password you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
-"ERROR.LoadPackages": "The request to browse existing packages failed to connect with the Foundry server. Make sure your application allows outbound connections.",
-"ERROR.NoTargetUsersForWhisper": "No target users exist for this whisper. Check your spelling or try \"/w [User Name]\" instead.",
-"ERROR.CantWhisper": "You do not have permission to send whispered chat messages to other users.",
-"ERROR.RendererNotDetected": "Your GPU renderer was unable to be identified, unexpected performance issues may occur.",
-"ERROR.NoHardwareAcceleration": "Your web browser does not have hardware acceleration enabled. This will severely impair the performance of Foundry Virtual Tabletop and cause graphical errors and anomalies. Be sure to enable hardware acceleration in your browser settings.",
-"ERROR.UpdateRequiresManualInstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it requires updates to core dependencies which are only available by re-installing the software from the <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
+"ERROR": {
+  "BrowserVersion": "Foundry Virtual Tabletop uses modern JavaScript features which are unsupported on {browser} version less than {minimum}. You are using {browser} version {version}. Please update or use a different browser.",
+  "ElectronVersion": "You are using an older version of the Foundry Virtual Tabletop Electron client. For best performance we recommend that you re-download your desired version of Foundry Virtual Tabletop and perform a full re-installation of the software.",
+  "NoWebGL": "Your browser does not currently support WebGL rendering which is required by Foundry Virtual Tabletop. Ensure that you have hardware rendering and WebGL enabled in your browser.",
+  "NoWebGL2": "Your browser does not currently support WebGL Version 2 rendering which is essential for Foundry Virtual Tabletop to work properly. Errors or abnormal graphical behavior may occur.",
+  "BackgroundTextureSize": "You are using a Scene background texture with dimensions {width}px by {height}px. One or both of these dimensions exceeds the maximum texture size of {max}px supported by your device.",
+  "InvalidAdminKey": "The provided server administrator password is invalid. If you have forgotten your configured password you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
+  "LoadPackages": "The request to browse existing packages failed to connect with the Foundry server. Make sure your application allows outbound connections.",
+  "NoTargetUsersForWhisper": "No target users exist for this whisper. Check your spelling or try \"/w [User Name]\" instead.",
+  "CantWhisper": "You do not have permission to send whispered chat messages to other users.",
+  "RendererNotDetected": "Your GPU renderer was unable to be identified, unexpected performance issues may occur.",
+  "NoHardwareAcceleration": "Your web browser does not have hardware acceleration enabled. This will severely impair the performance of Foundry Virtual Tabletop and cause graphical errors and anomalies. Be sure to enable hardware acceleration in your browser settings.",
+  "RequiresFullReinstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it requires updates to core dependencies which are only available by re-installing the software from the <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
+  "RequiresGenerationReinstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it is a new generation update which must be installed manually by re-installing the software from the <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
+  "RequiresElectronReinstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it includes a new Electron version which can only be installed manually by re-installing the software from the <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
+  "RESOLUTION": {
+    "Window": "Foundry Virtual Tabletop requires a screen resolution of {reqWidth}px by {reqHeight}px or greater. Your display has a resolution of {curWidth}px by {curHeight}px. You must increase your resolution or use a different display device, or else some features of the software will not work properly.",
+    "Scale": "Foundry Virtual Tabletop requires a usable screen dimensions of {reqWidth}px by {reqHeight}px or greater. The dimensions of this window are {curWidth}px by {curHeight}px. You currently have a zoom factor applied either at the operating system or browser level, which is reducing the effective size of your window. You must enlarge the size of your window or reduce the zoom factor applied to your browser, or else some features of the software will not work properly.",
+    "Screen": "Foundry Virtual Tabletop requires usable screen dimensions of {reqWidth}px by {reqHeight}px or greater. The current dimensions of this window are {curWidth}px by {curHeight}. You must enlarge the size of your window, or else some features of the software will not work properly."
+  }
+},
 
 "WARNING.GridConfigNoBG": "You are using the grid configuration tool for a scene with no background image. This is not currently recommended and may produce unpredictable results.",
 "WARNING.ForegroundDimensionsMismatch": "The dimensions of your configured Foreground Layer image do not match the dimensions of the Background Layer image for this scene. The foreground has been resized which may have undesired results.",
@@ -3242,39 +3249,44 @@
   }
 },
 
-"SUPPORT.Title": "Support Details",
-"SUPPORT.Places": "Places To Get Support",
-"SUPPORT.Discord": "To join others who are using Foundry VTT, or to get support from our wonderful Community Helpers, join our <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">Discord</a>.",
-"SUPPORT.BugReporting": "If you would like to report a bug, please use the Bug Report category available on our <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us page</a>.",
-"SUPPORT.ReportPrelude": "When asking for help on the Discord or Github, it is helpful for us to know about what is going on in your World. Below is a copy-pastable report we ask that you include.",
-"SUPPORT.CopyReport": "Copy Report to Clipboard",
-"SUPPORT.ReportCopied": "Report Copied",
-"SUPPORT.OS": "OS",
-"SUPPORT.Client": "Client",
-"SUPPORT.GPU": "GPU",
-"SUPPORT.MaxTextureSize": "Max Texture Size",
-"SUPPORT.LargestTexture": "Largest Texture",
-"SUPPORT.NoDocumentIssues": "No document issues were found.",
-"SUPPORT.NoClientIssues": "No client issues were found.",
-"SUPPORT.NoModuleIssues": "No module issues were found.",
-"SUPPORT.NoViewedScene": "No viewed scene",
-"SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} are unavailable because the '{name}' module is inactive",
-"SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} are unavailable because a module with the ID '{name}' is inactive",
-"SUPPORT.UnavailableDocuments": {
-  "one": "1 unavailable {document} document",
-  "other": "{count} unavailable {document} documents"
-},
-"SUPPORT.WorldScripts": "World Scripts",
-"SUPPORT.GenerateFullReport": "Generate Full Report",
-"SUPPORT.GenerateFullReportHint": "A full report contains more detailed information about your installed modules and compendiums and can take some time to generate.",
-"SUPPORT.WorldData": "World Data",
-"SUPPORT.CompendiumData": "Compendium Data",
-"SUPPORT.ActiveModules": "Active Modules",
-"SUPPORT.TABS": {
-  "support": "Support Details",
-  "documents": "Document Issues",
-  "client": "Client Issues",
-  "modules": "Module Issues"
+"SUPPORT": {
+  "Title": "Support Details",
+  "Places": "Places To Get Support",
+  "Discord": "To join others who are using Foundry VTT, or to get support from our wonderful Community Helpers, join our <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">Discord</a>.",
+  "BugReporting": "If you would like to report a bug, please use the Bug Report category available on our <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">Contact Us page</a>.",
+  "ReportPrelude": "When asking for help on the Discord or Github, it is helpful for us to know about what is going on in your World. Below is a copy-pastable report we ask that you include.",
+  "CopyReport": "Copy Report to Clipboard",
+  "ReportCopied": "Report Copied",
+  "OS": "OS",
+  "Client": "Client",
+  "Screen": "Screen Dimensions",
+  "Viewport": "Viewport Dimensions",
+  "Dimensions": "{width} × {height}",
+  "GPU": "GPU",
+  "MaxTextureSize": "Max Texture Size",
+  "LargestTexture": "Largest Texture",
+  "NoDocumentIssues": "No document issues were found.",
+  "NoClientIssues": "No client issues were found.",
+  "NoModuleIssues": "No module issues were found.",
+  "NoViewedScene": "No viewed scene",
+  "ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} are unavailable because the '{name}' module is inactive",
+  "ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} are unavailable because a module with the ID '{name}' is inactive",
+  "UnavailableDocuments": {
+    "one": "1 unavailable {document} document",
+    "other": "{count} unavailable {document} documents"
+  },
+  "WorldScripts": "World Scripts",
+  "GenerateFullReport": "Generate Full Report",
+  "GenerateFullReportHint": "A full report contains more detailed information about your installed modules and compendiums and can take some time to generate.",
+  "WorldData": "World Data",
+  "CompendiumData": "Compendium Data",
+  "ActiveModules": "Active Modules",
+  "TABS": {
+    "support": "Support Details",
+    "documents": "Document Issues",
+    "client": "Client Issues",
+    "modules": "Module Issues"
+  }
 },
 
 "TABLE": {
@@ -3768,11 +3780,11 @@
 },
 "TOKEN.MOVEMENT": {
   "ACTIONS": {
-    "blink.label": "Blink (Teleport)",
+    "blink.label": "Teleport (Blink)",
     "burrow.label": "Burrow",
     "climb.label": "Climb",
     "crawl.label": "Crawl",
-    "displace.label": "Displace (Teleport)",
+    "displace.label": "Teleport (Displace)",
     "jump.label": "Jump",
     "fly.label": "Fly",
     "swim.label": "Swim",
@@ -3780,25 +3792,39 @@
   }
 },
 
-"TYPES.Base": "Base",
-"TYPES.Cards.deck": "Deck",
-"TYPES.Cards.hand": "Hand",
-"TYPES.Cards.pile": "Pile",
-"TYPES.JournalEntryPage.image": "Image",
-"TYPES.JournalEntryPage.pdf": "PDF",
-"TYPES.JournalEntryPage.text": "Text",
-"TYPES.JournalEntryPage.video": "Video",
-"TYPES.Macro.chat": "Chat",
-"TYPES.Macro.script": "Script",
-"TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
-"TYPES.RegionBehavior.displayScrollingText": "Display Scrolling Text",
-"TYPES.RegionBehavior.executeMacro": "Execute Macro",
-"TYPES.RegionBehavior.executeScript": "Execute Script",
-"TYPES.RegionBehavior.modifyMovementCost": "Modify Movement Cost",
-"TYPES.RegionBehavior.pauseGame": "Pause Game",
-"TYPES.RegionBehavior.suppressWeather": "Suppress Weather",
-"TYPES.RegionBehavior.teleportToken": "Teleport Token",
-"TYPES.RegionBehavior.toggleBehavior": "Toggle Behavior",
+"TYPES": {
+  "Base": "Base",
+  "Cards": {
+    "deck": "Deck",
+    "hand": "Hand",
+    "pile": "Pile"
+  },
+  "JournalEntryPage": {
+    "image": "Image",
+    "pdf": "PDF",
+    "text": "Text",
+    "video": "Video"
+  },
+  "Macro": {
+    "chat": "Chat",
+    "script": "Script"
+  },
+  "RegionBehavior": {
+    "adjustDarknessLevel": "Adjust Darkness Level",
+    "displayScrollingText": "Display Scrolling Text",
+    "executeMacro": "Execute Macro",
+    "executeScript": "Execute Script",
+    "modifyMovementCost": "Modify Movement Cost",
+    "pauseGame": "Pause Game",
+    "suppressWeather": "Suppress Weather",
+    "teleportToken": "Teleport Token",
+    "toggleBehavior": "Toggle Behavior"
+  },
+  "TableResult": {
+    "document": "Document",
+    "text": "Text"
+  }
+},
 
 "DETECTION.LightPerception": "Light Perception",
 "DETECTION.BasicSight": "Darkvision",
