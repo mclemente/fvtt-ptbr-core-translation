@@ -42,7 +42,6 @@
   "Hidden": "Oculto",
   "Hold": "Segure",
   "Information": "Informação",
-  "Information": "Informação",
   "Light": "Luz",
   "Name": " Nome",
   "Next": "Próximo",
@@ -1946,40 +1945,83 @@
     "RoundPoints": "Pontos Redondos"
   },
   "SERVER_SETTINGS": {
+    "Title": "Configuração do Aplicativo",
+    "Warning": "Esses campos personalizam o comportamento da aplicação Foundry Virtual Tabletop. As alterações exigirão a reinicialização do servidor.",
     "Save": {
+      "label": "Salvar Configuração do Aplicativo",
+      "warning": "Para modificar essas opções de configuração, será necessário reiniciar o servidor para que elas entrem em vigor. Deseja continuar?",
+      "restart": "As configurações da aplicação Foundry Virtual Tabletop foram alteradas. Você precisa reiniciar o servidor para que as alterações entrem em vigor."
     },
+    "SSLCert": "Certificado SSL",
     "Telemetry": {
+      "request1": "Se você der sua permissão, o Foundry Virtual Tabletop compartilhará uma pequena quantidade de dados de uso anônimos com o site foundryvtt.com, o que permite que nossa equipe entenda melhor como o Foundry VTT está sendo usado e nos ajuda a melhorar o software.",
+      "request2": "Este prompt será exibido apenas uma vez. Você pode alterar suas preferências em relação ao compartilhamento de dados de uso a qualquer momento no menu Configuração do Aplicativo clicando no ícone <i class=\"fas fa-cogs\"></i> no canto superior direito desta tela.",
+      "yes": "Permitir Compartilhamento",
+      "no": "Recusar Compartilhamento"
     },
     "SECTIONS": {
+      "FVTTConfig": "Configuração do Foundry VTT",
+      "ServerConfig": "Configuração do Servidor",
+      "ElectronApp": "Aplicação Electron",
+      "OtherSettings": "Outras Configurações"
     },
     "FIELDS": {
       "adminPassword": {
+        "label": "Senha do Administrador",
+        "hint": "Uma senha de administrador é usada para proteger o acesso a esta área de Configuração e Instalação do Foundry Virtual Tabletop. É altamente recomendável definir uma senha de administrador para o seu servidor."
       },
       "dataPath": {
+        "label": "Caminho de Dados do Usuário",
+        "hint": "Configure o local onde seus dados de usuário, incluindo mundos, sistemas e módulos, são armazenados."
       },
       "telemetry": {
+        "label": "Permitir Compartilhamento de Dados de Uso",
+        "hint": "Permitir o compartilhamento de dados de uso conosco, o que nos ajuda a melhorar o Foundry Virtual Tabletop. Os dados coletados, se esta opção estiver habilitada, estão documentados em nossa <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Política de Privacidade</a> e não contêm nenhuma informação de identificação pessoal nem são compartilhados com terceiros. O compartilhamento de dados de uso nos ajuda a responder a perguntas como \"quais versões do software Foundry Virtual Tabletop são mais utilizadas\", \"quais Sistemas de Jogo são mais jogados\", and \"quais versões de Módulos são instaladas com frequência\". Usamos os insights desses dados para nos ajudar a melhorar a compatibilidade do software, fornecer melhor suporte ao cliente e compartilhar insights agregados com nossa comunidade. Se esta opção estiver desabilitada, nenhum dado será compartilhado."
       },
       "cssTheme": {
+        "label": "Tema de Configuração",
+        "hint": "Escolha entre vários temas visuais que configuram a aparência do menu de configuração do aplicativo."
       },
       "world": {
+        "label": "Mundo Padrão",
+        "hint": "Você pode escolher um dos seus mundos disponíveis para iniciar automaticamente quando o software for iniciado."
       },
       "language": {
+        "label": "Idioma Padrão",
+        "hint": "Você pode escolher um idioma padrão para o aplicativo escolhendo um módulo que fornece os arquivos de tradução principais para esse idioma."
       },
       "port": {
+        "label": "Porta",
+        "hint": "Você pode escolher qual porta o Foundry Virtual Tabletop usa para o tráfego de conexão TCP e habilitar ou desabilitar o Universal Plug and Play (UPnP)."
       },
       "compressStatic": {
+        "label": "Compactar Arquivos Estáticos",
+        "hint": "Compactar arquivos fornecidos pelo servidor web Foundry Virtual Tabletop antes de enviá-los ao cliente para reduzir a quantidade de dados transferidos."
       },
       "compressSocket": {
+        "label": "Compactar Dados do Web Socket",
+        "hint": "Habilite a compactação dos dados enviados do servidor para o cliente via websocket. Isso é recomendado para o desempenho da rede."
       },
       "deleteNEDB": {
+        "label": "Excluir Arquivos NEDB Migrados",
+        "hint": "Na Versão 11, nosso software migrou de uma tecnologia de banco de dados antiga (NEDB) para uma nova (LevelDB). Migramos automaticamente seus arquivos de banco de dados antigos para o novo formato e mantemos os arquivos NEDB antigos para o caso de você precisar reverter ou diagnosticar algum problema. Essa medida de segurança aumenta a quantidade de espaço que o Foundry Virtual Tabletop consome no seu disco rígido. A ativação desse recurso excluirá automaticamente os arquivos NEDB após a migração. Este se tornará o comportamento padrão na Versão 12."
       },
       "hotReload": {
+        "label": "Hot-Reload Arquivos de Pacote",
+        "hint": "Permitir que os pacotes recarreguem determinados recursos, como CSS, HTML e arquivos de localização, sem uma atualização completa. Esta configuração é recomendada apenas para desenvolvedores."
       },
       "sslCert": {
+        "label": "Certificado",
+        "hint": "Você pode executar o servidor usando criptografia Secure Socket Layer (SSL), fornecendo caminhos para os arquivos de certificado e chave. Os caminhos são absolutos ou relativos ao subdiretório Config nos dados do usuário."
       },
+      "sslKey.label": "Chave",
       "awsConfig": {
+        "label": "Configuração de Caminho da AWS",
+        "hint": "Você pode fornecer um arquivo de configuração da AWS para integração com o S3. O caminho é absoluto ou relativo ao subdiretório Config dos dados do usuário."
       },
       "fullscreen": {
+        "label": "Modo Tela Cheia",
+        "hint": "Abra o aplicativo em tela cheia, sem barras de ferramentas ou outros elementos da interface do usuário."
       }
     }
   },
@@ -2041,14 +2083,27 @@
   "SETTINGS.TabCore": "Config. da Base",
   "SETTINGS.TabModule": "Config. dos Módulos",
   "SETTINGS.TabSystem": "Config. do Sistema",
+  "SETTINGS.TokenAutoRotateN": "Rotação Automática de Tokens",
+  "SETTINGS.TokenAutoRotateL": "Quando ativado, os Tokens são girados automaticamente na direção do movimento. Independentemente dessa configuração, a configuração de Bloqueio de Rotação em tokens individuais ainda impedirá que suas artes sejam giradas visualmente.",
   "SETTINGS.TokenDragPreviewN": "Visão ao Arrastar Token",
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são visualizadas em tempo real enquanto arrastar com o botão esquerdo. Isso é desabilitado por padrão porque pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
+    "Name": "Substituições de Token de Protótipo",
+    "Label": "Configurar Substituições de Protótipo",
+    "Hint": "Configurar substituições de dados do Token de Protótipo para todos os Atores.",
     "Reset": {
+      "Label": "Redefinir Padrões",
+      "Warning": "Esta ação removerá todas as substituições configuradas."
     },
+    "Disabled": "Desabilitado",
+    "Submit": "Salvar Substituições",
     "TABS": {
       "AllTypes": {
-      }
+        "Label": "[Todos os Tipos]",
+        "Hint": "Essas substituições se aplicam a todos os Tokens de Protótipo, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas guias subsequentes. Uma seleção em branco para um campo indica que não há substituição."
+      },
+      "Basics": "Básicos",
+      "Marker": "Marcador de Turno"
     }
   },
   "SETTINGS.PermissionReset": "Redefinir configuração de permissão de cargo de Usuário para valores padrão.",
@@ -2070,28 +2125,54 @@
   "SETTINGS.GridDiagonalsIllegal": "Ilegal (∞)",
   "SETTINGS.UI": {
     "MENU": {
+      "name": "Configuração da Interface do Usuário",
+      "label": "Configurar Interface",
+      "hint": "Configurações que afetam a aparência ou o comportamento da interface do usuário do Foundry Virtual Tabletop."
     },
     "HEADERS": {
+      "theme": "Tema e Esquema de Cores",
+      "size": "Tamanho da Interface",
+      "fade": "Fading da Interface",
+      "other": "Outras Configurações"
     },
     "FIELDS": {
       "uiScale": {
+        "label": "Escala da Interface",
+        "hint": "Aplique um fator de escala global à interface geral do usuário para torná-la maior ou menor."
       },
       "fontScale": {
+        "label": "Tamanho da Fonte",
+        "hint": "Aumentar ou diminuir o tamanho da fonte padrão usada no aplicativo."
       },
       "colorScheme": {
         "applications": {
+          "label": "Aplicativos",
+          "hint": "Especifique se você prefere que aplicativos de interface de usuário em janela, como fichas de personagens, sejam renderizados usando um tema claro ou escuro. Nem todas as fichas suportam essa preferência."
         },
         "choices": {
+          "default": "Padrão do Navegador",
+          "dark": "Escuro",
+          "light": "Claro"
         },
         "interface": {
+          "label": "Interface",
+          "hint": "Especifique se você prefere que os elementos da interface do usuário sejam renderizados usando um tema claro ou escuro."
         }
       },
       "chatNotifications": {
+        "label": "Notificações de Chat",
+        "hint": "Escolha se as notificações de novas mensagens do chat aparecem como cartões de chat completos ou apenas como um ponto na guia de chat.",
+        "cards": "Cartões de Chat",
+        "pip": "Ponto de Notificação"
       },
       "fade": {
         "opacity": {
+          "label": "Opacidade Inativa",
+          "hint": "A opacidade dos elementos desbotados da interface do usuário quando não estão ativos. Valores mais baixos são mais transparentes."
         },
         "speed": {
+          "label": "Velocidade de Fade",
+          "hint": "A rapidez com que os elementos da interface aparecem ou desaparecem quando o mouse entra ou sai da área. Valores mais baixos são mais rápidos."
         }
       }
     }
@@ -2193,22 +2274,28 @@
     "PackagesLoading": "Carregando Pacotes Disponíveis",
     "CouldntLoadPackages": "Não foi possível carregar pacotes disponíveis",
     "PackageFilter": "Filtrar Pacotes",
-    "WorldFilter": "Filtrar mundos",
-    "SystemFilter": "Filtrar sistemas",
+    "WorldFilter": "Filtrar Mundos",
+    "SystemFilter": "Filtrar Sistemas",
     "ModuleFilter": "Filtrar Módulos",
     "PackageCategories": "Categorias de Pacotes",
     "PackageInstalled": "Instalado",
     "PackageNotOwned": "Não Possuído",
-    "PackageName": "Nome do pacote",
+    "PackageName": "Nome do Pacote",
+    "PackageProtected": "Protegido",
+    "PackageRequiresDowngradeHint": "Você deve fazer o downgrade para a versão {vmax} do Foundry VTT para instalar este pacote.",
+    "PackageRequiresDowngradeLabel": "Requer Downgrade",
+    "PackageRequiresUpgradeHint": "Você deve atualizar para a versão {vmin} do Foundry VTT para instalar este pacote.",
+    "PackageRequiresUpgradeLabel": "Requer Atualização",
     "PackageVisAll": "Todos os Pacotes",
     "PackageVisInst": "Instalados",
     "PackageVisUnin": "Não Instalados",
     "PackageVisCompatible": "Compatível",
     "PackageVisIncompatible": "Incompatível",
-    "PackageVisUnverified": "Não verificado",
+    "PackageVisUnverified": "Não Verificado",
     "PremiumContent": "Conteúdo Premium",
     "ExclusiveContent": "Conteúdo Exclusivo",
     "ViewPackagePage": "Ver Página do Pacote",
+    "ViewPackageWebsite": "Ver Site do Pacote",
     "ViewPackageChangelog": "Ver Registro de Alterações",
     "PackageHasDependenciesSingular": "{title} tem uma dependência que ainda não está instalada. Talvez você não possa usar este pacote se esta dependência não estiver presente.",
     "PackageHasDependenciesPlural": "{title} tem {number} dependências ainda não instaladas. Talvez você não possa usar este pacote se essas dependências não estiverem presentes.",
@@ -2216,10 +2303,10 @@
     "PackageOptionalDependencies": "Estas dependências são opcionais, mas podem melhorar a funcionalidade do pacote se instaladas:",
     "PackageDependenciesTitle": "Instalar Dependências do Pacote",
     "PackageInstallDependencies": "Deseja instalá-los automaticamente?",
-    "PackageDependenciesAutomaticSingular": "Instalar dependência automaticamente",
-    "PackageDependenciesAutomaticPlural": "Instalar dependências selectionadas automaticamente",
-    "PackageDependenciesManualSingular": "Instalar dependência manualmente",
-    "PackageDependenciesManualPlural": "Instalar todas as dependências manualmente",
+    "PackageDependenciesAutomaticSingular": "Instalar Dependência Automaticamente",
+    "PackageDependenciesAutomaticPlural": "Instalar Dependências Selectionadas Automaticamente",
+    "PackageDependenciesManualSingular": "Instalar Dependência Manualmente",
+    "PackageDependenciesManualPlural": "Instalar Todas as Dependências Manualmente",
     "PackageDependenciesCouldNotInstallSingular": "Uma dependência precisa ser instalada manualmente.",
     "PackageDependenciesCouldNotInstallPlural": "{number} dependências precisam ser instaladas manualmente.",
     "PackageDependenciesCouldInstallSingular": "Uma dependência pode ser instalada automaticamente.",
@@ -2259,6 +2346,8 @@
     "WorldLaunchMigratePackage": "Migrando Dados de Pacotes",
     "WorldLaunchMigrateCore": "Realizando Migrações do FVTT",
     "WorldLaunchMigrateSystem": "Realizando Migrações do Sistema",
+    "WorldLaunchCleanWorld": "Limpando Dados do Mundo",
+    "WorldLaunchExtractDemo": "Extraindo Dados de Demonstração",
     "UpdateDownloadingS": "Baixando Atualização",
     "UpdateDownloadingC": "Download Concluído",
     "UpdateExtractingS": "Extraindo Atualização",
@@ -2301,20 +2390,118 @@
     "FeaturedContent": "Conteúdo em Destaque",
     "NoFeaturedContent": "Nenhuma recomendação de conteúdo foi recebida do servidor da web foundryvtt.com.",
     "BACKUPS": {
+      "Backup": "Backup",
+      "BackingUp": "Backup em Andamento",
+      "BulkActions": "Ações em Massa",
+      "Extracting": "Extraindo Backup",
+      "ExtractingPl": "Extraindo Backups",
+      "CheckDiskSpace": "Verificando Espaço em Disco",
+      "Copying": "Copiando Backup",
+      "CopyingPl": "Copiando Backups",
+      "CreateBackup": "Criando Backup de {title}",
+      "CreateBackupComplete": "Criado Backup de {title}",
+      "CreateBackupFailure": "Falha ao criar backup para o pacote '{title}'. Consulte o console (F12) para obter detalhes.",
+      "CreateSnapshot": "Criar um Snapshot",
+      "CreateSnapshotComplete": "Snapshot criado.",
+      "CreateSnapshotFailure": "Falha ao criar o snapshot. Consulte o console (F12) para obter detalhes.",
+      "CreateSnapshotHint": "A criação de um snapshot fará backups de todos os pacotes instalados no momento, permitindo que você posteriormente reverta o estado da instalação do Foundry VTT para o ponto em que o snapshot foi feito.",
+      "CreateSnapshotPackageList": "Os seguintes pacotes serão incluídos neste snapshot:",
+      "CreateSnapshotConfirm": "Este processo pode levar muito tempo dependendo da quantidade de pacotes, seus tamanhos e o meio de armazenamento, e não pode ser interrompido. Deseja continuar?",
+      "DeletingBackup": "Excluindo Backups",
+      "DeleteBackupComplete": "Backup de {title} excluído.",
+      "DeleteBackupCompletePl": "Excluído {count} backups de {title}.",
+      "DeleteBackupFailure": "Falha ao excluir os backups do pacote '{title}'. Consulte o console (F12) para obter detalhes.",
+      "DeleteBackupTitle": "Excluindo Backups de {title}",
+      "DeleteBackupWarning": "A exclusão de um backup não pode ser revertida. Deseja continuar?",
+      "DeleteBackupWarningPl": "<strong>{count}</strong> backups foram selecionados para exclusão. Esta ação não pode ser revertida. Deseja continuar?",
+      "DeletingSnapshot": "Excluindo Snapshots",
+      "DeleteSnapshotComplete": "Snapshot excluído.",
+      "DeleteSnapshotCompletePl": "Excluído {count} snapshots.",
+      "DeleteSnapshotFailure": "Falha ao excluir um ou mais snapshots. Consulte o console (F12) para obter detalhes.",
+      "DeleteSnapshotTitle": "Excluindo Snapshots",
+      "DeleteSnapshotWarning": "A exclusão de um snapshot não pode ser revertida. Deseja continuar?",
+      "DeleteSnapshotWarningPl": "<strong>{count}</strong> snapshots foram selecionados para exclusão. Esta ação não pode ser revertida. Deseja continuar?",
+      "NoteHint": "Opcionalmente, forneça uma nota para referência.",
+      "DiskSpace": "Espaço em Disco",
+      "DiskSpaceAvailable": "{available} disponível",
+      "DiskSpaceRequired": "{required} necessário",
+      "DiskSpaceChecking": "Verificando Espaço",
+      "DiskSpaceInsufficient": "Espaço Insuficiente",
+      "Manage": "Gerenciar",
+      "ManageBackups": "Gerenciar Backups",
+      "ManagePackage": "Backups de {package}",
+      "LargePackageWarning": "O pacote escolhido parece ser bastante grande. Ele pode permanecer em 0% por algum tempo antes que o processo de backup possa ser iniciado. Por favor, seja paciente.",
+      "Loading": "Lendo Backups",
+      "Categories": "Categorias de Backup",
+      "Restore": "Restaurar",
+      "Restoring": "Restauração de Backup em Andamento",
+      "RestoreLatest": "Restaurar Mais Recente",
+      "RestoreLatestBackup": "Restaurar Backup Mais Recente",
+      "RestoreBackupWarning": "Restaurar um backup apagará o estado atual do pacote. Esta ação não pode ser revertida. Deseja continuar?",
+      "RestoreBackupTitle": "Restaurando backup de {title}",
+      "RestoreBackupFailure": "Falha ao restaurar o backup de {title}. Consulte o console (F12) para obter detalhes.",
+      "RestoreBackupComplete": "{title} restaurado com sucesso, com backup feito em {date}",
+      "RestoringSnapshot": "Restaurando Snapshot",
+      "RestoreSnapshotFailure": "Falha ao restaurar o snapshot. Consulte o console (F12) para obter detalhes.",
+      "RestoreSnapshotComplete": "Snapshot restaurado com sucesso criado em {date}.",
+      "RestoreSnapshotTitle": "Restaurar Snapshot",
+      "RestoreSnapshotWarning": "Restaurar um snapshot redefine o estado da instalação do Foundry VTT para o estado em que o snapshot foi criado. Todas as versões e estados globais serão revertidos. Este processo não pode ser desfeito.",
+      "RestoreSnapshotUnchangedPackages": "<strong>1</strong> pacote foi adicionado após o snapshot ser criado e permanecerá inalterado após o snapshot ser restaurado.",
+      "RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> pacotes foram adicionados após o snapshot ser criado e permanecerão inalterados após o snapshot ser restaurado.",
+      "Snapshot": "Snapshot",
+      "TakeBackup": "Realizar Backup",
+      "VersionFormat": "Versão {version}",
+      "Num": "{number} Backup",
+      "NumPl": "{number} Backups",
+      "TotalSize": "Tamanho Total",
       "TYPE": {
+        "world": "Mundos",
+        "module": "Módulos",
+        "system": "Sistemas",
+        "snapshots": "Snapshots"
       },
+      "CannotDeleteInSnapshot": "Backups que fazem parte de snapshots não podem ser excluídos individualmente.",
+      "WorldCount": "<strong>{count}</strong> Mundos",
+      "ModuleCount": "<strong>{count}</strong> Módulos",
+      "SystemCount": "<strong>{count}</strong> Sistemas",
       "Snapshotting": {
-      }
+        "world": "Snapshotting Mundos",
+        "module": "Snapshotting Módulos",
+        "system": "Snapshotting Sistemas"
+      },
+      "CannotRestoreUnusable": "Este backup não pode ser restaurado, pois tornaria o pacote inutilizável."
     },
     "COMPAT": {
+      "Title": "Visualizar Compatibilidade: {release}",
+      "Compatible": "{count} Compatível",
+      "CompatibleTooltip": "Pacotes que são verificados como compatíveis com a versão {version}.",
+      "Previewing": "Carregando Visualização",
+      "Incompatible": "{count} Incompatível",
+      "IncompatibleTooltip": "Pacotes que são verificados como incompatíveis com a versão {version}.",
+      "Warning": "{count} Risco de Compatibilidade",
+      "WarningTooltip": "Pacotes que foram verificados pela última vez como compatíveis com uma geração anterior e podem não ser compatíveis com a versão {version}.",
+      "Unverified": "{count} Não Verificado",
+      "UnverifiedTooltip": "Pacotes que foram verificados pela última vez como compatíveis com uma compilação anterior e provavelmente ainda são compatíveis com a versão {version}.",
+      "LearnMore": "Saiba mais sobre esta ferramenta",
       "INCOMPATIBLE": {
+        "Latest": "A versão mais recente deste pacote não é compatível com a atualização {version}",
+        "World": "Não há nenhuma versão compatível do sistema deste mundo disponível para a atualização {version}"
       },
       "COMPATIBLE": {
+        "Latest": "A versão mais recente deste pacote é compatível com a atualização {version}",
+        "World": "O sistema deste mundo tem uma versão compatível disponível para a atualização {version}"
       },
       "RISK": {
+        "Latest": "A versão mais recente deste pacote foi verificada pela última vez para a versão do software principal {verified}",
+        "World": "O sistema deste mundo foi verificado pela última vez para a versão do software principal {verified}"
       }
     },
     "UPDATE_NOTES": {
+      "Title": "Notas de Versão: {release}",
+      "FullList": "Veja a <a href=\"{url}\" target=\"_blank\">lista completa</a> de Notas de Versão.",
+      "BeginDownload": "Iniciar Download",
+      "NewGenerationHint": "Considere fazer um snapshot de todos os pacotes instalados antes de atualizar, caso precise reverter.",
+      "PreviewCompatibilityHint": "Usando o botão 'Visualizar Compatibilidade' abaixo, você pode verificar se todos os seus mundos, sistemas e módulos são suportados na versão {version} do Foundry Virtual Tabletop."
     }
   },
   "THEME.foundry": "Foundry Virtual Tabletop",
@@ -2322,6 +2509,13 @@
   "THEME.scifi": "Ficção Científica",
   "PACKAGE": {
     "Type": {
+      "world": "Mundo",
+      "worldPl": "Mundos",
+      "system": "Sistema",
+      "systemPl": "Sistemas",
+      "module": "Módulo",
+      "modulePl": "Módulos",
+      "allPl": "Todos"
     },
     "Create": "Criar Pacote",
     "Compatibility": {
