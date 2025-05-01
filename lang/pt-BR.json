@@ -2556,36 +2556,80 @@
     "ModuleEditWarning": "Você está editando dados de manifesto de pacote para um módulo instalável. As alterações feitas nesses dados têm a possibilidade de interromper a funcionalidade ou a capacidade do módulo de ser atualizado posteriormente. Prossiga com cuidado.",
     "ModuleEditSuccess": "Dados do manifesto do pacote do módulo \"{id}\" modificados.",
     "Relationship": {
+      "Package": "Pacote Relacionado",
+      "Category": "Categoria de Relação"
     },
     "Relationships": {
+      "Systems": "Sistema de Jogo",
+      "Requires": "Necessário",
+      "Recommends": "Recomendado",
+      "Conflicts": "Conflito Conhecido"
     },
     "VIEW_MODES": {
+      "GALLERY": "Visualização da Galeria",
+      "TILES": "Visualização de Blocos",
+      "DETAILS": "Visualização de Cetalhes"
     },
     "ACTIONS": {
+      "AddAuthor": "Adicionar Autor",
+      "RemoveAuthor": "Remover Autor",
+      "AddPack": "Adicionar Pacote de Compêndio",
+      "RemovePack": "Remover Pacote de Compêndio",
+      "AddRelationship": "Adicionar Relação",
+      "RemoveRelationship": "Remover Relação"
     },
     "TABS": {
+      "basics": "Detalhes Básicos",
+      "authors": "Autores",
+      "packs": "Pacotes de Compêndio",
+      "relationships": "Relações"
     },
     "FIELDS": {
       "id": {
+        "label": "Identificador de Pacote",
+        "hint": "O identificador deve ser uma sequência alfanumérica exclusiva, sem caracteres especiais além de hifens."
       },
       "title": {
+        "label": "Título do Pacote",
+        "hint": "O título é legível por humanos e pode conter caracteres especiais."
       },
       "version": {
+        "label": "Versão do Pacote",
+        "hint": "O campo versão identifica uma iteração específica deste pacote. Os esquemas de versão suportados permitem strings ou números separados por pontos."
       },
       "description": {
+        "label": "Descrição do Pacote",
+        "hint": "Uma descrição em texto simples ou HTML que explica o propósito e o conteúdo deste pacote."
       },
       "url": {
+        "label": "URL do Pacote",
+        "hint": "Uma URL de site onde mais detalhes sobre este pacote podem ser descobertos."
       },
       "authors": {
+        "name.label": "Nome do Autor",
+        "discord.label": "Usuário do Discord",
+        "email.label": "Endereço de Email",
+        "url.label": "URL do Site"
       },
       "packs": {
         "name": {
+          "label": "Nome",
+          "hint": "Uma sequência alfanumérica exclusiva sem caracteres especiais que identifica o pacote do compêndio.",
+          "disabledHint": "Você não pode alterar o nome deste pacote de compêndio porque ele já existe."
         },
+        "label.label": "Etiqueta",
+        "type.label": "Tipo de Documento",
         "system": {
+          "label": "Sistema Necessário",
+          "hint": "Pacotes de compêndio de Atores, Itens ou Aventuras (que contêm Atores ou Itens) devem declarar para qual sistema de jogo específico eles foram projetados."
         }
       },
       "compatibility": {
-      }
+        "minimum.label": "Versão Mínima",
+        "verified.label": "Versão Verificada",
+        "maximum.label": "Versão Máxima"
+      },
+      "dataPath.label": "Caminho de Dados"
     }
   },
   "PACKAGECONFIG": {
@@ -2595,6 +2639,8 @@
     "Core": "FVTT",
     "Unmapped": "Não Mapeado",
     "TABS": {
+      "core": "Core",
+      "unmapped": "Não Mapeado"
     }
   },
   "JOIN": {
