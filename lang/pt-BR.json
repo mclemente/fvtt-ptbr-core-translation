@@ -2519,6 +2519,8 @@
     },
     "Create": "Criar Pacote",
     "Compatibility": {
+      "Label": "Compatibilidade",
+      "Hint": "Opcionalmente, você pode indicar que este pacote é compatível apenas com uma série de versões do software Foundry Virtual Tabletop. A compatibilidade pode ser declarada para uma versão de compilação específica, como \"13.339\" ou para uma geração ampla, como \"13\"."
     },
     "TagJavaScript": "JavaScript",
     "TagCSS": "CSS",
@@ -2547,6 +2549,8 @@
     "ModuleCreateHint": "Você pode usar este formulário para criar um Módulo que pode ser compartilhado em vários mundos ou empacotado para distribuição a outros usuários. Este formulário oferece suporte a um subconjunto de configuração de pacote possível. Você poderá gerenciar e editar ainda mais seu pacote depois de criá-lo, modificando seu arquivo de manifesto JSON.",
     "ModuleCreateSuccess": "Novo módulo \"{id}\" criado, que agora está disponível para uso!",
     "ModuleCreateErrorAlreadyExists": "O módulo \"{id}\" já existe! Escolha um identificador de pacote diferente.",
+    "ConfigTitle": "Módulo: {module}",
+    "NewModuleTitle": "Meu Novo Módulo",
     "ModuleEdit": "Editar Módulo",
     "ModuleEditHint": "Você pode usar este formulário para atualizar as propriedades dos dados do manifesto do módulo.",
     "ModuleEditWarning": "Você está editando dados de manifesto de pacote para um módulo instalável. As alterações feitas nesses dados têm a possibilidade de interromper a funcionalidade ou a capacidade do módulo de ser atualizado posteriormente. Prossiga com cuidado.",
