@@ -458,10 +458,10 @@
   "CHAT.RevealMessage": "Mostrar para Todos",
   "CHAT.ConcealMessage": "Tornar Privado",
   "CHAT.RollVisibility": "Visibilidade de Rolagem",
-  "CHAT.RollBlind": "Rolagem Cega pro MJ",
+  "CHAT.RollBlind": "Rolagem Cega pro Mestre",
   "CHAT.RollDefault": "Modo de Rolagem Padrão",
   "CHAT.RollPublic": "Rolagem Pública",
-  "CHAT.RollPrivate": "Rolagem Privada pro MJ",
+  "CHAT.RollPrivate": "Rolagem Privada pro Mestre",
   "CHAT.RollSelf": "Rolagem Pessoal",
   "CHAT.RollTables": "Tabelas de Rolagem",
   "CHAT.JumpToBottom": "Pular para o Final",
@@ -2659,15 +2659,19 @@
     "LoginSuccess": "Login como {user} bem sucedido, entrando no jogo!"
   },
   "SHEETS.ConfigureSheet": "Configurar Ficha",
+  "SHEETS.ConfigureTitle": "{prefix}: Configuração de Ficha",
   "SHEETS.ThisSheet": "Esta Ficha",
+  "SHEETS.Defaults": "Padrões",
   "SHEETS.DefaultSheet": "Ficha Padrão",
   "SHEETS.DefaultDocumentSheet": "Ficha {document} Padrão",
   "SHEETS.DocumentSheetHint": "Substituir qual tipo de ficha você gostaria de usar para esse documento específico.",
-  "SHEETS.TypeSheetHint": "Defina o tipo de ficha padrão usada para esse tipo de entidade (Apenas MJ).",
+  "SHEETS.TypeSheetHint": "Defina o tipo de ficha padrão usada para esse tipo de entidade (Apenas Mestre).",
   "SHEETS.DocumentSheetPrivate": "Você não tem permissão suficiente para visualizar a ficha para esse {type}.",
   "SHEETS.Save": "Salvar Configuração da Ficha",
   "SHEETS.FormNavLabel": "Navegação das Abas do Formulário",
   "SHEETS.CopyUuid": "Copiar UUID do Documento",
+  "SHEETS.Theme": "Tema",
+  "SHEETS.ThemeHint": "Nem todos os temas estão disponíveis para cada ficha.",
   "SOUND": {
     "ConfigTitle": "Configuração de Som Ambiente",
     "PathPlaceholder": "caminho/para/audio.mp3",
@@ -2681,10 +2685,12 @@
   "FOLDER.Clear": "Limpar Diretório",
   "FOLDER.Collapse": "Recolher Todas as Pastas",
   "FOLDER.Delete": "Excluir Todas",
+  "FOLDER.DeleteName": "Excluir Todas: {name}",
   "FOLDER.DeleteWarning": "Esta pasta e seu conteúdo serão excluídos permanentemente e não poderão ser recuperados.",
   "FOLDER.Edit": "Editar Pasta",
   "FOLDER.Export": "Exportar para Compêndio",
   "FOLDER.Remove": "Remover Pasta",
+  "FOLDER.RemoveName": "Remover Pasta: {name}",
   "FOLDER.RemoveWarning": "Esta pasta será excluída permanentemente e seus conteúdos serão movidos para a sua pasta pai.",
   "FOLDER.SortAlphabetical": "Alfabética",
   "FOLDER.SortManual": "Manual",
@@ -2703,10 +2709,15 @@
   "FOLDER.ExportDone": "Exportação de {type} para o compêndio {compendium} concluída.",
   "FOLDER.CreateTable": "Criar Tabela de Rolagem",
   "FOLDER.CreateTableConfirm": {
+    "Title": "Criar Tabela Rolável: {folder}",
+    "Question": "Criar um novo documento de Tabela Rolável usando o conteúdo desta pasta como resultados da tabela?"
   },
   "FOLDER.InvalidDocumentType": "Tipo de Documento Inválido \"{type}\" fornecido para esta Pasta.",
   "FOLDER.ExceededMaxDepth": "Você não pode aninhar Pastas com mais de {depth} níveis de profundidade.",
   "FOLDER.FIELDS": {
+    "name.label": "Nome da Pasta",
+    "color.label": "Cor da Pasta",
+    "sorting.label": "Modo de Organização"
   },
   "OWNERSHIP": {
     "Title": "Configuração de propriedade",
@@ -2721,7 +2732,9 @@
     "HintFolder": "Configurar o acesso para todos os documentos dentro desta pasta. As alterações serão aplicadas a todos os documentos contidos, excluindo o conteúdo de sub-pastas.",
     "HintDocument": "Configura o acesso a este documento específico, permitindo que cada usuário seja atribuído a um nível diferente de visibilidade.",
     "Configure": "Configurar Propriedade",
-    "ShowGM": "Mostrar Usuários MJ"
+    "ShowGM": "Mostrar Usuários Mestres",
+    "Legend": "Propriedade",
+    "Save": "Salvar Alterações"
   },
   "PERMISSION.Title": "Configuração de Permissão do Usuário",
   "PERMISSION.Configure": "Configurar Permissões",
@@ -2778,6 +2791,8 @@
   "PERMISSION.TokenConfigureHint": "Permite que usuários com esse cargo definam as configurações dos tokens que eles possuem.",
   "PERMISSION.WallDoors": "Abrir e Fechar Portas",
   "PERMISSION.WallDoorsHint": "Permitir usuários com este cargo interagir com portas definidas na camada de paredes.",
+  "PERMISSION.QueryUser": "Consultar Usuários",
+  "PERMISSION.QueryUserHint": "Permitir que usuários com este cargo consultem outros usuários.",
   "PERMISSION.WarningNoCreate": "Você não tem permissão suficiente para criar um(a) {document}.",
   "REGION": {
     "TABS": {
@@ -2798,8 +2813,12 @@
         "label": "Elevação",
         "hint": "A faixa de elevação da Região.",
         "bottom": {
+          "label": "Inferior",
+          "hint": "A parte inferior da faixa de elevação."
         },
         "top": {
+          "label": "Superior",
+          "hint": "A parte superior da faixa de elevação."
         }
       },
       "behaviors": {
@@ -2843,12 +2862,16 @@
         "label": "Limite da Região Alterado"
       },
       "behaviorActivated": {
+        "label": "Comportamento Ativado"
       },
       "behaviorDeactivated": {
+        "label": "Comportamento Desativado"
       },
       "behaviorViewed": {
+        "label": "Comportamento Visualizado"
       },
       "behaviorUnviewed": {
+        "label": "Comportamento Não-Visualizado"
       },
       "tokenEnter": {
         "label": "Token Entra"
@@ -2863,10 +2886,13 @@
         "label": "Token Movido (Para Fora)"
       },
       "tokenMoveWithin": {
+        "label": "Token Movido (Dentro de)"
       },
       "tokenAnimateIn": {
+        "label": "Token Animado (Para Dentro)"
       },
       "tokenAnimateOut": {
+        "label": "Token Animado (Para Fora)"
       },
       "tokenTurnStart": {
         "label": "Token Inicia Turno"
@@ -3021,6 +3047,7 @@
       "modifyMovementCost": {
         "FIELDS": {
           "difficulties": {
+            "hint": "Configure o multiplicador de custo de movimento para cada ação de movimento. Modificações de custo de movimento sobrepostas se acumulam multiplicativamente."
           }
         }
       },
@@ -3081,60 +3108,140 @@
   "SIDEBAR.Documentation": "Documentação do Foundry VTT",
   "SIDEBAR.Wiki": "Wiki da comunidade Foundry VTT",
   "SIDEBAR.ACTIONS.CREATE": {
+    "Actor": "Criar Ator",
+    "Adventure": "Criar Aventura",
+    "Cards": "Criar Pilha de Cartas",
+    "Compendium": "Criar Compêndio",
+    "Folder": "Criar Pasta",
+    "Item": "Criar Item",
+    "JournalEntry": "Criar Entrada",
+    "Macro": "Criar Macro",
+    "Playlist": "Criar Playlist",
+    "RollTable": "Criar Tabela",
+    "Scene": "Criar Cena"
   },
   "SIDEBAR.COMPENDIUM.LABELS": {
+    "Ownership": "Propriedade não-padrão",
+    "Locked": "Bloqueado"
   },
   "SIDEBAR.SETTINGS": {
     "LABELS": {
+      "Build": "Versão de Compilação",
+      "Demo": "Modo de Demonstração",
+      "Modules": "Módulos Ativos"
     },
     "HEADERS": {
+      "Settings": "Configurações de Jogo",
+      "Docs": "Ajuda e Documentação",
+      "Access": "Acesso ao Jogo"
     },
     "ACTIONS": {
+      "Configure": "Definir Configurações",
+      "Docs": "Ver Documentação",
+      "Invite": "Links de Convite",
+      "Keybindings": "Configurar Controles",
+      "Logout": "Sair",
+      "ManageModules": "Gerenciar Módulos",
+      "Players": "Gerenciamento de Usuários",
+      "Support": "Suporte & Problemas",
+      "Tours": "Gerenciamento de Apresentação",
+      "ViewModules": "Ver Módulos Ativos",
+      "Wiki": "Páginas Wiki da Comunidade"
     }
   },
-  "SUPPORT.Title": "Detalhes do Suporte",
-  "SUPPORT.Places": "Lugares para Obter Suporte",
-  "SUPPORT.Discord": "Para se juntar a outros que estão usando o Foundry VTT, ou para obter apoio de nossos maravilhosos ajudantes da comunidade, entre em nosso Discord aqui:",
-  "SUPPORT.BugReporting": "Se você gostaria de relatar um bug, por favor use a categoria relatório de bug disponível em nossa página fale conosco: ",
-  "SUPPORT.ReportPrelude": "Ao pedir ajuda no Discord ou no Github, é útil para nós saber o que está acontecendo no seu mundo. Abaixo está um relatório copiável que pedimos que inclua.",
-  "SUPPORT.CopyReport": "Copiar Relatório para Área de Transferência",
-  "SUPPORT.ReportCopied": "Relatório Copiado",
-  "SUPPORT.OS": "SO",
-  "SUPPORT.Client": "Cliente",
-  "SUPPORT.GPU": "GPU",
-  "SUPPORT.MaxTextureSize": "Tamanho Máximo da Textura",
-  "SUPPORT.LargestTexture": "Maior Textura",
-  "SUPPORT.NoViewedScene": "Nenhuma cena visualizada",
-  "SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} estão indisponíveis porque o módulo '{name}' está inativo",
-  "SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} estão indisponíveis porque o módulo com ID '{name}' está inativo",
-  "SUPPORT.UnavailableDocuments": {
-  },
-  "SUPPORT.WorldScripts": "Scripts Mundiais",
-  "SUPPORT.GenerateFullReport": "Gerar Relatório Completo",
-  "SUPPORT.GenerateFullReportHint": "Um relatório completo contém informações mais detalhadas sobre os módulos e compêndios instalados e pode levar algum tempo para ser gerado.",
-  "SUPPORT.WorldData": "Informações do Mundo",
-  "SUPPORT.CompendiumData": "Informações do Compêndio",
-  "SUPPORT.ActiveModules": "Módulos Ativos",
-  "SUPPORT.TABS": {
+  "SUPPORT": {
+    "Title": "Detalhes do Suporte",
+    "Places": "Lugares para Obter Suporte",
+    "Discord": "Para se juntar a outros que estão usando o Foundry VTT, ou para obter suporte de nossos maravilhosos Ajudantes da Comunidade, junte-se ao nosso <a href=\"https://discord.gg/foundryvtt\" target=\"_blank\" rel=\"nofollow\">Discord</a>.",
+    "BugReporting": " você quiser relatar um bug, use a categoria Relatório de Bug disponível em nossa <a href=\"https://foundryvtt.com/contact-us?category=bug\" target=\"_blank\" rel=\"nofollow\">página Fale Conosco</a>.",
+    "ReportPrelude": "Ao pedir ajuda no Discord ou no Github, é útil sabermos o que está acontecendo no seu Mundo. Abaixo está um relatório copiável e colável que pedimos que você inclua.",
+    "CopyReport": "Copiar Relatório para a Área de Transferência",
+    "ReportCopied": "Relatório Copiado",
+    "OS": "SO",
+    "Client": "Cliente",
+    "Screen": "Dimensões da Tela",
+    "Viewport": "Dimensões da Janela de Visualização",
+    "Dimensions": "{width} × {height}",
+    "GPU": "GPU",
+    "MaxTextureSize": "Tamanho Máx. da Textura",
+    "LargestTexture": "Maior Textura",
+    "NoDocumentIssues": "Nenhum problema de documento foi encontrado.",
+    "NoClientIssues": "Nenhum problema com o cliente foi encontrado.",
+    "NoModuleIssues": "Nenhum problema de módulo foi encontrado.",
+    "NoViewedScene": "Nenhuma cena visualizada",
+    "ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} não estão disponíveis porque o módulo '{name}' está inativo",
+    "ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} não estão disponíveis porque um módulo com a ID '{name}' está inativo",
+    "UnavailableDocuments": {
+      "one": "1 documento {document} indisponível",
+      "other": "{count} documentos {document} indisponíveis"
+    },
+    "WorldScripts": "Scripts de Mundo",
+    "GenerateFullReport": "Gerar Relatório Completo",
+    "GenerateFullReportHint": "Um relatório completo contém informações mais detalhadas sobre seus módulos e compêndios instalados e pode levar algum tempo para ser gerado.",
+    "WorldData": "Dados do Mundo",
+    "CompendiumData": "Dados do Compêndio",
+    "ActiveModules": "Módulos Ativos",
+    "TABS": {
+      "support": "Detalhes de Suporte",
+      "documents": "Problemas com Documentos",
+      "client": "Problemas com Cliente",
+      "modules": "Problemas com Módulos"
+    }
   },
   "TABLE": {
+    "AnimateSetting": "Tabelas de Rolagem Animadas",
+    "AnimateSettingHint": "Exibe uma animação estilo roleta ao sortear em uma Tabela de Rolagem.",
+    "DrawFlavor": "Sortear um resultado da tabela {name}",
+    "DrawFlavorPlural": "Sortear {number} resultados da tabela {name}",
+    "NoAvailableResults": "Não há resultados disponíveis que possam ser sorteados desta tabela.",
+    "Result": "Resultado",
+    "ResultDescription": "Descrição do Resultado",
     "SHEETS": {
+      "Config": "Ficha de Configuração",
+      "View": "Ver Ficha"
     },
     "ACTIONS": {
       "ChangeMode": {
-      }
+        "Edit": "Editar",
+        "View": "Visualizar"
+      },
+      "OpenResultConfig": "Configuração de Resultado Aberto",
+      "DrawResult": "Resultado do Sorteio",
+      "DrawSpecificResult": "Sorteie Este Resultado",
+      "NormalizeResults": "Normalizar Intervalos de Resultados",
+      "ResetResults": "Redefinir Resultados",
+      "CreateResult": "Adicionar Novo Resultado",
+      "DeleteResult": "Excluir Resultado",
+      "ToggleDrawn": "Alternar Status de Sorteio",
+      "Submit": "Atualizar Tabela de Rolagem"
     },
     "TABS": {
+      "summary": "Resumo",
+      "results": "Resultados"
     },
     "FIELDS": {
+      "description.label": "Descrição da Tabela",
+      "formula.label": "Fórmula da Rolagem",
+      "replacement.label": "Sortear com Substituição",
+      "displayRoll.label": "Exibir Fórmula de Rolagem no Chat"
     }
   },
   "TABLE_RESULT": {
+    "Details": "Detalhes",
     "ACTIONS": {
+      "Submit": "Atualizar Resultado da Tabela"
     },
     "TYPES": {
+      "text": "Texto",
+      "document": "Documento"
     },
     "FIELDS": {
+      "name.label": "Nome do Resultado",
+      "type.label": "Tipo do Resultado",
+      "img.label": "Ícone do Resultado",
+      "documentUuid.label": "Documento Referenciado",
+      "weight.label": "Peso",
+      "range.label": "Intervalo"
     }
   },
   "TEMPLATE.ConeTypeSetting": "Tipo de Modelo de Cone",
@@ -3146,10 +3253,23 @@
   "TEMPLATE.GridTemplatesSetting": "Formas Baseadas em Modelos de Grade",
   "TEMPLATE.GridTemplatesSettingHint": "Configure se a área de efeito dos modelos deve ser baseada em grade em vez de euclidiana.",
   "TEMPLATE.TYPES": {
+    "circle": "Círculo",
+    "cone": "Cone",
+    "ray": "Linha",
+    "rect": "Retângulo"
   },
   "TEMPLATE.FIELDS": {
+    "sort.label": "Organizar",
+    "t.label": "Tipo",
+    "direction.label": "Direção",
+    "angle.label": "Ângulo",
+    "distance.label": "Distância",
+    "borderColor.label": "Cor da Borda",
+    "fillColor.label": "Cor de Preenchimento",
+    "texture.label": "Textura de Preenchimento"
   },
   "TILE.ConfigTitle": "Configuração de Peça",
+  "TILE.Dimensions": "Dimensões",
   "TILE.Scale": "Escala da Peça",
   "TILE.ScaleHint": "Ajusta a escala da imagem no eixo X ou Y. A imagem pode exceder sua caixa delimitadora. Valores negativos inverterão a imagem.",
   "TILE.OcclusionModeNone": "Nenhum (Sempre Visível)",
@@ -3157,38 +3277,81 @@
   "TILE.OcclusionModeRoof": "Telhado (Bloqueia Visão e Iluminação)",
   "TILE.OcclusionModeRadial": "Radial (Ao Redor do Token)",
   "TILE.OcclusionModeVision": "Visão (Campo de Visão do Token)",
+  "TILE.VideoOptions": "Opções de Vídeo",
   "TILE.ACTIONS": {
+    "CREATE": "Criar Peça",
+    "UPDATE": "Atualizar Peça"
   },
   "TILE.SECTIONS": {
+    "position": "Ajuste a posição e as dimensões da Peça.",
+    "overhead": "Atributos adicionais que se aplicam se a Peça estiver suspensa no primeiro plano."
   },
   "TILE.TABS": {
+    "position": "Posição",
+    "appearance": "Aparência",
+    "overhead": "Suspensa"
   },
   "TILE.FIELDS": {
+    "sort.label": "Organizar",
     "texture": {
+      "src.label": "Imagem ou Vídeo da Peça",
+      "scaleX.label": "Horizontal",
+      "scaleY.label": "Vertical",
+      "tint.label": "Cor da Tonalidade"
     },
+    "alpha.label": "Opacidade da Peça",
     "occlusion": {
+      "mode.label": "Modo de Oclusão",
+      "alpha.label": "Alfa de Oclusão"
     },
     "restrictions": {
       "light": {
+        "label": "Restringir Luz",
+        "hint": "As fontes de luz são bloqueadas com base em sua elevação em relação à elevação desta Peça?"
       },
       "weather": {
+        "label": "Restringir Clima",
+        "hint": "Os efeitos climáticos são bloqueados com base em sua elevação em relação à elevação desta Peça?"
       }
     },
     "video": {
+      "loop.label": "Repetir Vídeo",
+      "autoplay.label": "Vídeo Automático",
+      "volume.label": "Volume do Vídeo"
     }
   },
   "TIME": {
     "Day": {
+      "one": "Dia",
+      "other": "Dias",
+      "abbr": "d"
     },
     "Hour": {
+      "one": "Hora",
+      "other": "Horas",
+      "abbr": "h"
     },
     "Millisecond": {
+      "one": "Milissegundo",
+      "other": "Milissegundos",
+      "abbr": "ms"
     },
     "Minute": {
+      "one": "Minuto",
+      "other": "Minutos",
+      "abbr": "m"
     },
+    "Now": "Agora",
     "Second": {
+      "one": "Segundo",
+      "other": "Segundos",
+      "abbr": "s"
     },
+    "Since": "{since} atrás",
     "Year": {
+      "one": "Ano",
+      "other": "Anos",
+      "abbr": "a"
     }
   },
   "TOKEN.Assign": "Atribuir Token",
@@ -3498,9 +3661,9 @@
     "RoleNone": "Nenhum",
     "RolePlayer": "Jogador",
     "RoleTrusted": "Jogador Confiável",
-    "RoleAssistant": "Assistente do MJ",
+    "RoleAssistant": "Assistente do Mestre",
     "RoleGamemaster": "Mestre do Jogo",
-    "GM": "MJ"
+    "GM": "Mestre"
   },
   "USERS.AccessKey": "Senha",
   "USERS.Role": "Cargo do Usuário",
@@ -3548,7 +3711,7 @@
     "UnavailableDevice": "Dispositivo Indisponível (usará Padrão)",
     "TURNServerProvisioned": "Providenciado pelo Servidor de Sinalização",
     "CustomTURNServer": "Servidor de Retransmissão Personalizado",
-    "GeneralTabNotGM": "Configurações Gerais de Conferência Áudio/Vídeo só pode ser modificadas pelo MJ",
+    "GeneralTabNotGM": "Configurações Gerais de Conferência Áudio/Vídeo só pode ser modificadas pelo Mestre",
     "AVModeNotes": "Apenas um usuário Mestre de Jogo pode alterar essa configuração, o que exigirá que o Foundry VTT seja recarregado.",
     "ModeDisabled": "Desabilitado",
     "ModeAudioOnly": "Somente Áudio",
