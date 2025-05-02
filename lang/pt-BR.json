@@ -3359,6 +3359,7 @@
   "TOKEN.AssignSuccess": "Protótipo de configuração de Token atualizado para {name}",
   "TOKEN.BarAttributes": "Barras de Atributo",
   "TOKEN.BarValues": "Valores Únicos",
+  "TOKEN.DeleteCombatantWarning": "Você está excluindo um Token que está em Combate. Seu Combatente será excluído permanentemente.",
   "TOKEN.Dimensions": "Dimensões",
   "TOKEN.AnchorHint": "A âncora padrão (0,5, 0,5) é o centro da imagem do Token.",
   "TOKEN.ImageAlts": "Tokens Alternativos do Ator",
@@ -3372,24 +3373,57 @@
   "TOKEN.WarningNoActor": "Este token faz referência a um ator que já não existe mais no mundo.",
   "TOKEN.WarningNoVision": "Você não possui nenhum token com visão nesta cena",
   "TOKEN.TABS": {
+    "identity": "Identidade",
+    "appearance": "Aparência",
+    "vision": "Visão",
+    "light": "Luz",
+    "resources": "Recursos"
   },
   "TOKEN.SECTIONS": {
+    "basic": "Configuração Básica",
+    "animation": "Animação da Luz",
+    "advanced": "Opções Avançadas"
   },
   "TOKEN.FIELDS": {
+    "name.label": "Nome do Token",
+    "sort.label": "Organizar",
+    "movementAction.label": "Ação de Movimento",
+    "actorId.label": "Ator Representado",
+    "actorLink.label": "Vincular Dados do Ator",
+    "displayName.label": "Exibir Nome",
     "appendNumber": {
+      "label": "Adicionar Número Incremental",
+      "hint": "Adicione um número de incremento automático ao nome de tokens desvinculados. Por exemplo \"Goblin 3\"."
     },
     "prependAdjective": {
+      "label": "Adicionar Adjetivo Aleatório",
+      "hint": "Adicione um adjetivo aleatório ao nome de tokens desvinculados. Por exemplo \"Goblin Nervoso\"."
     },
     "occludable.radius": {
+      "label": "Raio de Oclusão",
+      "hint": "Quando este Token estiver abaixo de uma Peça que usa oclusão radial, este valor controla o tamanho do furo que é cortado na Peça para permitir que o Token seja visto através dela."
     },
+    "disposition.label": "Disposição do Token",
     "lockRotation": {
+      "label": "Bloquear Rotação de Arte",
+      "hint": "Impedir que o ângulo de rotação deste Token seja renderizado na Tela."
     },
     "texture": {
+      "src.label": "Caminho da Imagem",
       "fit": {
-      }
+        "label": "Modo de Ajuste da Imagem",
+        "hint": "Ajuste como a imagem se ajusta ao tamanho do Token."
+      },
+      "anchorX.label": "X",
+      "anchorY.label": "Y",
+      "tint.label": "Cor da Tonalidade"
     },
+    "randomImg.label": "Randomizar Imagens Curinga",
     "shape": {
+      "label": "Forma",
+      "hint": "A forma do Token."
     },
+    "alpha.label": "Opacidade do Token",
     "ring": {
       "colors": {
         "ring": {
@@ -3401,6 +3435,8 @@
           "hint": "Uma cor aplicada ao fundo do anel."
         }
       },
+      "effects.label": "Efeitos de Anel",
+      "enabled.label": "Anel Habilitado",
       "subject": {
         "scale": {
           "label": "Correção da Escala do Sujeito",
@@ -3414,32 +3450,60 @@
     },
     "sight": {
       "enabled": {
+        "label": "Visão Habilitada",
+        "hint": "Permite que o token veja espaços iluminados dentro de sua linha de visão."
       },
       "range": {
+        "label": "Alcance da Visão",
+        "hint": "A distância que um token pode ver sem qualquer luz."
       },
       "angle": {
+        "label": "Ângulo da Visão",
+        "hint": "O ângulo do cone de visão (o padrão é 360)."
       },
       "visionMode": {
+        "label": "Modo de Visão",
+        "hint": "Aplica um efeito visual à visão para representar sentidos especiais (o padrão é Visão Básica)."
       },
+      "color.label": "Cor da Visão",
       "attenuation": {
+        "label": "Atenuação",
+        "hint": "Ajuste a intensidade da atenuação da fonte de visão (o padrão é 0)."
       },
       "brightness": {
+        "label": "Brilho da Visão",
+        "hint": "Ajuste o brilho desta fonte de visão. Quanto maior o brilho, melhor o personagem enxerga no escuro (o padrão é 0)."
       },
       "saturation": {
+        "label": "Saturação",
+        "hint": "Ajuste a saturação do fundo que está no raio da fonte de visão (o padrão é 0)."
       },
       "contrast": {
+        "label": "Contraste",
+        "hint": "Ajuste o contraste do fundo que está no raio da fonte de visão (o padrão é 0)."
       }
     },
     "turnMarker": {
       "mode": {
+        "label": "Modo",
+        "hint": "Escolha Padrão para usar as configurações de Combate padrão, Desativado para ocultar o marcador de turno ou Personalizado para um comportamento exclusivo do marcador de turno."
       },
       "animation": {
+        "label": "Animação",
+        "hint": "Escolha um estilo de animação para o marcador de turno de combate deste Token."
       },
       "src": {
+        "label": "Fonte de Mídia",
+        "hint": "Escolha um arquivo de imagem ou vídeo usado para o marcador de turno de combate deste Token."
       },
       "disposition": {
+        "label": "Matiz de Disposição",
+        "hint": "Pinte o marcador de turno de combate deste Token de acordo com sua disposição."
       }
-    }
+    },
+    "displayBars.label": "Exibir Barras",
+    "bar1.attribute.label": "Atributo da Barra 1",
+    "bar2.attribute.label": "Atributo da Barra 2"
   },
   "TOKEN.DISPOSITION.HOSTILE": "Hostil",
   "TOKEN.DISPOSITION.NEUTRAL": "Neutro",
@@ -3451,6 +3515,15 @@
   "TOKEN.DISPLAY_HOVER": "Passagem do Mouse de Qualquer Um",
   "TOKEN.DISPLAY_OWNER": "Sempre para o Dono",
   "TOKEN.DISPLAY_ALWAYS": "Sempre para Todos",
+  "TOKEN.SHAPES.ELLIPSE.label": "Elipse",
+  "TOKEN.SHAPES.ELLIPSE_1.label": "Elipse (Variante 1)",
+  "TOKEN.SHAPES.ELLIPSE_2.label": "Elipse (Variante 2)",
+  "TOKEN.SHAPES.TRAPEZOID.label": "Trapézio",
+  "TOKEN.SHAPES.TRAPEZOID_1.label": "Trapézio (Variante 1)",
+  "TOKEN.SHAPES.TRAPEZOID_2.label": "Trapézio (Variante 2)",
+  "TOKEN.SHAPES.RECTANGLE.label": "Retângulo",
+  "TOKEN.SHAPES.RECTANGLE_1.label": "Retângulo (Variante 1)",
+  "TOKEN.SHAPES.RECTANGLE_2.label": "Retângulo (Variante 2)",
   "TOKEN.Adjectives.ambitious": "Ambicioso",
   "TOKEN.Adjectives.angry": "Zangado",
   "TOKEN.Adjectives.annoyed": "Incomodado",
@@ -3563,7 +3636,8 @@
       "BKG_WAVE": "Onda de Fundo",
       "RING_GRADIENT": "Gradiente de Anel",
       "RING_PULSE": "Pulso de Anel",
-      "INVISIBILITY": "Pulso Espectral"
+      "INVISIBILITY": "Pulso Espectral",
+      "COLOR_OVER_SUBJECT": "Cor Sobre o Sujeito"
     },
     "SHEET": {
       "legend": "Anel Dinâmico de Token"
@@ -3583,32 +3657,60 @@
   },
   "TOKEN.TURNMARKER": {
     "SHEET": {
+      "legend": "Marcador de Turno de Combate"
     },
     "MODES": {
+      "DISABLED": "Desabilitado",
+      "DEFAULT": "Padrão",
+      "CUSTOM": "Personalizado"
     }
   },
   "TOKEN.MOVEMENT": {
     "ACTIONS": {
+      "blink.label": "Teleporte (Piscar)",
+      "burrow.label": "Escavação",
+      "climb.label": "Escalada",
+      "crawl.label": "Rastejar",
+      "displace.label": "Teleporte (Deslocar)",
+      "jump.label": "Pulo",
+      "fly.label": "Voo",
+      "swim.label": "Natação",
+      "walk.label": "Caminhada"
     }
   },
-  "TYPES.Base": "Base",
-  "TYPES.Cards.deck": "Baralho",
-  "TYPES.Cards.hand": "Mão",
-  "TYPES.Cards.pile": "Pilha",
-  "TYPES.JournalEntryPage.image": "Imagem",
-  "TYPES.JournalEntryPage.pdf": "PDF",
-  "TYPES.JournalEntryPage.text": "Texto",
-  "TYPES.JournalEntryPage.video": "Vídeo",
-  "TYPES.Macro.chat": "Chat",
-  "TYPES.Macro.script": "Script",
-  "TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar Nível de Escuridão",
-  "TYPES.RegionBehavior.displayScrollingText": "Exibir Texto de Rolagem",
-  "TYPES.RegionBehavior.executeMacro": "Executar Macro",
-  "TYPES.RegionBehavior.executeScript": "Executar Script",
-  "TYPES.RegionBehavior.pauseGame": "Pausar Jogo",
-  "TYPES.RegionBehavior.suppressWeather": "Suprimir Clima",
-  "TYPES.RegionBehavior.teleportToken": "Teletransportar Token",
-  "TYPES.RegionBehavior.toggleBehavior": "Alternar Comportamento",
+  "TYPES": {
+    "Base": "Base",
+    "Cards": {
+      "deck": "Baralho",
+      "hand": "Mão",
+      "pile": "Pilha"
+    },
+    "JournalEntryPage": {
+      "image": "Imagem",
+      "pdf": "PDF",
+      "text": "Texto",
+      "video": "Vídeo"
+    },
+    "Macro": {
+      "chat": "Chat",
+      "script": "Script"
+    },
+    "RegionBehavior": {
+      "adjustDarknessLevel": "Ajustar Nível de Escuridão",
+      "displayScrollingText": "Exibir Texto de Rolagem",
+      "executeMacro": "Executar Macro",
+      "executeScript": "Executar Script",
+      "modifyMovementCost": "Modificar Custo de Movimento",
+      "pauseGame": "Pausar Jogo",
+      "suppressWeather": "Suprimir Clima",
+      "teleportToken": "Teleportar Token",
+      "toggleBehavior": "Alternar Comportamento"
+    },
+    "TableResult": {
+      "document": "Documento",
+      "text": "Texto"
+    }
+  },
   "DETECTION.LightPerception": "Percepção de Luz",
   "DETECTION.BasicSight": "Visão no Escuro",
   "DETECTION.SeeInvisibility": "Ver Invisibilidade",
@@ -3622,6 +3724,25 @@
   "TEXTURE_DATA.FIT.width": "Largura Total",
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
+    "NavLabel" : "Guias de Gerenciamento de Apresentação" ,
+    "ShowMeHow" : "Mostre-me como" ,
+    "TourCategories" : "Categorias de Apresentação" ,
+    "AllTours" : "Todas as Apresentações" ,
+    "ResetAll" : "Redefinir Todas Apresentações" ,
+    "TourFilter" : "Filtro de Apresentação" ,
+    "TourName" : "Nome da Apresentação" ,
+    "Start" : "Iniciar Apresentação" ,
+    "Resume" : "Retomar Apresentação" ,
+    "Restart" : "Iniciar Apresentação do Início" ,
+    "Reset" : "Redefinir Progresso da Apresentação" ,
+    "NotStarted" : "Não Iniciada" ,
+    "InProgress" : "Em Andamento - {current}/{total}" ,
+    "Completed" : "Concluída" ,
+    "ResetTitle" : "Redefinir Apresentações" ,
+    "ResetWarning" : "Deseja redefinir todo o progresso da apresentação?" ,
+    "ResetSuccess" : "Redefinir o status de conclusão de todas as apresentações." ,
+    "SuggestedTitle" : "Próxima Apresentação Sugerida" ,
+    "SuggestedDescription" : "<p>Você concluiu a Apresentação <strong>{currentTitle}</strong>.</p><p>Sugerimos que você continue com a Apresentação <strong>{nextTitle}</strong>. Deseja prosseguir?</p>"
   },
   "USER": {
     "FIELDS": {
@@ -3657,6 +3778,9 @@
       }
     },
     "MESSAGES": {
+      "KICKED": "O usuário {user} foi <strong>expulso</strong> do Mundo.",
+      "BANNED": "O usuário {user} foi <strong>banido</strong> do Mundo.",
+      "UNBANNED": "O usuário {user} foi <strong>desbanido</strong> do Mundo."
     },
     "RoleNone": "Nenhum",
     "RolePlayer": "Jogador",
@@ -3671,6 +3795,7 @@
   "USERS.KeyShow": "Exibir Senha",
   "USERS.Create": "Criar Usuário Adicional",
   "USERS.Delete": "Excluir Usuário",
+  "USERS.DeleteName": "Excluir Usuário: {name}",
   "USERS.Launch": "Salvar e Voltar",
   "USERS.ManageTitle": "Gestão de Usuários",
   "USERS.UpdateSuccess": "Usuários do jogo atualizados com sucesso, voltando para o Mundo de jogo.",
