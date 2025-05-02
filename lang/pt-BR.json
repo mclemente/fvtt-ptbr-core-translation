@@ -3810,17 +3810,85 @@
   "VISION.ModeTremorsense": "Sentido Sísmico",
   "VISION.ModeLightAmplification": "Amplificação de Luz",
   "WALL.FIELDS": {
+    "c.label": "Coordenadas da Parede",
+    "light.label": "Luz",
+    "move.label": "Movemento",
+    "sight.label": "visão",
+    "sound.label": "Som",
+    "dir.label": "Direção de Restrição",
+    "door.label": "Tipo de Porta",
+    "ds.label": "Estado da Porta",
+    "doorSound.label": "Som da Porta",
     "threshold.attenuation": {
+      "hint": "A distância que a percepção pode penetrar nesta parede é adaptativa em relação à proximidade do observador e ao limite de ativação. Se aplica apenas quando um limite é definido.",
+      "label": "Atenuação do Limite de Proximidade"
     },
     "animation": {
       "strength": {
-      }
+        "label": "Força da Animação",
+        "hint": "Um multiplicador entre 0 e 2 que modifica o quanto a porta se move durante a animação. Por exemplo, para uma porta de vaivém, mais força produz um ângulo de abertura maior. Para uma porta de correr, mais força faz com que a porta deslize mais longe."
+      },
+      "direction.label": "Direção da Abertura",
+      "double.label": "Porta Dupla",
+      "duration.label": "Duração da Animação (ms)",
+      "flip.label": "Textura de Porta Giratória",
+      "texture.label": "Textura da Porta",
+      "type.label": "Tipo de Animação"
     }
   },
   "WALL.ANIMATION_TYPES": {
+    "ASCEND": "Subir",
+    "DESCEND": "Descer",
+    "SLIDE": "Deslizar",
+    "SWING": "Abrir",
+    "SWIVEL": "Girar"
   },
   "WALL.ANIMATION_DIRECTIONS": {
+    "DEFAULT": "Padrão",
+    "REVERSE": "Invertido"
   },
+  "WALL.Title": "Configuração de Parede",
+  "WALL.TitleMany": "Configuração de Parede [Múltipla]",
+  "WALL.Instructions": "Personalize como este segmento de parede restringe o movimento ou os sentidos.",
+  "WALL.CoordinateRange": "({p0X}, {p0Y}) à ({p1X}, {p1Y})",
+  "WALL.DoorAnimation": "Animação de Porta",
+  "WALL.DoorConfiguration": "Configuração de Porta",
+  "WALL.NWalls": "[{n} Paredes]",
+  "WALL.Restrictions": "Restrições de Parede",
+  "WALL.Submit": "Atualizar Parede",
+  "WALL.SenseTypes.NONE": "Nenhum",
+  "WALL.SenseTypes.LIMITED": "Limitado",
+  "WALL.SenseTypes.NORMAL": "Normal",
+  "WALL.SenseTypes.PROXIMITY": "Proximidade",
+  "WALL.SenseTypes.DISTANCE": "Proximidade Reversa",
+  "WALL.Directions.BOTH": "Ambos",
+  "WALL.Directions.LEFT": "Esquerda",
+  "WALL.Directions.RIGHT": "Direita",
+  "WALL.DoorTypes.NONE": "Nenhuma",
+  "WALL.DoorTypes.DOOR": "Porta",
+  "WALL.DoorTypes.SECRET": "Porta Secreta",
+  "WALL.DoorStates.CLOSED": "Fechada",
+  "WALL.DoorStates.OPEN": "Aberta",
+  "WALL.DoorStates.LOCKED": "Trancada",
+  "WALL.DoorSounds.FuturisticFast": "Futurista, Rápido",
+  "WALL.DoorSounds.FuturisticHydraulic": "Futurista, Hidráulica",
+  "WALL.DoorSounds.FuturisticForcefield": "Futurista, Campo de Força",
+  "WALL.DoorSounds.Industrial": "Industrial",
+  "WALL.DoorSounds.IndustrialCreaky": "Industrial, Barulhenta",
+  "WALL.DoorSounds.Jail": "Cadeia",
+  "WALL.DoorSounds.MagicDoor": "Porta Mágica",
+  "WALL.DoorSounds.MagicWall": "Parede Mágica",
+  "WALL.DoorSounds.Metal": "Metal",
+  "WALL.DoorSounds.SlidingMetal": "Deslizando, Metal (Leve)",
+  "WALL.DoorSounds.SlidingMetalHeavy": "Deslizando, Metal (Pesado)",
+  "WALL.DoorSounds.SlidingModern": "Deslizando, Moderna",
+  "WALL.DoorSounds.SlidingWood": "Deslizando, Madeira",
+  "WALL.DoorSounds.StoneBasic": "Pedra",
+  "WALL.DoorSounds.StoneRocky": "Pedra, Rochosa",
+  "WALL.DoorSounds.StoneSandy": "Pedra, Arenosa",
+  "WALL.DoorSounds.WoodBasic": "Madeira, Básica",
+  "WALL.DoorSounds.WoodCreaky": "Madeira, Barulhenta",
+  "WALL.DoorSounds.WoodHeavy": "Madeira, Pesada",
   "WEBRTC": {
     "Title": "Configuração de Áudio/Vídeo",
     "MenuLabel": "Configurar Áudio/Vídeo",
@@ -3832,8 +3900,11 @@
     "DisableAudioOutput": "Desabilitar Saída de Áudio",
     "DefaultSource": "Dispositivo Padrão",
     "DevicesSubsections": {
+      "Video": "Vídeo",
+      "Audio": "Áudio"
     },
     "UnavailableDevice": "Dispositivo Indisponível (usará Padrão)",
+    "TURNServerConfiguration": "Configuração Personalizada de Servidor",
     "TURNServerProvisioned": "Providenciado pelo Servidor de Sinalização",
     "CustomTURNServer": "Servidor de Retransmissão Personalizado",
     "GeneralTabNotGM": "Configurações Gerais de Conferência Áudio/Vídeo só pode ser modificadas pelo Mestre",
@@ -3886,13 +3957,18 @@
     "ConnectionLostWarning": "Conexão perdida com o Servidor de Sinalização Áudio/Vídeo. Tentando re-estabelecer conexão.",
     "GenericError": "Erro WebRTC: ",
     "NoSSLError": "Você não pode utilizar chamadas de Áudio/Vídeo sem que seu servidor Foundry VTT esteja utilizando certificados SSL. Veja a documentação online para instruções.",
+    "Volume": "Volume",
     "WarningCannotEnableVideo": "Você não pode habilitar sua câmera porque não tem permissão para transmitir vídeo.",
     "WarningCannotEnableAudio": "Você não pode habilitar seu microfone porque você não tem permissão para transmitir áudio.",
     "WorldSettings": {
       "FIELDS": {
         "mode": {
+          "label": "Modo de Conferência",
+          "hint": "Configurar definições específicas para o componente WebRTC de Áudio/Vídeo integrado."
         },
         "turn": {
+          "type.label": "Servidor de Retransmissão",
+          "url.label": "URL",
           "username.label": "Nome de Usuário",
           "password.label": "Senha"
         }
@@ -3902,17 +3978,31 @@
       "FIELDS": {
         "voice": {
           "mode": {
+            "label": "Transmissão de Voz",
+            "hint": "Escolha como sua voz será transmitida em chamadas de Áudio/Vídeo."
           }
         },
+        "dockPosition.label": "Posição da Câmera",
+        "nameplates.label": "Placas de Identificação",
+        "borderColors.label": "Usar cores de borda do jogador",
         "videoSrc": {
+          "label": "Dispositivo de Captura",
+          "hint": "Selecione o dispositivo de captura de vídeo que deseja usar, se houver."
         },
         "audioSrc": {
+          "label": "Dispositivo de Captura",
+          "hint": "Selecione o dispositivo de captura de áudio que deseja usar, se houver."
         },
         "audioSink": {
+          "label": "Dispositivo de Saída",
+          "hint": "Selecione qual dispositivo de saída de áudio você deseja usar."
         }
       }
     },
     "TABS": {
+      "general": "Geral",
+      "devices": "Dispositivos",
+      "server": "Servidor"
     }
   },
   "WEATHER.Rain": "Chuva",
@@ -3923,12 +4013,21 @@
   "WEATHER.Fog": "Névoa",
   "WORLD": {
     "JOIN_THEMES": {
+      "default": "Padrão",
+      "minimal": "Mínimo"
     },
     "Title": {
+      "Create": "Criar Mundo",
+      "Update": "Editar Mundo: {world}"
     },
+    "SubmitUpdate": "Atualizar Mundo",
+    "ResetModules": "Redefinir Módulos Ativos",
     "FIELDS": {
+      "title.label": "Título do Mundo",
+      "id.label": "Caminho dos Dados",
       "system.label": "Sistema de Jogo",
       "background.label": "Imagem de Fundo",
+      "joinTheme.label": "Tema da Página de Início",
       "nextSession.label": "Próximo Sessão",
       "resetKeys.label": "Redefinir Senhas de Usuários",
       "safeMode": {
