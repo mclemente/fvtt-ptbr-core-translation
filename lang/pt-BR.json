@@ -433,9 +433,11 @@
       "drawn.label": "Comprada",
       "face.label": "Frentes",
       "faces": {
-        "name.label": "Nome da Face",
-        "img.label": "Imagem da Face",
-        "text.label": "Texto da Face"
+        "element": {
+          "name.label": "Nome da Face",
+          "img.label": "Imagem da Face",
+          "text.label": "Texto da Face"
+        }
       },
       "back": {
         "name.label": "Nome do Verso",
@@ -610,7 +612,8 @@
   "COMPENDIUM.ToggleLocked": {
     "Option": "Alternar Trava de Edição",
     "Title": "Alternar Trava de Edição: {compendium}",
-    "Warning": "Você está tentando destravar a edição de um compêndio que não pertence a este mundo. Quaisquer mudanças que você fizer nele podem ser perdidas se o sistema ou módulo que o contém for atualizado. Você pode duplicar este compêndio para o seu mundo em vez disso. Você deseja prosseguir?"
+    "Unlock": "Desbloquear",
+    "Warning": "Você está tentando destravar a edição de um compêndio que não pertence a este mundo. Quaisquer mudanças que você fizer nele podem ser perdidas se o sistema ou módulo que o contém for atualizado. Você pode duplicar este compêndio para o seu mundo em vez disso. Como você quer prosseguir?"
   },
   "COMPENDIUM.CannotViewWarning": "Você não tem permissão suficiente para ver este Pacote de Compêndio.",
   "COMPENDIUM.OwnershipInheritBelow": "Herdar de baixo",
@@ -640,7 +643,6 @@
     "TargetSelect": "Selecionar Alvos",
     "TargetSelectP": "Marque como alvo quaisquer tokens que você pode ver.",
     "BasicMeasure": "Medir Distância",
-    "BasicMeasureWaypoints": "Colocar Ponto",
     "GroupMeasure": "Controles de Medição",
     "MeasureType": "Tipo de Modelo",
     "MeasureConfigHint": "Configure o posicionamento e a exibição do modelo de medição.",
@@ -799,11 +801,8 @@
     "KeyPaste": "Colar Elementos na Tela",
     "KeyUndo": "Desfazer Ação na Tela",
     "KeyHotbar": "Ativar Espaço da Barra de Ações",
-    "RulerTitle": "Medição com Régua",
-    "RulerMeasure": "Medir Distância com a Régua",
-    "RulerWaypoint": "Colocar Ponto de Parada",
-    "RulerMove": "Mover Token pelo Caminho Medido",
-    "RulerWhile": "enquanto mede a partir de um Token",
+    "RulerPlaceWaypoint": "Colocar Ponto de Parada",
+    "RulerRemoveWaypoint": "Remover Ponto de Parada",
     "ObjectSheet": "Abrir Ficha do Objeto Referenciado",
     "ObjectHUD": "Exibir HUD do Objeto (Se Aplicável)",
     "ObjectConfig": "Abrir Ficha de Configuração do Objeto",
@@ -815,6 +814,7 @@
     "MouseWheel": "Roda de Rolagem",
     "DragDrop": "Arrastar e Soltar",
     "UnconstrainedMovement": "Movimento Irrestrito",
+    "UnconstrainedMovementP": "Quando ativo, você pode mover Tokens através de paredes e terrenos intransitáveis.",
     "TokenHeader": "Controles de Token",
     "TokenPlaceHidden": "Colocar Token Oculto",
     "TokenTarget": "Definir Token (não possuído) como Alvo",
@@ -1116,9 +1116,9 @@
     "RequiresGenerationReinstall": "A versão {version} do Foundry Virtual Tabletop já está disponível, mas não pode ser instalada a partir do aplicativo Foundry Virtual Tabletop porque é uma atualização de nova geração que deve ser instalada manualmente reinstalando o software a partir do site <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RequiresElectronReinstall": "A versão {version} do Foundry Virtual Tabletop já está disponível, mas não pode ser instalada a partir do aplicativo Foundry Virtual Tabletop porque inclui uma nova versão do Electron que só pode ser instalada manualmente reinstalando o software a partir do site <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RESOLUTION": {
-      "Window": "O Foundry Virtual Tabletop requer uma resolução de tela de {reqWidth}px por {reqHeight}px ou superior. Seu monitor tem uma resolução de {curWidth}px por {curHeight}px. Você deve aumentar a resolução ou usar um dispositivo de exibição diferente, caso contrário, alguns recursos do software não funcionarão corretamente.",
-      "Scale": "O Foundry Virtual Tabletop requer uma tela utilizável com dimensões de {reqWidth}px por {reqHeight}px ou maiores. As dimensões desta janela são {curWidth}px por {curHeight}px. No momento, você tem um fator de zoom aplicado no sistema operacional ou no navegador, o que está reduzindo o tamanho efetivo da sua janela. Você deve aumentar o tamanho da sua janela ou reduzir o fator de zoom aplicado ao seu navegador, caso contrário, alguns recursos do software não funcionarão corretamente.",
-      "Screen": "O Foundry Virtual Tabletop requer dimensões de tela utilizáveis ​​de {reqWidth}px por {reqHeight}px ou maiores. As dimensões atuais desta janela são {curWidth}px por {curHeight}. Você deve aumentar o tamanho da sua janela, caso contrário, alguns recursos do software não funcionarão corretamente."
+      "Screen": "O Foundry Virtual Tabletop requer uma resolução de tela de {reqWidth}px por {reqHeight}px ou superior. Seu monitor tem uma resolução de {curWidth}px por {curHeight}px. Você precisa aumentar a resolução ou usar um dispositivo de exibição diferente, caso contrário, alguns recursos do software não funcionarão corretamente.",
+      "Scale": "O Foundry Virtual Tabletop requer uma janela utilizável com dimensões de {reqWidth}px por {reqHeight}px ou maiores. As dimensões atuais desta janela são {curWidth}px por {curHeight}px. No momento, você tem um fator de zoom aplicado no sistema operacional ou no navegador, o que está reduzindo o tamanho efetivo da sua janela. Você deve aumentar o tamanho da sua janela ou reduzir o fator de zoom aplicado ao seu navegador, caso contrário, alguns recursos do software não funcionarão corretamente.",
+      "Window": "O Foundry Virtual Tabletop requer dimensões de janela utilizáveis de {reqWidth}px por {reqHeight}px ou maiores. As dimensões atuais desta janela são {curWidth}px por {curHeight}px. Você precisa aumentar o tamanho da sua janela, caso contrário, alguns recursos do software não funcionarão corretamente."
     }
   },
   "WARNING.GridConfigNoBG": "Você está usando a Ferramenta de Configuração da Grade em uma Cena que não possui imagem de fundo. Isso não é recomendável e poderá gerar resultados inesperados.",
@@ -1241,6 +1241,7 @@
     "TraverseBack": "Voltar",
     "NoResults": "Não foram encontrados resultados nesse local.",
     "Upload": "Enviar",
+    "CannotUpload": "Uploads para este diretório não são permitidos.",
     "Search": "Procurar",
     "ErrorTooLarge": "O arquivo que você tentou enviar é grande demais para o seu servidor proxy.",
     "ErrorSomethingWrong": "Algo deu errado com sua solicitação de envio de arquivo.",
@@ -1359,6 +1360,7 @@
   "JOURNAL.ConfigureCategoriesTitle": "Categorias {name}",
   "JOURNAL.CategoryName": "Nome da Categoria",
   "JOURNAL.Uncategorized": "Sem Categoria",
+  "JOURNAL.UnnamedCategory": "<Categoria Sem Nome>",
   "JOURNALENTRYPAGE.DefaultPageSheet": "Ficha {page} Padrão",
   "JOURNALENTRYPAGE.Format": "Formatação",
   "JOURNALENTRYPAGE.Page": "Página",
@@ -1735,9 +1737,9 @@
     "fade.label": "Duração do Desvanecimento",
     "description.label": "Descrição do Som"
   },
-  "SCENE.Accessibility" : "Permissões",
-  "SCENE.AccessibilityGM" : "Apenas Mestre",
-  "SCENE.AccessibilityAll" : "Todos Jogadores",
+  "SCENE.Accessibility": "Permissões",
+  "SCENE.AccessibilityGM": "Apenas Mestre",
+  "SCENE.AccessibilityAll": "Todos Jogadores",
   "SCENE.Activate": "Ativar",
   "SCENE.BackgroundScale": "Escala da Imagem de Fundo",
   "SCENE.BackgroundScaleHint": "Use SHIFT+Roda do Mouse ou SHIFT+Seta para Cima e SHIFT+Seta para Baixo para ajustar o tamanho da imagem de fundo.",
@@ -1776,7 +1778,7 @@
   "SCENE.InvalidDimension": "A dimensão fornecida resultaria em um valor não-inteiro para a outra dimensão. Tente um valor diferente ou desvincule-as.",
   "SCENE.Loading": "Carregando {name}",
   "SCENE.Notes": "Notas da Cena",
-  "SCENE.Pixels" : "Pixels",
+  "SCENE.Pixels": "Pixels",
   "SCENE.Preload": "Pré-carregar Cena",
   "SCENE.View": "Ver Cena",
   "SCENE.ShiftBG": "Fundo Deslocado",
@@ -1815,7 +1817,7 @@
       "type.label": "Tipo de Grade",
       "size": {
         "label": "Tamanho da Grade",
-        "hint" : "O tamanho do pixel de um único espaço de grade. Use a ferramenta Configuração de Grade para ajustar visualmente isso."
+        "hint": "O tamanho do pixel de um único espaço de grade. Use a ferramenta Configuração de Grade para ajustar visualmente isso."
       },
       "thickness.label": "Espessura da Grade",
       "color.label": "Cor da Grade",
@@ -1825,7 +1827,7 @@
       "style.label": "Estilo da Grade"
     },
     "padding": {
-      "label" : "Porcentagem de Preenchimento",
+      "label": "Porcentagem de Preenchimento",
       "hint": "Uma quantidade de preenchimento adicional ao redor da imagem de fundo da cena que fornece espaço de tela utilizável."
     },
     "tokenVision": {
@@ -1834,11 +1836,11 @@
     },
     "fog": {
       "exploration": {
-        "label" : "Exploração de Névoa",
-        "hint" : "Se esta configuração estiver habilitada, a exploração da névoa de guerra será rastreada por usuário e armazenada no banco de dados à medida que a cena for explorada. Caso contrário, a exploração da névoa não ocorrerá e, em vez disso, os Tokens serão limitados apenas ao que eles podem ver no momento."
+        "label": "Exploração de Névoa",
+        "hint": "Se esta configuração estiver habilitada, a exploração da névoa de guerra será rastreada por usuário e armazenada no banco de dados à medida que a cena for explorada. Caso contrário, a exploração da névoa não ocorrerá e, em vez disso, os Tokens serão limitados apenas ao que eles podem ver no momento."
       },
       "overlay": {
-        "label" : "Imagem da Névoa de Guerra",
+        "label": "Imagem da Névoa de Guerra",
         "hint": "Uma imagem opcional de névoa de guerra a ser desenhada acima de partes inexploradas da cena."
       },
       "colors": {
@@ -1855,7 +1857,7 @@
     "environment": {
       "globalLight": {
         "enabled": {
-          "label" : "Iluminação Global",
+          "label": "Iluminação Global",
           "hint": "Esta Cena contém uma fonte global de luz que fornece a todas as áreas da Cena um nível básico de iluminação."
         },
         "darkness.max": {
@@ -1878,7 +1880,7 @@
     },
     "environment.base": {
       "luminosity": {
-        "label":"Luminosidade",
+        "label": "Luminosidade",
         "hint": "Controle o brilho da cena. Uma luminosidade mais alta torna a cena brilhante como um dia ensolarado, enquanto uma luminosidade mais baixa a torna mais escura e sombria."
       },
       "saturation": {
@@ -1915,8 +1917,8 @@
       "hint": "Um Som específico dentro da Playlist de Áudio, que deve ser reproduzido quando esta Cena estiver ativa."
     },
     "weather": {
-      "label" : "Efeito Climático",
-      "hint" : "Exibir um Efeito Climático ativo que esteja presente nesta cena."
+      "label": "Efeito Climático",
+      "hint": "Exibir um Efeito Climático ativo que esteja presente nesta cena."
     }
   },
   "SCENE.TABS": {
@@ -1990,9 +1992,10 @@
         "label": "Idioma Padrão",
         "hint": "Você pode escolher um idioma padrão para o aplicativo escolhendo um módulo que fornece os arquivos de tradução principais para esse idioma."
       },
+      "upnp.label": "Habilitar UPnP",
       "port": {
         "label": "Porta",
-        "hint": "Você pode escolher qual porta o Foundry Virtual Tabletop usa para o tráfego de conexão TCP e habilitar ou desabilitar o Universal Plug and Play (UPnP)."
+        "hint": "Escolha qual porta o Foundry Virtual Tabletop usa para o tráfego de conexão TCP e habilite ou desabilite o Universal Plug and Play (UPnP)."
       },
       "compressStatic": {
         "label": "Compactar Arquivos Estáticos",
@@ -2375,7 +2378,7 @@
     "WorldCoreMigrationRequired": "<p>Carregar o mundo <strong>{world}</strong> migrará seu modelo de dados de uma versão mais antiga do software (<code>{oldVersion}</code>) para a versão <strong>{newVersion}</strong> instalada atualmente.</p>",
     "WorldSystemMigrationRequired": "<p>Este mundo foi carregado pela última vez com uma versão mais antiga do sistema (<code>{oldVersion}</code>) que a versão <strong>{newVersion}</strong> do sistema atualmente instalada e pode exigir uma migração de sistema.</p>",
     "WorldMigrationSystemUnavailable": "<p>A versão instalada do sistema de jogo <strong>{system}</strong> (<code>{systemVersion}</code>) não foi verificada como compatível com a versão do software. Não é possível garantir o sucesso da migração.</p>",
-    "WorldMigrationDisableModules": "<p>Não se esqueça de atualizar seu sistema e módulos instalados antes de migrar seu mundo. Como parte desta migração para uma nova geração do programa, todos os módulos serão desativados. Você pode reativá-los após a migração ser concluída.</p>",
+    "WorldMigrationDisableModules": "<p>Certifique-se de atualizar seu sistema de jogo e os módulos instalados antes de migrar seu mundo. Como parte dessa migração para uma nova geração de software, todos os módulos e cenas ativas serão desativados e qualquer áudio reproduzido será interrompido. Você poderá reativar esses módulos após a conclusão da migração.</p>",
     "WorldMigrationBackupPrompt": "<p><strong>Não é possível reverter este processo</strong>. É recomendado fazer backup dos dados do seu mundo antes de prosseguir. Você precisará de um backup para restaurar a versão anterior do programa</p>",
     "WorldMigrationCreateBackup": "Criar um backup antes da migração?",
     "WorldMigrationBegin": "Iniciar migração",
@@ -2496,6 +2499,16 @@
         "World": "O sistema deste mundo foi verificado pela última vez para a versão do software principal {verified}"
       }
     },
+    "INSTALL_PACKAGE": {
+      "ManifestIncompatible": {
+        "Title": "Aviso de Compatibilidade",
+        "Warning": [
+          "O {packageType} no URL fornecido não é compatível com a versão atual do Foundry Virtual Tabletop.",
+          "Tem certeza de que deseja continuar com a instalação?"
+        ]
+      },
+      "ManifestWrongPackageType": "O URL fornecido não parece apontar para um {packageType}."
+    },
     "UPDATE_NOTES": {
       "Title": "Notas de Versão: {release}",
       "FullList": "Veja a <a href=\"{url}\" target=\"_blank\">lista completa</a> de Notas de Versão.",
@@ -2606,22 +2619,26 @@
         "hint": "Uma URL de site onde mais detalhes sobre este pacote podem ser descobertos."
       },
       "authors": {
-        "name.label": "Nome do Autor",
-        "discord.label": "Usuário do Discord",
-        "email.label": "Endereço de Email",
-        "url.label": "URL do Site"
+        "element": {
+          "name.label": "Nome do Autor",
+          "discord.label": "Nome de usuário do Discord",
+          "email.label": "Endereço de email",
+          "url.label": "URL do site"
+        }
       },
       "packs": {
-        "name": {
-          "label": "Nome",
-          "hint": "Uma sequência alfanumérica exclusiva sem caracteres especiais que identifica o pacote do compêndio.",
-          "disabledHint": "Você não pode alterar o nome deste pacote de compêndio porque ele já existe."
-        },
-        "label.label": "Etiqueta",
-        "type.label": "Tipo de Documento",
-        "system": {
-          "label": "Sistema Necessário",
-          "hint": "Pacotes de compêndio de Atores, Itens ou Aventuras (que contêm Atores ou Itens) devem declarar para qual sistema de jogo específico eles foram projetados."
+        "element": {
+          "name": {
+            "label": "Nome",
+            "hint": "Uma sequência alfanumérica exclusiva, sem caracteres especiais, que identifica o pacote do compêndio.",
+            "disabledHint": "Você não pode alterar o nome deste pacote de compêndio porque ele já existe."
+          },
+          "label.label": "Nome",
+          "type.label": "Tipo de Documento",
+          "system": {
+            "label": "Sistema Necessário",
+            "hint": "Pacotes de compêndio de Atores, Itens ou Aventuras (que contêm Atores ou Itens) devem declarar para qual sistema de jogo específico eles foram projetados."
+          }
         }
       },
       "compatibility": {
@@ -3724,25 +3741,25 @@
   "TEXTURE_DATA.FIT.width": "Largura Total",
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
-    "NavLabel" : "Guias de Gerenciamento de Apresentação" ,
-    "ShowMeHow" : "Mostre-me como" ,
-    "TourCategories" : "Categorias de Apresentação" ,
-    "AllTours" : "Todas as Apresentações" ,
-    "ResetAll" : "Redefinir Todas Apresentações" ,
-    "TourFilter" : "Filtro de Apresentação" ,
-    "TourName" : "Nome da Apresentação" ,
-    "Start" : "Iniciar Apresentação" ,
-    "Resume" : "Retomar Apresentação" ,
-    "Restart" : "Iniciar Apresentação do Início" ,
-    "Reset" : "Redefinir Progresso da Apresentação" ,
-    "NotStarted" : "Não Iniciada" ,
-    "InProgress" : "Em Andamento - {current}/{total}" ,
-    "Completed" : "Concluída" ,
-    "ResetTitle" : "Redefinir Apresentações" ,
-    "ResetWarning" : "Deseja redefinir todo o progresso da apresentação?" ,
-    "ResetSuccess" : "Redefinir o status de conclusão de todas as apresentações." ,
-    "SuggestedTitle" : "Próxima Apresentação Sugerida" ,
-    "SuggestedDescription" : "<p>Você concluiu a Apresentação <strong>{currentTitle}</strong>.</p><p>Sugerimos que você continue com a Apresentação <strong>{nextTitle}</strong>. Deseja prosseguir?</p>"
+    "NavLabel": "Guias de Gerenciamento de Apresentação",
+    "ShowMeHow": "Mostre-me como",
+    "TourCategories": "Categorias de Apresentação",
+    "AllTours": "Todas as Apresentações",
+    "ResetAll": "Redefinir Todas Apresentações",
+    "TourFilter": "Filtro de Apresentação",
+    "TourName": "Nome da Apresentação",
+    "Start": "Iniciar Apresentação",
+    "Resume": "Retomar Apresentação",
+    "Restart": "Iniciar Apresentação do Início",
+    "Reset": "Redefinir Progresso da Apresentação",
+    "NotStarted": "Não Iniciada",
+    "InProgress": "Em Andamento - {current}/{total}",
+    "Completed": "Concluída",
+    "ResetTitle": "Redefinir Apresentações",
+    "ResetWarning": "Deseja redefinir todo o progresso da apresentação?",
+    "ResetSuccess": "Redefinir o status de conclusão de todas as apresentações.",
+    "SuggestedTitle": "Próxima Apresentação Sugerida",
+    "SuggestedDescription": "<p>Você concluiu a Apresentação <strong>{currentTitle}</strong>.</p><p>Sugerimos que você continue com a Apresentação <strong>{nextTitle}</strong>. Deseja prosseguir?</p>"
   },
   "USER": {
     "FIELDS": {
