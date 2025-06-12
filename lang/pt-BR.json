@@ -3829,8 +3829,8 @@
   "WALL.FIELDS": {
     "c.label": "Coordenadas da Parede",
     "light.label": "Luz",
-    "move.label": "Movemento",
-    "sight.label": "visão",
+    "move.label": "Movimento",
+    "sight.label": "Visão",
     "sound.label": "Som",
     "dir.label": "Direção de Restrição",
     "door.label": "Tipo de Porta",
