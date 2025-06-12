@@ -860,7 +860,8 @@
     "ObjectConfigured": "Você não pode realizar esta ação enquanto configura outro objeto."
   },
   "DICE": {
-    "ErrorNonNumeric": "A fórmula de rolagem de dados {formula} não produziu um resultado numérico.",
+    "ErrorNonNumeric": "A fórmula de rolagem de dados \\\"{formula}\\\" não produziu um resultado numérico.",
+    "ErrorNotParsable": "A fórmula de rolagem de dados \\\"{formula}\\\" não é uma string.",
     "ManualRoll": "Rolagem Manual",
     "RollResolution": "Resolução de Rolagem",
     "SubmitRoll": "Enviar Rolagem",
@@ -1215,10 +1216,10 @@
     }
   },
   "FILES": {
-    "CreateDirectory": "Criar Diretório",
+    "CreateDirectory": "Criar Pasta",
     "CreateSubfolder": "Criar subpasta",
     "DirectoryName": {
-      "Label": "Nome do Diretório",
+      "Label": "Nome da Pasta",
       "Placeholder": "minha-pasta"
     },
     "TogglePrivacy": "Alternar Modo de Privacidade",
@@ -1230,25 +1231,25 @@
     "FavoritesLabel": "Favoritos",
     "AddFavorite": "Adicionar Pasta Atual aos Favoritos",
     "RemoveFavorite": "Remover Pasta dos Favoritos",
-    "DirectoryPathLabel": "Caminho do Diretório",
+    "DirectoryPathLabel": "Caminho da Pasta",
     "FilterLabel": "Filtrar Resultados",
     "S3Label": "S3 Bucket",
     "Selected": "Selecionado",
     "SelectFile": "Selecionar Arquivo",
-    "SelectFolder": "Selecionar Diretório",
+    "SelectFolder": "Selecionar Pasta",
     "TileSize": "Tamanho da Grade do Recurso",
     "TileSizeHint": "Especifique o tamanho da grade (em pixels) da arte da peça, para que ele seja redimensionado automaticamente quando colocado na sua Cena ativa.",
     "TraverseBack": "Voltar",
     "NoResults": "Não foram encontrados resultados nesse local.",
     "Upload": "Enviar",
-    "CannotUpload": "Uploads para este diretório não são permitidos.",
+    "CannotUpload": "Envios para esta pasta são proibidos. Se necessário, crie uma nova pasta de nível superior para seus envios.",
     "Search": "Procurar",
     "ErrorTooLarge": "O arquivo que você tentou enviar é grande demais para o seu servidor proxy.",
     "ErrorSomethingWrong": "Algo deu errado com sua solicitação de envio de arquivo.",
-    "WarnUploadModules": "Você enviou arquivos para um diretório de módulo ou sistema. Isso geralmente <strong>não é seguro</strong> porque as atualizações do sistema ou módulo excluirão seus arquivos.",
+    "WarnUploadModules": "Você enviou arquivos para uma pasta de módulo ou sistema. Isso geralmente é <strong>inseguro</strong>, pois atualizações no sistema ou módulo excluirão seus arquivos.",
     "AlreadyFavorited": "{path} já está em seus favoritos.",
     "TitleAny": "Navegador de Arquivos",
-    "TitleFolder": "Navegador de Diretórios",
+    "TitleFolder": "Navegador de Pastas",
     "TitleFont": "Navegador de Fontes",
     "TitleImageVideo": "Explorador de Imagem ou Vídeo",
     "TitleImage": "Explorador de Imagem",
@@ -2015,12 +2016,12 @@
       },
       "sslCert": {
         "label": "Certificado",
-        "hint": "Você pode executar o servidor usando criptografia Secure Socket Layer (SSL), fornecendo caminhos para os arquivos de certificado e chave. Os caminhos são absolutos ou relativos ao subdiretório Config nos dados do usuário."
+        "hint": "Você pode executar o servidor usando criptografia Secure Socket Layer (SSL), fornecendo caminhos para os arquivos de certificado e chave. Os caminhos são absolutos ou relativos à subpasta Config nos dados do usuário."
       },
       "sslKey.label": "Chave",
       "awsConfig": {
         "label": "Configuração de Caminho da AWS",
-        "hint": "Você pode fornecer um arquivo de configuração da AWS para integração com o S3. O caminho é absoluto ou relativo ao subdiretório Config dos dados do usuário."
+        "hint": "Você pode fornecer um arquivo de configuração da AWS para integração com o S3. O caminho é absoluto ou relativo à subpasta Config dos dados do usuário."
       },
       "fullscreen": {
         "label": "Modo Tela Cheia",
