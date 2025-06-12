@@ -860,8 +860,8 @@
     "ObjectConfigured": "Você não pode realizar esta ação enquanto configura outro objeto."
   },
   "DICE": {
-    "ErrorNonNumeric": "A fórmula de rolagem de dados \\\"{formula}\\\" não produziu um resultado numérico.",
-    "ErrorNotParsable": "A fórmula de rolagem de dados \\\"{formula}\\\" não é uma string.",
+    "ErrorNonNumeric": "A fórmula de rolagem de dados \"{formula}\" não produziu um resultado numérico.",
+    "ErrorNotParsable": "A fórmula de rolagem de dados \"{formula}\" não é uma string.",
     "ManualRoll": "Rolagem Manual",
     "RollResolution": "Resolução de Rolagem",
     "SubmitRoll": "Enviar Rolagem",
