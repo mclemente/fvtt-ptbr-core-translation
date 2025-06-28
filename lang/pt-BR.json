@@ -1032,7 +1032,7 @@
   "EFFECT.MODE_OVERRIDE": "Sobrepor",
   "EFFECT.TransferLegacy": "Transferir Efeito para Ator",
   "EFFECT.TransferHintLegacy": "Este efeito será copiado para o Ator quando o Item deste Efeito for criado no Ator e será excluído se aquele Item for removido.",
-  "EFFECT.DurationTurns": "Duração do Efeito (Combat)",
+  "EFFECT.DurationTurns": "Duração do Efeito (Combate)",
   "EFFECT.StartTurns": "Início do Efeito",
   "EFFECT.ChangeKey": "Atributo Chave",
   "EFFECT.ChangeMode": "Mudar o Modo",
