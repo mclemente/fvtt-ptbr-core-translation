@@ -1032,8 +1032,8 @@
   "EFFECT.MODE_OVERRIDE": "Sobrepor",
   "EFFECT.TransferLegacy": "Transferir Efeito para Ator",
   "EFFECT.TransferHintLegacy": "Este efeito será copiado para o Ator quando o Item deste Efeito for criado no Ator e será excluído se aquele Item for removido.",
-  "EFFECT.DurationTurns": "Duração do Efeito (Turnos)",
-  "EFFECT.StartTurns": "Efeito de Início do Turno",
+  "EFFECT.DurationTurns": "Duração do Efeito (Combate)",
+  "EFFECT.StartTurns": "Início do Efeito",
   "EFFECT.ChangeKey": "Atributo Chave",
   "EFFECT.ChangeMode": "Mudar o Modo",
   "EFFECT.ChangeValue": "Valor do Efeito",
@@ -1242,7 +1242,7 @@
     "TraverseBack": "Voltar",
     "NoResults": "Não foram encontrados resultados nesse local.",
     "Upload": "Enviar",
-    "CannotUpload": "Envios para esta pasta são proibidos. Se necessário, crie uma nova pasta de nível superior para seus envios.",
+    "CannotUpload": "Envios para esta pasta são proibidos pois o conteúdo aqui pode ser sobrescrito durante atualizações. Em vez disso, envie para a sua pasta \"assets\" ou outra local permitido.",
     "Search": "Procurar",
     "ErrorTooLarge": "O arquivo que você tentou enviar é grande demais para o seu servidor proxy.",
     "ErrorSomethingWrong": "Algo deu errado com sua solicitação de envio de arquivo.",
@@ -1962,6 +1962,11 @@
       "yes": "Permitir Compartilhamento",
       "no": "Recusar Compartilhamento"
     },
+    "ChangePassword": {
+      "label": "Mudar Senha",
+      "hint": "Digite a senha de administrador atual.",
+      "title": "Digite a Senha Atual"
+    },
     "SECTIONS": {
       "FVTTConfig": "Configuração do Foundry VTT",
       "ServerConfig": "Configuração do Servidor",
@@ -2127,6 +2132,8 @@
   "SETTINGS.GridDiagonalsAlternating1": "Alternado (1/2/1)",
   "SETTINGS.GridDiagonalsAlternating2": "Alternado (2/1/2)",
   "SETTINGS.GridDiagonalsIllegal": "Ilegal (∞)",
+  "SETTINGS.UniversalKeybindingsN": "Teclas Universais (experimental)",
+  "SETTINGS.UniversalKeybindingsL": "Melhora o suporte para teclados com layouts diferentes, como ABNT, AZERTY, QWERTZ, Kana, etc. Este é um recurso experimental.",
   "SETTINGS.UI": {
     "MENU": {
       "name": "Configuração da Interface do Usuário",
@@ -2368,11 +2375,14 @@
     "UpdateWarningWillDisable": "Esta atualização é uma nova versão maior do Foundry Virtual Tabletop. Instalar esta atualização exigirá que alguns módulos instalados que talvez ainda seja compatíveis sejam desabilitados.",
     "UpdateButtonDownload": "Baixar Atualização {display}",
     "UpdateInfoAvailable": "Uma atualização para Foundry Virtual Tabletop versão {display} está disponível!",
-    "UpdateNoUpdateMode": "Você não tem permissão para atualizar esta instância do Foundry Virtual Tabletop porque ela foi iniciada no modo --noupdate.",
     "UpdateNotAvailable": "Nenhuma atualização do programa está atualmente disponível no canal de atualização solicitado.",
     "UpdateNoArchive": "Não existe arquivo de atualização para instalar",
     "UpdateLicenseInvalid": "Sua chave de licença do Foundry Virtual Tabletop não é válida.",
     "UpdatedPackages": "Registro de atualização de pacotes",
+    "NoUpdateMode": {
+      "Label": "Atualizações Desabilitadas",
+      "Hint": "Você não tem permissão para atualizar esta instância do Foundry VTT pois ela foi executada no modo --noupdate."
+    },
     "Package": "Pacote",
     "VersionChange": "Mudança de versão",
     "WorldMigrationRequiredTitle": "Migração dos Dados de Mundo",
@@ -2515,7 +2525,7 @@
       "FullList": "Veja a <a href=\"{url}\" target=\"_blank\">lista completa</a> de Notas de Versão.",
       "BeginDownload": "Iniciar Download",
       "NewGenerationHint": "Considere fazer um snapshot de todos os pacotes instalados antes de atualizar, caso precise reverter.",
-      "PreviewCompatibilityHint": "Usando o botão 'Visualizar Compatibilidade' abaixo, você pode verificar se todos os seus mundos, sistemas e módulos são suportados na versão {version} do Foundry Virtual Tabletop."
+      "PreviewCompatibilityHint": "Usando o botão \"Visualizar Compatibilidade\" abaixo, você pode verificar se todos os seus mundos, sistemas e módulos são suportados na versão {version} do Foundry Virtual Tabletop."
     }
   },
   "THEME.foundry": "Foundry Virtual Tabletop",
