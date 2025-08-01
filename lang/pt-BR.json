@@ -2097,9 +2097,9 @@
   "SETTINGS.TokenDragPreviewN": "Visão ao Arrastar Token",
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são visualizadas em tempo real enquanto arrastar com o botão esquerdo. Isso é desabilitado por padrão porque pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
-    "Name": "Substituições de Token de Protótipo",
+    "Name": "Substituições de Protótipos de Token",
     "Label": "Configurar Substituições de Protótipo",
-    "Hint": "Configurar substituições de dados do Token de Protótipo para todos os Atores.",
+    "Hint": "Configure substituições de dados do Protótipo do Token para todos os Atores.",
     "Reset": {
       "Label": "Redefinir Padrões",
       "Warning": "Esta ação removerá todas as substituições configuradas."
@@ -2109,7 +2109,7 @@
     "TABS": {
       "AllTypes": {
         "Label": "[Todos os Tipos]",
-        "Hint": "Essas substituições se aplicam a todos os Tokens de Protótipo, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas guias subsequentes. Uma seleção em branco para um campo indica que não há substituição."
+        "Hint": "Essas substituições se aplicam a todos os Protótipos de Token, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas guias subsequentes. Uma seleção em branco para um campo indica que não há substituição."
       },
       "Basics": "Básicos",
       "Marker": "Marcador de Turno"
