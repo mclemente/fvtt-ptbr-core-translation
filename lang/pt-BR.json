@@ -468,115 +468,149 @@
   "CHAT.RollTables": "Tabelas de Rolagem",
   "CHAT.JumpToBottom": "Pular para o Final",
   "CHAT.PrivateRollContent": "{user} rolou alguns dados em particular",
-  "CHAT.UnknownUser": "Usuário desconhecido",
-  "COMBAT.NavLabel": "Navegação de combates",
-  "COMBAT.Begin": "Iniciar Combate",
-  "COMBAT.Create": "Criar Encontro",
-  "COMBAT.Delete": "Excluir Encontro",
-  "COMBAT.Encounter": "Encontro",
-  "COMBAT.EncounterPrevious": "Ativar Encontro Anterior",
-  "COMBAT.EncounterNext": "Ativar Próximo Encontro",
-  "COMBAT.End": "Encerrar Combate",
-  "COMBAT.InitiativeRoll": "Rolar Iniciativa",
-  "COMBAT.InitiativeReset": "Redefinir Iniciativa",
-  "COMBAT.ClearMovementHistories": "Limpar Históricos de Movimento",
-  "COMBAT.InitiativeScore": "Iniciativa",
-  "COMBAT.EndTitle": "Encerrar combate?",
-  "COMBAT.EndConfirmation": "Encerrar esse combate e esvaziar o rastreador de turnos?",
-  "COMBAT.Linked": "Vinculado à cena, clique para desvincular",
-  "COMBAT.None": "Sem Encontros",
-  "COMBAT.NoneActive": "Não há Encontro de Combate ativo sua Cena atual.",
-  "COMBAT.NoneRemaining": "Não há mais Combatentes nesse Encontro que não estejam derrotados.",
-  "COMBAT.NotStarted": "Não Iniciado",
-  "COMBAT.PanToCombatant": "Focar no Combatente",
-  "COMBAT.PingCombatant": "Pingar Combatente",
-  "COMBAT.WarnNonVisibleToken": "Este combatente não está visível para você.",
-  "COMBAT.Round": "Rodada",
-  "COMBAT.Rounds": "Rodadas",
-  "COMBAT.RoundPrev": "Rodada Anterior",
-  "COMBAT.RoundNext": "Próxima Rodada",
-  "COMBAT.RollNPC": "Rolar para PNJs",
-  "COMBAT.RollAll": "Rolar para Todos",
-  "COMBAT.RollsInitiative": "{name} rolou a iniciativa!",
-  "COMBAT.Settings": "Configurações do Monitor de Combate",
-  "COMBAT.SettingsSave": "Salvar Configurações do Monitor",
-  "COMBAT.SidebarTitle": "Monitor de Combate",
-  "COMBAT.Sounds.Epic": "Épico",
-  "COMBAT.Sounds.MC": "Comentarista de Luta",
-  "COMBAT.ToggleVis": "Mudar Visibilidade",
-  "COMBAT.ToggleDead": "Marcar como Derrotado",
-  "COMBAT.Turn": "Turno",
-  "COMBAT.Turns": "Turnos",
-  "COMBAT.TurnEnd": "Encerrar Turno",
-  "COMBAT.TurnNext": "Próximo Turno",
-  "COMBAT.TurnPrev": "Turno Anterior",
-  "COMBAT.UnknownCombatant": "Combatente Desconhecido",
-  "COMBAT.Unlinked": "Combate desvinculado, clique para vincular à cena",
-  "COMBAT.CannotLinkToScene": "Você não pode vincular o Combate a uma Cena que não tenha todos os seus Combatentes.",
-  "COMBAT.CombatantActor": "Ator Representado",
-  "COMBAT.CombatantCreate": "Criar Combatente",
-  "COMBAT.CombatantDefeated": "Derrotado",
-  "COMBAT.CombatantHidden": "Oculto",
-  "COMBAT.CombatantImage": "Imagem Miniatura",
-  "COMBAT.CombatantInitiative": "Valor da Iniciativa",
-  "COMBAT.CombatantStatus": "Estado do Combatente",
-  "COMBAT.CombatantUpdate": "Atualizar Combatente",
-  "COMBAT.CombatantUpdateNamed": "Atualizar Combatente: {name}",
-  "COMBAT.CombatantName": "Nome Mostrado",
-  "COMBAT.CombatantRemove": "Remover Combatente",
-  "COMBAT.CombatantClear": "Limpar iniciativa",
-  "COMBAT.CombatantReroll": "Rerrolar Iniciativa",
-  "COMBAT.CombatantClearMovementHistory": "Limpar Histórico de Movimento",
-  "COMBAT.CombatantMovementHistoryCleared": "Limpou o histórico de movimento do token \"{name}\".",
-  "COMBAT.CombatantToken": "Token Representado",
-  "COMBAT.CombatantScene": "Cena do combatente",
-  "COMBAT.CombatantNotInScene": "O Combatente {name} não está presente na cena visualizada atualmente",
-  "COMBAT.FIELDS": {
-    "round.label": "Rodada",
-    "turn.label": "Turno"
-  },
-  "COMBAT.TURN_MARKERS": {
-    "ANIMATIONS": {
-      "SPIN": "Giro",
-      "SPIN_PULSE": "Giro Pulsante",
-      "PULSE": "Pulso"
-    }
-  },
-  "COMBAT.CONFIG": {
-    "SHEET": {
-      "TURN_MARKERS": "Marcados de Turno de Token"
+  "CHAT.UnknownUser": "Usuário Desconhecido",
+
+  "COMBAT": {
+    "NavLabel": "Navegação de Encontros de Combate",
+    "Begin": "Iniciar Encontro",
+    "Create": "Criar Encontro",
+    "Delete": "Excluir Encontro",
+    "Encounter": "Encontro",
+    "EncounterPrevious": "Ativar Encontro Anterior",
+    "EncounterNext": "Ativar Próximo Encontro",
+    "End": "Encerrar Encontro",
+    "InitiativeRoll": "Rolar Iniciativa",
+    "InitiativeReset": "Redefinir Iniciativa",
+    "ClearMovementHistories": "Limpar Históricos de Movimento",
+    "InitiativeScore": "Valor de Iniciativa",
+    "EndTitle": "Encerrar Encontro?",
+    "EndConfirmation": "Encerrar este combate e esvaziar o rastreador de turnos?",
+    "None": "Sem Encontros",
+    "NoneActive": "Não há nenhum Encontro ativo na sua Cena atual.",
+    "NoneRemaining": "Não há mais Combatentes neste Encontro que não estejam derrotados.",
+    "NotStarted": "Não Iniciado",
+    "PanToCombatant": "Focar no Combatente",
+    "PingCombatant": "Pingar Token",
+    "WarnNonVisibleToken": "Este combatente não está visível para você.",
+    "Round": "Rodada {round}",
+    "Rounds": "Rodadas",
+    "RoundPrev": "Rodada Anterior",
+    "RoundNext": "Próxima Rodada",
+    "RollNPC": "Rolar para PNJs",
+    "RollAll": "Rolar para Todos",
+    "RollsInitiative": "{name} rolou a Iniciativa!",
+    "Settings": "Configurações do Monitor de Encontro",
+    "SettingsSave": "Salvar Configurações do Monitor",
+    "SidebarTitle": "Monitor de Encontro",
+    "Sounds": {
+      "Epic": "Épico",
+      "MC": "Comentarista de Luta"
+    },
+    "ToggleVis": "Alterar Visibilidade",
+    "ToggleDead": "Marcar como Derrotado",
+    "Turn": "Turno",
+    "Turns": "Turnos",
+    "TurnEnd": "Encerrar Turno",
+    "TurnNext": "Próximo Turno",
+    "TurnPrev": "Turno Anterior",
+    "UnknownCombatant": "Participante Desconhecido",
+    "CannotLinkToScene": "Você não pode vincular o Combate a uma Cena que não tenha todos os seus Combatentes.",
+    "CombatantActor": "Ator Representado",
+    "CombatantCreate": "Criar Combatente",
+    "CombatantDefeated": "Derrotado",
+    "CombatantHidden": "Oculto",
+    "CombatantImage": "Imagem Miniatura",
+    "CombatantInitiative": "Valor da Iniciativa",
+    "CombatantStatus": "Estado do Participante",
+    "CombatantUpdate": "Atualizar Participante",
+    "CombatantUpdateNamed": "Atualizar Combatente: {name}",
+    "CombatantName": "Nome Exibido",
+    "CombatantRemove": "Remover Participante",
+    "CombatantClear": "Limpar Iniciativa",
+    "CombatantReroll": "Re-rolar Iniciativa",
+    "CombatantClearMovementHistory": "Limpar Histórico de Movimento",
+    "CombatantMovementHistoryCleared": "Limpou o histórico de movimento do Token \"{name}\".",
+    "CombatantToken": "Token Representado",
+    "CombatantScene": "Cena do Combatente",
+    "CombatantNotInScene": "O participante {name} não está presente na cena atualmente visualizada.",
+    "ACTIONS": {
+      "LinkToScene": "Vincular à Cena Visualizada",
+      "UnlinkFromScene": "Desvincular da Cena"
+    },
+    "DURATION": {
+      "ROUNDS": {
+        "one": "Rodada",
+        "two": "Rodadas",
+        "few": "Rodadas",
+        "many": "Rodadas",
+        "other": "Rodadas"
+      },
+      "TURNS": {
+        "one": "Turno",
+        "two": "Turnos",
+        "few": "Turnos",
+        "many": "Turnos",
+        "other": "Turnos"
+      },
+      "None": "Nenhum(a)"
     },
     "FIELDS": {
-      "core.combatTrackerConfig": {
-        "skipDefeated": {
-          "label": "Pular Derrotados",
-          "hint": "Automaticamente pula combatentes marcados como derrotados."
-        },
-        "resource": {
-          "label": "Recurso Monitorado",
-          "hint": "Escolha um atributo de combatentes para monitorar."
-        },
-        "turnMarker": {
-          "enabled": {
-            "label": "Habilitar Marcadores",
-            "hint": "Habilita marcadores de turno de combate por padrão para todos os tokens."
+      "round": {
+        "label": "Rodada"
+      },
+      "turn": {
+        "label": "Turno"
+      }
+    },
+    "TURN_MARKERS": {
+      "ANIMATIONS": {
+        "SPIN": "Giro",
+        "SPIN_PULSE": "Giro Pulsante",
+        "PULSE": "Pulso"
+      }
+    },
+    "CONFIG": {
+      "SHEET": {
+        "TURN_MARKERS": "Marcadores de Turno de Token"
+      },
+      "FIELDS": {
+        "core.combatTrackerConfig": {
+          "skipDefeated": {
+            "label": "Pular Derrotados",
+            "hint": "Automaticamente pula combatentes marcados como derrotado."
           },
-          "src": {
-            "label": "Fonte de Mídia",
-            "hint": "Um arquivo de imagem ou vídeo para usar por padrão como marcador de turno de token."
+          "resource": {
+            "label": "Recurso Monitorado",
+            "hint": "Escolha um atributo de combatentes para monitorar."
           },
-          "animation": {
-            "label": "Animação",
-            "hint": "O tipo de animação para usar por padrão para cada marcador de turno de token."
-          },
-          "disposition": {
-            "label": "Tom da Disposição",
-            "hint": "Aplica um tom ao marcador de turno baseado na disposição do token."
+          "turnMarker": {
+            "enabled": {
+              "label": "Habilitar Marcadores",
+              "hint": "Habilita marcadores de turno de combate por padrão para todos os tokens."
+            },
+            "src": {
+              "label": "Fonte de Mídia",
+              "hint": "Um arquivo de imagem ou vídeo para usar por padrão como marcador de turno de Token."
+            },
+            "animation": {
+              "label": "Animação",
+              "hint": "O tipo de animação para usar por padrão para cada marcador de turno de Token."
+            },
+            "disposition": {
+              "label": "Tom da Disposição",
+              "hint": "Aplica um tom ao marcador de turno baseado na disposição do Token."
+            }
           }
         }
       }
-    }
+    },
+    "PingInvisibleToken": "Você não pode ver o token deste participante.",
+    "ResourceHint": "Escolha um atributo para rastrear para cada participante.",
+    "SkipDefeatedHint": "Ignorar automaticamente os participantes marcados como derrotados?",
+    "TargetedBy": "Marcado por {list}",
+    "ToggleTargeting": "Alternar Marcação"
   },
+  
   "COMPENDIUM.Name": "Nome do Compêndio",
   "COMPENDIUM.Create": "Criar Compêndio",
   "COMPENDIUM.CreateHint": "Criar um novo Compêndio em seu Mundo atual.",
@@ -606,6 +640,10 @@
   },
   "COMPENDIUM.ImportEntry": "Importar Registro",
   "COMPENDIUM.Locked": "{title} [Trancado]",
+  "COMPENDIUM.Migration": {
+    "Begin": "Iniciando a migração do Compêndio {collection}. Por favor, seja paciente.",
+    "Complete": "Pacote de Compêndio {collection} migrado com sucesso."
+  },
   "COMPENDIUM.SidebarTitle": "Compêndios",
   "COMPENDIUM.Type": "Tipo de documento",
   "COMPENDIUM.TypeHint": "Cada pacote do compêndio contém um tipo específico de documento.",
@@ -1309,6 +1347,7 @@
     "UNLOCK": "Destravar Barra",
     "PAGE_NEXT": "Próxima Página",
     "PAGE_PREV": "Página Anterior",
+    "EMPTY": "Limpar Espaço",
     "CLEAR": "Limpar Barra",
     "CLEAR_CONFIRM": "Limpar todas as macros da barra?"
   },
