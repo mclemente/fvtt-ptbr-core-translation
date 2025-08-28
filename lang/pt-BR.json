@@ -1821,7 +1821,7 @@
   "SCENE.Pixels": "Pixels",
   "SCENE.Preload": "Pré-carregar Cena",
   "SCENE.View": "Ver Cena",
-  "SCENE.ShiftBG": "Fundo Deslocado",
+  "SCENE.ShiftBG": "Mover Fundo",
   "SCENE.ToggleNav": "Alternar Navegação",
   "SCENE.Ambience": {
     "Base": "Ambiente Básico",
