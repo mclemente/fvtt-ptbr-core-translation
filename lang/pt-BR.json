@@ -610,7 +610,7 @@
     "TargetedBy": "Marcado por {list}",
     "ToggleTargeting": "Alternar Marcação"
   },
-  
+
   "COMPENDIUM.Name": "Nome do Compêndio",
   "COMPENDIUM.Create": "Criar Compêndio",
   "COMPENDIUM.CreateHint": "Criar um novo Compêndio em seu Mundo atual.",
@@ -1459,6 +1459,7 @@
     "Paste": "Colar Objetos",
     "Target": "Token Alvo",
     "Ruler": "Alternar Régua de Distância",
+    "UnconstrainedMovement": "Alternar Movimento Irrestrito",
     "SendToBack": "Enviar Objetos para Trás",
     "BringToFront": "Trazer Objetos para a Frente",
     "ToggleCharacterSheet": "Alternar Ficha de Personagem",
