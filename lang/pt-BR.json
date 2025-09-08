@@ -2767,7 +2767,7 @@
   "FOLDER.ExportHint": "Você pode exportar os documentos desta pasta para um pacote de compêndio desbloqueado do tipo apropriado.",
   "FOLDER.ExportOptions": "Exportar Opções",
   "FOLDER.ExportDestination": "Pacote de Destino",
-  "FOLDER.ExportKeepId": "Manter os IDs do documento?",
+  "FOLDER.ExportKeepId": "Manter IDs do Documento?",
   "FOLDER.ExportMerge": "Mesclar por Nome?",
   "FOLDER.ExportKeepFolders": "Manter Estrutura de Pastas?",
   "FOLDER.ExportWarningNone": "Não há pacotes de compêndio disponíveis para documentos de {type} para que você pode exportar.",
@@ -3274,7 +3274,7 @@
         "View": "Visualizar"
       },
       "OpenResultConfig": "Configuração de Resultado Aberto",
-      "DrawResult": "Resultado do Sorteio",
+      "DrawResult": "Sortear Resultado",
       "DrawSpecificResult": "Sorteie Este Resultado",
       "NormalizeResults": "Normalizar Intervalos de Resultados",
       "ResetResults": "Redefinir Resultados",
