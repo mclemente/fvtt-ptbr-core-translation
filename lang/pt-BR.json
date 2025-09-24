@@ -2138,7 +2138,7 @@
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são previstas em tempo real enquanto arrasta com o botão esquerdo. Isso é desabilitado por padrão pois pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
     "Name": "Substituições de Protótipos de Token",
-    "Label": "Configurar Substituições de Protótipo",
+    "Label": "Configurar Protótipos de Token",
     "Hint": "Configure substituições de dados do Protótipo do Token para todos os Atores.",
     "Reset": {
       "Label": "Redefinir Padrões",
