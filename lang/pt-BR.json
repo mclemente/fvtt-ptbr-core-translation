@@ -2731,7 +2731,7 @@
   "SHEETS.ThisSheet": "Esta Ficha",
   "SHEETS.Defaults": "Padrões",
   "SHEETS.DefaultSheet": "Ficha Padrão",
-  "SHEETS.DefaultDocumentSheet": "Ficha {document} Padrão",
+  "SHEETS.DefaultDocumentSheet": "Ficha Padrão de {document}",
   "SHEETS.DocumentSheetHint": "Substituir qual tipo de ficha você gostaria de usar para esse documento específico.",
   "SHEETS.TypeSheetHint": "Defina o tipo de ficha padrão usada para esse tipo de entidade (Apenas Mestre).",
   "SHEETS.DocumentSheetPrivate": "Você não tem permissão suficiente para visualizar a ficha para esse {type}.",
