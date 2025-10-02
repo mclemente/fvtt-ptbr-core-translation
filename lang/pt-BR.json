@@ -469,7 +469,6 @@
   "CHAT.JumpToBottom": "Pular para o Final",
   "CHAT.PrivateRollContent": "{user} rolou alguns dados em particular",
   "CHAT.UnknownUser": "Usuário Desconhecido",
-
   "COMBAT": {
     "NavLabel": "Navegação de Encontros de Combate",
     "Begin": "Iniciar Encontro",
@@ -610,7 +609,6 @@
     "TargetedBy": "Marcado por {list}",
     "ToggleTargeting": "Alternar Marcação"
   },
-
   "COMPENDIUM.Name": "Nome do Compêndio",
   "COMPENDIUM.Create": "Criar Compêndio",
   "COMPENDIUM.CreateHint": "Criar um novo Compêndio em seu Mundo atual.",
@@ -886,7 +884,7 @@
     "CommonSelect": "Selecionar",
     "CommonSelectMultiple": "Selecionar Vários",
     "CommonOpenSheet": "Abrir Ficha",
-    "DisableToolclips": "Desabilite os Clipes de Ferramentas nas Configurações",
+    "DisableToolclips": "Você pode desabiltiar os Clipes de Ferramentas nas Configurações",
     "CutObjects": "Cortar {count} objeto(s) {type}.",
     "CopiedObjects": "{count} objeto(s) {type} copiados.",
     "PastedObjects": "{count} objeto(s) {type} colados.",
@@ -3793,7 +3791,7 @@
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
     "NavLabel": "Guias de Gerenciamento de Apresentação",
-    "ShowMeHow": "Mostre-me como",
+    "ShowMeHow": "Mostre-me como.",
     "TourCategories": "Categorias de Apresentação",
     "AllTours": "Todas as Apresentações",
     "ResetAll": "Redefinir Todas Apresentações",
