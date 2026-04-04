@@ -3897,7 +3897,7 @@
       "direction.label": "Direção da Abertura",
       "double.label": "Porta Dupla",
       "duration.label": "Duração da Animação (ms)",
-      "flip.label": "Textura de Porta Giratória",
+      "flip.label": "Inverter Textura da Porta",
       "texture.label": "Textura da Porta",
       "type.label": "Tipo de Animação"
     }
