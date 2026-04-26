@@ -690,8 +690,8 @@
     "GroupTile": "Controle de Peças",
     "TileSelect": "Selecionar Peças",
     "TilePlace": "Colocar Peça",
-    "TilePlaceHeading": "Place",
-    "TileForeground": "Camada de primeiro plano",
+    "TilePlaceHeading": "Colocar",
+    "TileForeground": "Camada de Primeiro Plano",
     "TileBrowser": "Explorador de Peças",
     "GroupDrawing": "Ferramentas de Desenho",
     "DrawingSelect": "Selecionar Desenhos",
@@ -1261,7 +1261,7 @@
     "TogglePrivacy": "Alternar Modo de Privacidade",
     "DisplayMode": "Modo de Exibição",
     "DisplayModeList": "Exibição de Lista",
-    "DisplayModeTiles": "Exibição de Quadros",
+    "DisplayModeTiles": "Exibição de Peças",
     "DisplayModeThumbs": "Exibição de Miniaturas",
     "DisplayModeImages": "Exibição de Imagens",
     "FavoritesLabel": "Favoritos",
@@ -2629,8 +2629,8 @@
     },
     "VIEW_MODES": {
       "GALLERY": "Visualização da Galeria",
-      "TILES": "Visualização de Blocos",
-      "DETAILS": "Visualização de Cetalhes"
+      "TILES": "Visualização de Peças",
+      "DETAILS": "Visualização de Detalhes"
     },
     "ACTIONS": {
       "AddAuthor": "Adicionar Autor",
