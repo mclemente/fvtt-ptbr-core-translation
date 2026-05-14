@@ -1074,7 +1074,7 @@
   "EFFECT.ChangeMode": "Mudar o Modo",
   "EFFECT.ChangeValue": "Valor do Efeito",
   "EFFECT.ChangePriority": "Prioridade",
-  "EFFECT.Submit": "Enviar Alterações",
+  "EFFECT.Submit": "Aplicar Alterações",
   "EFFECT.FIELDS": {
     "name.label": "Nome do Efeito",
     "img.label": "Ícone do Efeito",
