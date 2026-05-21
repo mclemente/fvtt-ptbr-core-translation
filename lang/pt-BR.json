@@ -68,7 +68,7 @@
   "Resize": "Redimensionar",
   "Rotation": "Rotação",
   "Roll Formula": "Fórmula de Rolagem",
-  "Commit Change": "Enviar Alterações",
+  "Commit Change": "Aplicar Alterações",
   "Reset Changes": "Redefinir Alterações",
   "Save": "Salvar",
   "Save Changes": "Salvar Alterações",
@@ -690,8 +690,8 @@
     "GroupTile": "Controle de Peças",
     "TileSelect": "Selecionar Peças",
     "TilePlace": "Colocar Peça",
-    "TilePlaceHeading": "Place",
-    "TileForeground": "Camada de primeiro plano",
+    "TilePlaceHeading": "Colocar",
+    "TileForeground": "Camada de Primeiro Plano",
     "TileBrowser": "Explorador de Peças",
     "GroupDrawing": "Ferramentas de Desenho",
     "DrawingSelect": "Selecionar Desenhos",
@@ -1074,7 +1074,7 @@
   "EFFECT.ChangeMode": "Mudar o Modo",
   "EFFECT.ChangeValue": "Valor do Efeito",
   "EFFECT.ChangePriority": "Prioridade",
-  "EFFECT.Submit": "Enviar Alterações",
+  "EFFECT.Submit": "Aplicar Alterações",
   "EFFECT.FIELDS": {
     "name.label": "Nome do Efeito",
     "img.label": "Ícone do Efeito",
@@ -1261,7 +1261,7 @@
     "TogglePrivacy": "Alternar Modo de Privacidade",
     "DisplayMode": "Modo de Exibição",
     "DisplayModeList": "Exibição de Lista",
-    "DisplayModeTiles": "Exibição de Quadros",
+    "DisplayModeTiles": "Exibição de Peças",
     "DisplayModeThumbs": "Exibição de Miniaturas",
     "DisplayModeImages": "Exibição de Imagens",
     "FavoritesLabel": "Favoritos",
@@ -2629,8 +2629,8 @@
     },
     "VIEW_MODES": {
       "GALLERY": "Visualização da Galeria",
-      "TILES": "Visualização de Blocos",
-      "DETAILS": "Visualização de Cetalhes"
+      "TILES": "Visualização de Peças",
+      "DETAILS": "Visualização de Detalhes"
     },
     "ACTIONS": {
       "AddAuthor": "Adicionar Autor",
@@ -3897,7 +3897,7 @@
       "direction.label": "Direção da Abertura",
       "double.label": "Porta Dupla",
       "duration.label": "Duração da Animação (ms)",
-      "flip.label": "Textura de Porta Giratória",
+      "flip.label": "Inverter Textura da Porta",
       "texture.label": "Textura da Porta",
       "type.label": "Tipo de Animação"
     }
