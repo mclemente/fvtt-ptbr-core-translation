@@ -1,102 +1,5 @@
 {
-  "Activate": "Ativar",
-  "all": "todos",
-  "Anchor": "Âncora",
-  "Angle": "Ângulo",
-  "Author": "Autor",
-  "AuthorPl": "Autores",
-  "AreYouSure": "Você tem Certeza?",
-  "and": "e",
-  "authorized": "autorizado",
-  "Between": "Entre",
-  "Cancel": "Cancelar",
-  "Character": "Personagem",
-  "Configure": "Configurar",
-  "Confirm": "Confirmar",
-  "Command": "Comando",
-  "Collapse": "Recolher",
-  "Coordinates": "Coordenadas",
-  "Close": "Fechar",
-  "Deactivate": "Desativar",
-  "Degrees": "Graus",
-  "Default": "Padrão",
-  "Delete": "Excluir",
-  "DeleteSelected": "Excluir Seleção",
-  "Description": "Descrição",
-  "Distance": "Distância",
-  "Display": "Tela",
-  "Direction": "Direção",
-  "Documentation": "Documentação",
-  "Duplicate": "Duplicar",
-  "Error": "Erro",
-  "Errors": "Erros",
-  "Expand": "Expandir",
-  "GridUnits": "Unidades da Grade",
-  "GridSpaces": "Espaços da Grade",
-  "Install": "Instalar",
-  "Elevation": "Elevação",
-  "Sort": "Organizar",
   "Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
-  "File Path": "Caminho do Arquivo",
-  "Height": "Altura",
-  "Hidden": "Oculto",
-  "Hold": "Segure",
-  "Information": "Informação",
-  "Light": "Luz",
-  "Name": "Nome",
-  "Next": "Próximo",
-  "No": "Não",
-  "Notes": "Notas",
-  "Preload": "Pré-carregar",
-  "Previous": "Anterior",
-  "Token": "Token",
-  "Minimum": "Mínimo",
-  "Maximum": "Máximo",
-  "Image": "Imagem",
-  "Invalid": "Inválido",
-  "None": "Nenhum",
-  "Path": "Caminho",
-  "Packs": "Pacotes",
-  "Permissions": "Permissões",
-  "Position": "Posição",
-  "Pixels": "Pixels",
-  "Preview": "Previsão",
-  "Ratio": "Proporção",
-  "Reset": "Redefinir",
-  "Resources": "Recursos",
-  "Result": "Resultado",
-  "Resize": "Redimensionar",
-  "Rotation": "Rotação",
-  "Roll Formula": "Fórmula de Rolagem",
-  "Commit Change": "Aplicar Alterações",
-  "Reset Changes": "Redefinir Alterações",
-  "Save": "Salvar",
-  "Save Changes": "Salvar Alterações",
-  "Scale": "Escala",
-  "Scope": "Escopo",
-  "Seconds": "Segundos",
-  "selected": "selecionado",
-  "SelectAll": "Selecionar Tudo",
-  "Sight": "Visão",
-  "Sheet": "Ficha",
-  "System": "Sistema",
-  "Software": "Software",
-  "Sound": "Som",
-  "spaces": "espaços",
-  "Template": "Modelo",
-  "Type": "Tipo",
-  "Uninstall": "Desinstalar",
-  "units": "unidades",
-  "Unknown": "Desconhecido",
-  "Update": "Atualizar",
-  "URL": "URL",
-  "Vision": "Visão",
-  "Warning": "Aviso",
-  "Warnings": "Avisos",
-  "Width": "Largura",
-  "XCoord": "Coordenada-X",
-  "YCoord": "Coordenada-Y",
-  "Yes": "Sim",
   "ADVENTURE": {
     "ImportSubmit": "Importar Aventura",
     "ImportProgress": "Importando",
@@ -107,6 +10,7 @@
     "ImportOverwriteWarning": "Alguns conteúdos da aventura {name} já existem no seu Mundo. Se você importar a aventura, esse conteúdo será substituído. Você quer prosseguir?",
     "ImportAll": "Importar Tudo",
     "ImportContent": "Importar {label}",
+    "ImportLoading": "Carregando dados da aventura...",
     "Importer": {
       "V1": "Importador de Aventura (V1)",
       "V2": "Importador de Aventura (V2)"
@@ -150,7 +54,6 @@
       "RestoreSection": "Restaurar Seção"
     }
   },
-  "APP.NavigateBackConfirm": "Tem certeza que deseja sair do Foundry Virtual Tabletop?",
   "AMBIENT_LIGHT": {
     "ACTIONS": {
       "CREATE": "Criar Luz Ambiente",
@@ -158,14 +61,9 @@
       "RESET": "Redefinir Opções Avançadas"
     },
     "FIELDS": {
-      "x": {
-        "label": "X"
-      },
-      "y": {
-        "label": "Y"
-      },
-      "elevation": {
-        "label": "Elevação"
+      "name": {
+        "hint": "Um nome opcional para ajudar a identificar a fonte de luz.",
+        "label": "Nome"
       },
       "rotation": {
         "label": "Ângulo de Rotação"
@@ -200,14 +98,15 @@
       "UPDATE": "Atualizar Som Ambiente"
     },
     "FIELDS": {
+      "name": {
+        "hint": "Um nome opcional para ajudar a identificar o som.",
+        "label": "Nome"
+      },
       "x": {
         "label": "X"
       },
       "y": {
         "label": "Y"
-      },
-      "elevation": {
-        "label": "Elevação"
       },
       "path": {
         "label": "Caminho do Arquivo de Origem",
@@ -273,6 +172,17 @@
     }
   },
   "APPLICATION": {
+    "NavigateBackConfirm": "Tem certeza de que deseja sair do Foundry Virtual Tabletop?",
+    "ACTIONS": {
+      "Attach": "Reanexar janela",
+      "Detach": "Destacar janela",
+      "Collapse": "Recolher",
+      "Expand": "Expandir",
+      "Close": "Fechar",
+      "CopyUuid": "Copiar UUID do documento",
+      "ImportDocument": "Importar",
+      "DeleteDocument": "Excluir documento"
+    },
     "TOOLS": {
       "ControlsMenu": "Controles de Aplicação",
       "ToggleControls": "Alternar Controles",
@@ -461,38 +371,35 @@
     "RevealMessage": "Mostrar para Todos",
     "ConcealMessage": "Tornar Privado",
     "RollVisibility": "Visibilidade de Rolagem",
-    "RollBlind": "Rolagem Cega pro Mestre",
-    "RollDefault": "Modo de Rolagem Padrão",
-    "RollPublic": "Rolagem Pública",
-    "RollPrivate": "Rolagem Privada pro Mestre",
-    "RollSelf": "Rolagem Pessoal",
     "RollTables": "Tabelas de Rolagem",
+    "SendMessage": "Enviar mensagem",
     "JumpToBottom": "Pular para o Final",
     "PrivateRollContent": "{user} rolou alguns dados em particular",
-    "UnknownUser": "Usuário Desconhecido"
+    "UnknownUser": "Usuário Desconhecido",
+    "MODES": {
+      "blind": "Cego para Mestres",
+      "gm": "Privado para Mestres",
+      "ic": "Público como Personagem",
+      "public": "Público como usuário",
+      "self": "Somente para si"
+    }
   },
   "COMBAT": {
     "NavLabel": "Navegação de Encontros de Combate",
     "Begin": "Iniciar Encontro",
     "Create": "Criar Encontro",
-    "Delete": "Excluir Encontro",
-    "Encounter": "Encontro",
     "EncounterPrevious": "Ativar Encontro Anterior",
     "EncounterNext": "Ativar Próximo Encontro",
     "End": "Encerrar Encontro",
     "InitiativeRoll": "Rolar Iniciativa",
     "InitiativeReset": "Redefinir Iniciativa",
     "ClearMovementHistories": "Limpar Históricos de Movimento",
-    "InitiativeScore": "Valor de Iniciativa",
     "EndTitle": "Encerrar Encontro?",
     "EndConfirmation": "Encerrar este combate e esvaziar o rastreador de turnos?",
     "None": "Sem Encontros",
     "NoneActive": "Não há nenhum Encontro ativo na sua Cena atual.",
     "NoneRemaining": "Não há mais Combatentes neste Encontro que não estejam derrotados.",
     "NotStarted": "Não Iniciado",
-    "PanToCombatant": "Focar no Combatente",
-    "PingCombatant": "Pingar Token",
-    "WarnNonVisibleToken": "Este combatente não está visível para você.",
     "Round": "Rodada {round}",
     "Rounds": "Rodadas",
     "RoundPrev": "Rodada Anterior",
@@ -507,55 +414,23 @@
       "Epic": "Épico",
       "MC": "Comentarista de Luta"
     },
-    "ToggleVis": "Alterar Visibilidade",
-    "ToggleDead": "Marcar como Derrotado",
     "Turn": "Turno",
     "Turns": "Turnos",
     "TurnEnd": "Encerrar Turno",
     "TurnNext": "Próximo Turno",
     "TurnPrev": "Turno Anterior",
-    "UnknownCombatant": "Participante Desconhecido",
     "CannotLinkToScene": "Você não pode vincular o Combate a uma Cena que não tenha todos os seus Combatentes.",
-    "CombatantActor": "Ator Representado",
-    "CombatantCreate": "Criar Combatente",
-    "CombatantDefeated": "Derrotado",
-    "CombatantHidden": "Oculto",
-    "CombatantImage": "Imagem Miniatura",
-    "CombatantInitiative": "Valor da Iniciativa",
-    "CombatantStatus": "Estado do Participante",
-    "CombatantUpdate": "Atualizar Participante",
-    "CombatantUpdateNamed": "Atualizar Combatente: {name}",
-    "CombatantName": "Nome Exibido",
-    "CombatantRemove": "Remover Participante",
-    "CombatantClear": "Limpar Iniciativa",
-    "CombatantReroll": "Re-rolar Iniciativa",
-    "CombatantClearMovementHistory": "Limpar Histórico de Movimento",
-    "CombatantMovementHistoryCleared": "Limpou o histórico de movimento do Token \"{name}\".",
-    "CombatantToken": "Token Representado",
-    "CombatantScene": "Cena do Combatente",
-    "CombatantNotInScene": "O participante {name} não está presente na cena atualmente visualizada.",
     "ACTIONS": {
+      "EditName": "Editar nome",
+      "EditNameTitle": "Editar nome do encontro de combate",
       "LinkToScene": "Vincular à Cena Visualizada",
       "UnlinkFromScene": "Desvincular da Cena"
     },
-    "DURATION": {
-      "ROUNDS": {
-        "one": "Rodada",
-        "two": "Rodadas",
-        "few": "Rodadas",
-        "many": "Rodadas",
-        "other": "Rodadas"
-      },
-      "TURNS": {
-        "one": "Turno",
-        "two": "Turnos",
-        "few": "Turnos",
-        "many": "Turnos",
-        "other": "Turnos"
-      },
-      "None": "Nenhum(a)"
-    },
     "FIELDS": {
+      "name": {
+        "label": "Nome do Combate",
+        "hint": "Forneça um nome curto para este Encontro de Combate que ajude a identificá-lo."
+      },
       "round": {
         "label": "Rodada"
       },
@@ -604,12 +479,51 @@
           }
         }
       }
+    }
+  },
+  "COMBATANT": {
+    "Status": "Status do combatente",
+    "UpdateNamed": "Atualizar Combatente: {name}",
+    "Unknown": "Combatente desconhecido",
+    "PanTo": "Focar no combatente",
+    "Ping": "Pingar token",
+    "Hide": "Esconder",
+    "Show": "Mostrar",
+    "MarkDefeated": "Marcar como Derrotado",
+    "UnmarkDefeated": "Desmarcar como Derrotado",
+    "MovementHistoryCleared": "Histórico de movimentação do Token \"{name}\" foi limpado.",
+    "WarnNonVisibleToken": "Este combatente não está visível para você.",
+    "FIELDS": {
+      "actorId.label": "Ator Representado",
+      "tokenId.label": "Token Representado",
+      "name.label": "Nome exibido",
+      "defeated.label": "Derrotado",
+      "hidden.label": "Escondido",
+      "img.label": "Imagem em miniatura",
+      "initiative.label": "Valor da Iniciativa"
     },
-    "PingInvisibleToken": "Você não pode ver o token deste participante.",
-    "ResourceHint": "Escolha um atributo para rastrear para cada participante.",
-    "SkipDefeatedHint": "Ignorar automaticamente os participantes marcados como derrotados?",
-    "TargetedBy": "Marcado por {list}",
-    "ToggleTargeting": "Alternar Marcação"
+    "ACTIONS": {
+      "Create": "Criar Combatente",
+      "Update": "Atualizar Combatente",
+      "Remove": "Remover Combatente",
+      "Clear": "Limpar Iniciativa",
+      "Reroll": "Rerrolar Iniciativa",
+      "ClearMovementHistory": "Limpar Histórico de Movimento"
+    }
+  },
+  "COMMON": {
+    "AreYouSure": "Você tem certeza?",
+    "Cancel": "Cancelar",
+    "Confirm": "Confirmar",
+    "Default": "Padrão",
+    "Delete": "Excluir",
+    "Invalid": "Inválido",
+    "No": "Não",
+    "None": "Nenhum",
+    "Preview": "Previsão",
+    "Unknown": "Desconhecido",
+    "Warning": "Aviso",
+    "Yes": "Sim"
   },
   "COMPENDIUM": {
     "Name": "Nome do Compêndio",
@@ -640,7 +554,7 @@
       "Finish": "Importou com sucesso {number} documentos {type} e {folderNumber} pastas na pasta {folder}."
     },
     "ImportEntry": "Importar Registro",
-    "Locked": "{title} [Trancado]",
+    "Locked": "{title} [Bloqueado]",
     "Migration": {
       "Begin": "Iniciando a migração do Compêndio {collection}. Por favor, seja paciente.",
       "Complete": "Pacote de Compêndio {collection} migrado com sucesso."
@@ -649,8 +563,8 @@
     "Type": "Tipo de documento",
     "TypeHint": "Cada pacote do compêndio contém um tipo específico de documento.",
     "ToggleLocked": {
-      "Option": "Alternar Trava de Edição",
       "Title": "Alternar Trava de Edição: {compendium}",
+      "Lock": "Bloquear",
       "Unlock": "Desbloquear",
       "Warning": "Você está tentando destravar a edição de um compêndio que não pertence a este mundo. Quaisquer mudanças que você fizer nele podem ser perdidas se o sistema ou módulo que o contém for atualizado. Você pode duplicar este compêndio para o seu mundo em vez disso. Como você quer prosseguir?"
     },
@@ -670,7 +584,9 @@
         "Label": "Configurar Arte",
         "Title": "Compêndio de Arte"
       }
-    }
+    },
+    "CopyId": "Copiar ID do Compêndio",
+    "IdCopiedClipboard": "ID do compêndio \"{id}\" copiado para a área de transferência."
   },
   "CONTROLS": {
     "Title": "Referência dos Controles de Jogo",
@@ -683,19 +599,10 @@
     "TargetSelect": "Selecionar Alvos",
     "TargetSelectP": "Marque como alvo quaisquer tokens que você pode ver.",
     "BasicMeasure": "Medir Distância",
-    "GroupMeasure": "Controles de Medição",
-    "MeasureType": "Tipo de Modelo",
-    "MeasureConfigHint": "Configure o posicionamento e a exibição do modelo de medição.",
-    "MeasureCircle": "Modelo de Círculo",
-    "MeasureCone": "Modelo de Cone",
-    "MeasureRect": "Modelo de Retângulo",
-    "MeasureRay": "Modelo de Linha",
-    "MeasureClear": "Limpar Modelos",
     "GroupTile": "Controle de Peças",
     "TileSelect": "Selecionar Peças",
     "TilePlace": "Colocar Peça",
     "TilePlaceHeading": "Colocar",
-    "TileForeground": "Camada de Primeiro Plano",
     "TileBrowser": "Explorador de Peças",
     "GroupDrawing": "Ferramentas de Desenho",
     "DrawingSelect": "Selecionar Desenhos",
@@ -707,19 +614,18 @@
     "DrawingText": "Desenhar Texto",
     "DrawingClear": "Limpar Desenhos",
     "DrawingConfig": "Configurar Desenho",
-    "DrawingRole": "Alternar Desenhos de Informações",
     "GroupWall": "Controles de Parede",
     "WallDraw": "Desenhar Paredes",
-    "WallBasic": "Paredes Básicas",
-    "WallBasicBlocks": "Movimento, visão e som",
+    "WallSolid": "Parede sólida",
+    "WallSolidBlocks": "Movimento, visão e audição",
     "WallInvisible": "Paredes Invisíveis",
     "WallInvisibleBlocks": "Movimento",
     "WallTerrain": "Paredes de Terreno",
     "WallTerrainBlocks": "Visão além da segunda parede, movimento e som",
     "WallEthereal": "Paredes Etéreas",
     "WallEtherealBlocks": "Visão e som",
-    "WallDoors": "Desenhar Portas",
-    "DoorBlocks": "Movimento, visão e som a não ser que esteja aberta",
+    "WallDoor": "Porta",
+    "WallDoorBlocks": "Movimento, visão e audição, a menos que esteja aberta.",
     "WallSecret": "Portas Secretas",
     "WallSecretHidden": "Oculta",
     "WallSecretHiddenP": "Portas Secretas não podem ser vistas pelos jogadores",
@@ -727,13 +633,13 @@
     "CommonMoveWithoutSnapping": "Mover Sem Encaixar",
     "WallSelectEdit": "<span class=\"reference\">Clique Duplo</span> em um ponto da Parede",
     "WallSnapP": "Pontos de Parede encaixam na canto da grade mais próximo quando ativo",
-    "WallClone": "Clonar Paredes",
     "WallCloseDoors": "Fechar todas as Portas",
     "WallDoorsClosed": "{number} portas foram fechadas",
     "WallClear": "Limpar Paredes",
     "WallWindow": "Paredes de Janela",
     "WallWindowBlocks": "Visão, movimento e som além de certa distância",
     "GroupLighting": "Controles de Iluminação",
+    "LightSelect": "Selecione as fontes de luz",
     "LightDraw": "Desenhar Fonte de Luz",
     "LightClear": "Limpar Luzes",
     "LightReset": "Redefinir Névoa de Guerra",
@@ -749,6 +655,7 @@
     "FOWResetTitle": "Redefinir a Exploração da Névoa de Guerra?",
     "FOWResetDesc": "Isso redefinirá a névoa de guerra dessa Cena para todos os jogadores.",
     "GroupSound": "Controles de Som Ambiente",
+    "SoundSelect": "Selecione Sons Ambientes",
     "SoundDraw": "Desenhar Som Ambiente",
     "SoundPreview": "Prever sons ambiente",
     "SoundPreviewP": "Quando ativo, passe o cursor sobre um som ambiente para ouvi-lo como se seu Token estivesse naquela posição.",
@@ -761,8 +668,15 @@
     "GroupRegion": "Controles de Região",
     "RegionSelect": "Selecionar Regiões",
     "RegionSelectP": "Selecione uma ou mais Regiões na Cena. Uma Região selecionada é de cor sólida e as Regiões não selecionadas são listradas.",
+    "RegionTemplateMode": "Modo de Modelo de Medição",
+    "RegionTemplateModeP": "Quando ativada, a paleta é ignorada e cada forma desenhada cria uma nova região. Não é possível adicionar formas a regiões já existentes.",
     "RegionRectangle": "Desenhar Retângulo",
+    "RegionCircle": "Desenhar Círculo",
     "RegionEllipse": "Desenhar Elipse",
+    "RegionRing": "Desenhar Anel",
+    "RegionEmanation": "Desenhar Emanação",
+    "RegionCone": "Desenhar Cone",
+    "RegionLine": "Desenhar Linha",
     "RegionPolygon": "Desenhar Polígono",
     "RegionHole": "Criar Furos",
     "RegionHoleP": "Quando ativo, qualquer Forma que você desenhar em uma Região usando qualquer uma das ferramentas de Forma, criará um Furo onde os comportamentos da Região não serão aplicados.",
@@ -770,7 +684,10 @@
     "RegionClear": "Limpar Região",
     "RegionPerformance": "<em>Nota de Desempenho:</em> Cada desenho é sua própria Forma. Tenha cuidado para não colocar múltiplas Formas inteiramente umas dentro das outras. Em vez de combinar Formas simples para criar uma Forma complexa, considere usar a ferramenta de Região Polígono.",
     "ClearAll": "Limpar todos os Objetos",
+    "ClearAllOwned": "Limpar todos os objetos possuídos",
     "ClearAllHint": "Excluir permanentemente todos os objetos de {type} desta Cena?",
+    "ClearAllOwnedHint": "Excluir permanentemente todos os objetos {type} visualizados que você possui?",
+    "DeleteLockedObjects": "Excluir objetos bloqueados",
     "HeaderGame": "Controles Gerais de Jogo",
     "HeaderGameNotes": "Esses controles geralmente se aplicam a todos os aspectos de funcionalidade do Foundry.",
     "HeaderCanvas": "Controles da Camada de Tela",
@@ -851,6 +768,7 @@
     "ObjectRotateSlow": "Girar Objeto (Lento)",
     "ObjectRotateFast": "Girar Objeto (Rápido)",
     "ObjectNoSnap": "Ignorar Encaixe na Grade",
+    "Palette": "Paleta",
     "MouseWheel": "Roda de Rolagem",
     "DragDrop": "Arrastar e Soltar",
     "UnconstrainedMovement": "Movimento Irrestrito",
@@ -862,7 +780,6 @@
     "TooltipDismiss": "Dispensar Dica Travada",
     "TooltipLock": "Travar Dica",
     "WallHeader": "Controles da Camada de Paredes",
-    "WallChain": "Criação Contínua de Paredes",
     "WallSelectChain": "Selecionar Segmentos Conectados",
     "DrawingHeader": "Controles da Ferramenta de Desenho",
     "DrawingTextConfirm": "Confirmar Desenho do Texto",
@@ -908,6 +825,7 @@
     "SubmitRollPl": "Enviar Rolagens",
     "WarnMissingData": "O atributo {match} não estava presente nesta rolagem.",
     "CONFIG": {
+      "DefaultMethod": "Método padrão",
       "Hint": "Configure como a rolagem dos dados é feita.",
       "Label": "Configurar Dado",
       "Title": "Configuração do Dado"
@@ -915,7 +833,8 @@
     "FULFILLMENT": {
       "Default": "Rolagem Digital do Foundry VTT",
       "Mersenne": "Rolagem Digital (Mersenne Twister)",
-      "Manual": "Entrada Manual"
+      "Manual": "Entrada Manual",
+      "UseDefault": "Usar padrão"
     }
   },
   "DOCUMENT": {
@@ -924,6 +843,7 @@
     "New": "Novo(a) {type}",
     "NewCount": "Novo {type} ({count})",
     "Update": "Atualizar {type}",
+    "Replace": "Substituir {type}",
     "SkipCreate": "Pular Criação",
     "ImportData": "Importar Dados",
     "ImportDataError": "Você não enviou um arquivo de dados!",
@@ -931,6 +851,7 @@
     "ImportDataHint2": "Esta operação atualizará os dados de {name} e não poderá ser desfeita.",
     "ImportSource": "Fonte de Dados",
     "Imported": "Os dados para {document} \"{name}\" foram importados com sucesso do JSON.",
+    "ReplaceWarning": "Já existe um documento {link} com o ID <code>{id}</code> nesta coleção. Deseja substituí-lo ou criar uma cópia?",
     "SheetPermissionWarn": "Você não tem permissão para visualizar este {document}.",
     "UsePermissionWarn": "Você não tem permissão para usar este {document}.",
     "IdCopiedClipboard": "{label} {type} \"{id}\" copiado para a área de transferência.",
@@ -972,10 +893,10 @@
     "JournalEntryCategories": "Categorias",
     "JournalEntryPage": "Página",
     "JournalEntryPages": "Páginas",
+    "Level": "Andar",
+    "Levels": "Andares",
     "Macro": "Macro",
     "Macros": "Macros",
-    "MeasuredTemplate": "Modelo de Medição",
-    "MeasuredTemplates": "Modelos de Medição",
     "Note": "Nota",
     "Notes": "Notas",
     "Playlist": "Playlist",
@@ -986,6 +907,7 @@
     "Scenes": "Cenas",
     "Setting": "Configuração",
     "Settings": "Configurações",
+    "Sheet": "Ficha",
     "RollTable": "Tabela de Rolagem",
     "RollTables": "Tabelas de Rolagem",
     "Region": "Região",
@@ -1008,6 +930,8 @@
       "type.label": "Tipo",
       "img.label": "Caminho da Imagem",
       "description.label": "Descrição",
+      "folder.label": "Pasta",
+      "author.label": "Autor",
       "width.label": "Largura",
       "height.label": "Altura",
       "hidden.label": "Escondido",
@@ -1018,40 +942,21 @@
         "hint": "Configuração a ordem de classificação deste documento em relação aos outros nesta coleção. Números menores são classificados primeiro."
       },
       "x.label": "X",
-      "y.label": "Y"
+      "y.label": "Y",
+      "levels": {
+        "label": "Andares",
+        "hint": "Selecione os andares nos quais a inclusão se aplica. Uma seleção vazia aplica a inclusão a todos os andares."
+      }
     }
   },
   "DRAWING": {
     "ConfigDefaultTitle": "Configuração Padrão de Desenho",
     "SubmitDefault": "Configurar Padrão",
-    "SubmitCreate": "Criar Desenho",
-    "SubmitUpdate": "Atualizar Desenho",
-    "SubmitReset": "Redefinir Padrões",
     "NotePosition": "Ajusta a posição e visibilidade do Desenho.",
     "NoteLines": "Ajusta a linha externa do Desenho.",
     "NoteFill": "Ajusta as preferências de preenchimento interno para este Desenho.",
     "NoteText": "Ajusta o rótulo de texto aplicado a este Desenho (se houver).",
-    "Rotation": "Rotação",
     "ZIndex": "Índice Z",
-    "LineWidth": "Largura da Linha",
-    "StrokeColor": "Cor do Traço",
-    "LineOpacity": "Opacidade da Linha",
-    "SmoothingFactor": "Fator de Suavização",
-    "SmoothingFactorHint": "Para desenho à mão livre, o fator de suavização controla a quantidade de suavização das curvas.",
-    "FillTypes": "Tipos de Preenchimento",
-    "FillTypeNone": "Nenhum",
-    "FillTypeSolid": "Sólido",
-    "FillTypePattern": "Padrão",
-    "FillColor": "Cor de Preenchimento",
-    "FillOpacity": "Opacidade de Preenchimento",
-    "FillTexture": "Textura de Preenchimento",
-    "TextLabel": "Rótulo de Texto",
-    "FontFamily": "Fonte",
-    "FontSize": "Tamanho da Fonte",
-    "TextColor": "Cor do Texto",
-    "TextOpacity": "Opacidade do Texto",
-    "Role": "Função de Desenho",
-    "RoleHint": "Um Desenho que representa um \"Objeto\" é renderizado no Grupo de Telas Primárias e é afetado pela iluminação e neblina de guerra. Um que transmite \"Informações\" é renderizado no Grupo de Interface e fica visível para todos os jogadores, a menos que esteja oculto.",
     "Object": "Objeto",
     "Information": "Informação",
     "JointValidationError": "Os desenhos devem possuir texto visível, preenchimento visível ou linha visível.",
@@ -1062,26 +967,163 @@
       "fill": "Preencher",
       "text": "Texto"
     },
+    "FILL_TYPES": {
+      "none": "Nenhum",
+      "solid": "Sólido",
+      "pattern": "Padrão"
+    },
     "FIELDS": {
-      "sort.label": "Organizar"
+      "bezierFactor": {
+        "label": "Fator de suavização",
+        "hint": "Para desenho à mão livre, o fator de suavização controla a quantidade de suavização do spline."
+      },
+      "fillAlpha.label": "Preencher opacidade",
+      "fillColor.label": "Preencher com cor",
+      "fillType.label": "Tipos de preenchimento",
+      "fontFamily.label": "Família de fonte",
+      "fontSize.label": "Tamanho da fonte",
+      "interface": {
+        "label": "Função do Desenho",
+        "hint": "Um desenho que representa um \"Objeto\" é renderizado no Grupo de Tela Primária e é afetado pela iluminação e pela névoa de guerra. Um desenho que transmite \"Informação\" é renderizado no Grupo de Interface e é visível para todos os jogadores, a menos que esteja oculto."
+      },
+      "name": {
+        "hint": "Um nome opcional para ajudar a identificar o desenho.",
+        "label": "Nome"
+      },
+      "shape": {
+        "width.label": "Largura",
+        "height.label": "Altura"
+      },
+      "sort.label": "Organizar",
+      "strokeAlpha.label": "Opacidade da linha",
+      "strokeColor.label": "Cor da linha",
+      "strokeWidth.label": "Largura da linha",
+      "text.label": "Rótulo de texto",
+      "textAlpha.label": "Opacidade do texto",
+      "textColor.label": "Cor do texto",
+      "texture.label": "Textura de preenchimento"
+    },
+    "ACTIONS": {
+      "resetDefaults": "Redefinir padrões",
+      "submitCreate": "Criar Desenho",
+      "submitUpdate": "Atualizar Desenho"
     }
   },
   "EFFECT": {
-    "MODE_CUSTOM": "Personalizar",
-    "MODE_MULTIPLY": "Multiplicar",
-    "MODE_ADD": "Adicionar",
-    "MODE_DOWNGRADE": "Piorar",
-    "MODE_UPGRADE": "Melhorar",
-    "MODE_OVERRIDE": "Sobrepor",
-    "TransferLegacy": "Transferir Efeito para Ator",
-    "TransferHintLegacy": "Este efeito será copiado para o Ator quando o Item deste Efeito for criado no Ator e será excluído se aquele Item for removido.",
-    "DurationTurns": "Duração do Efeito (Combate)",
-    "StartTurns": "Início do Efeito",
-    "ChangeKey": "Atributo Chave",
-    "ChangeMode": "Mudar o Modo",
-    "ChangeValue": "Valor do Efeito",
-    "ChangePriority": "Prioridade",
+    "StatusAsleep": "Adormecido",
+    "StatusBleeding": "Sangrando",
+    "StatusBlessed": "Abençoado",
+    "StatusBlind": "Cego",
+    "StatusBurning": "Queimando",
+    "StatusBurrow": "Escavação",
+    "StatusCorrode": "Corroendo",
+    "StatusCursed": "Amaldiçoado",
+    "StatusDead": "Morto",
+    "StatusDeaf": "Surdo",
+    "StatusDegen": "Degeneração",
+    "StatusDisease": "Doente",
+    "StatusDowngrade": "Enfraquecido",
+    "StatusFear": "Amedrontado",
+    "StatusFireShield": "Escudo de Fogo",
+    "StatusFlying": "Voando",
+    "StatusFrozen": "Congelado",
+    "StatusHolyShield": "Escudo Sagrado",
+    "StatusHover": "Planando",
+    "StatusIceShield": "Escudo de Gelo",
+    "StatusInvisible": "Invisível",
+    "StatusMagicShield": "Escudo Mágico",
+    "StatusMarked": "Marcado",
+    "StatusParalysis": "Paralisado",
+    "StatusPoison": "Envenenado",
+    "StatusProne": "Prostrado",
+    "StatusRadiation": "Radiação",
+    "StatusRegen": "Regeneração",
+    "StatusRestrained": "Contido",
+    "StatusShocked": "Chocado",
+    "StatusSilenced": "Silenciado",
+    "StatusStunned": "Atordoado",
+    "StatusTarget": "Mirado",
+    "StatusUnconscious": "Inconsciente",
+    "StatusUpgrade": "Fortalecido",
     "Submit": "Aplicar Alterações",
+    "CHANGES": {
+      "PHASES": {
+        "initial": {
+          "label": "Inicial",
+          "hint": "Após a inicialização dos atributos dos dados base, mas antes da preparação dos dados derivados."
+        },
+        "final": {
+          "label": "Final",
+          "hint": "Após o cálculo dos atributos dos dados derivados"
+        }
+      },
+      "TYPES": {
+        "custom": "Personalizado",
+        "multiply": "Multiplicar",
+        "add": "Adicionar",
+        "subtract": "Subtrair",
+        "downgrade": "Piorar",
+        "upgrade": "Melhorar",
+        "override": "Sobrepor"
+      }
+    },
+    "DURATION": {
+      "Header": "Duração do efeito",
+      "Label": "Duração",
+      "MaxOneWarning": "Uma duração em {unit} será considerada como tendo um valor não superior a um.",
+      "UNITS": {
+        "GROUPS": {
+          "time": "Tempo",
+          "combat": "Combate"
+        },
+        "years": "Anos",
+        "months": "Meses",
+        "weeks": "Semanas",
+        "days": "Dias",
+        "hours": "Horas",
+        "minutes": "Minutos",
+        "seconds": "Segundos",
+        "combats": "Encontros de Combate",
+        "rounds": "Rodadas",
+        "turns": "Turnos"
+      },
+      "ROUNDS": {
+        "one": "1 rodada",
+        "two": "2 rodadas",
+        "few": "{rounds} Rodadas",
+        "many": "{rounds} Rodadas",
+        "other": "{rounds} Rodadas"
+      },
+      "ROUNDS_AGO": {
+        "one": "1 rodada atrás",
+        "two": "2 rodadas atrás",
+        "few": "{rounds} Rodadas atrás",
+        "many": "{rounds} Rodadas atrás",
+        "other": "{rounds} Rodadas atrás"
+      },
+      "TURNS": {
+        "one": "1 turno",
+        "two": "2 turnos",
+        "few": "{turns} Turns",
+        "many": "{turns} Turns",
+        "other": "{turns} Turns"
+      },
+      "TURNS_AGO": {
+        "one": "1 turno atrás",
+        "two": "2 turnos atrás",
+        "few": "{turns} Turnos atrás",
+        "many": "{turns} Turnos atrás",
+        "other": "{turns} Turnos atrás"
+      },
+      "EXPIRY_EVENTS": {
+        "combatStart": "Início do combate",
+        "roundStart": "Início da rodada",
+        "turnStart": "Início do turno",
+        "combatEnd": "Fim do combate",
+        "roundEnd": "Fim da rodada",
+        "turnEnd": "Fim do turno"
+      }
+    },
     "FIELDS": {
       "name.label": "Nome do Efeito",
       "img.label": "Ícone do Efeito",
@@ -1094,56 +1136,52 @@
         "hint": "Se marcado, este efeito será aplicado a qualquer ator que for dono do item original do efeito."
       },
       "statuses.label": "Condições de Estado",
+      "showIcon": {
+        "label": "Mostrar ícone?",
+        "hint": "O ícone que representa esse efeito deve ser exibido na interface do usuário enquanto o efeito estiver ativo?"
+      },
+      "changes": {
+        "element": {
+          "key.label": "Chave do atributo",
+          "type.label": "Tipo",
+          "value.label": "Valor",
+          "priority.label": "Prioridade",
+          "phase": {
+            "label": "Fase",
+            "hint": "O momento na preparação dos dados ou em outro evento em que uma alteração deve ser aplicada."
+          }
+        }
+      },
+      "start": {
+        "combatant.label": "Combatente",
+        "round.label": "Rodada",
+        "turn.label": "Turno",
+        "initiative.label": "Iniciativa",
+        "time.label": "Hora de início"
+      },
       "duration": {
-        "seconds.label": "Duração do Efeito (Segundos)",
-        "rounds.label": "Rodadas",
-        "turns.label": "Turnos",
-        "startTime.label": "Início do Tempo do Efeito",
-        "startRound.label": "Rodada",
-        "startTurn.label": "Turno",
-        "combat.label": "Encontro de Combate"
+        "value.label": "Valor da duração",
+        "units.label": "Unidades da duração",
+        "expiry.label": "Evento de expiração"
       }
+    },
+    "SHOW_ICON": {
+      "always": "Sempre",
+      "conditional": "Se temporário",
+      "never": "Nunca"
+    },
+    "START": {
+      "Header": "Início do efeito",
+      "Time": "Hora de início",
+      "Combat": "Rodada {round}, Turno {turn}",
+      "Combatant": "{combatent} (Rolagem de Iniciativa: {initiative})",
+      "NoInitiative": "Não Rolado"
     },
     "TABS": {
       "details": "Detalhes",
       "duration": "Duração",
       "changes": "Mudanças"
-    },
-    "StatusAsleep": "Adormecido",
-    "StatusDead": "Morto",
-    "StatusUnconscious": "Inconsciente",
-    "StatusStunned": "Atordoado",
-    "StatusProne": "Prostrado",
-    "StatusRestrained": "Contido",
-    "StatusParalysis": "Paralisado",
-    "StatusFlying": "Voando",
-    "StatusBlind": "Cego",
-    "StatusDeaf": "Surdo",
-    "StatusSilenced": "Silenciado",
-    "StatusFear": "Amedrontado",
-    "StatusBurning": "Queimando",
-    "StatusFrozen": "Congelado",
-    "StatusShocked": "Chocado",
-    "StatusCorrode": "Corroendo",
-    "StatusBleeding": "Sangrando",
-    "StatusDisease": "Doente",
-    "StatusPoison": "Envenenado",
-    "StatusRadiation": "Radiação",
-    "StatusRegen": "Regeneração",
-    "StatusDegen": "Degeneração",
-    "StatusUpgrade": "Fortalecido",
-    "StatusDowngrade": "Enfraquecido",
-    "StatusHover": "Planando",
-    "StatusBurrow": "Escavação",
-    "StatusInvisible": "Invisível",
-    "StatusTarget": "Mirado",
-    "StatusMarked": "Marcado",
-    "StatusCursed": "Amaldiçoado",
-    "StatusBlessed": "Abençoado",
-    "StatusFireShield": "Escudo de Fogo",
-    "StatusIceShield": "Escudo de Gelo",
-    "StatusMagicShield": "Escudo Mágico",
-    "StatusHolyShield": "Escudo Sagrado"
+    }
   },
   "ERROR": {
     "BrowserVersion": "Foundry Virtual Tabletop usa funcionalidades modernas de JavaScript que não são suportadas em versões do {browser} inferiores à {minimum}. Você está usando a versão {version} do {browser} e pode encontrar problemas.",
@@ -1160,6 +1198,10 @@
     "RequiresFullReinstall": "A versão {version} do Foundry Virtual Tabletop já está disponível, mas não pode ser instalada a partir do aplicativo Foundry Virtual Tabletop porque requer atualizações nas dependências principais, que só estão disponíveis reinstalando o software a partir do site <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RequiresGenerationReinstall": "A versão {version} do Foundry Virtual Tabletop já está disponível, mas não pode ser instalada a partir do aplicativo Foundry Virtual Tabletop porque é uma atualização de nova geração que deve ser instalada manualmente reinstalando o software a partir do site <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RequiresElectronReinstall": "A versão {version} do Foundry Virtual Tabletop já está disponível, mas não pode ser instalada a partir do aplicativo Foundry Virtual Tabletop porque inclui uma nova versão do Electron que só pode ser instalada manualmente reinstalando o software a partir do site <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+    "DETACHED": {
+      "PopupBlocked": "Não foi possível desanexar o aplicativo. Você pode ter um bloqueador de pop-ups ativo.",
+      "TimedOut": "A operação expirou ao desanexar a janela do aplicativo. Você pode ter um bloqueador de pop-ups ativo."
+    },
     "RESOLUTION": {
       "Screen": "O Foundry Virtual Tabletop requer uma resolução de tela de {reqWidth}px por {reqHeight}px ou superior. Seu monitor tem uma resolução de {curWidth}px por {curHeight}px. Você precisa aumentar a resolução ou usar um dispositivo de exibição diferente, caso contrário, alguns recursos do software não funcionarão corretamente.",
       "Scale": "O Foundry Virtual Tabletop requer uma janela utilizável com dimensões de {reqWidth}px por {reqHeight}px ou maiores. As dimensões atuais desta janela são {curWidth}px por {curHeight}px. No momento, você tem um fator de zoom aplicado no sistema operacional ou no navegador, o que está reduzindo o tamanho efetivo da sua janela. Você deve aumentar o tamanho da sua janela ou reduzir o fator de zoom aplicado ao seu navegador, caso contrário, alguns recursos do software não funcionarão corretamente.",
@@ -1183,12 +1225,33 @@
   },
   "EDITOR": {
     "Format": "Formatação",
-    "Font": "Fonte",
+    "Font": {
+      "Color": {
+        "Label": "Cor da fonte",
+        "Set": "Definir cor da fonte",
+        "Title": "Cor"
+      },
+      "Size": {
+        "Huge": "Enorme",
+        "Invalid": "Tamanho de fonte inválido",
+        "Label": "Tamanho da fonte",
+        "Large": "Grande",
+        "Normal": "Normal",
+        "Placeholder": "12pt",
+        "Set": "Definir tamanho da fonte",
+        "Small": "Pequeno",
+        "Title": "Tamanho"
+      },
+      "Title": "Fonte"
+    },
     "Inline": "Em Linha",
     "Block": "Bloco",
     "Headings": "Cabeçalhos",
     "Heading": "Cabeçalho {level}",
     "Alignment": "Alinhamento",
+    "Custom": "Personalizado",
+    "Insert": "Inserir",
+    "Lists": "Listas",
     "Paragraph": "Parágrafo",
     "Bold": "Negrito",
     "Italic": "Itálico",
@@ -1223,6 +1286,7 @@
     "InsertImage": "Inserir Imagem",
     "ImageSource": "Origem",
     "ImageAlt": "Descrição Alternativa",
+    "ImageCaption": "Legenda",
     "ImageDimensions": "Dimensões",
     "ImageDimensionsHint": "Deixá-los em branco usará o tamanho intrínseco da imagem.",
     "ImageInsert": "Inserir",
@@ -1231,8 +1295,8 @@
     "LinkTitle": "Título do link",
     "LinkInsert": "Inserir link",
     "ProseMirrorBadArguments": "Tanto um documento quanto um nome devem ser fornecidos para criar uma instância do ProseMirror.",
-    "TinyMCE": "TinyMCE",
     "Markdown": "Markdown",
+    "HTML": "HTML",
     "Reveal": "Revelar",
     "Hide": "Ocultar",
     "CollaboratingUsers": "Usuários colaborando",
@@ -1258,8 +1322,12 @@
     },
     "TAGS": {
       "Add": "Adicionar Etiqueta",
+      "AddGridOffset": "Adicionar desvio de grade",
       "Remove": "Remover Etiqueta",
+      "RemoveGridOffset": "Remover desvio da grade",
       "ErrorBlank": "Etiquetas em um HTMLStringTagsElement não pode estar em branco.",
+      "ErrorInvalidGridOffset2D": "Um desvio de grade 2D deve ter duas coordenadas inteiras, separadas por um ponto.",
+      "ErrorInvalidGridOffset3D": "Um desvio de grade 3D deve ter três coordenadas inteiras, separadas por pontos.",
       "ErrorNonUnique": "Etiqueta \"{tag}\" já está configurada."
     }
   },
@@ -1302,6 +1370,7 @@
     "TitleImageVideo": "Explorador de Imagem ou Vídeo",
     "TitleImage": "Explorador de Imagem",
     "TitleVideo": "Explorador de Vídeo",
+    "TitleTexture": "Navegador de Texturas",
     "TitleAudio": "Explorador de Audio",
     "TitleText": "Explorador de Documentos",
     "TitleGraphics": "Explorador de 3D",
@@ -1349,29 +1418,36 @@
   "INVITATIONS.DiscoveryFailed": "Nosso serviço de detecção de IP falho em identificar o seu endereço de IP correto, você está usando IPv6 ou não está conectado à Internet no momento.",
   "ITEM.ViewArt": "Ver Arte de Item",
   "HOTBAR": {
-    "LABEL": "Barra de Ações",
-    "MUTE": "Mutar Volume",
-    "UNMUTE": "Desmutar Volume",
-    "MENU": "Menu Principal",
-    "LOCK": "Travar Barra",
-    "UNLOCK": "Destravar Barra",
-    "PAGE_NEXT": "Próxima Página",
-    "PAGE_PREV": "Página Anterior",
-    "EMPTY": "Limpar Espaço",
-    "CLEAR": "Limpar Barra",
-    "CLEAR_CONFIRM": "Limpar todas as macros da barra?"
+    "Label": "Barra de ação",
+    "Empty": "Espaço vazio",
+    "ToggleSheet": "Exibir {documento}",
+    "ClearConfirm": "Limpar todas as macros atribuídas à sua barra de atalhos?",
+    "ACTIONS": {
+      "Clear": "Limpar barra de acesso rápido",
+      "Mute": "Silenciar volume",
+      "Unmute": "Desmutar volume",
+      "Menu": "Menu Principal",
+      "Lock": "Barra de acesso rápido com trava",
+      "Unlock": "Desbloquear barra de atalhos",
+      "PageNext": "Próxima página",
+      "PagePrev": "Página anterior"
+    }
   },
   "HUD": {
+    "ChangeLevel": "Alterar Andar",
     "Elevation": "Elevação",
     "OpenConfig": "Abrir Configuração",
     "AssignStatusEffects": "Atribuir Efeitos de Condições",
     "SelectMovementAction": "Selecione Ação de Movimento",
-    "ToggleTargetState": "Alternar Estado do Alvo",
-    "ToggleCombatState": "Alternar Estado do Combate",
-    "ToggleVis": "Alternar Visibilidade",
-    "ToggleLock": "Mudar Bloqueio",
-    "ToFront": "Trazer para a Frente",
-    "ToBack": "Enviar para Trás",
+    "Target": "Alvejar",
+    "Untarget": "Remover alvo",
+    "EnterCombat": "Entrar em Combate",
+    "ExitCombat": "Sair do Combate",
+    "Hide": "Esconder",
+    "Show": "Mostrar",
+    "Lock": "Bloquear",
+    "Unlock": "Desbloquear",
+    "ToFrontOrBack": "Para a frente/verso",
     "TilePlay": "Reproduzir Peça de Vídeo",
     "TilePause": "Pausar Peça de Vídeo",
     "WarningEffectNoActor": "Você não pode atribuir efeitos de condições a um Token que não tenha nenhum Ator associado."
@@ -1395,7 +1471,6 @@
     "AnchorTop": "Topo",
     "AnchorLeft": "Esquerda",
     "AnchorRight": "Direita",
-    "EntryTitle": "Título da Entrada",
     "ModeMultiple": "Modo de Múltiplas Páginas",
     "ModeSingle": "Modo de Página Única",
     "ViewMultiple": "Ver Múltiplas Páginas",
@@ -1407,44 +1482,56 @@
     "ShowBadPermissions": "Você só pode mostrar Entradas do Diário ou Páginas que você possua.",
     "ShowNoPlayers": "Não há outros jogadores conectados para mostrar isso.",
     "ShowOwnershipHint": "Opcionalmente, atualize a permissão deste documento para os jogadores para os quais ele está sendo exibido. Se um jogador já tiver um nível de cargo maior, ele não será rebaixado.",
+    "SHOW": {
+      "all": "todos",
+      "authorized": "autorizado",
+      "selected": "selecionado"
+    },
     "LockModeLocked": "Índice bloqueado. Clique para desbloquear.",
     "LockModeUnlocked": "Índice desbloqueado. Clique para bloquear.",
     "ConfigureCategories": "Configurar Categorias",
     "ConfigureCategoriesTitle": "Categorias {name}",
     "CategoryName": "Nome da Categoria",
     "Uncategorized": "Sem Categoria",
-    "UnnamedCategory": "<Categoria Sem Nome>"
+    "UnnamedCategory": "<Categoria Sem Nome>",
+    "FIELDS": {
+      "name": {
+        "label": "Título da Entrada"
+      }
+    }
   },
   "JOURNALENTRYPAGE": {
     "DefaultPageSheet": "Ficha {page} Padrão",
-    "Format": "Formatação",
     "Page": "Página",
-    "PageTitle": "Nome da página",
-    "Source": "Origem",
-    "Type": "Tipo",
-    "TypeImage": "Imagem",
-    "TypePDF": "PDF",
-    "TypeText": "Texto",
-    "TypeVideo": "Vídeo",
-    "ImageSource": "Origem da Imagem",
-    "ImageCaption": "Legenda da Imagem",
-    "VideoAutoplay": "Auto-Reproduzir Vídeo",
-    "VideoControls": "Mostrar Controles de Vídeo",
     "VideoDimensions": "Dimensões do Vídeo",
-    "VideoLoop": "Vídeo em Loop",
     "VideoStartTime": "Tempo de Início do Vídeo",
-    "VideoSource": "Origem do Vídeo",
     "VideoSourceHint": "Pode ser um arquivo local, um URL de arquivo de vídeo remoto ou um URL do YouTube.",
-    "VideoVolume": "Volume do Vídeo",
     "PDFLoad": "Carregar PDF",
-    "PDFSource": "Origem do PDF",
     "ShowImageOnly": "Mostrar Apenas Imagem",
     "ShowImageTitle": "Mostrar Título da Imagem",
     "ShowImageCaption": "Exibir Legenda da Imagem",
-    "ShowTitle": "Exibir Título da Página",
-    "HeadingLevel": "Nível do Cabeçalho",
-    "Category": "Categoria da Página",
-    "Level": "Nível {level}"
+    "Level": "Nível {level}",
+    "FIELDS": {
+      "category.label": "Categoria da página",
+      "image": {
+        "caption.label": "Legenda da imagem"
+      },
+      "name.label": "Nome da página",
+      "src.label": "Caminho do arquivo",
+      "text": {
+        "format.label": "Formatação"
+      },
+      "title": {
+        "level.label": "Nível de cabeçalho",
+        "show.label": "Exibir título da página"
+      },
+      "video": {
+        "autoplay.label": "Vídeo com reprodução automática",
+        "controls.label": "Mostrar controles de vídeo",
+        "loop.label": "Vídeo em Loop",
+        "volume.label": "Volume de vídeo"
+      }
+    }
   },
   "KEYBINDINGS": {
     "Title": "Configuração de Controles",
@@ -1480,6 +1567,16 @@
     "BringToFront": "Trazer Objetos para a Frente",
     "ToggleCharacterSheet": "Alternar Ficha de Personagem",
     "PTTKey": "Aperte-para-Falar/Aperte-para-Mutar",
+    "MoveUp": "Mover para cima",
+    "MoveLeft": "Movar para a esquerda.",
+    "MoveDown": "Mover para baixo",
+    "MoveRight": "Movar para a direita.",
+    "MoveUpLeft": "Mover para cima e para a esquerda",
+    "MoveUpRight": "Mover para cima e para a direita",
+    "MoveDownLeft": "Mover para baixo e para a esquerda",
+    "MoveDownRight": "Mover para baixo e para a direita",
+    "Ascend": "Subir verticalmente",
+    "Descend": "Descer verticalmente",
     "PanUp": "Mover ou Deslizar para Cima",
     "PanLeft": "Mover ou Deslizar para Esquerda",
     "PanDown": "Mover ou Deslizar para Baixo",
@@ -1507,6 +1604,50 @@
     }
   },
   "LIGHT": {
+    "COLORATION": {
+      "Legacy": "Coloração Antiga",
+      "AdaptiveLuminance": "Luminância Adaptável",
+      "InternalHalo": "Halo Interno",
+      "ExternalHalo": "Halo Externo",
+      "ColorBurn": "Superexposição",
+      "InternalBurn": "Superexposição Interna",
+      "ExternalBurn": "Superexposição Externa",
+      "LowAbsorption": "Baixa Absorção",
+      "HighAbsorption": "Alta Absorção",
+      "InvertAbsorption": "Absorção Inversa",
+      "NaturalLight": "Luz Natural",
+      "NaturalAttenuation": "Atenuação Natural",
+      "AdaptiveAttenuation": "Atenuação Adaptável"
+    },
+    "ANIMATION": {
+      "Torch": "Luz Cintilante",
+      "Pulse": "Pulso",
+      "ReactivePulse": "Pulso reativo ao som",
+      "Chroma": "Croma",
+      "Wave": "Onda pulsante",
+      "Fog": "Névoa rodopiante",
+      "Sunburst": "Raio de Sol",
+      "LightDome": "Cúpula de Luz",
+      "Emanation": "Emanação Misteriosa",
+      "EnergyField": "Campo de energia",
+      "HexaDome": "Domo Hexagonal",
+      "GhostLight": "Luz Fantasmagórica",
+      "RoilingMass": "Massa Turva",
+      "BlackHole": "Buraco negro",
+      "Vortex": "Vórtice",
+      "BewitchingWave": "Onda Enfeitiçante",
+      "SwirlingRainbow": "Arco-íris giratório",
+      "RadialRainbow": "Arco-íris Radial",
+      "FairyLight": "Luzes de fada",
+      "Flame": "Tocha",
+      "ForceGrid": "Grade de Força",
+      "StarLight": "Luz das estrelas",
+      "SmokePatch": "Fumaça",
+      "Revolving": "Luz giratória",
+      "Siren": "Luz de sirene",
+      "MagicalGloom": "Melancolia Mágica",
+      "DenseSmoke": "Fumaça densa"
+    },
     "FIELDS": {
       "alpha": {
         "label": "Intensidade da Cor",
@@ -1515,7 +1656,9 @@
       "animation": {
         "label": "Animação da Luz",
         "type": {
-          "label": "Tipo de Animação da Luz"
+          "label": "Tipo de Animação da Luz",
+          "any": "Qualquer",
+          "none": "Sem animação"
         },
         "speed": {
           "label": "Velocidade da Animação",
@@ -1585,45 +1728,7 @@
           "label": "e"
         }
       }
-    },
-    "LegacyColoration": "Coloração Antiga",
-    "AdaptiveLuminance": "Luminância Adaptável",
-    "InternalHalo": "Halo Interno",
-    "ExternalHalo": "Halo Externo",
-    "ColorBurn": "Superexposição",
-    "InternalBurn": "Superexposição Interna",
-    "ExternalBurn": "Superexposição Externa",
-    "LowAbsorption": "Baixa Absorção",
-    "HighAbsorption": "Alta Absorção",
-    "InvertAbsorption": "Inverter Absorção",
-    "NaturalLight": "Luz Natural",
-    "AnimationTorch": "Luz Cintilante",
-    "AnimationPulse": "Pulso",
-    "AnimationReactivePulse": "Pulso Reativo a Som",
-    "AnimationChroma": "Croma",
-    "AnimationWave": "Onda Pulsante",
-    "AnimationFog": "Névoa Rodopiante",
-    "AnimationSunburst": "Explosão Solar",
-    "AnimationLightDome": "Domo de Luz",
-    "AnimationEmanation": "Emanação Misteriosa",
-    "AnimationEnergyField": "Campo de Energia",
-    "AnimationHexaDome": "Domo Hexagonal",
-    "AnimationGhostLight": "Luz Fantasmagórica",
-    "AnimationRoilingMass": "Massa Turva (Escuridão)",
-    "AnimationBlackHole": "Buraco Negro (Escuridão)",
-    "AnimationVortex": "Vórtex",
-    "AnimationBewitchingWave": "Onda Enfeitiçadora",
-    "AnimationSwirlingRainbow": "Arco-Íris Giratório",
-    "AnimationRadialRainbow": "Arco-Íris Radial",
-    "AnimationFairyLight": "Luz Encantada",
-    "AnimationFlame": "Tocha",
-    "AnimationForceGrid": "Grade de Força",
-    "AnimationStarLight": "Luz Estelar",
-    "AnimationSmokePatch": "Fumaça",
-    "AnimationRevolving": "Luz Giratória",
-    "AnimationSiren": "Luz de Sirene",
-    "AnimationMagicalGloom": "Melancolia Mágica",
-    "AnimationDenseSmoke": "Fumaça Densa"
+    }
   },
   "MACRO": {
     "Delete": "Excluir Macro",
@@ -1646,42 +1751,67 @@
       "command.label": "Comando"
     }
   },
+  "MEASUREMENT": {
+    "ABBR": {
+      "Pixels": "px"
+    },
+    "Angle": "Ângulo",
+    "Coordinates": "Coordenadas",
+    "Degrees": "Graus",
+    "Direction": "Direção",
+    "Distance": "Distância",
+    "GridSpaces": "Espaços em grade",
+    "GridUnits": "Unidades de grade",
+    "Height": "Altura",
+    "Pixels": "Pixels",
+    "Ratio": "Razão",
+    "Scale": "Escala",
+    "Width": "Largura"
+  },
   "MENU.NavLabel": "Menu principal",
   "MENU.Reload": "Recarregar",
   "MENU.Logout": "Sair",
   "MENU.Players": "Gestão de Usuários",
-  "MODMANAGE.Bugs": "Relatórios de Bugs ou Problemas",
-  "MODMANAGE.DeactivateAll": "Desativar Todos os Módulos",
-  "MODMANAGE.Readme": "Documentação do Módulo",
-  "MODMANAGE.Title": "Gerenciamento de Módulos",
-  "MODMANAGE.Instructions": "Use este formulário para configurar quais Módulos estão ativos no seu mundo atual. Alterar os módulos ativos fará a sessão atual ser recarregada.",
-  "MODMANAGE.View": "Os módulos listados abaixo estão ativos neste Mundo.",
-  "MODMANAGE.None": "Não há Módulos disponíveis neste Mundo.",
-  "MODMANAGE.Search": "Filtrar Módulos",
-  "MODMANAGE.Submit": "Salvar Configurações dos Módulos",
-  "MODMANAGE.Dependencies": "Dependências",
-  "MODMANAGE.RequiredDepError": "Este módulo não pode ser desativado, pois é exigido pelos seguintes módulos: {dependents}",
-  "MODMANAGE.RequiredDependencies": "Dependências Necessárias",
-  "MODMANAGE.RecommendedDependencies": "Dependências Recomendadas",
-  "MODMANAGE.OptionalDependencies": "Dependências Opcionais",
-  "MODMANAGE.DependencyResolution": "Resolução de Dependências",
-  "MODMANAGE.DepRequiredEnable": "Este módulo tem {number} dependências inativas que são necessárias para que ele funciona corretamente:",
-  "MODMANAGE.DepOptionalEnable": "Este módulo tem {number} dependências inativas que podem ser ativadas opcionalmente para melhorá-lo:",
-  "MODMANAGE.DepEnableCheck": "Ativar módulo e suas dependências?",
-  "MODMANAGE.DepDisable": "Este módulo tinha {number} dependências que podem não ser mais necessárias:",
-  "MODMANAGE.DepDisableCheck": "Gostaria de desativá-las também?",
-  "MODMANAGE.DepNotInstalled": "A dependência {missing} não está instalada!",
-  "MODMANAGE.DepMissing": "Você habilitou o módulo {module}, mas suas dependências {missing} não estão habilitadas!",
-  "MODMANAGE.FilterAll": "Todos os Módulos",
-  "MODMANAGE.FilterActive": "Módulos Ativos",
-  "MODMANAGE.FilterInactive": "Módulos Inativos",
-  "MODMANAGE.RequiredModule": "Este módulo precisa estar ativado",
-  "MODMANAGE.DependencyIssues": "Não pode ser ativado devido a problemas nas dependências necessárias",
-  "MODMANAGE.SystemCompatibilityIssueMinimum": "Este módulo requer uma versão de sistema mínima de {minimum}, mas a sua versão é {version}. Por favor, atualize o sistema.",
-  "MODMANAGE.SystemCompatibilityIssueMaximum": "Este módulo requer uma versão de sistema máxima de {maximum}, mas a sua versão é {version}.",
-  "MODMANAGE.NavLabel": "Gerenciar Módulos",
-  "MODMANAGE.UpstreamPackages": "Há {number} pacotes que necessitam que esse pacote esteja ativo. Desabilitar este pacote também irá desatilitar estes pacotes.",
-  "MODMANAGE.UnavailableDocuments": "Documentos Tornados Indisponíveis",
+  "MENU.Close": "Fechar menu principal",
+  "MODMANAGE": {
+    "Bugs": "Relatórios de erros ou problemas",
+    "DeactivateAll": "Desativar todos os módulos",
+    "Readme": "Documentação",
+    "Author": "Autor",
+    "Authors": "Autores",
+    "URL": "URL",
+    "Title": "Gerenciamento de Módulos",
+    "Instructions": "Use este formulário para configurar quais módulos estão ativos no seu mundo atual. Ao enviar alterações nos módulos ativos, a sessão atual será recarregada.",
+    "View": "Os módulos listados abaixo estão atualmente ativos neste mundo.",
+    "None": "Não há módulos disponíveis neste mundo.",
+    "Search": "Módulos de filtro",
+    "Submit": "Salvar configurações do módulo",
+    "Dependencies": "Dependências",
+    "RequiredDepError": "Este módulo não pode ser desativado, pois é necessário para os seguintes itens: {dependents}",
+    "RequiredDependencies": "Dependências necessárias",
+    "RecommendedDependencies": "Dependências recomendadas",
+    "OptionalDependencies": "Dependências opcionais",
+    "DependencyResolution": "Resolução de Dependências",
+    "DepRequiredEnable": "As seguintes dependências são necessárias para que os módulos selecionados funcionem.",
+    "DepOptionalEnable": "Os módulos selecionados listam as seguintes dependências opcionais.",
+    "DepEnableCheck": "Habilitar o módulo e as dependências selecionadas?",
+    "DepDisable": "As seguintes dependências deixariam de ser utilizadas e podem ser desativadas:",
+    "DepDisableCheck": "Deseja desativar também os pacotes selecionados?",
+    "DepNotInstalled": "A dependência necessária {missing} não está instalada!",
+    "DepMissing": "Você habilitou o módulo {module}, mas suas dependências {missing} não estão habilitadas!",
+    "FilterAll": "Todos os módulos",
+    "FilterActive": "Módulos ativos",
+    "FilterInactive": "Módulos inativos",
+    "RequiredModule": "Este módulo precisa estar ativo.",
+    "DependencyIssues": "Não pode ser ativado devido a problemas nas dependências necessárias.",
+    "SystemCompatibilityIssueMinimum": "Este módulo requer uma versão mínima do sistema de {minimum}, mas a sua versão é {version}. Por favor, atualize o sistema.",
+    "SystemCompatibilityIssueMaximum": "Este módulo requer uma versão máxima do sistema de {maximum}, mas sua versão é {version}.",
+    "NavLabel": "Navegação de gerenciamento de módulos",
+    "UpstreamPackages": "Existem {number} pacotes que exigem que este pacote esteja ativo. Desativar este pacote também desativará esses pacotes.",
+    "UnavailableDocuments": "Os seguintes documentos ficarão indisponíveis se você desativar esses módulos.",
+    "Activate": "Ativar",
+    "Deactivate": "Desativar"
+  },
   "NOTE.Create": "Criar Nota do Mapa",
   "NOTE.CreateJournal": "Criar registro de diário correspondente?",
   "NOTE.Custom": "Personalizar",
@@ -1738,8 +1868,6 @@
     "LATENCY": "Latência",
     "FPS": "FPS"
   },
-  "PLAYLIST.Delete": "Excluir Playlist",
-  "PLAYLIST.Edit": "Editar Playlist",
   "PLAYLIST.DefaultChannel": "Canal de Áudio da Playlist",
   "PLAYLIST.CurrentlyPlaying": "Em Reprodução",
   "PLAYLIST.ModeDisabled": "Apenas Mesa de Som",
@@ -1756,7 +1884,7 @@
   "PLAYLIST.Update": "Atualizar Playlist",
   "PLAYLIST.SortAlphabetical": "Alfabética",
   "PLAYLIST.SortManual": "Manual",
-  "PLAYLIST.SoundCreate": "Criar som",
+  "PLAYLIST.SoundAdd": "Adicionar som",
   "PLAYLIST.SoundEdit": "Editar Som",
   "PLAYLIST.SoundDelete": "Excluir Som",
   "PLAYLIST.SoundLoop": "Repetir Som",
@@ -1766,6 +1894,7 @@
   "PLAYLIST.SoundPreload": "Pré-carregar Som",
   "PLAYLIST.SoundResume": "Retomar som",
   "PLAYLIST.SoundStop": "Parar Som",
+  "PLAYLIST.Preload": "Sons de pré-carregamento",
   "PLAYLIST.BulkImport": {
     "Title": "Importação em Massa de Sons",
     "Hint": "Selecione uma pasta contendo os sons a serem importados.",
@@ -1786,6 +1915,7 @@
     "CONTROLS": "Controles de Volume de Usuário",
     "TOOLTIP": "Volume: {volume}%"
   },
+  "PLAYLIST_SOUND.Create": "Criar som",
   "PLAYLIST_SOUND.Update": "Atualizar Faixa",
   "PLAYLIST_SOUND.FIELDS": {
     "name.label": "Nome da Faixa",
@@ -1800,23 +1930,35 @@
   "SCENE.AccessibilityGM": "Apenas Mestre",
   "SCENE.AccessibilityAll": "Todos Jogadores",
   "SCENE.Activate": "Ativar",
+  "SCENE.Audio": "Áudio",
   "SCENE.BackgroundScale": "Escala da Imagem de Fundo",
   "SCENE.BackgroundScaleHint": "Use SHIFT+Roda do Mouse ou SHIFT+Seta para Cima e SHIFT+Seta para Baixo para ajustar o tamanho da imagem de fundo.",
   "SCENE.CaptureInitialViewPosition": "Posição da tela capturada como visualização inicial na configuração da Cena.",
-  "SCENE.Configure": "Configurar",
+  "SCENE.CurrentLevel": "Andar atual",
+  "SCENE.Darkness": "Escuridão",
+  "SCENE.Details": "Detalhes",
   "SCENE.Dimensions": "Dimensões da Cena",
   "SCENE.DimensionsHint": "As dimensões da cena são definidas automaticamente para corresponder às dimensões da imagem de fundo quando uma imagem de fundo é configurada pela primeira vez.",
   "SCENE.DimensionChangeTitle": "Alterar Dimensões da Cena?",
   "SCENE.DimensionChangeWarning": "Você está alterando as dimensões subjacentes desta Cena. Se você já colocou objetos nesta Cena, esta operação pode fazer com que esses objetos mudem de posição em relação à imagem de fundo.",
   "SCENE.DimensionLinked": "As dimensões da cena estão vinculadas no momento. Alterar uma alterará a outra para manter a proporção. Clique para desvincular.",
+  "SCENE.DeterminingDimensions": "Determinar as dimensões da cena.",
   "SCENE.DimensionUnlinked": "As dimensões da cena não estão vinculadas no momento. Alterar uma não alterará a outra. Clique para vincular.",
   "SCENE.DistortedDimensionsTitle": "Dimensões de Cena Distorcidas",
   "SCENE.DistortedDimensionsWarning": "Você escolheu novas dimensões com uma proporção diferente da original. Deseja reposicionar automaticamente objetos posicionados, como Tokens? O resultado pode acabar distorcido.",
+  "SCENE.Environment.Base": "Ambiente básico",
+  "SCENE.Environment.Dark": "Ambiente de escuridão",
+  "SCENE.Environment.DarkHint": "Comporta-se como as configurações ambientais básicas, mas aplica-se à medida que o nível de escuridão da cena se aproxima de 1.",
+  "SCENE.Environment.Reset": "Restaurar opções padrão",
+  "SCENE.FogOfWar": "Névoa da Guerra",
   "SCENE.GenerateThumb": "Gerar Imagem em Miniatura",
   "SCENE.GenerateThumbNoCanvas": "A miniatura da cena não pode ser gerada com a configuração 'Desativar Tela do Jogo' ativada.",
   "SCENE.GenerateThumbUploadDenied": "The scene thumbnail could not be generated because the user does not have permission to upload files.",
   "SCENE.GenerateThumbProgress": "Gerando imagem em miniatura para Cena {name}.",
   "SCENE.GenerateThumbSuccess": "Imagem em miniatura gerada para Cena {name}.",
+  "SCENE.GlobalIllumination": "Iluminação Global",
+  "SCENE.GridAppearance": "Aparência",
+  "SCENE.GridAppearanceHint": "Configure a aparência das linhas da grade.",
   "SCENE.GridConfigTool": "Ferramenta de Configuração de Grade",
   "SCENE.GridConfigToolHint": "Configure a posição da grade e da imagem de fundo usando a roda do mouse e as teclas de seta ou definindo manualmente os seguintes campos.",
   "SCENE.GridGridless": "Sem Grade",
@@ -1825,29 +1967,69 @@
   "SCENE.GridHexEvenR": "Linhas Hexagonais - Pares",
   "SCENE.GridHexOddQ": "Colunas Hexagonais - Ímpares",
   "SCENE.GridHexEvenQ": "Colunas Hexagonais - Pares",
+  "SCENE.GridMeasurement": "Medidas",
+  "SCENE.GridMechanics": "Mecânicas",
   "SCENE.GridSizeError": "Este redimensionamento reduziria o tamanho da grade abaixo de 50px. Se você quer reduzir para este tamanho, troque para Sem Grade primeiro e redefina a nova grade após o redimensionamento.",
   "SCENE.GridResizeHint": "Use ALT+Roda do mouse, ALT+Seta para cima ALT+Seta para baixo para ajustar o tamanho da grade.",
   "SCENE.GridPosition": "Deslocamento da Imagem de Fundo",
   "SCENE.GridPositionHint": "Use as teclas de seta para deslocar o deslocamento da imagem de fundo.",
-  "SCENE.GridScale": "Escala da Grade",
   "SCENE.GridReset": "Desfazer Mudanças",
+  "SCENE.InheritedField": "O valor deste campo está sendo herdado do andar '{level}'. Clique aqui para editá-lo diretamente.",
+  "SCENE.InitialLevel": "Andar inicial",
   "SCENE.InitialView": "Posição de Visão Inicial",
   "SCENE.InitialViewButton": "Capturar Visão Atual",
   "SCENE.InitialViewHint": "Define uma posição de câmera padrão que será exibida na primeira vez que a cena for exibida.",
   "SCENE.InvalidDimension": "A dimensão fornecida resultaria em um valor não-inteiro para a outra dimensão. Tente um valor diferente ou desvincule-as.",
   "SCENE.Loading": "Carregando {name}",
   "SCENE.Notes": "Notas da Cena",
-  "SCENE.Pixels": "Pixels",
+  "SCENE.Perception": "Percepção",
   "SCENE.Preload": "Pré-carregar Cena",
+  "SCENE.Presentation": "Apresentação",
+  "SCENE.Properties": "Propriedades da Cena",
   "SCENE.View": "Ver Cena",
   "SCENE.ShiftBG": "Mover Fundo",
+  "SCENE.PullEveryone": "Puxar todos",
   "SCENE.ToggleNav": "Alternar Navegação",
-  "SCENE.Ambience": {
-    "Base": "Ambiente Básico",
-    "Dark": "Ambiente Escuro",
-    "ResetEnvironment": "Redefinir para Opções Padrão"
+  "SCENE.FogModeChangeMessage": "O modo de exploração da névoa foi alterado. Isso recarregará a exploração da névoa e redefinirá a visão.",
+  "SCENE.Transition": {
+    "Animation": "Animação de transição",
+    "Preview": "Previsão",
+    "Config": "Configurar",
+    "Types": {
+      "fade": "Desvanecer",
+      "swirl": "Redemoinho",
+      "waterDrop": "Gota de água",
+      "morph": "Morfar",
+      "crosshatch": "Hachurar",
+      "wind": "Vento",
+      "waves": "Ondas",
+      "whiteNoise": "Estática",
+      "hologram": "Holograma",
+      "hole": "Buraco",
+      "holeSwirl": "Buraco em espiral",
+      "glitch": "Falha",
+      "dots": "Pontos"
+    }
   },
   "SCENE.FIELDS": {
+    "initialLevel": {
+      "hint": "Se um usuário tiver visibilidade deste andar, ele será colocado nele quando a cena for ativada pela primeira vez ou se a cena estiver ativa ao entrar no jogo.",
+      "label": "Andar inicial"
+    },
+    "transition": {
+      "type": {
+        "label": "Tipo de transição",
+        "hint": "O tipo de animação de transição que é reproduzida quando a cena é visualizada."
+      },
+      "duration": {
+        "label": "Duração",
+        "hint": "A duração da animação de transição em milissegundos."
+      },
+      "activeOnly": {
+        "label": "Somente ativos",
+        "hint": "Reproduza esta animação de transição somente quando a Cena estiver ativada ou quando estiver ativa após entrar no jogo."
+      }
+    },
     "name.label": "Nome da Cena",
     "navigation.label": "Mostrar na Navegação",
     "navName": {
@@ -1863,14 +2045,6 @@
       "offsetY.label": "Vertical"
     },
     "backgroundColor.label": "Cor de Fundo",
-    "foreground": {
-      "label": "Imagem de Primeiro Plano",
-      "hint": "Uma imagem de primeiro plano opcional que é desenhada acima de outros objetos na Cena."
-    },
-    "foregroundElevation": {
-      "label": "Elevação do Primeiro Plano",
-      "hint": "Uma elevação em unidades de distância que configura a altura da imagem do primeiro plano e dos blocos superiores."
-    },
     "initial.scale.label": "Zoom",
     "grid": {
       "type.label": "Tipo de Grade",
@@ -1881,6 +2055,7 @@
       "thickness.label": "Espessura da Grade",
       "color.label": "Cor da Grade",
       "alpha.label": "Opacidade da Grade",
+      "distance.hint": "A distância que cada espaço da grade representa nesta cena, em unidades apropriadas para o sistema de jogo.",
       "distance.label": "Distância",
       "units.label": "Unidades",
       "style.label": "Estilo da Grade"
@@ -1889,14 +2064,22 @@
       "label": "Porcentagem de Preenchimento",
       "hint": "Uma quantidade de preenchimento adicional ao redor da imagem de fundo da cena que fornece espaço de tela utilizável."
     },
+    "shiftX.hint": "O deslocamento é aplicado à área jogável da cena, que por padrão é centralizada na tela.",
+    "shiftX.label": "Deslocamento (X)",
+    "shiftY.label": "Deslocamento (Y)",
     "tokenVision": {
       "label": "Visão do Token",
       "hint": "Restringe a visibilidade dentro desta Cena à visão de Tokens controlados. Se desabilitado, toda a Cena fica visível."
     },
     "fog": {
-      "exploration": {
-        "label": "Exploração de Névoa",
-        "hint": "Se esta configuração estiver habilitada, a exploração da névoa de guerra será rastreada por usuário e armazenada no banco de dados à medida que a cena for explorada. Caso contrário, a exploração da névoa não ocorrerá e, em vez disso, os Tokens serão limitados apenas ao que eles podem ver no momento."
+      "MODES": {
+        "DISABLED": "Nenhum",
+        "INDIVIDUAL": "Individual",
+        "SHARED": "Compartilhado"
+      },
+      "mode": {
+        "label": "Modo de Exploração",
+        "hint": "Controles do modo Névoa de Guerra: \"Nenhum\" desativa a exploração (os tokens veem apenas o que conseguem ver no momento), \"Individual\" rastreia a exploração separadamente para cada usuário e \"Compartilhado\" usa um único estado de exploração para o qual todos os usuários contribuem."
       },
       "overlay": {
         "label": "Imagem da Névoa de Guerra",
@@ -1984,13 +2167,71 @@
     "SHEET": {
       "basics": "Básicos",
       "grid": "Grade",
-      "lighting": "Iluminação",
-      "ambience": "Ambiente"
-    },
-    "AMBIENCE": {
-      "basic": "Opções Básicas",
-      "environment": "Iluminação Ambiental"
+      "visibility": "Visibilidade",
+      "environment": "Ambiente",
+      "misc": "Diversos",
+      "levels": "Andares"
     }
+  },
+  "SCENE_LEVEL": {
+    "Actions": {
+      "Add": {
+        "hint": "As cenas suportam mais de um andar vertical. Adicione um novo andar para converter esta cena em uma cena com vários andares.",
+        "label": "Adicionar andar"
+      },
+      "Edit": "Editar andar",
+      "Delete": "Excluir andar"
+    },
+    "FIELDS": {
+      "background": {
+        "label": "Fundo",
+        "src.label": "Textura",
+        "color.label": "Cor",
+        "tint.label": "Matiz",
+        "alphaThreshold": {
+          "label": "Limiar Alfa",
+          "hint": "Os pixels na textura de fundo com valores alfa abaixo desse limite não restringem a luz ou as condições climáticas."
+        }
+      },
+      "elevation": {
+        "label": "Faixa de altitude",
+        "bottom.label": "Elevação de fundo",
+        "top.label": "Elevação do primeiro plano"
+      },
+      "foreground": {
+        "label": "Primeiro plano",
+        "src.label": "Textura",
+        "tint.label": "Matiz",
+        "alphaThreshold.label": "Limiar Alfa"
+      },
+      "fog": {
+        "label": "Exploração da névoa",
+        "src.label": "Textura inexplorada",
+        "tint.label": "Matiz da textura"
+      },
+      "textures": {
+        "label": "Posicionamento",
+        "anchor": "Âncora",
+        "anchorX.label": "X",
+        "anchorY.label": "Y",
+        "offset": "Desvio",
+        "offsetX.label": "X",
+        "offsetY.label": "Y",
+        "fit.label": "Modo de ajuste",
+        "scale": "Escala",
+        "scaleX.label": "X",
+        "scaleY.label": "Y",
+        "rotation.label": "Rotação"
+      },
+      "visibility": {
+        "label": "Visibilidade do Andar",
+        "levels": {
+          "label": "Andares Visíveis",
+          "hint": "Configure o conjunto de outros andares que são total ou parcialmente visíveis a partir deste."
+        }
+      }
+    },
+    "CannotDeleteOnlyLevel": "Você não pode excluir o único andar desta cena."
   },
   "SCENE_NAVIGATION": {
     "COLLAPSE": "Recolher Navegação",
@@ -2061,6 +2302,10 @@
         "label": "Porta",
         "hint": "Escolha qual porta o Foundry Virtual Tabletop usa para o tráfego de conexão TCP e habilite ou desabilite o Universal Plug and Play (UPnP)."
       },
+      "unixSocket": {
+        "label": "Socket Unix",
+        "hint": "Em vez de um número de porta, pode ser inserido o caminho de um socket de domínio Unix. Se forem inseridos tanto a porta quanto o socket, o caminho do socket será utilizado."
+      },
       "compressStatic": {
         "label": "Compactar Arquivos Estáticos",
         "hint": "Compactar arquivos fornecidos pelo servidor web Foundry Virtual Tabletop antes de enviá-los ao cliente para reduzir a quantidade de dados transferidos."
@@ -2092,7 +2337,6 @@
       }
     }
   },
-  "SETTINGS.CombatConfigN": "Monitor de Combate",
   "SETTINGS.CombatConfigL": "Configurar Monitor de Combate",
   "SETTINGS.CombatConfigH": "Configurações relacionados ao Monitor de Combate.",
   "SETTINGS.CombatThemeN": "Tema do combate",
@@ -2204,6 +2448,9 @@
       "fade": "Fading da Interface",
       "other": "Outras Configurações"
     },
+    "ACTIONS": {
+      "Reset": "Redefinir"
+    },
     "FIELDS": {
       "uiScale": {
         "label": "Escala da Interface",
@@ -2264,6 +2511,7 @@
     "NueWorldDescription": "<p>Para mais informações sobre como configurar mundos, confira a documentação <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>Mundo</a>.</p>",
     "SeeTutorial": "Para um guia mais detalhado de como começar no Foundry Virtual Tabletop, você pode dar uma olhada na série <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Tutorial do Mestre de Jogo</a> na nossa <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Base de Dados</a>.",
     "Title": "Configuração e Instalação",
+    "Software": "Software",
     "Update": "Atualização do Programa",
     "UpdateNewGeneration": "Instalação Manual Necessária",
     "PreviewCompatibility": "Prever Compatibilidade",
@@ -2290,14 +2538,26 @@
     "UpdateStable": "Estável",
     "UpdateStableHint": "Estável: Versões testadas cuidadosamente e recomendadas para uso em jogos reais.",
     "ForceUpdateHint": "Marcar a caixa Forçar Atualização vai forçar a sua versão para o canal solicitado. Não use esta opção a menos que você saiba exatamente o que você está fazendo.",
+    "Install": "Instalar",
     "Uninstall": "Desinstalar",
     "Reinstall": "Reinstalar",
     "ReinstallPackageNotFound": "A reinstalção do pacote falho já que um pacote com esse ID não foi encontrado no repósito de pacotes central. Você precisará reinstalar ele manualmente através do link de manifesto.",
+    "WorldBlank": "Mundo em branco",
+    "WorldCancelConfirm": "Se você retornar à configuração agora, perderá todas as alterações feitas aqui.",
     "WorldCreate": "Criar Mundo",
+    "WorldCreating": "Criando Mundo...",
+    "WorldCreateCancel": "Cancelar Criação do Mundo",
+    "WorldCreateDependencyFail": "O mundo não pôde ser criado porque as dependências necessárias não foram instaladas.",
+    "WorldCreateNoSystem": "Você deve selecionar um Sistema de Jogo para o Mundo antes de continuar.",
+    "WorldCreateNoTitle": "Você precisa fornecer um título para o Mundo antes de continuar.",
+    "WorldCreateSuccess": "Criação concluída com sucesso, lançamento...",
     "WorldDelete": "Excluir Mundo",
     "WorldEdit": "Editar Mundo",
+    "WorldFilterAdventures": "Aventuras de filtro",
+    "WorldFilterSystems": "Sistemas de filtragem",
     "WorldLaunch": "Iniciar",
     "WorldLaunchFailure": "Inicialização do Mundo falho: {message}. Veja o console (F12) para mais detalhes.",
+    "WorldContinue": "Continuar",
     "WorldUnavailable": "Indisponível",
     "Worlds": "Mundos",
     "RequireUpdate": "Requer Atualização",
@@ -2305,9 +2565,12 @@
     "RequireDep": "Requer Dependências",
     "IncompatibleDep": "Dependências incompatíveis: {dependencies}",
     "IncompatibleSystems": "Sistemas incompatíveis:: {systems}",
+    "InstallingDependencies": "Instalando dependências",
+    "InstallDependenciesSuccess": "Dependências instaladas com sucesso.",
     "NoSupportedSystem": "Nenhum sistema suportado instalado",
     "RequireCoreUpgrade": "Requer Atualização da Base",
     "RequireCoreUnstable": "Requer versão instável",
+    "RequireCoreUnknown": "Requer versão desconhecida",
     "RequireCoreDowngrade": "Versão do fvtt não suportada",
     "LockHint": "Bloquear um pacote impede que ele seja desinstalado ou atualizado",
     "FavoritePackage": "Favorito",
@@ -2384,6 +2647,7 @@
     "PackageDependenciesSuccess": "{title} e {number} dependências foram instalados com sucesso.",
     "PackageUpdateCoreUpdateNeeded": "Uma atualização está disponível para {id}, mas não pode ser instalada porque requer que seja atualizado para pelo menos {vmin}. Você está usando a versão {vcur}.",
     "PackageUpdateCoreUnstable": "Uma atualização está disponível para {id}, mas pode não ser instalada porque requer a versão {vmin} do FVTT, que ainda não é estável.",
+    "PackageUpdateCoreUnknown": "Uma atualização está disponível para {title}, mas pode não ser instalada porque requer uma versão desconhecida do software principal {vmin}.",
     "PackageUpdateCoreInsufficient": "Uma atualização está disponível, mas ela requer uma versão mais velha do FVTT ({vmax}) para funcionar.",
     "PackageDeleteTitle": "Excluir {type}: {title}",
     "PackageDeleteConfirm": "Tem certeza que deseja excluir o {type} <strong>{title}</strong>?",
@@ -2409,6 +2673,8 @@
     "PackageIncompatibleSystemsBulkPrompt": "Os módulos a seguir não foram atualizados porque isso os tornaria incompatíveis com um ou mais sistemas instalados. Você deseja atualizá-los mesmo assim?",
     "PackageIncompatibleWithSystems": "{module} <em>incompatível com</em> {systems}",
     "ConfirmCodeLabel": "Digite '{code}' exatamente para proceder",
+    "ImportingAdventure": "Importando Aventuras",
+    "QuickstartFailure": "A inicialização rápida do módulo '{title}' falhou: {message}. Consulte o console (F12) para obter mais detalhes.",
     "WorldLaunchConnect": "Carregando Dados do Mundo",
     "WorldLaunchMigrate": "Migrando Dados do Mundo",
     "WorldLaunchConnectPackage": "Carregando Dados de Pacotes",
@@ -2461,6 +2727,12 @@
     "News": "Notícias",
     "FeaturedContent": "Conteúdo em Destaque",
     "NoFeaturedContent": "Nenhuma recomendação de conteúdo foi recebida do servidor da web foundryvtt.com.",
+    "ACTIONS": {
+      "Configure": "Configurar",
+      "Logout": "Sair",
+      "Update": "Atualizar",
+      "Warnings": "Avisos"
+    },
     "BACKUPS": {
       "Backup": "Backup",
       "BackingUp": "Backup em Andamento",
@@ -2486,6 +2758,7 @@
       "DeleteBackupTitle": "Excluindo Backups de {title}",
       "DeleteBackupWarning": "A exclusão de um backup não pode ser revertida. Deseja continuar?",
       "DeleteBackupWarningPl": "<strong>{count}</strong> backups foram selecionados para exclusão. Esta ação não pode ser revertida. Deseja continuar?",
+      "DeleteSelected": "Excluir selecionados",
       "DeletingSnapshot": "Excluindo Snapshots",
       "DeleteSnapshotComplete": "Snapshot excluído.",
       "DeleteSnapshotCompletePl": "Excluído {count} snapshots.",
@@ -2520,6 +2793,7 @@
       "RestoreSnapshotWarning": "Restaurar um snapshot redefine o estado da instalação do Foundry VTT para o estado em que o snapshot foi criado. Todas as versões e estados globais serão revertidos. Este processo não pode ser desfeito.",
       "RestoreSnapshotUnchangedPackages": "<strong>1</strong> pacote foi adicionado após o snapshot ser criado e permanecerá inalterado após o snapshot ser restaurado.",
       "RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> pacotes foram adicionados após o snapshot ser criado e permanecerão inalterados após o snapshot ser restaurado.",
+      "SelectAll": "Selecionar tudo",
       "Snapshot": "Snapshot",
       "TakeBackup": "Realizar Backup",
       "VersionFormat": "Versão {version}",
@@ -2627,6 +2901,7 @@
     "AlreadyUpdated": "{name} já está atualizado.",
     "AllUpdated": "Todos os {type} estão atualizados!",
     "UpdateAllInProgress": "Um processo \"atualizar todos\" já está em progresso. Você precisa esperar que ele termine antes de atualizar outros tipos de pacote.",
+    "Description": "Descrição",
     "ModuleCreate": "Criar Módulo",
     "ModuleCreateHint": "Você pode usar este formulário para criar um Módulo que pode ser compartilhado em vários mundos ou empacotado para distribuição a outros usuários. Este formulário oferece suporte a um subconjunto de configuração de pacote possível. Você poderá gerenciar e editar ainda mais seu pacote depois de criá-lo, modificando seu arquivo de manifesto JSON.",
     "ModuleCreateSuccess": "Novo módulo \"{id}\" criado, que agora está disponível para uso!",
@@ -2651,6 +2926,13 @@
       "GALLERY": "Visualização da Galeria",
       "TILES": "Visualização de Peças",
       "DETAILS": "Visualização de Detalhes"
+    },
+    "RESULT": {
+      "Label": "Resultado",
+      "Update": "Atualizar",
+      "Error": "Erro",
+      "Warning": "Aviso",
+      "Information": "Informação"
     },
     "ACTIONS": {
       "AddAuthor": "Adicionar Autor",
@@ -2742,7 +3024,8 @@
     "ErrorUserDoesNotExist": "O Usuário solicitado, \"{user}\", não existe!",
     "ErrorInvalidPassword": "Senha inválida fornecida para {user}!",
     "ErrorBanned": "{user} não tem permissão para acessar este Mundo!",
-    "LoginSuccess": "Login como {user} bem sucedido, entrando no jogo!"
+    "LoginSuccess": "Login como {user} bem sucedido, entrando no jogo!",
+    "WorldPendingSetup": "Este mundo ainda não está pronto. Aguarde até que o Mestre faça login e conclua a configuração antes de tentar entrar."
   },
   "SHEETS.ConfigureSheet": "Configurar Ficha",
   "SHEETS.ConfigureTitle": "{prefix}: Configuração de Ficha",
@@ -2755,7 +3038,6 @@
   "SHEETS.DocumentSheetPrivate": "Você não tem permissão suficiente para visualizar a ficha para esse {type}.",
   "SHEETS.Save": "Salvar Configuração da Ficha",
   "SHEETS.FormNavLabel": "Navegação das Abas do Formulário",
-  "SHEETS.CopyUuid": "Copiar UUID do Documento",
   "SHEETS.Theme": "Tema",
   "SHEETS.ThemeHint": "Nem todos os temas estão disponíveis para cada ficha.",
   "SOUND": {
@@ -2828,6 +3110,7 @@
   "PERMISSION.ConfigureHint": "Ajuste que ações são permitidas aos Usuários de cada cargo.",
   "PERMISSION.Instructions": "Configure qual cargo de Usuário tem a permissão para realizar qual ação. Note que algumas ações não podem ser desativadas para usuários Mestres. Algumas mudanças podem não ter efeito até que o jogo seja recarregado.",
   "PERMISSION.Permission": "Permissão",
+  "PERMISSION.Setting": "Permissões",
   "PERMISSION.Permissions": "Permissões de Cargo de Usuário",
   "PERMISSION.Reset": "Redefinir Padrões",
   "PERMISSION.Submit": "Salvar Configuração",
@@ -2861,14 +3144,14 @@
   "PERMISSION.PingCanvasHint": "Permite que usuários com este cargo chamem a atenção para um ponto da tela com um ping animado.",
   "PERMISSION.PlaylistCreate": "Criar Playlists",
   "PERMISSION.PlaylistCreateHint": "Permite que usuários com este cargo criem novas playlists no Mundo.",
+  "PERMISSION.RegionCreate": "Criar regiões",
+  "PERMISSION.RegionCreateHint": "Permitir que usuários com essa função criem regiões.",
   "PERMISSION.SettingsModify": "Modificar Configurações",
   "PERMISSION.SettingsModifyHint": "Permite que usuários com esse cargo modifiquem as configurações do jogo e ative ou desative módulos.",
   "PERMISSION.ShowCursor": "Mostrar Cursor do Mouse",
   "PERMISSION.ShowCursorHint": "Exibir a posição do ponteiro do mouse do jogador que ilustra onde o jogador está olhando na tela.",
   "PERMISSION.ShowRuler": "Exibir Medição com Régua",
   "PERMISSION.ShowRulerHint": "Exibir medidas usando a ferramenta de régua para outros jogadores conectados.",
-  "PERMISSION.TemplateCreate": "Criar Modelos de Medição",
-  "PERMISSION.TemplateCreateHint": "Permite que usuários com este cargo criem modelos para medição de área de efeito.",
   "PERMISSION.TokenCreate": "Criar Novos Tokens",
   "PERMISSION.TokenCreateHint": "Permite que usuários com este cargo coloquem tokens para os personagens que eles possuem na tela de jogo.",
   "PERMISSION.TokenDelete": "Excluir Tokens",
@@ -2880,16 +3163,29 @@
   "PERMISSION.QueryUser": "Consultar Usuários",
   "PERMISSION.QueryUserHint": "Permitir que usuários com este cargo consultem outros usuários.",
   "PERMISSION.WarningNoCreate": "Você não tem permissão suficiente para criar um(a) {document}.",
+  "PLACEABLE_PALETTE": {
+    "Apply": "Aplicar",
+    "CannotApplyToLocked": "Não é possível aplicar a paleta a objetos bloqueados.",
+    "CloneSettings": "Clonar",
+    "MultipleValues": "<Múltiplos Valores>",
+    "Selected": "Paleta {document} [{count}]",
+    "Title": "Paleta {document}"
+  },
   "REGION": {
     "TABS": {
-      "identity": "Identidade",
+      "appearance": "Aparência",
       "shapes": "Formas",
+      "placement": "Posicionamento",
       "behaviors": "Comportamentos"
+    },
+    "SECTIONS": {
+      "restriction": "Restrição de parede"
     },
     "FIELDS": {
       "color": {
         "label": "Cor",
-        "hint": "A cor aplicada à visualização da Região."
+        "hint": "A cor aplicada à visualização da Região.",
+        "placeholder": "Cor aleatória"
       },
       "shapes": {
         "label": "Formas",
@@ -2905,7 +3201,25 @@
         "top": {
           "label": "Superior",
           "hint": "A parte superior da faixa de elevação."
+        },
+        "topInclusive": {
+          "label": "Topo Inclusivo",
+          "hint": "O ponto mais alto está incluído na faixa de altitude?"
         }
+      },
+      "attachment": {
+        "token": {
+          "label": "Token anexado",
+          "hint": "O token ao qual a região está associada. Quando esse token é movido, a região é movida junto."
+        }
+      },
+      "restriction": {
+        "enabled": {
+          "label": "É restrito",
+          "hint": "Configure se as formas desta região serão limitadas por paredes."
+        },
+        "type.label": "Restrito por",
+        "priority.label": "Limiar de prioridade"
       },
       "behaviors": {
         "label": "Comportamentos",
@@ -2914,38 +3228,64 @@
       "visibility": {
         "label": "Visibilidade",
         "hint": "Configure a visibilidade da Região."
+      },
+      "highlightMode": {
+        "label": "Modo de destaque",
+        "hint": "Configure se deseja destacar as formas reais ou os espaços da grade abrangidos pela região."
+      },
+      "displayMeasurements": {
+        "label": "Exibir medidas",
+        "hint": "Configure se deseja exibir as medições da região."
       }
     },
     "ACTIONS": {
       "create": "Crir Região",
       "update": "Atualizar Região",
       "delete": "Excluir Região",
-      "shapeCreateFromWalls": "Crie Formas a partir de Paredes Controladas",
-      "shapeMakeHole": "Fazer Furo",
-      "shapeFillHole": "Preencher Furo",
-      "shapeMoveUp": "Mover Forma para Cima",
-      "shapeMoveDown": "Mover Forma para Baixo",
-      "shapeRemove": "Remover Forma",
-      "behaviorCreate": "Criar Comportamento",
+      "behaviorAdd": "Adicionar comportamento",
       "behaviorEdit": "Editar Comportamento",
       "behaviorDelete": "Excluir Comportamento",
       "behaviorEnable": "Habilitar Comportamento",
       "behaviorDisable": "Desabilitar Comportamento"
     },
     "VISIBILITY": {
+      "LAYER_UNLOCKED": {
+        "label": "Somente na camada de região quando desbloqueada."
+      },
       "LAYER": {
         "label": "Somente na Camada de Região"
       },
       "GAMEMASTER": {
         "label": "Sempre para o Mestre do Jogo"
       },
+      "OBSERVER": {
+        "label": "Sempre para Observadores"
+      },
       "ALWAYS": {
         "label": "Sempre para Qualquer Um"
       }
     },
+    "HIGHLIGHT_MODES": {
+      "shapes": {
+        "label": "Formas Verdadeiras"
+      },
+      "coverage": {
+        "label": "Espaços de grade cobertos"
+      }
+    },
+    "RESTRICTION_TYPES": {
+      "light.label": "Paredes que bloqueiam a luz e fontes de escuridão com prioridade ≥ Limiar",
+      "darkness.label": "Paredes que bloqueiam a escuridão e fontes de luz com prioridade > Limiar",
+      "sight.label": "Paredes que bloqueiam a visão e fontes de escuridão com prioridade ≥ limite",
+      "sound.label": "Paredes com isolamento acústico",
+      "move.label": "Paredes que bloqueiam o movimento"
+    },
     "EVENTS": {
       "regionBoundary": {
         "label": "Limite da Região Alterado"
+      },
+      "regionAnimation": {
+        "label": "Estado da animação da região alterado"
       },
       "behaviorActivated": {
         "label": "Comportamento Ativado"
@@ -2993,14 +3333,7 @@
         "label": "Token Encerra Rodada"
       }
     },
-    "SHAPES": {
-      "rectangle": "Retângulo",
-      "circle": "Círculo",
-      "ellipse": "Elipse",
-      "polygon": "Polígono"
-    },
     "Behavior": "Comportamento",
-    "Shape": "Forma",
     "LEGEND": {
       "control": "Controlar Região",
       "config": "Configurar Região",
@@ -3018,10 +3351,17 @@
       "title": "Configurar Região"
     },
     "NOTIFICATIONS": {
-      "ControlWalls": "Controle um grupo de paredes que definem os limites da forma desejada.",
-      "DrawingMultipleRegionsControlled": "Você deve controlar apenas uma ou nenhuma região ao desenhar uma forma!",
-      "EmptyEnclosedArea": "A área delimitada pelas Paredes controladas está vazia! Certifique-se de que as Paredes externas formem um circuito fechado e estejam conectadas de ponta a ponta.",
-      "NoControlledWalls": "Você não está controlando nenhuma Parede!"
+      "PlacedRegionRotationNotAllowed": "Não é permitido rotacionar a forma da região inserida.",
+      "PlacedRegionNotAttachedToToken": "A região inserida deve ser associada a um token.",
+      "CopiedShape": "Formato da região copiada.",
+      "CutShape": "Formato da região de corte.",
+      "PastedShape": "Formato da região colada.",
+      "PastedShapeWithoutControlledRegion": "Você não está controlando uma região na qual a forma possa ser colada."
+    },
+    "TOOLTIPS": {
+      "CannotChangeLevelsIfAttached": "A região deve estar no mesmo nível que o token ao qual está associada.",
+      "CannotSelectMultipleLevelsIfRestricted": "Esta região não pode ser incluída em vários níveis enquanto estiver restrita.",
+      "CannotEnableRestriction": "Esta região não pode ser restringida porque está incluída em mais de um nível."
     }
   },
   "BEHAVIOR": {
@@ -3083,6 +3423,57 @@
           }
         }
       },
+      "applyActiveEffect": {
+        "FIELDS": {
+          "effects": {
+            "label": "Efeitos",
+            "hint": "Os efeitos que são aplicados aos Tokens dentro da Região."
+          }
+        }
+      },
+      "changeLevel": {
+        "FIELDS": {
+          "movementActions": {
+            "label": "Ações de Movimento Permitidas",
+            "hint": "Define quais ações de movimento o Token pode usar para alterar o Nível. Se nenhuma ação for selecionada, todas as ações de movimento serão permitidas."
+          }
+        },
+        "Level": "Nível de destino",
+        "MovementAction": "Ação do Movimento",
+        "Confirm": "Deseja mover {token} para {level}?",
+        "ConfirmSelect": "Selecione o andar para o qual deseja mover {token}.",
+        "ConfirmDisabled": "{token} não pode ser movido para outro andar a partir de sua posição atual.",
+        "Move": "Mover",
+        "MoveDown": "Mover para baixo",
+        "MoveUp": "Subir para cima",
+        "DoNotMove": "Não mover"
+      },
+      "defineSurface": {
+        "FIELDS": {
+          "placement.label": "Posicionamento",
+          "light.label": "Restringe a entrada de luz e escuridão.",
+          "move.label": "Restringe a movimentação",
+          "sight.label": "Restringe a visão",
+          "sound.label": "Restringe o som",
+          "occlusion": {
+            "label": "Oclusão",
+            "hint": "Quando um Token controlado ou detectado está abaixo de uma superfície, as Peças que usam o modo de oclusão \"Superfície\" desaparecem se estiverem no mesmo andar ou acima dessa superfície, assim como as texturas de fundo e primeiro plano. Para superfícies no topo de uma Região tridimensional, o desaparecimento só se aplica se o Token também estiver no mesmo nível ou acima da elevação inferior da Região. Passar o cursor sobre a Região ou pressionar a tecla \"Destacar Objetos\" também ativa esse efeito."
+          },
+          "exposure": {
+            "label": "Revelar superfície elevada",
+            "hint": "Revele parcialmente a área visível desta superfície elevada para observadores abaixo e fora dela. A área revelada depende do ângulo entre o observador e o limite da superfície, diminuindo à medida que o ângulo se torna mais íngreme. Esta opção é útil para telhados, varandas ou outras plataformas suspensas."
+          },
+          "culling": {
+            "label": "Eliminar Tokens",
+            "hint": "Oculta Tokens não controlados fora do andar visualizado na visão do Mestre ou quando a Visão de Tokens estiver desativada. Superfícies em segundo plano ocultam Tokens abaixo delas, enquanto superfícies em primeiro plano ocultam Tokens sobre ou acima delas."
+          }
+        },
+        "PLACEMENTS": {
+          "bottom.label": "Fundo",
+          "top.label": "Topo",
+          "both.label": "Fundo e topo"
+        }
+      },
       "displayScrollingText": {
         "FIELDS": {
           "color": {
@@ -3139,17 +3530,56 @@
       },
       "teleportToken": {
         "FIELDS": {
-          "destination": {
-            "label": "Destino",
-            "hint": "A Região de destino para a qual o Token é teletransportado assim que entrar na Região."
+          "destinations": {
+            "label": "Destinos",
+            "hint": "As regiãões de destino para as quais o Token será teleportado assim que for movido para esta região. Se várias regiões de destino estiverem configuradas, uma delas será selecionada aleatoriamente, a menos que uma escolha seja permitida e este teletransportador seja revelado ou o usuário que moveu o Token seja um Mestre."
+          },
+          "placement": {
+            "label": "Posicionamento",
+            "hint": "Escolha o local onde o Token será posicionado na região de destino."
+          },
+          "snap": {
+            "label": "Forçar Encaixe",
+            "hint": "Encaixa a posição de destino para onde o Token será teleportado."
           },
           "choice": {
             "label": "Permitir Escolha",
             "hint": "Permite que o usuário que moveu o token escolha se deseja teletransportá-lo."
+          },
+          "revealed": {
+            "label": "Revelado",
+            "hint": "Revele os destinos deste teletransportador a todos."
+          },
+          "dialog.revealed": {
+            "label": "Diálogo (Revelado)",
+            "hint": "O texto exibido na caixa de diálogo de confirmação se os destinos forem revelados ou se o usuário for um Mestre. {token} é substituído pelo nome do token. {region} é substituído pelo nome da região de destino, a menos que este teletransportador tenha vários destinos. {scene} é substituído pelo nome da cena de destino, a menos que este teletransportador tenha destinos em cenas diferentes."
+          },
+          "dialog.unrevealed": {
+            "label": "Diálogo (Não Revelado)",
+            "hint": "O texto que é exibido na caixa de diálogo de confirmação se os destinos não forem revelados e o usuário não for um GM. {token} é substituído pelo nome do token."
+          },
+          "transition.type": {
+            "label": "Tipo de transição",
+            "hint": "O tipo de animação de transição que é reproduzida quando um Token é teletransportado."
+          },
+          "transition.duration": {
+            "label": "Duração da transição",
+            "hint": "A duração da animação de transição em milissegundos."
           }
         },
+        "PLACEMENTS": {
+          "random.label": "Aleatório",
+          "center.label": "Centro",
+          "relative.label": "Relativo"
+        },
         "Confirm": "Você quer teletransportar {token}?",
-        "ConfirmGM": "Você quer teletransportar {token} para {region} em {scene}?"
+        "ConfirmDisabled": "{token} não pode ser teletransportado de sua posição atual.",
+        "ConfirmRevealed": "Deseja teletransportar {token} para {region} em {scene}?",
+        "ConfirmSelectSameScene": "Selecione o destino em {scene} para o qual você deseja teletransportar {token}.",
+        "ConfirmSelectDifferentScene": "Selecione o destino para o qual deseja teletransportar {token}.",
+        "ConfirmSelectOption": "{região} em {scene}",
+        "Teleport": "Teletransportar",
+        "DoNotTeleport": "Não se teletransportar"
       },
       "toggleBehavior": {
         "FIELDS": {
@@ -3173,6 +3603,7 @@
   "SIDEBAR.NavLabel": "Abas da Barra Lateral",
   "SIDEBAR.TabJournal": "Diário",
   "SIDEBAR.TabCompendium": "Compêndios",
+  "SIDEBAR.TabPlaceables": "Objetos Posicionáveis",
   "SIDEBAR.TabSettings": "Configurações do Jogo",
   "SIDEBAR.TabTables": "Tabelas de Rolagem",
   "SIDEBAR.TokenArt": "Ver Arte do Token",
@@ -3185,6 +3616,7 @@
   "SIDEBAR.CollapseToggle": "Recolher ou Expandir",
   "SIDEBAR.Delete": "Excluir",
   "SIDEBAR.DeleteWarning": "Este {type} será excluído permanentemente e não poderá ser recuperado.",
+  "SIDEBAR.DeleteManyWarning": "{count} {type} serão excluídos permanentemente e não poderão ser recuperados.",
   "SIDEBAR.Duplicate": "Duplicar",
   "SIDEBAR.Edit": "Editar",
   "SIDEBAR.Export": "Exportar Dados",
@@ -3194,6 +3626,7 @@
   "SIDEBAR.Documentation": "Documentação do Foundry VTT",
   "SIDEBAR.Wiki": "Wiki da comunidade Foundry VTT",
   "SIDEBAR.ACTIONS.CREATE": {
+    "ActiveEffect": "Criar efeito ativo",
     "Actor": "Criar Ator",
     "Adventure": "Criar Aventura",
     "Cards": "Criar Pilha de Cartas",
@@ -3209,6 +3642,56 @@
   "SIDEBAR.COMPENDIUM.LABELS": {
     "Ownership": "Propriedade não-padrão",
     "Locked": "Bloqueado"
+  },
+  "SIDEBAR.PLACEABLES": {
+    "ACTIONS": {
+      "ChangeLevel": "Alterar andar",
+      "Clear": "Limpar",
+      "Hidden": "Escondido",
+      "Hide": "Esconder",
+      "InLevel": "Incluído no andar",
+      "Lock": "Bloquear",
+      "Locked": "Bloqueado",
+      "NotInLevel": "Não incluído no andar",
+      "Show": "Mostrar",
+      "Unlock": "Desbloquear",
+      "Unlocked": "Desbloqueado",
+      "Visible": "Visível"
+    },
+    "Categories": {
+      "NoAuthor": "Sem autor",
+      "NoLevel": "Sem andar"
+    },
+    "Meta": {
+      "empty": "Vazio",
+      "visible": "Visível para alguns jogadores",
+      "hidden": "Oculto dos jogadores",
+      "locked": "Trancado"
+    },
+    "Filter": {
+      "ACTIONS": {
+        "Clear": "Limpar"
+      },
+      "Bottom": "Fundo",
+      "Title": "Filtro avançado",
+      "Level": "Filtrar por andar",
+      "Tooltip": "Filtros avançados. Clique com o botão direito para limpar.",
+      "Top": "Topo"
+    },
+    "Search": {
+      "placeholder": "Filtrar {name}"
+    },
+    "WALLS": {
+      "door": "Portas",
+      "ethereal": "Paredes Etéreas",
+      "filterByCategory": "Filtrar por categoria",
+      "invisible": "Paredes Invisíveis",
+      "normal": "Paredes normais",
+      "secret": "Portas Secretas",
+      "terrain": "Paredes de Terreno",
+      "window": "Janelas",
+      "blank": "Paredes em branco"
+    }
   },
   "SIDEBAR.SETTINGS": {
     "LABELS": {
@@ -3267,6 +3750,8 @@
     "WorldData": "Dados do Mundo",
     "CompendiumData": "Dados do Compêndio",
     "ActiveModules": "Módulos Ativos",
+    "Errors": "Erros",
+    "Warnings": "Avisos",
     "TABS": {
       "support": "Detalhes de Suporte",
       "documents": "Problemas com Documentos",
@@ -3330,37 +3815,14 @@
       "range.label": "Intervalo"
     }
   },
-  "TEMPLATE.ConeTypeSetting": "Tipo de Modelo de Cone",
-  "TEMPLATE.ConeTypeSettingHint": "Escolha como a área de efeito para modelos de cone devem ser definidas.",
-  "TEMPLATE.ConeTypeFlat": "Reta",
-  "TEMPLATE.ConeTypeRound": "Redonda",
-  "TEMPLATE.SubmitCreate": "Criar Modelos de Medição",
-  "TEMPLATE.SubmitUpdate": "Atualizar Modelos de Medição",
-  "TEMPLATE.GridTemplatesSetting": "Formas Baseadas em Modelos de Grade",
-  "TEMPLATE.GridTemplatesSettingHint": "Configure se a área de efeito dos modelos deve ser baseada em grade em vez de euclidiana.",
-  "TEMPLATE.TYPES": {
-    "circle": "Círculo",
-    "cone": "Cone",
-    "ray": "Linha",
-    "rect": "Retângulo"
-  },
-  "TEMPLATE.FIELDS": {
-    "sort.label": "Organizar",
-    "t.label": "Tipo",
-    "direction.label": "Direção",
-    "angle.label": "Ângulo",
-    "distance.label": "Distância",
-    "borderColor.label": "Cor da Borda",
-    "fillColor.label": "Cor de Preenchimento",
-    "texture.label": "Textura de Preenchimento"
-  },
   "TILE.ConfigTitle": "Configuração de Peça",
   "TILE.Dimensions": "Dimensões",
+  "TILE.Anchor": "Âncora de Azulejo",
   "TILE.Scale": "Escala da Peça",
   "TILE.ScaleHint": "Ajusta a escala da imagem no eixo X ou Y. A imagem pode exceder sua caixa delimitadora. Valores negativos inverterão a imagem.",
   "TILE.OcclusionModeNone": "Nenhum (Sempre Visível)",
   "TILE.OcclusionModeFade": "Desvanecer (Peça Inteira)",
-  "TILE.OcclusionModeRoof": "Telhado (Bloqueia Visão e Iluminação)",
+  "TILE.OcclusionModeSurface": "Superfície",
   "TILE.OcclusionModeRadial": "Radial (Ao Redor do Token)",
   "TILE.OcclusionModeVision": "Visão (Campo de Visão do Token)",
   "TILE.VideoOptions": "Opções de Vídeo",
@@ -3375,7 +3837,8 @@
   "TILE.TABS": {
     "position": "Posição",
     "appearance": "Aparência",
-    "overhead": "Suspensa"
+    "overhead": "Suspensa",
+    "video": "Vídeo"
   },
   "TILE.FIELDS": {
     "sort.label": "Organizar",
@@ -3383,14 +3846,30 @@
       "src.label": "Imagem ou Vídeo da Peça",
       "scaleX.label": "Horizontal",
       "scaleY.label": "Vertical",
-      "tint.label": "Cor da Tonalidade"
+      "tint.label": "Cor da Tonalidade",
+      "alphaThreshold": {
+        "label": "Limiar Alfa",
+        "hint": "Os pixels na imagem Tile com valores alfa abaixo desse limite não restringem a luz ou as condições climáticas e não acionam o efeito de desvanecimento ao passar o cursor."
+      }
     },
     "alpha.label": "Opacidade da Peça",
+    "name": {
+      "hint": "Um nome opcional para ajudar a identificar o Tile.",
+      "label": "Nome"
+    },
     "occlusion": {
-      "mode.label": "Modo de Oclusão",
+      "modes.label": "Modos de Oclusão",
       "alpha.label": "Alfa de Oclusão"
     },
+    "OCCLUSION_MODES": {
+      "FADE.label": "Desaparecer",
+      "NONE.label": "Nenhum",
+      "RADIAL.label": "Radial",
+      "SURFACE.label": "Superfície",
+      "VISION.label": "Visão"
+    },
     "restrictions": {
+      "label": "Restrições",
       "light": {
         "label": "Restringir Luz",
         "hint": "As fontes de luz são bloqueadas com base em sua elevação em relação à elevação desta Peça?"
@@ -3409,33 +3888,51 @@
   "TIME": {
     "Day": {
       "one": "Dia",
+      "two": "Dias",
+      "few": "Dias",
+      "many": "Dias",
       "other": "Dias",
       "abbr": "d"
     },
     "Hour": {
       "one": "Hora",
+      "two": "Horas",
+      "few": "Horas",
+      "many": "Horas",
       "other": "Horas",
       "abbr": "h"
     },
     "Millisecond": {
       "one": "Milissegundo",
+      "two": "Milissegundos",
+      "few": "Milissegundos",
+      "many": "Milissegundos",
       "other": "Milissegundos",
       "abbr": "ms"
     },
     "Minute": {
       "one": "Minuto",
+      "two": "Minutos",
+      "few": "Minutos",
+      "many": "Minutos",
       "other": "Minutos",
       "abbr": "m"
     },
     "Now": "Agora",
     "Second": {
       "one": "Segundo",
+      "two": "Segundos",
+      "few": "Segundos",
+      "many": "Segundos",
       "other": "Segundos",
       "abbr": "s"
     },
     "Since": "{since} atrás",
     "Year": {
       "one": "Ano",
+      "two": "Anos",
+      "few": "Anos",
+      "many": "Anos",
       "other": "Anos",
       "abbr": "a"
     }
@@ -3446,9 +3943,15 @@
   "TOKEN.BarAttributes": "Barras de Atributo",
   "TOKEN.BarValues": "Valores Únicos",
   "TOKEN.DeleteCombatantWarning": "Você está excluindo um Token que está em Combate. Seu Combatente será excluído permanentemente.",
-  "TOKEN.Dimensions": "Dimensões",
+  "TOKEN.DeleteAttachedRegionWarning": "Você está excluindo um token que possui uma região associada a ele. As regiões associadas a ele serão excluídas permanentemente.",
+  "TOKEN.Size": "Tamanho",
+  "TOKEN.Anchor": "Âncora",
   "TOKEN.AnchorHint": "A âncora padrão (0,5, 0,5) é o centro da imagem do Token.",
   "TOKEN.ImageAlts": "Tokens Alternativos do Ator",
+  "TOKEN.ImageCycleNext": "Próxima imagem do token",
+  "TOKEN.ImageCyclePrev": "Imagem do token anterior",
+  "TOKEN.ImagePreview": "Previsão da imagem do token",
+  "TOKEN.ImagePathOverridden": "Esta imagem é substituída pela textura do objeto de Anel Dinâmico do Token.",
   "TOKEN.Mirror": "Espelhar Imagem",
   "TOKEN.MirrorX": "Horizontalmente",
   "TOKEN.MirrorY": "Verticalmente",
@@ -3458,6 +3961,9 @@
   "TOKEN.Update": "Atualizar Token",
   "TOKEN.WarningNoActor": "Este token faz referência a um ator que já não existe mais no mundo.",
   "TOKEN.WarningNoVision": "Você não possui nenhum token com visão nesta cena",
+  "TOKEN.PROTOTYPE": {
+    "OverridesWarning": "Este campo é definido por meio de substituições de token de protótipo e não pode ser editado diretamente."
+  },
   "TOKEN.TABS": {
     "identity": "Identidade",
     "appearance": "Aparência",
@@ -3470,9 +3976,16 @@
     "animation": "Animação da Luz",
     "advanced": "Opções Avançadas"
   },
+  "TOKEN.NOTIFICATIONS": {
+    "PlacedTokenRotationNotAllowed": "Não é permitido girar o Token posicionado."
+  },
   "TOKEN.FIELDS": {
     "name.label": "Nome do Token",
     "sort.label": "Organizar",
+    "width.label": "Tamanho X",
+    "height.label": "Tamanho Y",
+    "depth.label": "Tamanho Z",
+    "level.label": "Nível",
     "movementAction.label": "Ação de Movimento",
     "actorId.label": "Ator Representado",
     "actorLink.label": "Vincular Dados do Ator",
@@ -3715,7 +4228,7 @@
   "TOKEN.DetectionMode": "Modo de Detecção",
   "TOKEN.DetectionRange": "Alcance",
   "TOKEN.DetectionEnabled": "Ativado",
-  "TOKEN.DetectionAdd": "Adicionar Modo de Detecção",
+  "TOKEN.DetectionOverride": "Modo de detecção de sobreposição",
   "TOKEN.DetectionRemove": "Remover Modo de Detecção",
   "TOKEN.RING": {
     "EFFECTS": {
@@ -3762,6 +4275,15 @@
       "fly.label": "Voo",
       "swim.label": "Natação",
       "walk.label": "Caminhada"
+    },
+    "NOTIFICATIONS": {
+      "PLAN": {
+        "DirectViolation": "Não é permitido inserir pontos de passagem durante o planejamento deste deslocamento.",
+        "MinCostViolation": "O trajeto planejado não atende ao custo mínimo exigido.",
+        "MaxCostViolation": "O trajeto planejado excede o custo máximo permitido.",
+        "MinDistanceViolation": "O percurso planejado não atende à distância mínima exigida.",
+        "MaxDistanceViolation": "O percurso planejado excede a distância máxima permitida."
+      }
     }
   },
   "TYPES": {
@@ -3783,6 +4305,9 @@
     },
     "RegionBehavior": {
       "adjustDarknessLevel": "Ajustar Nível de Escuridão",
+      "applyActiveEffect": "Aplicar efeito ativo",
+      "changeLevel": "Alterar andar",
+      "defineSurface": "Definir superfície",
       "displayScrollingText": "Exibir Texto de Rolagem",
       "executeMacro": "Executar Macro",
       "executeScript": "Executar Script",
@@ -3795,6 +4320,22 @@
     "TableResult": {
       "document": "Documento",
       "text": "Texto"
+    },
+    "HINTS": {
+      "RegionBehavior": {
+        "adjustDarknessLevel": "Ajuste o nível de escuridão da cena na região, alterando-o para mais claro ou mais escuro.",
+        "applyActiveEffect": "Aplique efeitos ativos aos tokens enquanto eles estiverem dentro da região.",
+        "changeLevel": "Permitir que os Tokens que entram na Região se movam para outro Nível no qual a Região esteja incluída.",
+        "defineSurface": "Defina uma superfície que possa restringir a luz, o movimento, a visão e o som.",
+        "displayScrollingText": "Exibir um texto rolante acima de um Token quando ele acionar um dos eventos inscritos.",
+        "executeMacro": "Executar uma macro quando um dos eventos inscritos ocorrer.",
+        "executeScript": "Executar um script quando um dos eventos inscritos ocorrer.",
+        "modifyMovementCost": "Modifique o custo de movimentação de Tokens dentro da Região.",
+        "pauseGame": "O jogo é pausado quando um marcador é movido para a região por um jogador.",
+        "suppressWeather": "Suprimir os efeitos climáticos na região.",
+        "teleportToken": "Fichas de Teletransporte que são movidas de uma Região para outra Região.",
+        "toggleBehavior": "Ativar/desativar outros comportamentos regionais quando um dos eventos inscritos ocorrer."
+      }
     }
   },
   "DETECTION.LightPerception": "Percepção de Luz",
@@ -3810,6 +4351,7 @@
   "TEXTURE_DATA.FIT.width": "Largura Total",
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
+    "Title": "Gestão de Turismo",
     "NavLabel": "Guias de Gerenciamento de Apresentação",
     "ShowMeHow": "Mostre-me como.",
     "TourCategories": "Categorias de Apresentação",
@@ -3872,7 +4414,7 @@
     "RolePlayer": "Jogador",
     "RoleTrusted": "Jogador Confiável",
     "RoleAssistant": "Assistente do Mestre",
-    "RoleGamemaster": "Mestre do Jogo",
+    "RoleGamemaster": "Mestre",
     "GM": "Mestre"
   },
   "USERS.AccessKey": "Senha",
@@ -3881,13 +4423,17 @@
   "USERS.KeyShow": "Exibir Senha",
   "USERS.Create": "Criar Usuário Adicional",
   "USERS.Delete": "Excluir Usuário",
+  "USERS.LoginAs": "Entrar como usuário",
+  "USERS.LoginAsGMRequired": "Você precisa ser um Mestre de Jogo para entrar como outro usuário.",
   "USERS.DeleteName": "Excluir Usuário: {name}",
   "USERS.Launch": "Salvar e Voltar",
+  "USERS.FirstLaunch": "Salvar e continuar",
   "USERS.ManageTitle": "Gestão de Usuários",
   "USERS.UpdateSuccess": "Usuários do jogo atualizados com sucesso, voltando para o Mundo de jogo.",
   "USERS.NoGMError": "Você precisar ter pelo menos um usuário Mestre de Jogo no seu mundo.",
   "USERS.DeleteWarning": "Esse usuário será excluído permanentemente do mundo de jogo.",
   "USERS.DeleteGMWarning": "Você está prestes a excluir um usuário Mestre de Jogo!",
+  "USERS.PasswordWarning": "É altamente recomendável definir uma senha para a conta do Gamemaster.",
   "VISION.ModeBlindness": "Cegueira",
   "VISION.ModeBasicVision": "Visão Básica",
   "VISION.ModeDetectInvisibility": "Detectar Invisibilidade",
@@ -3962,6 +4508,8 @@
   "WALL.DoorSounds.Industrial": "Industrial",
   "WALL.DoorSounds.IndustrialCreaky": "Industrial, Barulhenta",
   "WALL.DoorSounds.Jail": "Cadeia",
+  "WALL.DoorSounds.JailCreaky": "Prisão, rangente",
+  "WALL.DoorSounds.JailHeavy": "Prisão, Pesada",
   "WALL.DoorSounds.MagicDoor": "Porta Mágica",
   "WALL.DoorSounds.MagicWall": "Parede Mágica",
   "WALL.DoorSounds.Metal": "Metal",
@@ -4121,6 +4669,126 @@
         "hint": "Desabilita todos os módulos e cenas ativas, e para a reprodução de todo áudio."
       },
       "description.label": "Descrição do Mundo"
+    }
+  },
+  "SHAPE": {
+    "label": "Forma",
+    "labelPlural": "Formas",
+    "TYPES": {
+      "base": {
+        "FIELDS": {
+          "type.label": "Tipo",
+          "hole.label": "É um buraco",
+          "gridBased": {
+            "label": "É baseado em grade",
+            "hint": "Uma forma baseada em grade segue as regras de distância da grade, conforme definido pela configuração de jogo Diagonais da Grade."
+          },
+          "x.label": "Origem X",
+          "y.label": "Origem Y",
+          "rotation.label": "Rotação"
+        },
+        "origin.label": "Origem"
+      },
+      "rectangle": {
+        "name": "Retângulo",
+        "FIELDS": {
+          "width.label": "Tamanho X",
+          "height.label": "Tamanho Y",
+          "anchorX.label": "Âncora X",
+          "anchorY.label": "Âncora em Y"
+        },
+        "anchor.label": "Âncora"
+      },
+      "circle": {
+        "name": "Círculo",
+        "FIELDS": {
+          "radius.label": "Raio"
+        }
+      },
+      "ellipse": {
+        "name": "Elipse",
+        "FIELDS": {
+          "radiusX.label": "Raio-X",
+          "radiusY.label": "Raio Y"
+        }
+      },
+      "cone": {
+        "name": "Cone",
+        "FIELDS": {
+          "radius.label": "Raio",
+          "angle.label": "Ângulo",
+          "curvature.label": "Curvatura"
+        },
+        "CURVATURES": {
+          "round.label": "Redondo",
+          "flat.label": "Plano",
+          "semicircle.label": "Semicírculo"
+        }
+      },
+      "ring": {
+        "name": "Anel",
+        "FIELDS": {
+          "radius.label": "Raio",
+          "innerWidth.label": "Largura interna",
+          "outerWidth.label": "Largura externa"
+        }
+      },
+      "line": {
+        "name": "Linha",
+        "FIELDS": {
+          "width.label": "Largura",
+          "length.label": "Comprimento"
+        }
+      },
+      "emanation": {
+        "name": "Emanação",
+        "FIELDS": {
+          "base.label": "Base",
+          "radius.label": "Raio"
+        }
+      },
+      "polygon": {
+        "name": "Polígono",
+        "FIELDS": {
+          "points.label": "Pontos",
+          "origin.label": "Origem"
+        }
+      },
+      "token": {
+        "name": "Token",
+        "FIELDS": {
+          "x.label": "X",
+          "y.label": "Y",
+          "width.label": "Largura",
+          "height.label": "Altura",
+          "shape.label": "Forma"
+        },
+        "position.label": "Posição",
+        "size.label": "Tamanho"
+      },
+      "grid": {
+        "name": "Espaços em grade",
+        "FIELDS": {
+          "offsets.label": "Desvios da grade",
+          "origin.label": "Origem"
+        }
+      }
+    },
+    "ACTIONS": {
+      "createFromWalls": "Criar formas a partir de paredes controladas",
+      "makeHole": "Fazer um buraco",
+      "fillHole": "Preencha o buraco",
+      "moveUp": "Mover Forma para Cima",
+      "moveDown": "Mova a forma para baixo",
+      "edit": "Editar forma",
+      "remove": "Remover forma",
+      "removeAll": "Remover todas as formas"
+    },
+    "NOTIFICATIONS": {
+      "DrawingMultipleObjectsControlled": "Você deve controlar ou configurar apenas um ou nenhum {tipo} ao desenhar uma forma!",
+      "ControlWalls": "Controle um grupo de paredes que definem o limite da forma desejada.",
+      "EmptyEnclosedArea": "A área delimitada pelas paredes controladas está vazia! Certifique-se de que as paredes externas formem um circuito fechado e estejam conectadas de ponta a ponta.",
+      "NoControlledWalls": "Você não controla nenhuma parede!"
     }
   }
 }
