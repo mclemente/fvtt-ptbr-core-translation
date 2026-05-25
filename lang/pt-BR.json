@@ -2372,7 +2372,7 @@
   "SETTINGS.MaxFPSN": "Taxa de Quadros Máxima",
   "SETTINGS.MaxFPSL": "Limitar a taxa de quadros (FPS) máxima que o Foundry Virtual Tabletop usará para renderizar atualizações da tela. Baixar esse valor pode melhorar a performance da aplicação para computadores menos potentes.",
   "SETTINGS.DefaultSheetsN": "Fichas de Documento Padrão",
-  "SETTINGS.DefaultSheetsL": "Fichas de Documento Padrão",
+  "SETTINGS.DefaultSheetsL": "Fichas Padrão",
   "SETTINGS.DefaultSheetsH": "Configura quais fichas serão usadas por padrão por todos os tipos de Documento disponíveis no Mundo",
   "SETTINGS.FontConfigN": "Fontes Adicionais",
   "SETTINGS.FontConfigL": "Fontes Adicionais",
@@ -2400,7 +2400,7 @@
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são previstas em tempo real enquanto arrasta com o botão esquerdo. Isso é desabilitado por padrão pois pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
     "Name": "Substituições de Protótipos de Token",
-    "Label": "Substituições de Protótipos de Token",
+    "Label": "Protótipos de Token",
     "Hint": "Configure substituições de dados do Protótipo do Token para todos os Atores.",
     "Reset": {
       "Label": "Redefinir Padrões",
@@ -2411,7 +2411,7 @@
     "TABS": {
       "AllTypes": {
         "Label": "[Todos os Tipos]",
-        "Hint": "Essas substituições se aplicam a todos os Protótipos de Token, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas guias subsequentes. Uma seleção em branco para um campo indica que não há substituição."
+        "Hint": "Essas substituições se aplicam a todos os Protótipos de Token, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas abas subsequentes. Uma seleção em branco para um campo indica que não há substituição."
       },
       "Basics": "Básicos",
       "Marker": "Marcador de Turno"
@@ -3105,8 +3105,8 @@
     "Save": "Salvar Alterações"
   },
   "PERMISSION.Title": "Configuração de Permissões de Usuários",
-  "PERMISSION.Configure": "Configurar Permissões de Usuário",
-  "PERMISSION.ConfigureLabel": "Permissões de Usuário",
+  "PERMISSION.Configure": "Permissões de Usuários",
+  "PERMISSION.ConfigureLabel": "Permissões de Usuários",
   "PERMISSION.ConfigureHint": "Ajuste que ações são permitidas aos Usuários de cada cargo.",
   "PERMISSION.Instructions": "Configure qual cargo de Usuário tem a permissão para realizar qual ação. Note que algumas ações não podem ser desativadas para usuários Mestres. Algumas mudanças podem não ter efeito até que o jogo seja recarregado.",
   "PERMISSION.Permission": "Permissão",
@@ -3624,7 +3624,7 @@
   "SIDEBAR.Search": "Procurar {types}",
   "SIDEBAR.DirectoryTitle": "Diretório de {type}",
   "SIDEBAR.Documentation": "Documentação do Foundry VTT",
-  "SIDEBAR.Wiki": "Wiki da comunidade Foundry VTT",
+  "SIDEBAR.Wiki": "Wiki do Foundry VTT",
   "SIDEBAR.ACTIONS.CREATE": {
     "ActiveEffect": "Criar Efeito Ativo",
     "Actor": "Criar Ator",
@@ -3705,17 +3705,17 @@
       "Access": "Acesso ao Jogo"
     },
     "ACTIONS": {
-      "Configure": "Conjurações de Jogo",
+      "Configure": "Configurações",
       "Docs": "Documentação",
       "Invite": "Links de Convite",
-      "Keybindings": "Configuração de Controles",
+      "Keybindings": "Controles",
       "Logout": "Sair",
-      "ManageModules": "Gerenciamento de Módulos",
-      "Players": "Gerenciamento de Usuários",
+      "ManageModules": "Módulos",
+      "Players": "Usuários",
       "Support": "Suporte e Problemas",
-      "Tours": "Gerenciamento de Apresentação",
-      "ViewModules": "Módulos Ativos",
-      "Wiki": "Wiki da Comunidade"
+      "Tours": "Apresentações",
+      "ViewModules": "Ver Módulos Ativos",
+      "Wiki": "Páginas Wiki da Comunidade"
     }
   },
   "SUPPORT": {
@@ -4351,8 +4351,8 @@
   "TEXTURE_DATA.FIT.width": "Largura Total",
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
-    "Title": "Gerenciamento de Apresentação",
-    "NavLabel": "Guias de Gerenciamento de Apresentação",
+    "Title": "Gerenciamento de Apresentações",
+    "NavLabel": "Abas de Gerenciamento de Apresentação",
     "ShowMeHow": "Mostre-me como.",
     "TourCategories": "Categorias de Apresentação",
     "AllTours": "Todas as Apresentações",
