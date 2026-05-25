@@ -827,8 +827,8 @@
     "CONFIG": {
       "DefaultMethod": "Método padrão",
       "Hint": "Configure como a rolagem dos dados é feita.",
-      "Label": "Configurar Dado",
-      "Title": "Configuração do Dado"
+      "Label": "Dados",
+      "Title": "Configuração de Dados"
     },
     "FULFILLMENT": {
       "Default": "Rolagem Digital do Foundry VTT",
@@ -2337,7 +2337,7 @@
       }
     }
   },
-  "SETTINGS.CombatConfigL": "Configurar Monitor de Combate",
+  "SETTINGS.CombatConfigL": "Monitor de Combate",
   "SETTINGS.CombatConfigH": "Configurações relacionados ao Monitor de Combate.",
   "SETTINGS.CombatThemeN": "Tema do combate",
   "SETTINGS.CombatThemeL": "O conjunto de sons que serão reproduzidos quando o combate começar, quando seu turno for o próximo e quando for seu turno",
@@ -2372,10 +2372,10 @@
   "SETTINGS.MaxFPSN": "Taxa de Quadros Máxima",
   "SETTINGS.MaxFPSL": "Limitar a taxa de quadros (FPS) máxima que o Foundry Virtual Tabletop usará para renderizar atualizações da tela. Baixar esse valor pode melhorar a performance da aplicação para computadores menos potentes.",
   "SETTINGS.DefaultSheetsN": "Fichas de Documento Padrão",
-  "SETTINGS.DefaultSheetsL": "Configurar Fichas Padrão",
+  "SETTINGS.DefaultSheetsL": "Fichas Padrão",
   "SETTINGS.DefaultSheetsH": "Configura quais fichas serão usadas por padrão por todos os tipos de Documento disponíveis no Mundo",
   "SETTINGS.FontConfigN": "Fontes Adicionais",
-  "SETTINGS.FontConfigL": "Configurar Fontes Adicionais",
+  "SETTINGS.FontConfigL": "Fontes Adicionais",
   "SETTINGS.FontConfigH": "Configure fontes adicionais que estarão disponíveis para uso neste mundo.",
   "SETTINGS.PhotosensitiveModeN": "Modo de Fotossensibilidade",
   "SETTINGS.PhotosensitiveModeL": "A ativação desse modo reduz a prevalência e a intensidade de flashes, movimentos rápidos e animações e efeitos repetitivos.",
@@ -2400,7 +2400,7 @@
   "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são previstas em tempo real enquanto arrasta com o botão esquerdo. Isso é desabilitado por padrão pois pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
     "Name": "Substituições de Protótipos de Token",
-    "Label": "Configurar Protótipos de Token",
+    "Label": "Protótipos de Token",
     "Hint": "Configure substituições de dados do Protótipo do Token para todos os Atores.",
     "Reset": {
       "Label": "Redefinir Padrões",
@@ -2411,7 +2411,7 @@
     "TABS": {
       "AllTypes": {
         "Label": "[Todos os Tipos]",
-        "Hint": "Essas substituições se aplicam a todos os Protótipos de Token, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas guias subsequentes. Uma seleção em branco para um campo indica que não há substituição."
+        "Hint": "Essas substituições se aplicam a todos os Protótipos de Token, independentemente do tipo de Ator pai. Elas podem ser substituídas para cada tipo de Ator nas abas subsequentes. Uma seleção em branco para um campo indica que não há substituição."
       },
       "Basics": "Básicos",
       "Marker": "Marcador de Turno"
@@ -2439,7 +2439,7 @@
   "SETTINGS.UI": {
     "MENU": {
       "name": "Configuração da Interface do Usuário",
-      "label": "Configurar Interface",
+      "label": "Interface",
       "hint": "Configurações que afetam a aparência ou o comportamento da interface do usuário do Foundry Virtual Tabletop."
     },
     "HEADERS": {
@@ -3105,8 +3105,8 @@
     "Save": "Salvar Alterações"
   },
   "PERMISSION.Title": "Configuração de Permissões de Usuários",
-  "PERMISSION.Configure": "Configurar Permissões",
-  "PERMISSION.ConfigureLabel": "Abrir Configuração de Permissões",
+  "PERMISSION.Configure": "Permissões de Usuários",
+  "PERMISSION.ConfigureLabel": "Permissões de Usuários",
   "PERMISSION.ConfigureHint": "Ajuste que ações são permitidas aos Usuários de cada cargo.",
   "PERMISSION.Instructions": "Configure qual cargo de Usuário tem a permissão para realizar qual ação. Note que algumas ações não podem ser desativadas para usuários Mestres. Algumas mudanças podem não ter efeito até que o jogo seja recarregado.",
   "PERMISSION.Permission": "Permissão",
@@ -3624,7 +3624,7 @@
   "SIDEBAR.Search": "Procurar {types}",
   "SIDEBAR.DirectoryTitle": "Diretório de {type}",
   "SIDEBAR.Documentation": "Documentação do Foundry VTT",
-  "SIDEBAR.Wiki": "Wiki da comunidade Foundry VTT",
+  "SIDEBAR.Wiki": "Wiki do Foundry VTT",
   "SIDEBAR.ACTIONS.CREATE": {
     "ActiveEffect": "Criar efeito ativo",
     "Actor": "Criar Ator",
@@ -3705,15 +3705,15 @@
       "Access": "Acesso ao Jogo"
     },
     "ACTIONS": {
-      "Configure": "Definir Configurações",
-      "Docs": "Ver Documentação",
+      "Configure": "Configurações",
+      "Docs": "Documentação",
       "Invite": "Links de Convite",
-      "Keybindings": "Configurar Controles",
+      "Keybindings": "Controles",
       "Logout": "Sair",
-      "ManageModules": "Gerenciar Módulos",
-      "Players": "Gerenciamento de Usuários",
+      "ManageModules": "Módulos",
+      "Players": "Usuários",
       "Support": "Suporte & Problemas",
-      "Tours": "Gerenciamento de Apresentação",
+      "Tours": "Apresentações",
       "ViewModules": "Ver Módulos Ativos",
       "Wiki": "Páginas Wiki da Comunidade"
     }
@@ -4351,8 +4351,8 @@
   "TEXTURE_DATA.FIT.width": "Largura Total",
   "TEXTURE_DATA.FIT.height": "Altura Total",
   "TOURS": {
-    "Title": "Gestão de Turismo",
-    "NavLabel": "Guias de Gerenciamento de Apresentação",
+    "Title": "Gerenciamento de Apresentações",
+    "NavLabel": "Abas de Gerenciamento de Apresentação",
     "ShowMeHow": "Mostre-me como.",
     "TourCategories": "Categorias de Apresentação",
     "AllTours": "Todas as Apresentações",
@@ -4525,7 +4525,7 @@
   "WALL.DoorSounds.WoodHeavy": "Madeira, Pesada",
   "WEBRTC": {
     "Title": "Configuração de Áudio/Vídeo",
-    "MenuLabel": "Configurar Áudio/Vídeo",
+    "MenuLabel": "Áudio/Vídeo",
     "MenuHint": "Editar configurações específicas para o componente WebRTC de Áudio/Vídeo integrado",
     "UnknownDevice": "<Dispositivo Desconhecido>",
     "DeviceUnavailableWarning": "A comunicação de Áudio/Vídeo não pôde ser iniciada porque um dos dispositivos de entrada configurados não estava disponível.",
