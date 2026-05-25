@@ -3451,7 +3451,7 @@
       "defineSurface": {
         "FIELDS": {
           "placement.label": "Posicionamento",
-          "light.label": "Restringir Luz e Escuridão.",
+          "light.label": "Restringir Luz e Escuridão",
           "move.label": "Restringir Movimento",
           "sight.label": "Restringir Visão",
           "sound.label": "Restringir Som",
