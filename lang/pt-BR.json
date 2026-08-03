@@ -1,5 +1,4 @@
 {
-  "Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
   "ADVENTURE": {
     "ImportSubmit": "Importar Aventura",
     "ImportProgress": "Importando",
@@ -517,6 +516,7 @@
     "Confirm": "Confirmar",
     "Default": "Padrão",
     "Delete": "Excluir",
+    "FoundryVirtualTabletop": "Foundry Virtual Tabletop",
     "Invalid": "Inválido",
     "No": "Não",
     "None": "Nenhum",
@@ -553,6 +553,10 @@
       "Start": "Importando {number} Documentos {type} e {folderNumber} Pastas na pasta {folder}. Por favor, seja paciente.",
       "Finish": "Importou com sucesso {number} Documentos {type} e {folderNumber} Pastas na pasta {folder}."
     },
+    "ImportFolder": {
+      "InvalidDocument": "Você não pode importar um Documento do tipo {type} para a coleção de pastas do Compêndio {collection}.",
+      "InvalidDocuments": "Você só pode importar documentos do tipo Pasta para a coleção de pastas do Compêndio {collection}."
+    },
     "ImportEntry": "Importar Registro",
     "Locked": "{title} [Bloqueado]",
     "Migration": {
@@ -569,6 +573,8 @@
       "Warning": "Você está tentando desbloquear para edição um compêndio que não pertence a este Mundo. Quaisquer alterações feitas neste pacote de compêndio podem ser perdidas caso o Sistema ou Módulo proprietário dele seja atualizado. Em vez disso, talvez seja melhor duplicar o compêndio para o seu Mundo. Como deseja prosseguir?"
     },
     "CannotViewWarning": "Você não tem permissão suficiente para ver este pacote de Compêndio.",
+    "ModifyLocked": "Você não pode modificar o conteúdo deste pacote de Compêndio porque ele está bloqueado.",
+    "ModifyPermissionDenied": "Você não tem permissão para modificar este pacote de Compêndio.",
     "OwnershipInheritBelow": "Herdar de baixo",
     "OwnershipReset": "Redefinir para Padrão",
     "ART": {
@@ -1990,7 +1996,7 @@
   "SCENE.ShiftBG": "Mover",
   "SCENE.PullEveryone": "Puxar Todos",
   "SCENE.ToggleNav": "Alternar Navegação",
-  "SCENE.FogModeChangeMessage": "O modo de exploração da névoa foi alterado. Isso recarregará a exploração da névoa e redefinirá a visão.",
+  "SCENE.FogModeChangeMessage": "O modo de Névoa de Guerra foi alterado. Isso recarregará a exploração da névoa e redefinirá a visão.",
   "SCENE.Transition": {
     "Animation": "Animação de Transição",
     "Preview": "Pré-visualizar",
@@ -2082,8 +2088,8 @@
         "hint": "Controles do modo Névoa de Guerra: \"Nenhum\" desativa a exploração (os tokens veem apenas o que conseguem ver no momento), \"Individual\" rastreia a exploração separadamente para cada usuário e \"Compartilhado\" usa um único estado de exploração para o qual todos os usuários contribuem."
       },
       "overlay": {
-        "label": "Imagem da Exploração",
-        "hint": "Uma imagem opcional de névoa de guerra a ser desenhada acima de partes inexploradas da cena."
+        "label": "Imagem Inexplorada",
+        "hint": "Uma imagem opcional de Névoa de Guerra a ser exibida sobre as partes não exploradas da Cena. Se a Cor Inexplorada estiver configurada, a imagem será exibida sobre ela."
       },
       "colors": {
         "explored": {
@@ -2205,9 +2211,8 @@
         "alphaThreshold.label": "Limite de Alfa"
       },
       "fog": {
-        "label": "Exploração da Névoa",
-        "src.label": "Textura Inexplorada",
-        "tint.label": "Matiz da Textura"
+        "label": "Névoa de Guerra",
+        "src.label": "Imagem Inexplorada"
       },
       "textures": {
         "label": "Posicionamento",
@@ -3168,8 +3173,8 @@
     "CannotApplyToLocked": "Não é possível aplicar a paleta a objetos bloqueados.",
     "CloneSettings": "Clonar",
     "MultipleValues": "<Múltiplos Valores>",
-    "Selected": "Paleta {document} [{count}]",
-    "Title": "Paleta {document}"
+    "Selected": "Paleta de {document}: Editar [{count}]",
+    "Title": "Paleta de {document}: Preset"
   },
   "REGION": {
     "TABS": {
@@ -3676,7 +3681,8 @@
       "Title": "Filtro Avançado",
       "Level": "Filtrar por Andar",
       "Tooltip": "Filtros Avançados. Clique direito para limpar.",
-      "Top": "Superior"
+      "Top": "Superior",
+      "Viewed": "Somente Visualização"
     },
     "Search": {
       "placeholder": "Filtrar {name}"
@@ -3764,7 +3770,9 @@
     "AnimateSettingHint": "Exibe uma animação estilo roleta ao sortear em uma Tabela de Rolagem.",
     "DrawFlavor": "Sortear um resultado da tabela {name}",
     "DrawFlavorPlural": "Sortear {number} resultados da tabela {name}",
+    "DrawMaximumIterations": "Falha ao sortear uma entrada disponível da Tabela {name}, número máximo de tentativas atingido.",
     "NoAvailableResults": "Não há resultados disponíveis que possam ser sorteados desta tabela.",
+    "NoPossibleResults": "Nenhum resultado pode ser obtido a partir desta tabela e fórmula.",
     "Result": "Resultado",
     "ResultDescription": "Descrição do Resultado",
     "SHEETS": {
@@ -3987,6 +3995,7 @@
     "depth.label": "Tamanho Z",
     "level.label": "Andar",
     "movementAction.label": "Ação de Movimento",
+    "movementAction.hint": "Quando Padrão estiver selecionado, a ação de movimento será determinada automaticamente para este Token.",
     "actorId.label": "Ator Representado",
     "actorLink.label": "Vincular Dados do Ator",
     "displayName.label": "Exibir Nome",
