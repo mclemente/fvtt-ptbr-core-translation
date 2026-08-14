@@ -3711,17 +3711,17 @@
       "Access": "Acesso ao Jogo"
     },
     "ACTIONS": {
-      "Configure": "Configurações",
+      "Configure": "Configurações de Jogo",
       "Docs": "Documentação",
       "Invite": "Links de Convite",
-      "Keybindings": "Controles",
+      "Keybindings": "Configuração de Controles",
       "Logout": "Sair",
-      "ManageModules": "Módulos",
-      "Players": "Usuários",
+      "ManageModules": "Gerenciador de Módulos",
+      "Players": "Gerenciador de Usuários",
       "Support": "Suporte e Problemas",
-      "Tours": "Apresentações",
-      "ViewModules": "Ver Módulos Ativos",
-      "Wiki": "Páginas Wiki da Comunidade"
+      "Tours": "Gerenciador de Apresentações",
+      "ViewModules": "Módulos Ativos",
+      "Wiki": "Wiki da Comunidade"
     }
   },
   "SUPPORT": {
