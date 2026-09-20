@@ -1431,6 +1431,7 @@
     "Empty": "Espaço Vazio",
     "ToggleSheet": "Exibir {document}",
     "ClearConfirm": "Limpar todas as Macros atribuídas à sua hotbar?",
+    "IsLocked": "Você não pode realizar esta ação enquanto a hotbar estiver bloqueada.",
     "ACTIONS": {
       "Clear": "Limpar Hotbar",
       "Mute": "Mutar Volume",
@@ -2267,6 +2268,16 @@
       "warning": "Para modificar essas opções de configuração, será necessário reiniciar o servidor para que elas entrem em vigor. Deseja continuar?",
       "restart": "As configurações da aplicação Foundry Virtual Tabletop foram alteradas. Você precisa reiniciar o servidor para que as alterações entrem em vigor."
     },
+    "SSL": {
+      "Content": {
+        "Warning": "Um certificado autoassinado é uma maneira conveniente de adicionar criptografia SSL à sua instância do Foundry Virtual Tabletop e permitirá que você aproveite APIs modernas dos navegadores. No entanto, os navegadores não confiam implicitamente em certificados autoassinados e exibirão um aviso destacado quando você ou outros jogadores tentarem se conectar à sua instância.",
+        "Ignore": "Este aviso pode ser ignorado com segurança, e a conexão continuará criptografada.",
+        "DoNotShare": "Certifique-se de não compartilhar o arquivo <code>fvtt-key.pem</code> gerado com ninguém.",
+        "Continue": "Deseja continuar?"
+      },
+      "Title": "Gerar Certificado Autoassinado",
+      "Tooltip": "Gerar (novamente) certificados e chaves SSL automaticamente."
+    },
     "SSLCert": "Certificado SSL",
     "Telemetry": {
       "request1": "Se você der sua permissão, o Foundry Virtual Tabletop compartilhará uma pequena quantidade de dados de uso anônimos com o site foundryvtt.com, o que permite que nossa equipe entenda melhor como o Foundry VTT está sendo usado e nos ajuda a melhorar o software.",
@@ -2670,6 +2681,8 @@
     "PackageDependenciesCouldInstallSingular": "Uma dependência pode ser instalada automaticamente.",
     "PackageDependenciesCouldInstallPlural": "{number} dependências podem ser instaladas automaticamente.",
     "PackageDependenciesDecline": "Você optou por não instalar os pacotes de dependência necessários para {title}. Você precisará instalá-los manualmente.",
+    "PackageDependenciesUnavailable": "Este mundo não pode ser criado porque as seguintes dependências obrigatórias não estão disponíveis para instalação:",
+    "PackageDependencyUnlisted": "Este pacote não está listado.",
     "PackageDependenciesSuccess": "{title} e {number} dependências foram instalados com sucesso.",
     "PackageUpdateCoreUpdateNeeded": "Uma atualização está disponível para {title}, mas não pode ser instalada porque requer que seja atualizado para pelo menos {vmin}. Você está usando a versão {vcur}.",
     "PackageUpdateCoreUnstable": "Uma atualização está disponível para {title}, mas pode não ser instalada porque requer a versão {vmin} do FVTT, que ainda não é estável.",
@@ -3088,7 +3101,8 @@
     "NextSession": "Próxima Sessão",
     "SelectUser": "Selecione o Usuário",
     "UserKey": "Senha do Usuário",
-    "AuthAdmin": "Você está autenticado como usuário administrador do servidor.",
+    "AuthAdmin": "Você está autenticado como administrador do servidor.",
+    "AuthRequired": "Será necessário se autenticar como administrador do servidor.",
     "ErrorMustSelectUser": "Você deve selecionar um Usuário para fazer login.",
     "ErrorUserDoesNotExist": "O Usuário solicitado, \"{user}\", não existe.",
     "ErrorInvalidPassword": "Senha inválida fornecida para {user}!",
