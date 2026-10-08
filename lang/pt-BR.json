@@ -69,7 +69,7 @@
       },
       "vision": {
         "label": "Fornece Visão",
-        "hint": "Uma fonte de luz com esta opção habilitada serve como ponto de visão adicional para tokens. Ative esta opção para permitir que os tokens sempre vejam a área que ela ilumina, mesmo que essa área esteja atrás de uma parede ou fora do campo de visão do token."
+        "hint": "Uma fonte de luz com esta opção ativada serve como ponto de visão adicional para tokens. Ative esta opção para permitir que os tokens sempre vejam a área que ela ilumina, mesmo que essa área esteja atrás de uma parede ou fora do campo de visão do token."
       },
       "walls": {
         "label": "Restrito por Paredes e Superfícies",
@@ -123,7 +123,7 @@
         "hint": "Ajuste o nível de volume do som conforme os tokens se aproximam da origem."
       },
       "hidden": {
-        "label": "Escondido",
+        "label": "Ocultada",
         "hint": "Alterne se esta fonte de som está temporariamente desativada."
       },
       "walls": {
@@ -460,8 +460,8 @@
           },
           "turnMarker": {
             "enabled": {
-              "label": "Habilitar Marcadores",
-              "hint": "Habilita marcadores de turno de combate por padrão para todos os tokens."
+              "label": "Ativar Marcadores",
+              "hint": "Ativa marcadores de turno de combate por padrão para todos os tokens."
             },
             "src": {
               "label": "Fonte de Mídia",
@@ -486,7 +486,7 @@
     "Unknown": "Combatente Desconhecido",
     "PanTo": "Focar no Combatente",
     "Ping": "Pingar Token",
-    "Hide": "Esconder",
+    "Hide": "Ocultar",
     "Show": "Mostrar",
     "MarkDefeated": "Marcar como Derrotado",
     "UnmarkDefeated": "Desmarcar como Derrotado",
@@ -497,7 +497,7 @@
       "tokenId.label": "Token Representado",
       "name.label": "Nome Exibido",
       "defeated.label": "Derrotado",
-      "hidden.label": "Escondido",
+      "hidden.label": "Ocultado",
       "img.label": "Imagem da Miniatura",
       "initiative.label": "Valor da Iniciativa"
     },
@@ -794,7 +794,7 @@
     "CommonCreate": "Criar",
     "CommonMove": "Mover",
     "CommonEdit": "Editar",
-    "CommonHide": "Esconder",
+    "CommonHide": "Ocultar",
     "CommonDelete": "Excluir",
     "CommonRotate": "Rotacionar",
     "CommonToggleHUD": "Alternar HUD",
@@ -812,7 +812,7 @@
     "CommonSelect": "Selecionar",
     "CommonSelectMultiple": "Selecionar Vários",
     "CommonOpenSheet": "Abrir Ficha",
-    "DisableToolclips": "Você pode desabilitar os Clipes de Ferramentas nas Configurações",
+    "DisableToolclips": "Você pode desativar os Clipes de Ferramentas nas Configurações",
     "CutObjects": "Cortar {count} objeto(s) {type}.",
     "CopiedObjects": "{count} objeto(s) {type} copiados.",
     "PastedObjects": "{count} objeto(s) {type} colados.",
@@ -941,7 +941,7 @@
       "author.label": "Autor",
       "width.label": "Largura",
       "height.label": "Altura",
-      "hidden.label": "Escondido",
+      "hidden.label": "Ocultado",
       "elevation.label": "Elevação",
       "rotation.label": "Rotação",
       "sort": {
@@ -1194,7 +1194,7 @@
   "ERROR": {
     "BrowserVersion": "Foundry Virtual Tabletop usa funcionalidades modernas de JavaScript que não são suportadas em versões do {browser} inferiores à {minimum}. Você está usando a versão {version} do {browser} e pode encontrar problemas.",
     "ElectronVersion": "Você está usando uma versão antiga do cliente Electron do Foundry Virtual Tabletop. Para o melhor desempenho, recomendamos que você baixe novamente a versão desejada do Foundry Virtual Tabletop e execute uma reinstalação completa do programa.",
-    "NoWebGL": "Atualmente, seu navegador não suporta a renderização WebGL, que é exigida pelo Foundry Virtual Tabletop. Verifique se você possui a renderização de hardware e o WebGL habilitados no seu navegador.",
+    "NoWebGL": "Atualmente, seu navegador não suporta a renderização WebGL, que é exigida pelo Foundry Virtual Tabletop. Verifique se você possui a renderização de hardware e o WebGL ativados no seu navegador.",
     "NoWebGL2": "Atualmente, seu navegador não suporta à renderização WebGL Versão 2, essencial para que o Foundry Virtual Tabletop funcione corretamente. Podem ocorrer erros ou comportamento gráfico anormal.",
     "BackgroundTextureSize": "Você está usando uma textura de fundo de Cena com dimensões de {width}px por {height}px. Uma ou ambas as dimensões excedem o tamanho máximo de textura de {max}px suportado pelo seu dispositivo.",
     "InvalidAdminCredentials": "O nome de usuário ou a senha de administrador do servidor fornecidos são inválidos. Se você esqueceu as credenciais configuradas, será necessário excluir manualmente o arquivo <strong>Config/admin.txt</strong> da sua pasta de dados do usuário.",
@@ -1453,7 +1453,7 @@
     "Untarget": "Remover Alvo",
     "EnterCombat": "Entrar em Combate",
     "ExitCombat": "Sair do Combate",
-    "Hide": "Esconder",
+    "Hide": "Ocultar",
     "Show": "Mostrar",
     "Lock": "Bloquear",
     "Unlock": "Desbloquear",
@@ -1804,16 +1804,16 @@
     "DependencyResolution": "Resolução de Dependências",
     "DepRequiredEnable": "As seguintes dependências são necessárias para que os módulos selecionados funcionem",
     "DepOptionalEnable": "Os módulos selecionados listam as seguintes dependências opcionais",
-    "DepEnableCheck": "Habilitar o módulo e as dependências selecionadas?",
+    "DepEnableCheck": "Ativar o módulo e as dependências selecionadas?",
     "DepDisable": "As seguintes dependências deixariam de ser utilizadas e podem ser desativadas:",
     "DepDisableCheck": "Deseja desativar também os pacotes selecionados?",
     "DepNotInstalled": "A dependência necessária {missing} não está instalada!",
-    "DepMissing": "Você habilitou o módulo {module}, mas suas dependências {missing} não estão habilitadas!",
+    "DepMissing": "Você ativou o módulo {module}, mas suas dependências {missing} não estão ativadas!",
     "FilterAll": "Todos os Módulos",
     "FilterActive": "Módulos Ativos",
     "FilterInactive": "Módulos Inativos",
     "RequiredModule": "Este módulo precisa estar ativo.",
-    "DependencyIssues": "Não pode ser habilitado devido a problemas nas dependências necessárias.",
+    "DependencyIssues": "Não pode ser ativado devido a problemas nas dependências necessárias.",
     "SystemCompatibilityIssueMinimum": "Este módulo requer uma versão mínima do sistema de {minimum}, mas sua versão é {version}. Por favor, atualize o sistema.",
     "SystemCompatibilityIssueMaximum": "Este módulo requer uma versão máxima do sistema de {maximum}, mas sua versão é {version}.",
     "NavLabel": "Navegação do Gerenciamento de Módulos",
@@ -2079,7 +2079,7 @@
     "shiftY.label": "Deslocamento Y",
     "tokenVision": {
       "label": "Visão do Token",
-      "hint": "Restringe a visibilidade dentro desta Cena à visão de Tokens controlados. Se desabilitado, toda a Cena fica visível."
+      "hint": "Restringe a visibilidade dentro desta Cena à visão de Tokens controlados. Se desativada, toda a Cena fica visível."
     },
     "fog": {
       "MODES": {
@@ -2311,7 +2311,7 @@
       },
       "telemetry": {
         "label": "Permitir Compartilhamento de Dados de Uso",
-        "hint": "Permitir o compartilhamento de dados de uso conosco, o que nos ajuda a melhorar o Foundry Virtual Tabletop. Os dados coletados, se esta opção estiver habilitada, estão documentados em nossa <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Política de Privacidade</a> e não contêm nenhuma informação de identificação pessoal nem são compartilhados com terceiros. O compartilhamento de dados de uso nos ajuda a responder a perguntas como \"quais versões do software Foundry Virtual Tabletop são mais utilizadas\", \"quais Sistemas de Jogo são mais jogados\", and \"quais versões de Módulos são instaladas com frequência\". Usamos os insights desses dados para nos ajudar a melhorar a compatibilidade do software, fornecer melhor suporte ao cliente e compartilhar insights agregados com nossa comunidade. Se esta opção estiver desabilitada, nenhum dado será compartilhado."
+        "hint": "Permitir o compartilhamento de dados de uso conosco, o que nos ajuda a melhorar o Foundry Virtual Tabletop. Os dados coletados, se esta opção estiver ativada, estão documentados em nossa <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Política de Privacidade</a> e não contêm nenhuma informação de identificação pessoal nem são compartilhados com terceiros. O compartilhamento de dados de uso nos ajuda a responder a perguntas como \"quais versões do software Foundry Virtual Tabletop são mais utilizadas\", \"quais Sistemas de Jogo são mais jogados\", and \"quais versões de Módulos são instaladas com frequência\". Usamos os insights desses dados para nos ajudar a melhorar a compatibilidade do software, fornecer melhor suporte ao cliente e compartilhar insights agregados com nossa comunidade. Se esta opção estiver desativada, nenhum dado será compartilhado."
       },
       "cssTheme": {
         "label": "Tema de Configuração",
@@ -2325,7 +2325,7 @@
         "label": "Idioma Padrão",
         "hint": "Você pode escolher um idioma padrão para o aplicativo escolhendo um módulo que fornece os arquivos de tradução principais para esse idioma."
       },
-      "upnp.label": "Habilitar UPnP",
+      "upnp.label": "Ativar UPnP",
       "port": {
         "label": "Porta",
         "hint": "Escolha um número de porta que o Foundry Virtual Tabletop usará para conexões TCP. Você também pode ativar ou desativar o Universal Plug and Play (UPnP)."
@@ -2340,7 +2340,7 @@
       },
       "compressSocket": {
         "label": "Compactar Dados do Web Socket",
-        "hint": "Habilite a compactação dos dados enviados do servidor para o cliente via websocket. Isso é recomendado para o desempenho da rede."
+        "hint": "Ativa a compactação dos dados enviados do servidor para o cliente via websocket. Isso é recomendado para o desempenho da rede."
       },
       "deleteNEDB": {
         "label": "Excluir Arquivos NEDB Migrados",
@@ -2382,7 +2382,7 @@
   "SETTINGS.AnimVisionN": "Animação de Visão de Token",
   "SETTINGS.AnimVisionL": "Anima mudanças de visão, luz e regiões anexadas do Token durante animações de movimento do Token. Desativar isso melhorará o desempenho em máquinas mais fracas.",
   "SETTINGS.AnimLightN": "Animação da Fonte de Luz",
-  "SETTINGS.AnimLightL": "Permitir animação das fontes de luz. Desabilitar esta opção vai aumentar a performance de computadores com baixos recursos.",
+  "SETTINGS.AnimLightL": "Permitir animação das fontes de luz. Desativar esta opção vai aumentar a performance de computadores com baixos recursos.",
   "SETTINGS.FPSMeterN": "Exibir Medidor de FPS",
   "SETTINGS.FPSMeterL": "Exibe um medidor de framerate no canto inferior direito que reporta o desempenho de renderização da tela em quadros por segundo.",
   "SETTINGS.ResolutionScaleN": "Escala de Resolução da Proporção de Píxel",
@@ -2390,10 +2390,10 @@
   "SETTINGS.LangN": "Preferência de Idioma",
   "SETTINGS.LangL": "Altere o idioma de exibição do Foundry Virtual Tabletop.",
   "SETTINGS.LClickReleaseN": "Clique-Esquerdo para Liberar Objetos",
-  "SETTINGS.LClickReleaseL": "Quando habilitado, um clique com o botão esquerdo em um espaço vazio da tela vai liberar quaisquer objetos atualmente controlados. Se for desabilitado, os objetos são liberados selecionando um espaço vazio, clicando com o shift no objeto ou pressionando a tecla Esc.",
+  "SETTINGS.LClickReleaseL": "Quando ativado, um clique com o botão esquerdo em um espaço vazio da tela vai liberar quaisquer objetos atualmente controlados. Se for desativado, os objetos são liberados selecionando um espaço vazio, clicando com o shift no objeto ou pressionando a tecla Esc.",
   "SETTINGS.NoCanvasN": "Desativar Tela de Jogo",
   "SETTINGS.NoCanvasL": "A tela de jogo, que fornece uma representação visual da mesa virtual, pode ser desativada. Isso permite que máquinas mais fracas usem um subconjunto dos recursos do programa.",
-  "SETTINGS.CBubN": "Habilitar Balões de Fala",
+  "SETTINGS.CBubN": "Ativar Balões de Fala",
   "SETTINGS.CBubL": "Configurar se balões de fala serão ou não exibidos acima dos Tokens para mensagens e emotes dos personagens.",
   "SETTINGS.CBubPN": "Deslocar para Token Falante",
   "SETTINGS.CBubPL": "Configurar se a câmera deve ser deslocada automaticamente para um Token que fale quando um balão de fala é exibido.",
@@ -2417,15 +2417,15 @@
   "SETTINGS.PerformanceModeMax": "Máximo",
   "SETTINGS.ScrollStatusN": "Texto de Status",
   "SETTINGS.ScrollStatusL": "O texto de status pode aparecer acima dos tokens ou outros objetos da tela para dar feedback de texto sobre as mudanças desse objeto.",
-  "SETTINGS.SoftSN": "Habilitar Sombras Suaves",
-  "SETTINGS.SoftSL": "Habilite sombras suaves para uma iluminação dinâmica mais bonita, ou desabilite para melhorar a performance em computadores com hardware mais fraco.",
+  "SETTINGS.SoftSN": "Ativar Sombras Suaves",
+  "SETTINGS.SoftSL": "Ativa sombras suaves para uma iluminação dinâmica mais bonita, ou desativa-a para melhorar a performance em computadores com hardware mais fraco.",
   "SETTINGS.TabCore": "Config. da Base",
   "SETTINGS.TabModule": "Config. dos Módulos",
   "SETTINGS.TabSystem": "Config. do Sistema",
   "SETTINGS.TokenAutoRotateN": "Rotação Automática de Tokens",
   "SETTINGS.TokenAutoRotateL": "Quando ativado, os Tokens são girados automaticamente na direção do movimento. Independentemente dessa configuração, a configuração de Bloqueio de Rotação em tokens individuais ainda impedirá que suas artes sejam giradas visualmente.",
   "SETTINGS.TokenDragPreviewN": "Visão ao Arrastar Token",
-  "SETTINGS.TokenDragPreviewL": "Quando habilitado, a visão e a iluminação de um Token são previstas em tempo real enquanto arrasta com o botão esquerdo. Isso é desabilitado por padrão pois pode promover comportamentos indesejáveis de meta-jogo.",
+  "SETTINGS.TokenDragPreviewL": "Quando ativada, a visão e a iluminação de um Token são previstas em tempo real enquanto arrasta com o botão esquerdo. Isto é desativado por padrão pois pode promover comportamentos indesejáveis de meta-jogo.",
   "SETTINGS.PrototypeTokenOverrides": {
     "Name": "Substituições de Protótipos de Token",
     "Label": "Protótipos de Token",
@@ -2434,7 +2434,7 @@
       "Label": "Redefinir Padrões",
       "Warning": "Esta ação removerá todas as substituições configuradas."
     },
-    "Disabled": "Desabilitado",
+    "Disabled": "Desativado",
     "Submit": "Salvar Substituições",
     "TABS": {
       "AllTypes": {
@@ -2534,7 +2534,7 @@
     "UpdateAvailable": "Uma atualização {channel} para a versão {version} está disponível!",
     "Configuration": "Configurações",
     "MinifyFiles": "Otimizar Arquivos Estáticos",
-    "MinifyFilesHint": "Reduzir o tráfego de rede fornecendo arquivos Javascript e CSS estáticos em formato minified. Habilitar esta opção é recomendado para a maioria dos usuários, mas desenvolvedores de módulos podem querer desabilitá-la.",
+    "MinifyFilesHint": "Reduz o tráfego de rede fornecendo arquivos Javascript e CSS estáticos em formato minified. Ativar esta opção é recomendado para a maioria dos usuários, mas desenvolvedores de módulos podem querer desativá-la.",
     "Modules": "Módulos Adicionais",
     "Systems": "Sistemas",
     "GettingStarted": "Primeiros Passos",
@@ -2743,7 +2743,7 @@
     "UpdateLicenseInvalid": "Sua chave de licença do Foundry Virtual Tabletop não é válida.",
     "UpdatedPackages": "Registro de atualização de pacotes",
     "NoUpdateMode": {
-      "Label": "Atualizações Desabilitadas",
+      "Label": "Atualizações Desativadas",
       "Hint": "Você não tem permissão para atualizar esta instância do Foundry VTT pois ela foi executada no modo --noupdate."
     },
     "Package": "Pacote",
@@ -2762,7 +2762,7 @@
     "AdminCredentialsForgot": "Se você esqueceu o nome de usuário ou a senha do administrador, o administrador do servidor pode redefini-los <a href=\"https://foundryvtt.com/article/reset-admin-password/\" target=\"_blank\">seguindo estas instruções</a>.",
     "AdminLogIn": "Entrar",
     "AdminLogout": "Sair da Administração",
-    "UPNPLabel": "Habilitar UPnP?",
+    "UPNPLabel": "Ativar UPnP?",
     "News": "Notícias",
     "FeaturedContent": "Conteúdo em Destaque",
     "NoFeaturedContent": "Nenhuma recomendação de conteúdo foi recebida do servidor da web foundryvtt.com.",
@@ -3328,8 +3328,8 @@
       "behaviorAdd": "Adicionar Comportamento",
       "behaviorEdit": "Editar Comportamento",
       "behaviorDelete": "Excluir Comportamento",
-      "behaviorEnable": "Habilitar Comportamento",
-      "behaviorDisable": "Desabilitar Comportamento"
+      "behaviorEnable": "Ativar Comportamento",
+      "behaviorDisable": "Desativar Comportamento"
     },
     "VISIBILITY": {
       "LAYER_UNLOCKED": {
@@ -3453,7 +3453,7 @@
     },
     "FIELDS": {
       "disabled": {
-        "label": "Desabilitado",
+        "label": "Desativado",
         "hint": "Alterne se este comportamento está temporariamente desativado."
       }
     },
@@ -3666,11 +3666,11 @@
       "toggleBehavior": {
         "FIELDS": {
           "enable": {
-            "label": "Habilitar Comportamentos",
+            "label": "Ativar Comportamentos",
             "hint": "Os comportamentos que são ativados quando um dos eventos ocorre."
           },
           "disable": {
-            "label": "Desabilitar Comportamentos",
+            "label": "Desativar Comportamentos",
             "hint": "Os comportamentos que são desativados quando um dos eventos ocorre."
           }
         }
@@ -3729,8 +3729,8 @@
     "ACTIONS": {
       "ChangeLevel": "Alterar Andar",
       "Clear": "Limpar",
-      "Hidden": "Escondido",
-      "Hide": "Esconder",
+      "Hidden": "Oculto",
+      "Hide": "Ocultar",
       "InLevel": "Incluído no Andar",
       "Lock": "Bloquear",
       "Locked": "Bloqueado",
@@ -3747,8 +3747,8 @@
     "Meta": {
       "empty": "Vazio",
       "visible": "Visível para alguns jogadores",
-      "hidden": "Escondido dos jogadores",
-      "locked": "Trancado"
+      "hidden": "Ocultado dos jogadores",
+      "locked": "Bloqueado"
     },
     "Filter": {
       "ACTIONS": {
@@ -4121,7 +4121,7 @@
         }
       },
       "effects.label": "Efeitos de Anel",
-      "enabled.label": "Anel Habilitado",
+      "enabled.label": "Anel Ativado",
       "subject": {
         "scale": {
           "label": "Correção da Escala do Sujeito",
@@ -4135,7 +4135,7 @@
     },
     "sight": {
       "enabled": {
-        "label": "Visão Habilitada",
+        "label": "Visão Ativada",
         "hint": "Permite que o token veja espaços iluminados dentro de sua linha de visão."
       },
       "range": {
@@ -4345,7 +4345,7 @@
       "legend": "Marcador de Turno de Combate"
     },
     "MODES": {
-      "DISABLED": "Desabilitado",
+      "DISABLED": "Desativado",
       "DEFAULT": "Padrão",
       "CUSTOM": "Personalizado"
     }
@@ -4615,9 +4615,9 @@
     "MenuHint": "Editar configurações específicas para o componente WebRTC de Áudio/Vídeo integrado",
     "UnknownDevice": "<Dispositivo Desconhecido>",
     "DeviceUnavailableWarning": "A comunicação de Áudio/Vídeo não pôde ser iniciada porque um dos dispositivos de entrada configurados não estava disponível.",
-    "DisableVideoSource": "Desabilitar Envio de Câmera",
-    "DisableAudioSource": "Desabilitar Envio de Áudio",
-    "DisableAudioOutput": "Desabilitar Saída de Áudio",
+    "DisableVideoSource": "Desativar Envio de Câmera",
+    "DisableAudioSource": "Desativar Envio de Áudio",
+    "DisableAudioOutput": "Desativar Saída de Áudio",
     "DefaultSource": "Dispositivo Padrão",
     "DevicesSubsections": {
       "Video": "Vídeo",
@@ -4629,17 +4629,17 @@
     "CustomTURNServer": "Servidor de Retransmissão Personalizado",
     "GeneralTabNotGM": "Configurações Gerais de Conferência Áudio/Vídeo só pode ser modificadas pelo Mestre",
     "AVModeNotes": "Apenas um usuário Mestre de Jogo pode alterar essa configuração, o que exigirá que o Foundry VTT seja recarregado.",
-    "ModeDisabled": "Desabilitado",
+    "ModeDisabled": "Desativado",
     "ModeAudioOnly": "Somente Áudio",
     "ModeVideoOnly": "Somente Vídeo",
-    "ModeAudioVideo": "Áudio/Vídeo Habilitados",
+    "ModeAudioVideo": "Áudio/Vídeo Ativados",
     "NavLabel": "Controles de Áudio/Vídeo do Usuário",
     "TooltipToggleVideo": "Ativar Vídeo",
     "TooltipConfigure": "Definir Configurações",
     "TooltipDock": "Enviar para o Quadro",
     "TooltipPopout": "Destacar",
     "PTTKeyWarn": "Sua tecla de pressione-para-falar está usando um valor antigo e pode não funcionar como esperado, por favor reconfigure-a.",
-    "VoiceModeAlways": "Sempre Habilitado",
+    "VoiceModeAlways": "Sempre Ativado",
     "VoiceModeActivity": "Ativação por Voz",
     "VoiceModePtt": "Pressione-para-Falar",
     "DockPositionTop": "Topo",
@@ -4652,16 +4652,16 @@
     "TooltipBlockUserAudio": "Bloquear Áudio do Usuário",
     "TooltipHideUser": "Ocultar Usuário",
     "TooltipShowUser": "Exibir Usuário",
-    "TooltipEnableMyVideo": "Habilitar seu Vídeo",
-    "TooltipDisableMyVideo": "Desabilitar seu Vídeo",
-    "TooltipEnableMyAudio": "Habilitar seu Áudio",
+    "TooltipEnableMyVideo": "Ativar seu Vídeo",
+    "TooltipDisableMyVideo": "Desativar seu Vídeo",
+    "TooltipEnableMyAudio": "Ativar seu Áudio",
     "TooltipDisableMyAudio": "Silenciar seu Áudio",
     "TooltipMutePeers": "Silenciar Áudio dos Outros",
     "TooltipUnmutePeers": "Reativar Áudio dos Outros",
     "TooltipDisableAllVideo": "Desativar Recebimento de Vídeo",
-    "TooltipEnableVideo": "Habilitar Recebimento de Vídeo",
+    "TooltipEnableVideo": "Ativar Recebimento de Vídeo",
     "TooltipShowPlayers": "Mostrar Lista de Jogadores",
-    "TooltipHidePlayers": "Esconder Lista de Jogadores",
+    "TooltipHidePlayers": "Ocultar Lista de Jogadores",
     "TooltipExpandDock": "Expandir Quadro",
     "TooltipMinimizeDock": "Minimizar Quadro",
     "NameplatesOff": "Desativado",
@@ -4678,8 +4678,8 @@
     "GenericError": "Erro WebRTC: ",
     "NoSSLError": "Você não pode utilizar chamadas de Áudio/Vídeo sem que seu servidor Foundry VTT esteja utilizando certificados SSL. Veja a documentação online para instruções.",
     "Volume": "Volume",
-    "WarningCannotEnableVideo": "Você não pode habilitar sua câmera porque não tem permissão para transmitir vídeo.",
-    "WarningCannotEnableAudio": "Você não pode habilitar seu microfone porque você não tem permissão para transmitir áudio.",
+    "WarningCannotEnableVideo": "Você não pode ativar sua câmera porque não tem permissão para transmitir vídeo.",
+    "WarningCannotEnableAudio": "Você não pode ativar seu microfone porque você não tem permissão para transmitir áudio.",
     "WorldSettings": {
       "FIELDS": {
         "mode": {
@@ -4752,7 +4752,7 @@
       "resetKeys.label": "Redefinir Senhas de Usuários",
       "safeMode": {
         "label": "Iniciar no Modo de Segurança",
-        "hint": "Desabilita todos os módulos e cenas ativas, e para a reprodução de todo áudio."
+        "hint": "Desativa todos os módulos e cenas ativas, e para a reprodução de todo áudio."
       },
       "description.label": "Descrição do Mundo"
     }
