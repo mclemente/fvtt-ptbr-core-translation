@@ -64,6 +64,8 @@
         "hint": "Um nome opcional para ajudar a identificar a fonte de luz.",
         "label": "Nome"
       },
+      "hidden": {
+      },
       "rotation": {
         "label": "Ângulo de Rotação"
       },
@@ -942,6 +944,9 @@
       "width.label": "Largura",
       "height.label": "Altura",
       "hidden.label": "Ocultado",
+      "locked": {
+        "hint": "Impede a manipulação e edição da tela através da paleta."
+      },
       "elevation.label": "Elevação",
       "rotation.label": "Rotação",
       "sort": {
@@ -983,6 +988,9 @@
       "bezierFactor": {
         "label": "Fator de Suavização",
         "hint": "Para desenho à mão livre, o fator de suavização controla a quantidade de suavização do spline."
+      },
+      "hidden": {
+        "hint": "Oculta este desenho de todos os jogadores, exceto do autor."
       },
       "fillAlpha.label": "Opacidade do Preenchimento",
       "fillColor.label": "Cor do Preenchimento",
@@ -1366,7 +1374,7 @@
     "TraverseBack": "Voltar",
     "NoResults": "Não foram encontrados resultados nesse local.",
     "Upload": "Enviar",
-    "CannotUpload": "Envios para esta pasta são proibidos pois o conteúdo aqui pode ser sobrescrito durante atualizações. Em vez disso, envie para a sua pasta \"assets\" ou outra local permitido.",
+    "CannotUpload": "Envios para esta pasta são proibidos. Em vez disso, envie para a sua pasta \"assets\" ou outro local permitido.",
     "Search": "Procurar",
     "ErrorTooLarge": "O arquivo que você tentou enviar é grande demais para o seu servidor proxy.",
     "ErrorSomethingWrong": "Algo deu errado com sua solicitação de envio de arquivo.",
@@ -1414,6 +1422,7 @@
   "GAME.ReturnSetup": "Voltar à Configuração",
   "GAME.ReturnSetupActiveUser": "Há um outro Usuário ativo neste Mundo no momento e ele será desconectado. Deseja prosseguir?",
   "GAME.ReturnSetupActiveUsers": "Há {number} outros Usuários ativos neste Mundo no momento e serão desconectados. Deseja prosseguir?",
+  "GAME.WorldShuttingDown": "O mundo do jogo está sendo desligado e você será redirecionado à página inicial do servidor.",
   "INFO.SceneViewCanvasDisabled": "A cena \"{name}\" está sendo visualizada, mas não está sendo exibida porque a tela está desativada.",
   "INVITATIONS.Copied": "Link de convite do jogo copiado para a área de transferência",
   "INVITATIONS.Instructions": "Compartilhe os links abaixo com os usuários que você deseja que participem do seu jogo. O link de convite local é para usuários em sua rede local, já o link da Internet se conecta através da Internet na porta configurada.",
@@ -2270,13 +2279,30 @@
     },
     "SSL": {
       "Content": {
-        "Warning": "Um certificado autoassinado é uma maneira conveniente de adicionar criptografia SSL à sua instância do Foundry Virtual Tabletop e permitirá que você aproveite APIs modernas dos navegadores. No entanto, os navegadores não confiam implicitamente em certificados autoassinados e exibirão um aviso destacado quando você ou outros jogadores tentarem se conectar à sua instância.",
-        "Ignore": "Este aviso pode ser ignorado com segurança, e a conexão continuará criptografada.",
+        "Attempt": "O Foundry Virtual Tabletop tentará primeiro obter um certificado do serviço de terceiros Let's Encrypt. Os navegadores confiam automaticamente nesses certificados, sendo este o método preferencial para habilitar SSL em seu servidor. A obtenção desses certificados exige que sua instância esteja publicamente acessível na porta 80, o que pode não ser possível em algumas circunstâncias.",
+        "Fallback": "Caso não seja possível obter um certificado confiável, um certificado autoassinado será emitido. Isso ainda criptografa a conexão e permite o uso das APIs modernas do navegador, mas os navegadores não confiam implicitamente nesses certificados e exibirão um aviso destacado para você e seus jogadores. É seguro ignorar esse aviso.",
         "DoNotShare": "Certifique-se de não compartilhar o arquivo <code>fvtt-key.pem</code> gerado com ninguém.",
-        "Continue": "Deseja continuar?"
+        "Terms": "Para solicitar um certificado do Let's Encrypt, você precisa concordar com o <a href=\"https://letsencrypt.org/repository/\">Contrato de Assinatura</a>. Deseja prosseguir?"
       },
+      "ERRORS": {
+        "CertificateGenerationFailed": "A geração do certificado falhou. Consulte os registros do servidor para obter mais detalhes.",
+        "CouldNotBind": "Não foi possível responder ao desafio da autoridade certificadora porque a solicitação de vinculação à porta 80 foi rejeitada.",
+        "NoCandidates": "Não foi possível encontrar nenhum endereço candidato para a geração do certificado.",
+        "NoChallenge": "O Let's Encrypt não ofereceu um desafio http-01 para o endereço fornecido.",
+        "PortUnreachable": "A porta 80 não está acessível publicamente.",
+        "ProxySSL": "Esta instância não requer um certificado SSL, pois já está atrás de um proxy reverso que lida com SSL."
+      },
+      "RenewalFailed": "Falha ao renovar o certificado SSL gerenciado: {error}",
+      "RenewalFailedInGame": "Falha ao renovar o certificado SSL gerenciado. Isso provavelmente não causará nenhum problema imediato, mas você precisará retornar à Configuração quando quiser e tentar gerar um novo certificado ou entrar em contato com quem administra sua instância do Foundry Virtual Tabletop.",
+      "SelfSigned": "Não foi possível obter um certificado da Let's Encrypt, portanto, um certificado autoassinado foi emitido: {error}",
       "Title": "Gerar Certificado Autoassinado",
-      "Tooltip": "Gerar (novamente) certificados e chaves SSL automaticamente."
+      "Tooltip": "Gerar (novamente) certificados e chaves SSL automaticamente.",
+      "Trusted": "Um certificado confiável foi obtido e será renovado automaticamente. Salve suas configurações e reinicie o servidor para aplicá-lo.",
+      "Unlock": {
+        "Title": "Parar Renovação Automática",
+        "Tooltip": "Para de gerenciar este certificado automaticamente.",
+        "Warning": "O Foundry Virtual Tabletop gerencia este certificado e o renova automaticamente antes que expire. Se você continuar, o certificado será excluído e a renovação automática será interrompida, permitindo que você gerencie seus certificados SSL manualmente. Deseja prosseguir?"
+      }
     },
     "SSLCert": "Certificado SSL",
     "Telemetry": {
@@ -2352,7 +2378,7 @@
       },
       "sslCert": {
         "label": "Certificado",
-        "hint": "Você pode executar o servidor usando criptografia Secure Socket Layer (SSL), fornecendo caminhos para os arquivos de certificado e chave. Os caminhos são absolutos ou relativos à subpasta Config nos dados do usuário."
+        "hint": "A camada de soquetes seguros (SSL) deve ser configurada para usar certos recursos modernos do navegador, como WebRTC (para recursos de áudio e vídeo) ou WebBluetooth (para recursos de dado inteligente Bluetooth). Você pode gerar seu próprio certificado e arquivo de chave para habilitar o SSL ou pode solicitar a criação automática de um. Os caminhos podem ser absolutos ou relativos à subpasta Config nos dados do usuário. Consulte o artigo <a href=\"https://foundryvtt.com/article/ssl/\" target=\"_blank\">Certificados SSL</a> para obter mais detalhes."
       },
       "sslKey.label": "Chave",
       "awsConfig": {
@@ -2538,7 +2564,6 @@
     "Modules": "Módulos Adicionais",
     "Systems": "Sistemas",
     "GettingStarted": "Primeiros Passos",
-    "NoSystemsMessage": "Para criar seu primeiro mundo, você deve primeiro instalar um <a class=\"system-install\" data-query=\"\" title=\"Game System\">Sistema de Jogo</a>. Por favor, reserve algum tempo para navegar nos sistemas disponíveis e escolha um para instalar. Se você não sabe qual sistema quer ou o seu sistema preferido não está disponível, nós recomendamos que você instale o sistema <a class=\"system-install\" data-query=\"Simple Worldbuilding\" title=\"Simple Worldbuilding\">Simple Worldbuilding</a>. ",
     "NoWorldsMessage": "Agora que você tem um sistema de jogos fornecendo regras sobre como jogar, você vai querer criar um mundo. Mundos de jogo são espaços que contêm todos os personagens, fichas, diários e mapas usados para jogar, seja ele uma aventura única ou uma campanha.",
     "NueWorldDescription": "<p>Para mais informações sobre como configurar mundos, confira a documentação <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>Mundo</a>.</p>",
     "SeeTutorial": "Para um guia mais detalhado de como começar no Foundry Virtual Tabletop, você pode dar uma olhada na série <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Gamemaster Tutorial\">Tutorial do Mestre de Jogo</a> na nossa <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Knowledge Base\">Base de Dados</a>.",
@@ -2830,6 +2855,7 @@
       "RestoreBackupTitle": "Restaurando backup de {title}",
       "RestoreBackupFailure": "Falha ao restaurar o backup de {title}. Consulte o console (F12) para obter detalhes.",
       "RestoreBackupComplete": "{title} restaurado com sucesso, com backup feito em {date}",
+      "RestoreBackupConfirmCodeInvalid": "Você deve inserir o código exato para confirmar a solicitação de restauração do backup.",
       "RestoringSnapshot": "Restaurando Snapshot",
       "RestoreSnapshotFailure": "Falha ao restaurar o snapshot. Consulte o console (F12) para obter detalhes.",
       "RestoreSnapshotComplete": "Snapshot restaurado com sucesso criado em {date}.",
@@ -2837,6 +2863,7 @@
       "RestoreSnapshotWarning": "Restaurar um snapshot redefine o estado da instalação do Foundry VTT para o estado em que o snapshot foi criado. Todas as versões e estados globais serão revertidos. Este processo não pode ser desfeito.",
       "RestoreSnapshotUnchangedPackages": "<strong>1</strong> pacote foi adicionado após o snapshot ser criado e permanecerá inalterado após o snapshot ser restaurado.",
       "RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> pacotes foram adicionados após o snapshot ser criado e permanecerão inalterados após o snapshot ser restaurado.",
+      "RestoreSnapshotConfirmCodeInvalid": "Você deve inserir o código exato para confirmar a solicitação de restauração do snapshot.",
       "SelectAll": "Selecionar Tudo",
       "Snapshot": "Snapshot",
       "TakeBackup": "Realizar Backup",
@@ -3312,6 +3339,14 @@
         "label": "Visibilidade",
         "hint": "Configure a visibilidade da Região."
       },
+      "hidden": {
+        "label": "Oculto",
+        "hint": "Oculta a região dos jogadores e desativa seus comportamentos."
+      },
+      "locked": {
+        "label": "Bloqueado",
+        "hint": "Impede interações com a tela, edições da paleta e oculta a região quando a visibilidade estiver definida para mostrar apenas regiões desbloqueadas."
+      },
       "highlightMode": {
         "label": "Modo de Realce",
         "hint": "Configure se deseja realçar as formas reais ou os espaços da grade cobertos pela Região."
@@ -3754,6 +3789,9 @@
       "ACTIONS": {
         "Clear": "Limpar"
       },
+      "Any": "Qualquer",
+      "Yes": "Sim",
+      "No": "Não",
       "Bottom": "Inferior",
       "Title": "Filtro Avançado",
       "Level": "Filtrar por Andar",
@@ -3897,7 +3935,8 @@
       "img.label": "Ícone do Resultado",
       "documentUuid.label": "Documento Referenciado",
       "weight.label": "Peso",
-      "range.label": "Intervalo"
+      "range.label": "Intervalo",
+      "description.label": "Descrição"
     }
   },
   "TILE.ConfigTitle": "Configuração de Tile",
@@ -3926,6 +3965,10 @@
     "video": "Vídeo"
   },
   "TILE.FIELDS": {
+    "hidden": {
+      "label": "Oculto",
+      "hint": "Oculta este Tile dos jogadores."
+    },
     "sort.label": "Organizar",
     "texture": {
       "src.label": "Imagem ou Vídeo da Tile",
@@ -4066,6 +4109,14 @@
   },
   "TOKEN.FIELDS": {
     "name.label": "Nome do Token",
+    "hidden": {
+      "label": "Oculto",
+      "hint": "Oculta este Token dos jogadores."
+    },
+    "locked": {
+      "label": "Bloqueado",
+      "hint": "Impede que este Token seja movido na tela."
+    },
     "sort.label": "Organizar",
     "width.label": "Tamanho X",
     "height.label": "Tamanho Y",
