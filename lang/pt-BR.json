@@ -1427,7 +1427,7 @@
   "INVITATIONS": {
     "Copied": "Link de convite do jogo copiado para a área de transferência",
     "Instructions": "Compartilhe os links abaixo com os usuários que você deseja que participem do seu jogo. O link de convite local é para usuários em sua rede local, já o link da Internet se conecta através da Internet na porta configurada.",
-    "Internet": "Internet",
+    "Internet": "Internet (IPv4)",
     "InternetV6": "Internet (IPv6)",
     "Local": "Rede Local",
     "Title": "Links de Convite do Jogo",
