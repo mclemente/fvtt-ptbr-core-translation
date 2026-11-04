@@ -65,6 +65,8 @@
         "label": "Nome"
       },
       "hidden": {
+        "label": "Oculta",
+        "hint": "Desativa temporariamente esta fonte de luz."
       },
       "rotation": {
         "label": "Ângulo de Rotação"
@@ -687,6 +689,8 @@
     "RegionCone": "Desenhar Cone",
     "RegionLine": "Desenhar Linha",
     "RegionPolygon": "Desenhar Polígono",
+    "RegionGrid": "Desenhar Espaços de Grade",
+    "RegionGridP": "<span class=\"reference\">Clique</span> para adicionar espaços à grade. <span class=\"reference\">Clique Direito</span> para remover o último espaço da grade. <span class=\"reference\">Clique Duplo</span> para finalizar.",
     "RegionHole": "Criar Furos",
     "RegionHoleP": "Quando ativo, qualquer Forma que você desenhar em uma Região usando qualquer uma das ferramentas de Forma, criará um Furo onde os comportamentos da Região não serão aplicados.",
     "RegionSnap": "Quando ativo, qualquer Forma que você desenhar em uma Região usando qualquer uma das ferramentas de Forma, será encaixado na grade.",
@@ -945,6 +949,7 @@
       "height.label": "Altura",
       "hidden.label": "Ocultado",
       "locked": {
+        "label": "Bloqueado",
         "hint": "Impede a manipulação e edição da tela através da paleta."
       },
       "elevation.label": "Elevação",
@@ -990,6 +995,7 @@
         "hint": "Para desenho à mão livre, o fator de suavização controla a quantidade de suavização do spline."
       },
       "hidden": {
+        "label": "Oculto",
         "hint": "Oculta este desenho de todos os jogadores, exceto do autor."
       },
       "fillAlpha.label": "Opacidade do Preenchimento",
@@ -1430,6 +1436,7 @@
     "Internet": "Internet (IPv4)",
     "InternetV6": "Internet (IPv6)",
     "Local": "Rede Local",
+    "Recheck": "Checar Conectividade Novamente",
     "Title": "Links de Convite do Jogo",
     "OpenConnection": "A sua conexão parece estar aberta",
     "ClosedConnection": "A sua conexão parece estar fechada",
@@ -3779,6 +3786,8 @@
       "Visible": "Visível"
     },
     "Categories": {
+      "Player": "Propriedade dos Jogadores",
+      "Gamemaster": "Propriedade do Mestre",
       "NoAuthor": "Sem Autor",
       "NoLevel": "Sem Andar"
     },
@@ -4533,22 +4542,35 @@
       "character": {
         "label": "Personagem de Jogador",
         "hint": "Selecione um Ator do conjunto sobre o qual você tem pelo menos permissão de cargo de OBSERVADOR que representa o personagem principal deste usuário."
+      },
+      "password": {
+        "label": "Senha do Jogador",
+        "hint": "Alterar a senha deste usuário encerrará as sessões atuais associadas a ele."
       }
     },
     "SHEET": {
       "HEADERS": {
         "INFO": "Informações do Jogador",
-        "CHAR": "Personagem do Jogador"
+        "CHAR": "Personagem do Jogador",
+        "PASS": "Alteração de Senha"
       },
-      "BUTTONS": {
-        "SAVE": "Salvar Configuração do Jogador",
-        "RELEASE": "Liberar Personagem"
-      }
+      "PASSWORD": {
+        "Current": "Senha (atual)",
+        "New": "Senha (nova)",
+        "Wipe": {
+          "label": "Apagar",
+          "hint": "Apagar a senha atual em vez de definir uma nova."
+        }
+      },
+      "Submit": "Salvar Configuração do Jogador"
     },
     "MESSAGES": {
       "KICKED": "O usuário {user} foi <strong>expulso</strong> do Mundo.",
       "BANNED": "O usuário {user} foi <strong>banido</strong> do Mundo.",
       "UNBANNED": "O usuário {user} foi <strong>desbanido</strong> do Mundo."
+    },
+    "ACTIONS": {
+      "releaseCharacter": "Soltar Personagem"
     },
     "RoleNone": "Nenhum",
     "RolePlayer": "Jogador",
