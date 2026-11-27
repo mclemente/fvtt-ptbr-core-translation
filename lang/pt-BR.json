@@ -191,7 +191,10 @@
       "ToggleControls": "Alternar Controles",
       "Close": "Fechar Janela"
     },
-    "IMAGE_POPOUT.AltText": "Uma imagem em destaque: o sujeito não é conhecido."
+    "IMAGE_POPOUT.AltText": "Uma imagem em destaque: o sujeito não é conhecido.",
+    "DIALOG": {
+      "InputQueryWarning": "Qualquer informação que você inserir aqui será compartilhada com o usuário \"<strong>{user}</strong>\". Tenha cuidado ao compartilhar informações confidenciais."
+    }
   },
   "AUDIO": {
     "CHANNELS": {
@@ -579,6 +582,7 @@
     "CannotViewWarning": "Você não tem permissão suficiente para ver este pacote de Compêndio.",
     "ModifyLocked": "Você não pode modificar o conteúdo deste pacote de Compêndio porque ele está bloqueado.",
     "ModifyPermissionDenied": "Você não tem permissão para modificar este pacote de Compêndio.",
+    "CreatePermissionDenied": "Você não tem permissão para criar um pacote Compêndio.",
     "OwnershipInheritBelow": "Herdar de baixo",
     "OwnershipReset": "Redefinir para Padrão",
     "ART": {
@@ -1212,6 +1216,7 @@
     "NoWebGL2": "Seu navegador não suporta à renderização WebGL Versão 2, essencial para que o Foundry Virtual Tabletop funcione corretamente. Podem ocorrer erros ou comportamento gráfico anormal.",
     "BackgroundTextureSize": "Você está usando uma textura de fundo de Cena com dimensões de {width}px por {height}px. Uma ou ambas as dimensões excedem o tamanho máximo de textura de {max}px suportado pelo seu dispositivo.",
     "InvalidAdminCredentials": "O nome de usuário ou a senha de administrador do servidor fornecidos são inválidos. Se você esqueceu as credenciais configuradas, será necessário excluir manualmente o arquivo <strong>Config/admin.txt</strong> da sua pasta de dados do usuário.",
+    "TooManyAdminAttempts": "Muitas tentativas de login do administrador do servidor falharam. Tente novamente em alguns minutos.",
     "LoadPackages": "A solicitação para consultar os pacotes existentes falhou ao se conectar com o servidor do Foundry. Verifique se sua aplicação permite conexões de saída.",
     "NoTargetUsersForWhisper": "Não existem usuários alvo para este sussurro. Verifique sua ortografia ou tente \"/w [Nome de Usuário]\" em vez disso.",
     "CantWhisper": "Você não tem permissão para enviar mensagens sussurradas a outros usuários.",
@@ -1775,7 +1780,17 @@
     "UnlockBar": "Desbloquear Hotbar",
     "EmptySlot": "Espaço Vazio {slot}",
     "CannotOverwrite": "Não é possível sobrescrever esta Macro já que a hotbar está bloqueada.",
+    "AuthoredBy": "por",
+    "APPROVAL": {
+      "Approve": "Aprovar Macro",
+      "Required": "A macro \"{name}\" precisa ser aprovada por um Mestre antes de poder ser executada.",
+      "Risk": "Um script malicioso pode modificar ou excluir quaisquer dados aos quais o usuário executante tenha acesso. Aprove apenas códigos que você tenha revisado e compreendido.",
+      "Unapproved": "Este script Macro precisa ser aprovado por um Mestre antes de poder ser executado por outros usuários.",
+      "UnknownAuthor": "um usuário desconhecido",
+      "Warning": "A aprovação da macro \"<strong>{name}</strong>\", criada por {author}, permite que qualquer usuário com permissão execute seu código em seu próprio cliente, incluindo os Mestres, sem confirmação adicional."
+    },
     "FIELDS": {
+      "approver.label": "Aprovador",
       "command.label": "Comando"
     }
   },
@@ -1960,7 +1975,7 @@
   "SCENE.Activate": "Ativar",
   "SCENE.Audio": "Áudio",
   "SCENE.BackgroundScale": "Escala da Cena",
-  "SCENE.BackgroundScaleHint": "Use SHIFT+Roda do Mouse ou SHIFT+Seta para Cima e SHIFT+Seta para Baixo para ajustar a escala da cena.",
+  "SCENE.BackgroundScaleHint": "Use SHIFT + Roda do Mouse ou SHIFT + Seta para Cima e SHIFT + Seta para Baixo para ajustar a escala da cena.",
   "SCENE.CaptureInitialViewPosition": "Posição da tela capturada como visualização inicial na configuração da Cena.",
   "SCENE.CurrentLevel": "Andar Atual",
   "SCENE.Darkness": "Escuridão",
@@ -1998,7 +2013,7 @@
   "SCENE.GridMeasurement": "Medidas",
   "SCENE.GridMechanics": "Mecânicas",
   "SCENE.GridSizeError": "Este redimensionamento reduziria o tamanho da grade abaixo de 50px. Se você quer reduzir para este tamanho, troque para Sem Grade primeiro e redefina a nova grade após o redimensionamento.",
-  "SCENE.GridResizeHint": "Use ALT+Roda do mouse, ALT+Seta para cima ALT+Seta para baixo para ajustar o tamanho da grade.",
+  "SCENE.GridResizeHint": "Use ALT + Roda do mouse, ALT + Seta para cima ALT + Seta para baixo para ajustar o tamanho da grade.",
   "SCENE.GridPosition": "Deslocamento da Cena",
   "SCENE.GridPositionHint": "Use as Teclas de Seta para ajustar o deslocamento da cena.",
   "SCENE.GridReset": "Desfazer Mudanças",
@@ -3143,6 +3158,7 @@
     "ErrorMustSelectUser": "Você deve selecionar um Usuário para fazer login.",
     "ErrorUserDoesNotExist": "O Usuário solicitado, \"{user}\", não existe.",
     "ErrorInvalidPassword": "Senha inválida fornecida para {user}!",
+    "ErrorTooManyAttempts": "Muitas tentativas de login falharam para {user}. Por favor, tente novamente em alguns minutos.",
     "ErrorBanned": "{user} não tem permissão para acessar este Mundo!",
     "LoginSuccess": "Login como {user} bem sucedido, entrando no jogo!",
     "WorldPendingSetup": "Este Mundo ainda não está pronto. Por favor, aguarde até que o Mestre faça login e conclua a configuração antes de tentar entrar."
@@ -3253,7 +3269,7 @@
   "PERMISSION.JournalCreate": "Criar Diário",
   "PERMISSION.JournalCreateHint": "Permite que usuários com esse cargo criem entradas de diário na barra lateral do diário.",
   "PERMISSION.MacroScript": "Usar Macros de Script",
-  "PERMISSION.MacroScriptHint": "Permite que usuários com esse cargo usem macros JavaScript que acessam a API.",
+  "PERMISSION.MacroScriptHint": "Permite que usuários com esse cargo criem, editem e deletem macros JavaScript que acessam a API do FoundryVTT e executem Scripts de Comportamentos de Região.",
   "PERMISSION.ManualRolls": "Fazer Rolagens Manuais",
   "PERMISSION.ManualRollsHint": "Permite que usuários com este cargo tenham a opção de inserir rolagens manualmente.",
   "PERMISSION.MessageWhisper": "Sussurrar Mensagens Privadas",
@@ -3795,6 +3811,8 @@
       "empty": "Vazio",
       "visible": "Visível para alguns jogadores",
       "hidden": "Ocultado dos jogadores",
+      "attachedToToken": "Anexado a Token",
+      "attachedToHiddenToken": "Anexado a Token Oculto",
       "locked": "Bloqueado"
     },
     "Filter": {
