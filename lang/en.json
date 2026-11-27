@@ -199,7 +199,10 @@
     "ToggleControls": "Toggle Controls",
     "Close": "Close Window"
   },
-  "IMAGE_POPOUT.AltText": "A featured image: the subject is not known."
+  "IMAGE_POPOUT.AltText": "A featured image: the subject is not known.",
+  "DIALOG": {
+    "InputQueryWarning": "Anything you enter here will be shared with User \"<strong>{user}</strong>\". Please be mindful of sharing sensitive information."
+  }
 },
 
 "AUDIO": {
@@ -600,6 +603,7 @@
   "CannotViewWarning": "You do not have sufficient permission to view this Compendium pack.",
   "ModifyLocked": "You cannot modify content in this Compendium pack because it is locked.",
   "ModifyPermissionDenied": "You do not have permission to modify this Compendium pack.",
+  "CreatePermissionDenied": "You do not have permission to create a Compendium pack.",
   "OwnershipInheritBelow": "Inherit from below",
   "OwnershipReset": "Reset to Default",
   "ART": {
@@ -765,7 +769,7 @@
   "Ctrl": "Control",
   "CtrlAbbr": "CTRL",
   "CtrlClickDrag": "{mod} + Click + Drag",
-  "Alt": "Alt",
+  "Alt": "ALT",
   "AltClick": "{alt} + Click",
   "AltClickDrag": "{alt} + Click + Drag",
   "CtrlClick": "{mod} + Click",
@@ -1242,6 +1246,7 @@
   "NoWebGL2": "Your browser does not currently support WebGL Version 2 rendering which is essential for Foundry Virtual Tabletop to work properly. Errors or abnormal graphical behavior may occur.",
   "BackgroundTextureSize": "You are using a Scene background texture with dimensions {width}px by {height}px. One or both of these dimensions exceeds the maximum texture size of {max}px supported by your device.",
   "InvalidAdminCredentials": "The provided server administrator username or password is invalid. If you have forgotten your configured credentials, you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
+  "TooManyAdminAttempts": "Too many failed server administrator login attempts. Please try again in a few minutes.",
   "LoadPackages": "The request to browse existing packages failed to connect with the Foundry server. Make sure your application allows outbound connections.",
   "NoTargetUsersForWhisper": "No target users exist for this whisper. Check your spelling or try \"/w [User Name]\" instead.",
   "CantWhisper": "You do not have permission to send whispered chat messages to other users.",
@@ -1825,7 +1830,17 @@
   "UnlockBar": "Unlock Hotbar",
   "EmptySlot": "Empty Slot {slot}",
   "CannotOverwrite": "Cannot overwrite this Macro as the hotbar is locked.",
+  "AuthoredBy": "by",
+  "APPROVAL": {
+    "Approve": "Approve Macro",
+    "Required": "Macro \"{name}\" must be approved by a Gamemaster before you can execute it.",
+    "Risk": "A malicious script could modify or delete any data the running user can access. Only approve code you have reviewed and understand.",
+    "Unapproved": "This script Macro must be approved by a Gamemaster before it can be executed by other users.",
+    "UnknownAuthor": "an unknown User",
+    "Warning": "Approving Macro \"<strong>{name}</strong>\", authored by {author}, allows any user with permission to run its code in their own client, including Gamemasters, without further confirmation."
+  },
   "FIELDS": {
+    "approver.label": "Approver",
     "command.label": "Command"
   }
 },
@@ -2019,7 +2034,7 @@
 "SCENE.Activate": "Activate",
 "SCENE.Audio": "Audio",
 "SCENE.BackgroundScale": "Scene Scale",
-"SCENE.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the scene scale.",
+"SCENE.BackgroundScaleHint": "Use SHIFT + Scroll or SHIFT + Up Arrow and SHIFT + Down Arrow to adjust the scene scale.",
 "SCENE.CaptureInitialViewPosition": "Captured canvas position as initial view in the Scene configuration form.",
 "SCENE.CurrentLevel": "Current Level",
 "SCENE.Darkness": "Darkness",
@@ -2057,7 +2072,7 @@
 "SCENE.GridMeasurement": "Measurement",
 "SCENE.GridMechanics": "Mechanics",
 "SCENE.GridSizeError": "This resize would reduce the grid size under the minimum of 50px. If you would like to reduce to this size, please swap to gridless first and resetup a new grid after resize.",
-"SCENE.GridResizeHint" : "Use ALT+Mousewheel or ALT+Up Arrow and ALT+Down Arrow to adjust the grid size.",
+"SCENE.GridResizeHint" : "Use ALT + Scroll or ALT + Up Arrow and ALT + Down Arrow to adjust the grid size.",
 "SCENE.GridPosition": "Scene Offset",
 "SCENE.GridPositionHint": "Use the Arrow Keys to adjust the scene offset.",
 "SCENE.GridReset": "Reset Changes",
@@ -3230,6 +3245,7 @@
   "ErrorMustSelectUser": "You must select a User in order to log in.",
   "ErrorUserDoesNotExist": "The requested User, \"{user}\", does not exist.",
   "ErrorInvalidPassword": "Invalid password provided for {user}!",
+  "ErrorTooManyAttempts": "Too many failed login attempts for {user}. Please try again in a few minutes.",
   "ErrorBanned": "{user} does not have permission to access this World!",
   "LoginSuccess": "Login as {user} successful, joining game!",
   "WorldPendingSetup": "This World is not ready yet. Please wait for the Gamemaster to log in and complete setup before attempting to join."
@@ -3345,7 +3361,7 @@
 "PERMISSION.JournalCreate": "Create Journal Entries",
 "PERMISSION.JournalCreateHint": "Allow users with this role to create new Journal Entries in the Journal sidebar.",
 "PERMISSION.MacroScript": "Modify Script Macros and Execute Script Region Behaviors",
-"PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros that access the Foundry API and to execute Script Behaviors in Scene Regions.",
+"PERMISSION.MacroScriptHint": "Allow users with this role to create, update, and delete JavaScript Macros that access the Foundry VTT API, and Execute Script Region Behaviors.",
 "PERMISSION.ManualRolls": "Make Manual Rolls",
 "PERMISSION.ManualRollsHint": "Allow users with this role the option to manually input rolls.",
 "PERMISSION.MessageWhisper": "Whisper Private Messages",
@@ -3895,6 +3911,8 @@
     "empty": "Empty",
     "visible": "Visible to some players",
     "hidden": "Hidden from players",
+    "attachedToToken": "Attached to Token",
+    "attachedToHiddenToken": "Attached to Hidden Token",
     "locked": "Locked"
   },
   "Filter": {
